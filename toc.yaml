@@ -1,0 +1,26 @@
+toc:
+  properties:
+    subcollection: sandbox
+    path: sandbox
+    href: /docs/sandbox
+    service-name: service-name
+    audience: service
+    category: solution_docs
+    label: IBM Cloud Sandbox
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - getting-started.md
+      - about-sandbox.md
+      - release-notes.md
+  - navgroup:
+      id: howto
+      topics:
+      - deploying-sandbox.md
+  - navgroup:
+      id: help
+      topics:
+      - faq.md
+      - troubleshoot.md
+      - get-help.md
