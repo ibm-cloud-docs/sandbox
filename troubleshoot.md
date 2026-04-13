@@ -20,15 +20,12 @@ content-type: troubleshoot
 
 
 
-# Title in the form of a question?
+# Troubleshooting
 {: #troubleshoot-xx}
 {: troubleshoot}
 {: support} 
 
 
-
-You try to create more than one instance in your Lite account, but you can't create more.
-{: shortdesc}
 
 
 
