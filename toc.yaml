@@ -18,6 +18,10 @@ toc:
       id: howto
       topics:
       - deploying-sandbox.md
+      - topicgroup:
+          label: Observability
+          topics:
+          - at-events.md
   - navgroup:
       id: help
       topics:
