@@ -1,19 +1,51 @@
 {
   "version": 2,
   "title": "IBM Cloud Sandbox",
-  "introduction": "Find useful information to learn about IBM Cloud Sandbox",
+  "introduction": "This is a description of what the user will be able to find in the content for your product.",
   "product_page": "https://www.ibm.com/products/product-value",
   "console_page": "/relative/console/path",
   "section_topics": {
     "links": [
       {
-        "title": "Getting started with IBM Cloud Sandbox",
-        "href": "/docs/sandbox?topic=sandbox-getting-started"
+        "title": "Getting Started",
+        "href": "/docs/sandbox?topic=sandbox-getting-started-sandbox"
       },
       {
         "title": "Deploying the IBM Cloud Sandbox",
-        "href": "/docs/sandbox?topic=sandbox-deploying-sandbox"
+        "href": "/docs/sandbox?topic=sandbox-deploy"
+      },
+      {
+        "title": "Topic title",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
+      },
+      {
+        "title": "Topic title",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
+      },
+      {
+        "title": "Topic title",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
       }
     ]
+  },
+  "section_highlights": [
+    {
+      "title": "Resource title",
+      "description": "Short description of resource content.",
+      "href": "https://www.example.ibm.com/link/to/resource",
+      "type": "blog"
+    },
+    {
+      "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
+      "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
+      "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
+      "type": "redbook",
+      "recommended": true
+    }
+  ],
+  "section_devtools": {
+    "api": "/apidocs/acme-test-v1/acme-test-v1.2.0",
+    "cli": "/docs/acme-test",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group"
   }
 }
