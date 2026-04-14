@@ -34,13 +34,6 @@
       "description": "Short description of resource content.",
       "href": "https://www.example.ibm.com/link/to/resource",
       "type": "blog"
-    },
-    {
-      "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
-      "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
-      "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
-      "type": "redbook",
-      "recommended": true
     }
   ],
   "section_devtools": {
