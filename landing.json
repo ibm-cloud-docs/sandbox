@@ -1,30 +1,18 @@
 {
   "version": 2,
-  "title": "<Product name>",
-  "introduction": "This is a description of what the user will be able to find in the content for your product.",
+  "title": "IBM Cloud Sandbox",
+  "introduction": "Find useful information to learn about IBM Cloud Sandbox",
   "product_page": "https://www.ibm.com/products/product-value",
   "console_page": "/relative/console/path",
   "section_topics": {
     "links": [
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Getting started with IBM Cloud Sandbox",
+        "href": "/docs/sandbox?topic=sandbox-getting-started-sandbox"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Deploying the IBM Cloud Sandbox",
+        "href": "/docs/sandbox?topic=sandbox-deploy"
       }
     ]
   },

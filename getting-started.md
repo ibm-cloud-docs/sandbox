@@ -2,21 +2,16 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-13"
+lastupdated: "2026-04-14"
 
-keywords: IBM Cloud VPC, getting started, sandbox
+keywords:
 
 subcollection: sandbox
-
 content-type: tutorial
-services: # Getting started tutorials tend to be only for the service, so leave empty.
-account-plan: lite # Specify 'lite' if tutorial can be completed using only Lite plan of your service; otherwise, specify 'paid'
-completion-time: 10m # Estimated time to complete the steps in this tutorial. Minute values are supported up to 90 minutes. Whole hours are also supported; for example: 2h
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Getting started with IBM Cloud Sandbox
 {: #getting-started-sandbox}
@@ -48,21 +43,87 @@ Before you access the IBM Cloud Sandbox, ensure that the following requirements 
 {: #sandbox-request}
 {: step}
 
+For phase 1, IBM Cloud Sandbox uses an allow-listed process to manage access.
+
+1. Contact your IBM Cloud account representative or the Classic to VPC Migration Program team to request sandbox access.
+2. Provide information about your current Classic infrastructure configuration and migration goals.
+3. Wait for approval notification, which typically takes 3-5 business days.
+
+After approval, you will receive an email with instructions to access your sandbox environment.
+
 ## Choose a VPC template
 {: #sandbox-template}
 {: step}
+
+IBM Cloud Sandbox provides 8 standard VPC templates that match common Classic infrastructure configurations. Review the available templates and select the one that most closely matches your current setup.
+
+1. Log in to the [IBM Cloud console](https://cloud.ibm.com){: external}.
+2. Navigate to the IBM Cloud Sandbox section.
+3. Review and select the appropriate template.
+
+If none of the standard templates meet your requirements, select the "Other" option to create a custom configuration.
+{: tip}
 
 ## Deploy your sandbox environment
 {: #sandbox-deploy}
 {: step}
 
+After you select a template, deploy your sandbox environment.
+
+1. Review the template configuration details, including:
+
+    - Virtual server instances
+    - Subnets and network configuration
+    - Security groups and network ACLs
+    - Storage volumes
+    - Load balancers (if applicable)
+
+2. Customize the configuration if needed:
+
+    - Adjust instance sizes
+    - Modify network settings
+    - Add or remove components
+
+3. Click **Deploy sandbox environment**.
+4. Wait for the deployment to complete. This process typically takes 10-15 minutes.
+
+You receive a notification when your sandbox environment is ready to use.
+
 ## Explore VPC features
 {: #sandbox-explore}
 {: step}
 
-## Plan your migration
-{: #sandbox-plan-migration}
-{: step}
+After your sandbox environment is deployed, you can begin exploring VPC features and capabilities.
+
+### Access your sandbox environment
+{: #sandbox-access-environment}
+
+1. In the IBM Cloud console, navigate to your sandbox environment.
+2. Review the deployed resources in the VPC dashboard.
+3. Access virtual server instances using SSH or the web console.
+
+For more information, see [Deploying the IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-deploy).
+
+### Test VPC capabilities
+{: #sandbox-test-capabilities}
+
+Use your sandbox environment to test the following VPC capabilities:
+
+- **Networking**: Configure subnets, security groups, and network ACLs
+- **Compute**: Deploy and manage virtual server instances
+- **Storage**: Attach and manage block storage volumes
+- **Load balancing**: Configure application and network load balancers
+- **VPN connectivity**: Set up VPN connections for hybrid cloud scenarios
+
+### Compare with Classic infrastructure
+{: #sandbox-compare-classic}
+
+As you explore VPC features, compare them with your existing classic infrastructure:
+
+- Note differences in networking models (VPC vs. Classic VLANs)
+- Compare security approaches (security groups vs. Classic firewalls)
+- Evaluate performance and scalability differences
+- Identify any gaps or challenges for your specific use case
 
 ## Next steps
 {: #next-steps}
