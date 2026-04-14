@@ -23,19 +23,19 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 ## Creating the account using UI
 {: #create-ui}
 
-1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment using the new **IBM Cloud Sandbox**. This is a cost-free configuration and below is the email format:
+1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment using the new **IBM Cloud Sandbox**. This is a cost-free configuration.
 
     ![Sandbox - Email notification](images/sandbox-email-notification.png "Sandbox - Email notification"){: caption="Sandbox - Email notification" caption-side="bottom"}
 
-2. After clicking the **Request** button on the email, you will be navigated to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog#highlights). Search for Sandbox offering.
+2. After clicking the **Request** button on the email, you will be navigated to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#highlights). Search for Sandbox offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 
-3. In the **Create** tab, provide the following information under Details:
-    * Sandbox name - Name of the sandbox instance.
-    * Region - Region where the instance is provisioned.
-    * Resource group - Name from your IBM Cloud account where the VPC resources must be deployed.
-    * Tags (optional)
+3. In the **Create** tab, provide the following information under **Details** section:
+    * **Sandbox name** - Name of the sandbox instance.
+    * **Region** - Region where the instance is provisioned.
+    * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
+    * **Tags (optional)**
 
     ![Sandbox - Details](images/sandbox-details.png "Sandbox - Details"){: caption="Sandbox - Details" caption-side="bottom"}
 
@@ -57,7 +57,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 9. A welcome email is sent and you can successfully login to the Sandbox account.
 
-10. You can continue without selecting a trusted profile by clicking Continue or select a trusted profile for the Sandbox.
+10. You can continue without selecting a trusted profile by clicking **Continue** or select a trusted profile for the Sandbox.
 
 11. On the main Sandbox dashboard you can create the resources, extend sandbox, end sandbox, and save the configuration.
 
@@ -69,7 +69,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 15. In the Resource list, you can see all the resources that you have created.
 
-16. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running the same in customer account.
+16. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running the same in the customer account.
 
     ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
 

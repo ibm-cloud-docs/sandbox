@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-13"
+lastupdated: "2026-04-14"
 
 keywords:
 
@@ -14,7 +14,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ for IBM Cloud Sandbox
+# FAQ
 {: #my-service-faq}
 
 This document provides a list of frequently asked questions and answers about a specific topic for IBM Cloud Sandbox.
@@ -24,13 +24,13 @@ This document provides a list of frequently asked questions and answers about a 
 {: #faq-page-setup}
 {: faq}
 
-A: Yes, the Sandbox is completely free to use for 2 weeks trial period. There are no charges for the preconfigured resources provided within the Sandbox environment.
+Yes, the Sandbox is completely free to use for 2 weeks trial period. There are no charges for the preconfigured resources provided within the Sandbox environment.
 
 ## How long can I use the Sandbox?
 {: #faq-content-include}
 {: faq}
 
-A: The Sandbox is available for a limited trial period of 2 weeks. Extensions may be possible based on availability and use case requirements and for only 2 days.
+The Sandbox is available for a limited trial period of 2 weeks. Extensions may be possible based on availability and use case requirements and for only 2 days.
 
 ## What is the mapping between IBM Cloud Classic resources and equivalent VPC resources?
 {: #faq-content-include}
