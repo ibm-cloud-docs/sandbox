@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-15"
 
 keywords:
 
@@ -20,12 +20,12 @@ content-type: release-note
 
 The solution uses the IBM Cloud Catalog service to ensure a unified and consistent approach.
 
+Setting IAM permissions - UI
+
 ## Creating the account using UI
 {: #create-ui}
 
 1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment using the new **IBM Cloud Sandbox**. This is a cost-free configuration.
-
-    ![Sandbox - Email notification](images/sandbox-email-notification.png "Sandbox - Email notification"){: caption="Sandbox - Email notification" caption-side="bottom"}
 
 2. After clicking the **Request** button on the email, you will be navigated to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#highlights). Search for Sandbox offering.
 
@@ -35,9 +35,9 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
     * **Sandbox name** - Name of the sandbox instance.
     * **Region** - Region where the instance is provisioned.
     * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
-    * **Tags (optional)**
+    * **Tags (optional)** - These the key-value labels used to organize, filter, and manage cloud resources efficiently.
 
-    ![Sandbox - Details](images/sandbox-details.png "Sandbox - Details"){: caption="Sandbox - Details" caption-side="bottom"}
+    ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 
 4. In the **Users** section, the creation page allows users to initiate Sandbox provisioning. Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
 
@@ -65,9 +65,15 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 13. Select the instance profile.
 
+    ![Sandbox - Instance profile](images/sandbox-select-instance-profile.png "Sandbox - Instance profile"){: caption="Sandbox - Instance profile" caption-side="bottom"}
+
 14. Select an image for the available operating system.
 
+    ![Sandbox - Image selection](images/sandbox-select-image.png "Sandbox - Image selection"){: caption="Sandbox - Image selection" caption-side="bottom"}
+
 15. In the Resource list, you can see all the resources that you have created.
+
+    ![Sandbox - Resource page](images/sandbox-resource-page.png "Sandbox - Resource page"){: caption="Sandbox - Resource page" caption-side="bottom"}
 
 16. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running the same in the customer account.
 

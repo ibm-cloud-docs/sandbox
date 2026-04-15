@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-15"
 
 keywords:
 
@@ -14,7 +14,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ
+# FAQs
 {: #my-service-faq}
 
 This document provides a list of frequently asked questions and answers about a specific topic for IBM Cloud Sandbox.
