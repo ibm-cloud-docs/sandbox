@@ -20,8 +20,6 @@ content-type: release-note
 
 The solution uses the IBM Cloud Catalog service to ensure a unified and consistent approach.
 
-Setting IAM permissions - UI
-
 ## Creating the account using UI
 {: #create-ui}
 
@@ -37,8 +35,6 @@ Setting IAM permissions - UI
     * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
     * **Tags (optional)** - These the key-value labels used to organize, filter, and manage cloud resources efficiently.
 
-    ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
-
 4. In the **Users** section, the creation page allows users to initiate Sandbox provisioning. Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
 
 5. In the **About** tab, you will get all the details and overview of the service.
@@ -48,6 +44,8 @@ Setting IAM permissions - UI
 6. After accepting the terms and conditions, click **Create Sandbox**.
 
     ![Sandbox - Create](images/sandbox-create.png "Sandbox - Create"){: caption="Sandbox - Create" caption-side="bottom"}
+
+    ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
 
 7. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
 
@@ -59,30 +57,33 @@ Setting IAM permissions - UI
 
 10. You can continue without selecting a trusted profile by clicking **Continue** or select a trusted profile for the Sandbox.
 
-11. On the main Sandbox dashboard you can create the resources, extend sandbox, end sandbox, and save the configuration.
+11. On the main Sandbox dashboard, click **Create Resources**.
 
-12. On the **Create** page, you can create the resources for the Sandbox.
+    ![Sandbox - Create Resources](images/sandbox-create-resources.png "Sandbox - Create Resources"){: caption="Sandbox - Create Resources" caption-side="bottom"}
 
-13. Select the instance profile.
+12. Select the instance profile.
 
     ![Sandbox - Instance profile](images/sandbox-select-instance-profile.png "Sandbox - Instance profile"){: caption="Sandbox - Instance profile" caption-side="bottom"}
 
-14. Select an image for the available operating system.
+13. Select an image for the available operating system.
 
     ![Sandbox - Image selection](images/sandbox-select-image.png "Sandbox - Image selection"){: caption="Sandbox - Image selection" caption-side="bottom"}
 
-15. In the Resource list, you can see all the resources that you have created.
+14. In the Resource list, you can see all the resources that you have created.
 
     ![Sandbox - Resource page](images/sandbox-resource-page.png "Sandbox - Resource page"){: caption="Sandbox - Resource page" caption-side="bottom"}
 
-16. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running the same in the customer account.
+15. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running the same in the customer account.
 
     ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
 
-17. In the **Extend Sandbox**, you can extend the duration of the Sandbox trial environment. The extension is for 48 hours.
+16. In the **Extend Sandbox**, you can extend the duration of the Sandbox trial environment. The extension is for 48 hours.
 
     ![Sandbox - Extend](images/sandbox-extend.png "Sandbox - Extend"){: caption="Sandbox - Extend" caption-side="bottom"}
 
-18. In the **End Sandbox**, you can manually delete the Sandbox environment and all the associated resources.
+17. In the **End Sandbox**, you can manually delete the Sandbox environment and all the associated resources.
 
     ![Sandbox - End](images/sandbox-delete.png "Sandbox - End"){: caption="Sandbox - End" caption-side="bottom"}
+
+## Setting IAM permissions - UI
+{: #sandbox-setting-iam-ui}
