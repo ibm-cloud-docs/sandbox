@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-13"
+lastupdated: "2026-04-16"
 
 keywords:
 
@@ -45,30 +45,21 @@ It enables users to:
 
 ![Architecture diagram](images/sandbox_architecture.svg "IBM Cloud Sandbox architecture diagram"){: caption="IBM Cloud Sandbox architecture diagram" caption-side="bottom"}
 
-## How it works
-{: #how-it-works}
+### Service catalog
+{: #sandbox-service-catalog}
 
-The Sandbox user experience is structured into four key domains:
+Allowlisted customers access the Sandbox offering through the IBM Cloud Catalog within their IBM Cloud account. By selecting the offering from the **Service Catalog** initiates the Sandbox experience in the IBM Cloud Console.
 
-1. Sandbox Enterprise POC Master Account
-2. Customer Sandbox Sub Account (Trusted Profile)
-3. Console Microservice
-4. Sandbox Enterprise IBM Internal Sub Account (Control Plane)
+### Create Sandbox form
+{: #create-sandbox-form}
 
-### Sandbox Enterprise POC Master Account
-{: #sandbox-poc-master-accnt}
+On the IBM Sandbox provisioning page, enter the required information:
 
-The Sandbox Enterprise POC Master Account acts as the central governance and enterprise root for the Sandbox ecosystem. It is used to create sandbox environments for customers and set the catalog settings. It also helps in monitoring the child accounts.
-
-Following are the key responsibilties:
-
-* Managing enterprise hierarchy and account lifecycle
-* Enforcing organization-wide policies and compliance controls
-* Acting as the trust anchor for Sandbox Enterprise Trusted Profiles
-* No customer workloads or control plane services run here
-
-This account serves purely as the governance foundation and does not host runtime Sandbox services.
-{: note}
+* Sandbox name
+* Region
+* Resource group
+* Tags (optional)
+* Users list - required for working with the Sandbox environment.
 
 ### Customer Sandbox Sub Account (Trusted Profile)
 {: #sandbox-sub-accnt}
@@ -88,58 +79,7 @@ Following are the key characteristics:
 * Customer can create resources as per the quota and access policies defined in trusted profile.
 * Lifecycle is fully automated
 
-### Console Microservice
-{: #sandbox-console-ms}
 
-The Console Microservice is responsible for deploying and serving the Sandbox UI, enabling users to interact with the Sandbox platform through the IBM Cloud Console.
-
-Following are the key components:
-
-* Sandbox UI (Console Microservice)
-* Cloud logs for debugging
-* Cloud monitoring for health and performance
-
-### Sandbox Enterprise IBM Internal Sub Account (Control Plane)
-{: #sandbox-internal-sub-accnt}
-
-The Sandbox Enterprise IBM Internal Sub Account functions as the control plane for the Sandbox platform. This account resides within the Sandbox Enterprise IBM Internal Master Account.
-
-This account hosts all API services, service broker, automation pipelines, and operational services required to manage customer sandbox environments.
-
-Following are the key responsibilties:
-
-* Handles user requests coming from IBM Cloud Catalog
-* Exposes Sandbox APIs and Service Broker endpoints
-* Orchestrates account provisioning and onboarding
-* Manages lifecycle automation (trial, reminders, cleanup)
-* Integrates with IBM Cloud services and customer sandbox
-
-Sandbox UI is hosted on IBM Cloud Console.
-{: note}
-
-Following are the key components of Sandbox Enterprise IBM Internal Sub Account:
-
-* VPC with Private Subnet - This secures the network boundary for control plane services.
-
-* Red Hat OpenShift on IBM Cloud (ROKS) - This consists of:
-
-    * Sandbox API
-    * Sandbox maintenance services (part of API service)
-    * Console microservice
-    * Service broker
-
-* Ingress Controller and Load Balancer (ALB) - This securely exposes Sandbox APIs and service broker endpoints.
-
-* IBM Cloud Internet Services (CIS) - This provides secure public ingress, traffic routing, TLS termination, and protection.
-
-* IBM IAM Token Endpoint - This is used for authentication and authorization of users and services.
-
-* PostgreSQL - This stores:
-
-    * User and invite metadata
-    * Registration and lifecycle state
-    * Trial status and operational data
-    * Service Broker registration and binding metadata
 
 * Cloud Object Storage (COS) - This stores configuration artifacts, templates, and generated outputs.
 
