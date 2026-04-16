@@ -25,38 +25,84 @@ subcollection: sandbox
 
 ![Architecture diagram](images/sandbox_architecture.svg "IBM Cloud Sandbox architecture diagram"){: caption="IBM Cloud Sandbox architecture diagram" caption-side="bottom"}
 
-### Service catalog
-{: #sandbox-service-catalog}
+## How it works
+{: #how-it-works}
 
-Allowlisted customers access the Sandbox offering through the IBM Cloud Catalog within their IBM Cloud account. By selecting the offering from the **Service Catalog** initiates the Sandbox experience in the IBM Cloud Console.
+The IBM Cloud Sandbox architecture consists of three primary layers that work together to provide a secure and isolated trial environment:
 
-### Creating Sandbox
-{: #create-sandbox}
+1. **User Access Layer** - Where users authenticate and access the Sandbox
+2. **Customers Account** - The provisioning and management interface
+3. **Sandbox Enterprise POC Master Account** - The backend infrastructure hosting customer sandbox environments.
 
-After you login to [IBM Cloud catalog](https://cloud.ibm.com/catalog), search for Sandbox and provide the following details to create the Sandbox.
+### User access
+{: #user-access}
 
-* Sandbox name
-* Region
-* Resource group
-* Tags (optional)
-* Users list - required for working with the Sandbox environment.
+Users access the IBM Cloud Sandbox through the IBM Cloud Console. After authentication, users can request access to a sandbox environment, which triggers the provisioning workflow.
 
-### Quick Start
-{: #sandbox-quickstart}
+### Customers account
+{: #customer-account}
 
-Customers can access the Sandbox using a trusted profile. When a customer switches to the trusted profile, they can view the Sandbox landing page and provision resources. The trusted profile also enables fine-grained control over what customers can view and which resources they can provision through IAM access policies.
+The Customer's Account serves as the entry point for sandbox provisioning and management. This layer includes:
 
-Create the resources on the Overview page by clicking on **Create Resources**.
+#### IBM Cloud catalog
+{: #cloud-catalog}
 
+The IBM Cloud Catalog provides the Cloud Sandbox service offering, allowing users to discover and request sandbox environments directly from the catalog interface.
 
-Some of the additional services are:
+#### Cloud Console
+{: #cloud-console}
 
-* Cloud Object Storage (COS) - This stores configuration artifacts, templates, and generated outputs.
+The Cloud Console provides the user interface for creating and managing sandbox environments. Users interact with the **Create Sandbox Form** to enter the following details:
 
-* Cloud Logs - This provides centralized logging for API, onboarding, service broker, and maintenance services.
+* **Sandbox Name** - A unique identifier for the sandbox environment
+* **Region** - The geographic location where resources will be deployed
+* **Resource Group** - The organizational unit for resource management
+* **Tags** - Metadata labels for resource organization and tracking
+* **Users List** - Collaborators who will have access to the sandbox environment
 
-* Cloud Monitoring - This provides observability into platform health and performance.
+Once the form is submitted, the sandbox is provisioned in the backend infrastructure.
 
-* Event Notifications- This handles the email notifications such as invites, reminders, and expiration notices.
+### Sandbox Enterprise POC Master Account
+{: #sandbox-enterprise-master}
 
-* Secrets Manager- This safely stores the credentials, tokens, and sensitive configuration information.
+The Sandbox Enterprise POC Master Account is the central infrastructure that hosts all customer sandbox environments. It consists of two distinct sub-accounts:
+
+#### Customer Sandbox Sub Account
+{: #customer-sandbox-subaccount}
+
+Each customer receives a dedicated sub-account with a trusted profile that provides isolated access to sandbox resources. This sub-account has a 14-day trial period and includes:
+
+* **Quick Start** - Under the Overview page, you can create the resources for Sandbox by clicking **Create Resources**.
+
+* **Servers** - You can provision the Virtual Server Instances (VSIs) or Bare Metal servers for testing workloads.
+
+* **Additional Services** - These are the additional services that are provisioned automatically using default configuration.
+
+    * **Cloud Object Storage** - Scalable object storage for data and backups.
+    * **Load Balancer** - Distribute traffic across multiple server instances.
+    * **VPN for VPC** - Secure connectivity to the VPC environment.
+    * **Transit Gateway** - Securely interconnect Classic and VPC resources.
+
+The trusted profile ensures that customers have appropriate access controls and can only interact with resources within their allocated sandbox environment. All resources are automatically cleaned up after the 14-day trial period expires.
+
+## Key features
+{: #key-features}
+
+* **Isolated Environments** - Each customer is provided with a dedicated sub-account that is strictly isolated from all other users.
+
+* **Time-Limited Access** - A 14-day trial period with automatic resource cleanup.
+
+* **Pre-configured Services** - Quick Start templates for common infrastructure patterns
+* **Trusted Profile Security** - Fine-grained access control through IBM Cloud IAM
+* **Automated Provisioning** - Streamlined onboarding through the Cloud Console
+* **Collaborative Access** - Ability to invite team members to the sandbox environment
+
+## Benefits
+{: #benefits}
+
+* **Risk-Free Exploration** - Test VPC capabilities without affecting production environments
+* **Cost-Effective** - Free trial period with no charges for sandbox usage
+* **Rapid Deployment** - Provision resources quickly using pre-configured templates
+* **Hands-On Learning** - Gain practical experience with IBM Cloud infrastructure
+* **Migration Planning** - Evaluate VPC architecture before committing to migration
+* **Team Collaboration** - Share sandbox access with colleagues for joint evaluation
