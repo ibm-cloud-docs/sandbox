@@ -20,12 +20,14 @@ content-type: release-note
 
 The solution uses the IBM Cloud Catalog service to ensure a unified and consistent approach.
 
-## Creating the account using UI
+## Creating the account by using UI
 {: #create-ui}
 
-1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment using the new **IBM Cloud Sandbox**. This is a cost-free configuration.
+1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment by using the new **IBM Cloud Sandbox**. This is a cost-free configuration and below is the email format:
 
-2. After clicking the **Request** button on the email, you will be navigated to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#highlights). Search for Sandbox offering.
+    ![Sandbox - Email notification](images/sandbox-email-notification.png "Sandbox - Email notification"){: caption="Sandbox - Email notification" caption-side="bottom"}
+
+2. After you click the **Request** button on the email, you will be navigated to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog#highlights). Search for Sandbox offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 
@@ -37,7 +39,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 4. In the **Users** section, the creation page allows users to initiate Sandbox provisioning. Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
 
-5. In the **About** tab, you will get all the details and overview of the service.
+5. In the **About** tab, you get all the details and overview of the service.
 
     ![Sandbox - About page](images/sandbox-about-page.png "Sandbox - About page"){: caption="Sandbox - About page" caption-side="bottom"}
 
@@ -49,11 +51,11 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 7. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
 
-8. The Sandbox instance will be be displayed for provisioning in the **Resource list**.
+8. The Sandbox instance is displayed for provisioning in the **Resource list**.
 
     ![Sandbox - Resource list](images/sandbox-resource-list.png "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
 
-9. A welcome email is sent and you can successfully login to the Sandbox account.
+9. A welcome email is sent and you can successfully log in to the Sandbox account.
 
 10. You can continue without selecting a trusted profile by clicking **Continue** or select a trusted profile for the Sandbox.
 
@@ -73,7 +75,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     ![Sandbox - Resource page](images/sandbox-resource-page.png "Sandbox - Resource page"){: caption="Sandbox - Resource page" caption-side="bottom"}
 
-15. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running the same in the customer account.
+16. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running it in your customer account.
 
     ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
 
