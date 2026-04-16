@@ -23,9 +23,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 ## Creating the account by using UI
 {: #create-ui}
 
-1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment by using the new **IBM Cloud Sandbox**. This is a cost-free configuration and below is the email format:
-
-    ![Sandbox - Email notification](images/sandbox-email-notification.png "Sandbox - Email notification"){: caption="Sandbox - Email notification" caption-side="bottom"}
+1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment by using the new **IBM Cloud Sandbox**.
 
 2. After you click the **Request** button on the email, you will be navigated to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog#highlights). Search for Sandbox offering.
 
@@ -37,15 +35,15 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
     * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
     * **Tags (optional)** - These the key-value labels used to organize, filter, and manage cloud resources efficiently.
 
-4. In the **Users** section, the creation page allows users to initiate Sandbox provisioning. Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
+4. In the **Users** section, you can add the users from your account to collaborate with the Sandbox.
+
+    ![Sandbox - Create](images/sandbox-create.png "Sandbox - Create"){: caption="Sandbox - Create" caption-side="bottom"}
 
 5. In the **About** tab, you get all the details and overview of the service.
 
     ![Sandbox - About page](images/sandbox-about-page.png "Sandbox - About page"){: caption="Sandbox - About page" caption-side="bottom"}
 
 6. After accepting the terms and conditions, click **Create Sandbox**.
-
-    ![Sandbox - Create](images/sandbox-create.png "Sandbox - Create"){: caption="Sandbox - Create" caption-side="bottom"}
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
 

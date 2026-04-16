@@ -13,7 +13,7 @@ content-type: tutorial
 
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM Cloud Sandbox Overview
+# Getting Started with IBM Cloud Sandbox
 {: #getting-started-sandbox}
 
 The IBM Cloud Sandbox is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the IBM Cloud infrastructure performs, behaves, and scales for their use cases before making production or migration decisions.
@@ -58,9 +58,9 @@ Before you access the IBM Cloud Sandbox, ensure that the following requirements 
 {: step}
 
 1. An email notification is sent to all the allow-listed customers to experience the IBM Cloud Sandbox environment.
-2. After clicking Join now, you will be redirected to IBM Cloud account details page to get started. Fill in all the required information.
+2. After clicking **Join now**, you will be redirected to IBM Cloud account details page to get started. Fill in all the required information.
 3. Accept the terms and conditions.
-4. Click Join account.
+4. Click **Join** account.
 
 You will receive and "Welcome to your IBM Cloud Sandbox" email. Now you are ready to deploy workloads, test configurations, and experience how VPC helps you build secure, scalable cloud environments.
 
@@ -75,6 +75,8 @@ The IBM Cloud Sandbox is available through the IBM Cloud Catalog.
 3. Search for "Cloud Sandbox" or browse the catalog to find the IBM Cloud Sandbox service.
 4. Click on the **Cloud Sandbox** tile to view the service details.
 
+For more information on Deploying the Sandbox, see...
+
 ## Create your sandbox environment
 {: #sandbox-create}
 {: step}
@@ -83,9 +85,9 @@ The IBM Cloud Sandbox is available through the IBM Cloud Catalog.
 
 2. Enter the required details:
 
-   * **Sandbox Name** - Provide a unique, descriptive name for your sandbox environment (for example, "sandbox-month-date")
+   * **Sandbox name** - Provide a unique, descriptive name for your sandbox environment (for example, "sandbox-month-date")
 
-   * **Resource Group** - Choose an existing resource group or create a new one to organize your sandbox resources. For more information on creating a new resource group, see
+   * **Resource group** - Choose an existing resource group or create a new one to organize your sandbox resources. For more information on creating a new resource group, see
 
    * **Region** - Select the geographic location where your sandbox resources will be deployed (for example, us-south, eu-de, jp-tok and so on).
 
@@ -100,7 +102,7 @@ The IBM Cloud Sandbox is available through the IBM Cloud Catalog.
 The sandbox provisioning process typically takes 5-10 minutes. You will receive a notification when your sandbox environment is ready.
 {: note}
 
-## Access your sandbox via trusted profile
+## Access your sandbox through trusted profile
 {: #sandbox-access-profile}
 {: step}
 
@@ -232,8 +234,6 @@ After the 14-day trial period expires, all resources in the sandbox environment 
 {: important}
 
 If you need to extend your evaluation, you can create a new sandbox environment or migrate your workloads to your own IBM Cloud account.
-
-
 
 ## Next steps
 {: #next-steps}
