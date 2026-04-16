@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-15"
+lastupdated: "2026-04-16"
 
 keywords:
 
@@ -83,7 +83,31 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 17. In the **End Sandbox**, you can manually delete the Sandbox environment and all the associated resources.
 
-    ![Sandbox - End](images/sandbox-delete.png "Sandbox - End"){: caption="Sandbox - End" caption-side="bottom"}
+    ![Sandbox - End](images/sandbox-end.png "Sandbox - End"){: caption="Sandbox - End" caption-side="bottom"}
 
-## Setting IAM permissions - UI
-{: #sandbox-setting-iam-ui}
+## Setting IAM permissions
+{: #sandbox-setting-iam}
+
+IBM Cloud® Identity and Access Management (IAM) policies assigned in the sandbox environment for the customer trusted profile.
+
+### IAM policies
+{: #iam-policies}
+
+Following is the list of custom IAM Policies assigned to trusted profile.
+
+   | Service | Resources | Platform roles |
+   | ------- | --------- | ---- |
+   | App configuration | All | Administrator | Manager |
+   | All Identity and Access enabled services | All | Administrator | Manager |
+   | All Account Management services | All | Administrator | -- |
+   | Cloud Object Storage | All | Service Configuration Reader | Writer |
+   | DNS Services | All | Editor | Manager |
+   | IAM Identity Service | All | Administrator | -- |
+   | IBM Key Protect | All | Service Configuration Reader | Manager |
+   | Security and Compliance Center Workload Protection | All | Administrator | -- |
+   | Secrets Manager | All | Administrator | Manager |
+   | VPC Infrastructure Services | All | Administrator | -- |
+   {: caption="Verify access policies" caption-side="bottom"}
+
+### Sandbox IAM policies
+{: #sandbox-iam-policies}

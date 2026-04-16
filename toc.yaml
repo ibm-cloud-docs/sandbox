@@ -12,7 +12,8 @@ toc:
       id: learn
       topics:
       - getting-started.md
-      - about-sandbox.md
+      - architecture-diagram.md
+      - supported-features.md
       - release-notes.md
   - navgroup:
       id: howto
