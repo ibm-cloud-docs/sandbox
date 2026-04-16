@@ -11,7 +11,7 @@ toc:
   - navgroup:
       id: learn
       topics:
-      - getting-started.md
+      - overview.md
       - architecture-diagram.md
       - supported-features.md
       - release-notes.md

@@ -4,31 +4,44 @@ copyright:
   years: 2026
 lastupdated: "2026-04-16"
 
-keywords: getting started, sandbox provisioning, vpc trial, trusted profile
+keywords:
 
 subcollection: sandbox
-
 content-type: tutorial
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with IBM Cloud Sandbox
+# IBM Cloud Sandbox Overview
 {: #getting-started-sandbox}
 
-The IBM Cloud Sandbox enables users to explore and evaluate {{site.data.keyword.vpc_short}} capabilities in a realistic environment—without cost or long‑term commitment. It helps users understand how the IBM Cloud infrastructure performs, behaves, and scales for their use cases before making production or migration decisions.
+The IBM Cloud Sandbox is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the IBM Cloud infrastructure performs, behaves, and scales for their use cases before making production or migration decisions.
 {: shortdesc}
 
-The Sandbox platform provides a secure, automated, and scalable environment with a 14-day trial period. Users can discover IBM Cloud offerings from the IBM Cloud Catalog, provision a sandbox environment through a simple form, and deploy workloads using pre-configured Quick Start resources.
+It allows users to test, explore, and evaluate their applications or workloads using {{site.data.keyword.vpc_short}} capabilities within a limited trial period of 2 weeks.
 
 The IBM Cloud Sandbox is ideal for:
 
-- Existing IBM Cloud Classic customers running workloads on Classic Virtual Server or Bare Metal Server who want to explore VPC features, validate workload compatibility, and prepare for migration to next-generation VPC infrastructure.
+- **Existing IBM Cloud Classic customers** running workloads on Classic Virtual Server or Bare Metal Server who want to explore VPC features, validate workload compatibility, and prepare for migration to next-generation VPC infrastructure.
 
-- Existing IBM Cloud users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
+- **Existing IBM Cloud users** who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
 
-- New IBM Cloud users who want hands-on experience with IBM Cloud services, VPC capabilities, deployment models, and the next-generation infrastructure—available free of charge for 14 days before implementation in their own account.
+- **New IBM Cloud users** who want hands-on experience with IBM Cloud services, VPC capabilities, deployment models, and the next-generation infrastructure—available free of charge for 14 days before implementation in their own account.
+
+It enables users to:
+
+* Familiarize themselves with {{site.data.keyword.vpc_short}} features, functions, and deployment workflows.
+
+* Select suitable VPC compute profiles and deploy test workloads.
+
+* Evaluate how VPC architecture supports their technical and business requirements.
+
+* Experience hands-on testing before migrating applications from Classic Virtual Server or Bare Metal Server.
+
+* Explore next-generation infrastructure without impacting existing environments or incurring additional cost.
+
+* Gain practical insights that enhance confidence and readiness for migration to {{site.data.keyword.vpc_short}}.
 
 ## Before you begin
 {: #before-you-begin}
@@ -39,6 +52,17 @@ Before you access the IBM Cloud Sandbox, ensure that the following requirements 
 * You have a valid IBMid for authentication.
 * You understand that the sandbox environment has a 14-day trial period with automatic cleanup after expiry.
 * You have reviewed the [About IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-about-sandbox) documentation.
+
+## Request sandbox access
+{: #sandbox-request}
+{: step}
+
+1. An email notification is sent to all the allow-listed customers to experience the IBM Cloud Sandbox environment.
+2. After clicking Join now, you will be redirected to IBM Cloud account details page to get started. Fill in all the required information.
+3. Accept the terms and conditions.
+4. Click Join account.
+
+You will receive and "Welcome to your IBM Cloud Sandbox" email. Now you are ready to deploy workloads, test configurations, and experience how VPC helps you build secure, scalable cloud environments.
 
 ## Access the IBM Cloud Catalog
 {: #sandbox-catalog}
@@ -55,21 +79,19 @@ The IBM Cloud Sandbox is available through the IBM Cloud Catalog.
 {: #sandbox-create}
 {: step}
 
-Use the Create Sandbox Form in the Cloud Console to provision your sandbox environment.
-
-1. On the Cloud Sandbox service page, click **Create** to open the Create Sandbox Form.
+1. On the Cloud catalog page, click **Create**.
 
 2. Enter the required details:
 
-   * **Sandbox Name** - Provide a unique, descriptive name for your sandbox environment (e.g., "vpc-migration-test" or "app-evaluation-sandbox")
-   
-   * **Region** - Select the geographic location where your sandbox resources will be deployed (e.g., us-south, eu-de, jp-tok)
-   
-   * **Resource Group** - Choose an existing resource group or create a new one to organize your sandbox resources
-   
-   * **Tags** - Add optional metadata labels to help organize and track your sandbox (e.g., "testing", "migration", "team-alpha")
-   
-   * **Users List** - Specify additional users who should have access to collaborate in this sandbox environment (enter IBMids or email addresses)
+   * **Sandbox Name** - Provide a unique, descriptive name for your sandbox environment (for example, "sandbox-month-date")
+
+   * **Resource Group** - Choose an existing resource group or create a new one to organize your sandbox resources. For more information on creating a new resource group, see
+
+   * **Region** - Select the geographic location where your sandbox resources will be deployed (for example, us-south, eu-de, jp-tok and so on).
+
+   * **Tags** - Use the tags to organize your resources (for example, "testing", "migration", "team-alpha").
+
+   * **Users** - Specify additional users who should have access to collaborate in this sandbox environment (enter IBMids or email addresses).For more information on creating/adding users, see
 
 3. Review the sandbox configuration and trial period information (14 days).
 
@@ -111,7 +133,7 @@ The sandbox environment includes Quick Start options to help you rapidly deploy 
 1. From the sandbox landing page, navigate to **Quick Start > Create resources for Sandbox**.
 
 2. Click **Servers (Create VSI/BM)** to provision compute resources:
-   
+
    * **Virtual Server Instances (VSI)** - Deploy virtual machines with various compute profiles
    * **Bare Metal Servers (BM)** - Provision dedicated physical servers for high-performance workloads
 
@@ -129,11 +151,11 @@ The sandbox environment includes Quick Start options to help you rapidly deploy 
 Enhance your sandbox environment with additional VPC services:
 
 * **Cloud Object Storage** - Deploy scalable object storage for data, backups, and application content
-  
+
 * **Load Balancer** - Configure load balancers to distribute traffic across multiple server instances for high availability
-  
+
 * **VPN for VPC** - Set up secure VPN connectivity to access your sandbox environment from on-premises networks or remote locations
-  
+
 * **Transit Gateway** - Connect multiple VPCs or integrate with on-premises networks for hybrid cloud scenarios
 
 To deploy any of these services:
@@ -211,11 +233,12 @@ After the 14-day trial period expires, all resources in the sandbox environment 
 
 If you need to extend your evaluation, you can create a new sandbox environment or migrate your workloads to your own IBM Cloud account.
 
+
+
 ## Next steps
 {: #next-steps}
 
-- [About IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-about-sandbox)
-- [Deploying resources in IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-deploying-sandbox)
+- [Understanding VPC templates](/docs/vpc?topic=vpc-sandbox-templates)
+- [Migrating from Classic to VPC](/docs/vpc?topic=vpc-sandbox-migration-guide)
 - [VPC networking concepts](/docs/vpc?topic=vpc-about-networking-for-vpc)
 - [Managing VPC resources](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console)
-- [Migrating from Classic to VPC](/docs/vpc?topic=vpc-migrating-faqs)
