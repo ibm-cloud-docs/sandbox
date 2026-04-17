@@ -34,9 +34,18 @@ The IBM Cloud Sandbox is ideal for:
 
 Before you access the IBM Cloud Sandbox, ensure that the following requirements are met:
 
-* You have an active IBM Cloud account.
+* You need to have an active IBM Cloud account.
+* If you do not have an account, then:
+
+    - Go to [IBM Cloud account](https://cloud.ibm.com/registration).
+    - Enter the email and password. The password requirement should be met.
+    - Verify your email address and personal information.
+    - Click **Create account**.
+
+    ![Create IBM Cloud account](images/create-ibm-account.png "Create IBM Cloud account"){: caption="Create IBM Cloud account" caption-side="bottom"}
+
 * You have a valid IBMid for authentication.
-* You understand that the sandbox environment has a 14-day trial period with automatic cleanup after expiry.
+* You understand that the sandbox environment has a 14-day trial period.
 
 ## Request sandbox access
 {: #sandbox-request}
