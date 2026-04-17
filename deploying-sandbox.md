@@ -20,7 +20,7 @@ content-type: release-note
 
 The solution uses the IBM Cloud Catalog service to ensure a unified and consistent approach.
 
-## Creating the account by using UI
+## Creating the account using UI
 {: #create-ui}
 
 1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment by using the new **IBM Cloud Sandbox**.
