@@ -37,7 +37,7 @@ Before you access the IBM Cloud Sandbox, ensure that the following requirements 
 * You need to have an active IBM Cloud account.
 * If you do not have an account, then:
 
-    - Go to [IBM Cloud account](https://cloud.ibm.com/registration).
+    - Register using the [IBM Cloud account](https://cloud.ibm.com/registration).
     - Enter the email and password. The password requirement should be met.
     - Verify your email address and personal information.
     - Click **Create account**.
@@ -45,18 +45,18 @@ Before you access the IBM Cloud Sandbox, ensure that the following requirements 
     ![Create IBM Cloud account](images/create-ibm-account.png "Create IBM Cloud account"){: caption="Create IBM Cloud account" caption-side="bottom"}
 
 * You have a valid IBMid for authentication.
-* You understand that the sandbox environment has a 14-day trial period.
+* You need to know that the sandbox environment has a 14-day trial period.
 
 ## Request sandbox access
 {: #sandbox-request}
 {: step}
 
 1. An email notification is sent to all the allow-listed customers to experience the IBM Cloud Sandbox environment.
-2. After clicking **Join now**, you will be redirected to IBM Cloud account details page to get started. Fill in all the required information.
+2. After clicking **Join now**, you will be redirected to IBM Cloud account details page to get started. Update the required information.
 3. Accept the terms and conditions.
 4. Click **Join** account.
 
-You will receive and "Welcome to your IBM Cloud Sandbox" email. Now you are ready to deploy workloads, test configurations, and experience how VPC helps you build secure, scalable cloud environments.
+You will receive **Welcome to your IBM Cloud Sandbox** email. Now you are ready to deploy workloads, test configurations, and experience how VPC helps you build secure, scalable cloud environments.
 
 ## Access the IBM Cloud Catalog
 {: #sandbox-catalog}
@@ -65,17 +65,17 @@ You will receive and "Welcome to your IBM Cloud Sandbox" email. Now you are read
 The IBM Cloud Sandbox is available through the IBM Cloud Catalog.
 
 1. Log in to the [IBM Cloud console](https://cloud.ibm.com){: external}.
-2. Navigate to the **Catalog** from the top navigation menu.
+2. Navigate to **Catalog** from the top navigation menu.
 3. Search for **Cloud Sandbox** or browse the catalog to find the IBM Cloud Sandbox service.
 4. Click **Cloud Sandbox** tile to view the service details.
 
-For more information on Deploying the Sandbox, see...
+For more information on provisioning, see [Deploying the Sandbox](/docs-draft/sandbox?topic=sandbox-deploy) topic.
 
 ## Create your sandbox environment
 {: #sandbox-create}
 {: step}
 
-1. On the Cloud catalog page, click **Create**.
+1. On the Sandbox catalog page, click **Create**.
 
 2. Enter the required details:
 
@@ -100,7 +100,7 @@ The sandbox provisioning process typically takes 5-10 minutes. You will receive 
 {: #sandbox-access-profile}
 {: step}
 
-After your sandbox is provisioned, you will receive access through a trusted profile.
+After your sandbox is provisioned, you will receive access for the trusted profile.
 
 1. Check your email for the sandbox access notification.
 
@@ -121,7 +121,7 @@ The trusted profile provides secure, time-limited access to your sandbox environ
 {: #sandbox-quickstart}
 {: step}
 
-The sandbox environment includes Quick Start options to help you rapidly deploy common infrastructure resources.
+The sandbox environment includes Quick Start options to help you deploy common infrastructure resources.
 
 ### Create servers
 {: #sandbox-create-servers}
