@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords:
 
@@ -29,20 +29,6 @@ The IBM Cloud Sandbox is ideal for:
 
 - **New IBM Cloud users** who want hands-on experience with IBM Cloud services, VPC capabilities, deployment models, and the next-generation infrastructure—available free of charge for 14 days before implementation in their own account.
 
-It enables users to:
-
-* Familiarize themselves with {{site.data.keyword.vpc_short}} features, functions, and deployment workflows.
-
-* Select suitable VPC compute profiles and deploy test workloads.
-
-* Evaluate how VPC architecture supports their technical and business requirements.
-
-* Experience hands-on testing before migrating applications from Classic Virtual Server or Bare Metal Server.
-
-* Explore next-generation infrastructure without impacting existing environments or incurring additional cost.
-
-* Gain practical insights that enhance confidence and readiness for migration to {{site.data.keyword.vpc_short}}.
-
 ## Before you begin
 {: #before-you-begin}
 
@@ -51,7 +37,6 @@ Before you access the IBM Cloud Sandbox, ensure that the following requirements 
 * You have an active IBM Cloud account.
 * You have a valid IBMid for authentication.
 * You understand that the sandbox environment has a 14-day trial period with automatic cleanup after expiry.
-* You have reviewed the [About IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-about-sandbox) documentation.
 
 ## Request sandbox access
 {: #sandbox-request}
@@ -72,8 +57,8 @@ The IBM Cloud Sandbox is available through the IBM Cloud Catalog.
 
 1. Log in to the [IBM Cloud console](https://cloud.ibm.com){: external}.
 2. Navigate to the **Catalog** from the top navigation menu.
-3. Search for "Cloud Sandbox" or browse the catalog to find the IBM Cloud Sandbox service.
-4. Click on the **Cloud Sandbox** tile to view the service details.
+3. Search for **Cloud Sandbox** or browse the catalog to find the IBM Cloud Sandbox service.
+4. Click **Cloud Sandbox** tile to view the service details.
 
 For more information on Deploying the Sandbox, see...
 
@@ -91,7 +76,7 @@ For more information on Deploying the Sandbox, see...
 
    * **Region** - Select the geographic location where your sandbox resources will be deployed (for example, us-south, eu-de, jp-tok and so on).
 
-   * **Tags** - Use the tags to organize your resources (for example, "testing", "migration", "team-alpha").
+   * **Tags** - Use the tags to organize your resources (for example, testing, migration, team-alpha).
 
    * **Users** - Specify additional users who should have access to collaborate in this sandbox environment (enter IBMids or email addresses).For more information on creating/adding users, see
 

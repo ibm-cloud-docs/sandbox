@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords:
 
@@ -25,6 +25,40 @@ subcollection: sandbox
 
 The Sandbox platform provides a secure, automated, and scalable environment that enables users to discover IBM Cloud offerings from the IBM Cloud Catalog, provision sandbox environment, deploy workloads, and evaluate IBM Cloud VPC capabilities with minimal setup effort.
 
+IBM Cloud Sandbox enables users to:
+
+* Familiarize with {{site.data.keyword.vpc_short}} features, functions, and deployment workflows.
+
+* Select suitable VPC compute profiles and deploy test workloads.
+
+* Evaluate how VPC architecture supports their technical and business requirements.
+
+* Experience hands-on testing before migrating applications from Classic Virtual Server or Bare Metal Server.
+
+* Explore next-generation infrastructure without impacting existing environments or incurring additional cost.
+
+* Gain practical insights that enhance confidence and readiness for migration to {{site.data.keyword.vpc_short}}.
+
+## Key features
+{: #key-features}
+
+Following are the key features:
+
+* **Isolated environments** - Each customer is provided with a dedicated sub-account that is strictly isolated from all other users.
+
+* **Time limited access** - A 14-day trial period with automatic resource cleanup.
+
+* **Pre-configured services** - Quick Start templates for common infrastructure use cases..
+
+* **Trusted profile security** - Fine-grained access control through IBM Cloud IAM.
+
+* **Automated provisioning** - Simplified onboarding through the cloud console.
+
+* **Collaborative access** - Ability to invite team members to the sandbox environment.
+
+## Architecture diagram
+{: #arch-diagram}
+
 ![Architecture diagram](images/sandbox_architecture.svg "IBM Cloud Sandbox architecture diagram"){: caption="IBM Cloud Sandbox architecture diagram" caption-side="bottom"}
 
 ## How it works
@@ -33,7 +67,7 @@ The Sandbox platform provides a secure, automated, and scalable environment that
 The IBM Cloud Sandbox architecture consists of three primary layers that work together to provide a secure and isolated trial environment:
 
 1. **User access layer** - The users can authenticate and access the IBM Cloud Sandbox.
-2. **Customers account** - For provisioning and management interface
+2. **Customer account** - For provisioning and management interface
 3. **Sandbox Enterprise POC Master Account** - The backend infrastructure hosting customer sandbox environments.
 
 ### User access
@@ -81,30 +115,3 @@ The Sandbox Enterprise POC Master Account is the central infrastructure that hos
     * **Transit Gateway** - Securely interconnect Classic and VPC resources.
 
 The trusted profile ensures that customers have appropriate access controls and can only interact with resources within their allocated sandbox environment. All resources are automatically cleaned up after the 14-day trial period expires.
-
-## Key features
-{: #key-features}
-
-Following are the key features of the IBM Cloud Sandbox architecture:
-
-* **Isolated environments** - Each customer is provided with a dedicated sub-account that is strictly isolated from all other users.
-
-* **Time limited access** - A 14-day trial period with automatic resource cleanup.
-
-* **Pre-configured services** - Quick Start templates for common infrastructure use cases..
-
-* **Trusted profile security** - Fine-grained access control through IBM Cloud IAM.
-
-* **Automated provisioning** - Simplified onboarding through the cloud console.
-
-* **Collaborative access** - Ability to invite team members to the sandbox environment.
-
-## Benefits
-{: #benefits}
-
-* **Risk-Free Exploration** - Test VPC capabilities without affecting production environments
-* **Cost-Effective** - Free trial period with no charges for sandbox usage
-* **Rapid Deployment** - Provision resources quickly using pre-configured templates
-* **Hands-On Learning** - Gain practical experience with IBM Cloud infrastructure
-* **Migration Planning** - Evaluate VPC architecture before committing to migration
-* **Team Collaboration** - Share sandbox access with colleagues for joint evaluation
