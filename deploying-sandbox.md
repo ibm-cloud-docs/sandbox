@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords:
 
@@ -85,29 +85,38 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     ![Sandbox - End](images/sandbox-end.png "Sandbox - End"){: caption="Sandbox - End" caption-side="bottom"}
 
-## Setting IAM permissions
-{: #sandbox-setting-iam}
+## Verify access policies
+{: #sandbox-verify-policy}
 
 IBM Cloud® Identity and Access Management (IAM) policies assigned in the sandbox environment for the customer trusted profile.
 
 ### IAM policies
 {: #iam-policies}
 
-Following is the list of custom IAM Policies assigned to trusted profile.
+Following is the list of custom IAM Policies assigned to trusted profile:
 
-   | Service | Resources | Platform roles |
+   | Service | Resources | Roles |
    | ------- | --------- | ---- |
-   | App configuration | All | Administrator | Manager |
-   | All Identity and Access enabled services | All | Administrator | Manager |
-   | All Account Management services | All | Administrator | -- |
-   | Cloud Object Storage | All | Service Configuration Reader | Writer |
-   | DNS Services | All | Editor | Manager |
-   | IAM Identity Service | All | Administrator | -- |
-   | IBM Key Protect | All | Service Configuration Reader | Manager |
-   | Security and Compliance Center Workload Protection | All | Administrator | -- |
-   | Secrets Manager | All | Administrator | Manager |
-   | VPC Infrastructure Services | All | Administrator | -- |
-   {: caption="Verify access policies" caption-side="bottom"}
+   | All IAM Account Management services | All | Viewer |
+   | Cloud Object Storage | All | SandboxCOSRole |
+   | Catalog Management | All | Editor |
+   | DNS Services | All | Manager, Editor |
+   | Resource group only | All resource groups in the account | Editor |
+   | Secrets Manager | Region string equals us-east | Manager, Editor, SecretsReader |
+   | Transit Gateway | All | Manager, Editor |
+   | User Management | All | Viewer |
+   | VPC Infrastructure Services | Region string equals us-east |  |
+   {: caption="IAM policies" caption-side="bottom"}
 
 ### Sandbox IAM policies
 {: #sandbox-iam-policies}
+
+Following is the list of IAM policies defined for our Sandbox service:
+
+   | Action | Display name | Roles |
+   | ------- | --------- | ---- |
+   | sandbox.instance.read | Sandbox Viewer | Administrator, Editor, Operator, Viewer |
+   | sandbox.instance.operate | Sandbox Operator | Administrator, Editor, Operator |
+   | sandbox.instance.editor | Sandbox Editor | Administrator, Editor |
+   | sandbox.instance.admin | Sandbox Administrator | Manager, Administrator |
+   {: caption="Sandbox IAM policies" caption-side="bottom"}
