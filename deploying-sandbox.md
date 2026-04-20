@@ -28,19 +28,21 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 
 2. In the **Create** tab, provide the following information under **Details**:
+
     * **Sandbox name** - Name of the sandbox instance.
 
     * **Region** - Region where the instance is provisioned.
+
     Note: Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
     {: note}
 
     * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
 
-    * **Tags** (optional)
+    * **Tags** (optional) - Use the tags to organize your resources.
 
     ![Sandbox - Create](images/sandbox-create.png "Sandbox - Create"){: caption="Sandbox - Create" caption-side="bottom"}
 
-3. In the **Users** section, you can invite users from your account to be part of the Sandbox environment.
+3. In the **Users** section, you can invite users from your account to be part of the Sandbox environment. For more information, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
 
 4. In the **About** tab, you get all the details and overview of the service.
 
@@ -61,6 +63,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 9. You will be redirected to the trusted profile by clicking **Continue**.
 
 10. On the main **Sandbox Overview** page, click **Create Resources**.
+
     You will not be able to change the region once selected during the provisioning.
     {: note}
 
@@ -70,7 +73,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     ![Select image - Server instance](images/sandbox-select-image.png "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
 
-13. Select the profile type.
+13. Select the instance profile type.
 
     ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
@@ -84,17 +87,17 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 16. In the Resource list, you can see all the resources that you have created.
 
-17. On the **Sandbox Overview** page, you can:
+17. On the **Sandbox Overview** page, you can also:
 
-    * **Manage Sandbox** - you can save the configuration by downloading the Terraform package and running it in your customer account.
+    * **Manage Sandbox** - save the configuration by downloading the Terraform package and running it in your customer account.
 
     ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
 
-    * **Extend Sandbox** - you can extend the duration of the Sandbox trial environment. The extension is for 48 hours.
+    * **Extend Sandbox** - extend the duration of the Sandbox trial environment. The extension is for 48 hours.
 
     ![Sandbox - Extend](images/sandbox-extend.png "Sandbox - Extend"){: caption="Sandbox - Extend" caption-side="bottom"}
 
-    * **End Sandbox** - you can manually delete the Sandbox environment and all the associated resources.
+    * **End Sandbox** - manually delete the Sandbox environment and all the associated resources.
 
     ![Sandbox - End](images/sandbox-end.png "Sandbox - End"){: caption="Sandbox - End" caption-side="bottom"}
 
