@@ -20,6 +20,7 @@ toc:
       topics:
       - deploying-sandbox.md
       - sandbox-quotas.md
+      - iam-permissions.md
       - create-user.md
       - topicgroup:
           label: Observability
