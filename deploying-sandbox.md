@@ -46,7 +46,8 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 4. In the **About** tab, you get all the details and overview of the service.
 
-    ![Sandbox - About page](images/sandbox-about-page.png "Sandbox - About page"){: caption="Sandbox - About page" caption-side="bottom"}
+
+3. In the **Users** section, you can invite users from your account to be part of the Sandbox environment.
 
 5. Accept the terms and conditions, click **Create Sandbox**.
 
@@ -56,7 +57,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 7. The Sandbox instance is displayed for provisioning in the **Resource list**.
 
-    ![Sandbox - Resource list](images/sandbox-resource-list.png "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
+6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
 
 8. A welcome email is sent and you can successfully log in to the Sandbox account.
 

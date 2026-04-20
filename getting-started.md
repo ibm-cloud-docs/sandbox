@@ -52,7 +52,7 @@ Before you access the IBM Cloud Sandbox, ensure that the following requirements 
 {: step}
 
 1. An email notification is sent to all the allow-listed customers to experience the IBM Cloud Sandbox environment.
-2. After clicking **Request**, you will be redirected to IBM Cloud account details page to get started. Update the required information.
+2. After clicking **Request**, you will be redirected to the dashboard catalog page to get started. Update the required information.
 3. Accept the terms and conditions.
 4. Click **Join** account.
 
@@ -65,7 +65,7 @@ You will receive **Welcome to your IBM Cloud Sandbox** email. Now you are ready 
 The IBM Cloud Sandbox is available through the IBM Cloud Catalog.
 
 1. Log in to the [IBM Cloud console](https://cloud.ibm.com){: external}.
-2. Navigate to **Catalog** from the top navigation menu.
+2. Go to **Catalog** from the top navigation menu.
 3. Search for **Cloud Sandbox** or browse the catalog to find the Cloud Sandbox service.
 4. Click **Cloud Sandbox** tile to view the service details.
 
@@ -104,9 +104,13 @@ After your sandbox is provisioned, you will receive access for the trusted profi
 
 1. Check your email for the sandbox access notification.
 
-2. Locate your sandbox trusted profile (it will include your sandbox name).
+2. Click on **Trusted profiles** in the left navigation.
 
-6. Go to Sandbox Overview page
+3. Locate your sandbox trusted profile (it will include your sandbox name).
+
+4. Click **Apply** or **Switch to profile** to activate the trusted profile.
+
+5. Click **Create** to access the resource creation page. The Quick Start page appears where you can begin provisioning resources.
 
 The trusted profile provides secure, time-limited access to your sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
