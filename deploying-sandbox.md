@@ -23,6 +23,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 ## Creating the account using UI
 {: #create-ui}
 
+
 1. Navigate to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
@@ -55,11 +56,19 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
 
-8. The Sandbox instance is displayed for provisioning in the **Resource list**.
+
+6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
+
+    ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
+
+
+7. The Sandbox instance is displayed for provisioning in the **Resource list**.
+
+    ![Sandbox - Resource list](images/sandbox-resource-list.png "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
+
+8. A welcome email is sent and you can successfully log in to the Sandbox account.
 
 9. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
-
-10. A welcome email is sent and you can successfully log in to the Sandbox account.
 
 11. You will be redirected to the trusted profile by clicking **Continue**.
 
