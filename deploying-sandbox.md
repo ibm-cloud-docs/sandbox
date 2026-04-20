@@ -95,6 +95,8 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 17. Accept the terms and conditions, click **Create resources**.
 
+    ![Sandbox - Quickstart](images/ui-sandbox-quick-start.png "Sandbox - Quickstart"){: caption="Sandbox - Quickstart" caption-side="bottom"}
+
 18. In the Resource list, you can see all the resources that you have created.
 
 19. On the **Sandbox Overview** page, you can also:

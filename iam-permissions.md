@@ -35,7 +35,7 @@ Following is the list of custom IAM Policies assigned to trusted profile:
    | Secrets Manager | Region string equals us-east | Manager, Editor, SecretsReader |
    | Transit Gateway | All | Manager, Editor |
    | User Management | All | Viewer |
-   | VPC Infrastructure Services | Region string equals us-east |  |
+   | VPC Infrastructure Services | Region string equals us-east | \n * SandboxVirtualServerforVPCRole, \n * SandboxVirtualPrivateCloudRole, \n * SandboxVNetworkInterfaceRole, \n * SandboxSSHKeyforVPCRole, \n * SandboxSubnetRole, \n * SandboxSecGroupforVPCRole, \n * SandboxFloatingIPforVPCRole, \n * SandboxClientVPNforVPCRole, \n * SandboxBMServersforVPCRole, \n * SandboxNetworkACLRole, \n * SandboxLoadBalancerforVPCRole, \n * SandboxImageServiceforVPCRole, \n * SandboxBlockStorageforVPCRole |
    {: caption="IAM policies" caption-side="bottom"}
 
 ## Sandbox IAM policies
