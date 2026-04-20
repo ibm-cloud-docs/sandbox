@@ -72,7 +72,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 11. You will be redirected to the trusted profile by clicking **Continue**.
 
-12. On the main **Sandbox Overview** page, click **Create Resources**.
+12. On the main **Sandbox Quick Start** page, click **Create** tab.
 
     You will not be able to change the region once selected during the provisioning.
     {: note}

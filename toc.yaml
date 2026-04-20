@@ -19,8 +19,10 @@ toc:
       id: howto
       topics:
       - deploying-sandbox.md
+      - quickstart.md
       - sandbox-quotas.md
       - iam-permissions.md
+      - create-resource-group.md
       - create-user.md
       - topicgroup:
           label: Observability
