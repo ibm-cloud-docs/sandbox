@@ -19,6 +19,7 @@ toc:
       id: howto
       topics:
       - deploying-sandbox.md
+      - sandbox-quotas.md
       - create-user.md
       - topicgroup:
           label: Observability

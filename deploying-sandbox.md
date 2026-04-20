@@ -47,48 +47,48 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 4. In the **About** tab, you get all the details and overview of the service.
 
 
-3. In the **Users** section, you can invite users from your account to be part of the Sandbox environment.
+5. In the **Users** section, you can invite users from your account to be part of the Sandbox environment.
 
-5. Accept the terms and conditions, click **Create Sandbox**.
+6. Accept the terms and conditions, click **Create Sandbox**.
 
-6. Sandbox account is provisioned now. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
+7. Sandbox account is provisioned now. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
 
-7. The Sandbox instance is displayed for provisioning in the **Resource list**.
+8. The Sandbox instance is displayed for provisioning in the **Resource list**.
 
-6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
+9. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
 
-8. A welcome email is sent and you can successfully log in to the Sandbox account.
+10. A welcome email is sent and you can successfully log in to the Sandbox account.
 
-9. You will be redirected to the trusted profile by clicking **Continue**.
+11. You will be redirected to the trusted profile by clicking **Continue**.
 
-10. On the main **Sandbox Overview** page, click **Create Resources**.
+12. On the main **Sandbox Overview** page, click **Create Resources**.
 
     You will not be able to change the region once selected during the provisioning.
     {: note}
 
-11. Under **Server Configuration**, select the server instances.
+13. Under **Server Configuration**, select the server instances.
 
-12. Select the image to configure the instances.
+14. Select the image to configure the instances.
 
     ![Select image - Server instance](images/sandbox-select-image.png "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
 
-13. Select the instance profile type.
+15. Select the instance profile type.
 
     ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
-14. Under **Additional services**, you can enable and customize the services.
+16. Under **Additional services**, you can enable and customize the services.
     * Cloud Object Storage
     * Load Balancer
     * VPN for VPC
     * Transit Gateway
 
-15. Accept the terms and conditions, click **Create resources**.
+17. Accept the terms and conditions, click **Create resources**.
 
-16. In the Resource list, you can see all the resources that you have created.
+18. In the Resource list, you can see all the resources that you have created.
 
-17. On the **Sandbox Overview** page, you can also:
+19. On the **Sandbox Overview** page, you can also:
 
     * **Manage Sandbox** - save the configuration by downloading the Terraform package and running it in your customer account.
 
