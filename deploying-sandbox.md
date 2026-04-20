@@ -33,7 +33,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     * **Region** - Region where the instance is provisioned.
 
-    Note: Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
+    Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
     {: note}
 
     * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
