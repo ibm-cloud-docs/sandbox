@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-04-20"
 
 keywords:
 
@@ -23,57 +23,51 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 ## Creating the account using UI
 {: #create-ui}
 
-1. An email notification is sent to the allowlisted customers to access the {{site.data.keyword.vpc_short}} environment by using the new **IBM Cloud Sandbox**.
-
-2. After you click the **Request** button on the email, you will be navigated to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog#highlights). Search for Sandbox offering.
+1. Navigate to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog#highlights) and search for the Sandbox offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 
-3. In the **Create** tab, provide the following information under **Details** section:
-    * **Sandbox name** - Name of the sandbox instance.
-    * **Region** - Region where the instance is provisioned.
-    * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
-    * **Tags (optional)** - These the key-value labels used to organize, filter, and manage cloud resources efficiently.
-
-4. In the **Users** section, you can add the users from your account to collaborate with the Sandbox.
+2. In the **Create** tab, provide the following information under Details:
+    * Sandbox name - Name of the sandbox instance.
+    * Region - Region where the instance is provisioned. Note: Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
+    * Resource group - Name from your IBM Cloud account where the VPC resources must be deployed.
+    * Tags (optional)
 
     ![Sandbox - Create](images/sandbox-create.png "Sandbox - Create"){: caption="Sandbox - Create" caption-side="bottom"}
 
-5. In the **About** tab, you get all the details and overview of the service.
+    ![Sandbox - Details](images/sandbox-details.png "Sandbox - Details"){: caption="Sandbox - Details" caption-side="bottom"}
+
+3. In the **Users** section, you can invite users from your account to be part of the Sandbox environment.
+
+4. In the **About** tab, you get all the details and overview of the service.
 
     ![Sandbox - About page](images/sandbox-about-page.png "Sandbox - About page"){: caption="Sandbox - About page" caption-side="bottom"}
 
-6. After accepting the terms and conditions, click **Create Sandbox**.
+5. After accepting the terms and conditions, click **Create Sandbox**.
+
+
+6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
 
-7. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
 
-8. The Sandbox instance is displayed for provisioning in the **Resource list**.
+7. The Sandbox instance is displayed for provisioning in the **Resource list**.
 
     ![Sandbox - Resource list](images/sandbox-resource-list.png "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
 
-9. A welcome email is sent and you can successfully log in to the Sandbox account.
+8. A welcome email is sent and you can successfully log in to the Sandbox account.
 
-10. You can continue without selecting a trusted profile by clicking **Continue** or select a trusted profile for the Sandbox.
+9. You can continue without selecting a trusted profile by clicking Continue or select a trusted profile for the Sandbox.
 
-11. On the main Sandbox dashboard, click **Create Resources**.
+10. On the main Sandbox dashboard, click **Create Resources** to create resources for the Sandbox.
 
-    ![Sandbox - Create Resources](images/sandbox-create-resources.png "Sandbox - Create Resources"){: caption="Sandbox - Create Resources" caption-side="bottom"}
+11. Select the instance profile.
 
-12. Select the instance profile.
+12. Select an image for the available operating system.
 
-    ![Sandbox - Instance profile](images/sandbox-select-instance-profile.png "Sandbox - Instance profile"){: caption="Sandbox - Instance profile" caption-side="bottom"}
+13. In the Resource list, you can see all the resources that you have created.
 
-13. Select an image for the available operating system.
-
-    ![Sandbox - Image selection](images/sandbox-select-image.png "Sandbox - Image selection"){: caption="Sandbox - Image selection" caption-side="bottom"}
-
-14. In the Resource list, you can see all the resources that you have created.
-
-    ![Sandbox - Resource page](images/sandbox-resource-page.png "Sandbox - Resource page"){: caption="Sandbox - Resource page" caption-side="bottom"}
-
-16. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running it in your customer account.
+14. In the **Manage Sandbox**, you can save the configuration by downloading the Terraform package and running it in your customer account.
 
     ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
 
