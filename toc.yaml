@@ -28,5 +28,6 @@ toc:
       id: help
       topics:
       - faq.md
+      - best-practices.md
       - troubleshoot.md
       - get-help.md
