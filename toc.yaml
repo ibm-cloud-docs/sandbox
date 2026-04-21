@@ -24,10 +24,6 @@ toc:
       - iam-permissions.md
       - create-resource-group.md
       - create-user.md
-      - topicgroup:
-          label: Observability
-          topics:
-          - at-events.md
   - navgroup:
       id: help
       topics:

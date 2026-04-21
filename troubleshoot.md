@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-13"
+lastupdated: "2026-04-21"
 
 keywords: question about _xx_, _messageID_
 
@@ -23,17 +23,14 @@ content-type: troubleshoot
 # Troubleshooting
 {: #troubleshoot-xx}
 {: troubleshoot}
-{: support} 
 
+Provisioning issues
+Access and login issues
+SSH / connectivity issues
+Resource limit issues
+Performance dashboard issues
+Service availability issues
 
-
-
-
-
-
-
-Description of the troubleshooting entry symptom. For example: You receive the following error message when you try to create a new Lite plan instance:
-{: tsSymptoms}
 
 > message-id.0001E: Unable to provision new Lite instance
 
