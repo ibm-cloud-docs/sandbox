@@ -151,17 +151,12 @@ After provisioning resources, use your sandbox environment to explore VPC featur
 {: #sandbox-collaborate}
 {: step}
 
-Collaboration in your sandbox environment allows you to work together with team members on projects, share resources, and learn IBM Cloud services collectively. Whether you added users during sandbox creation or need to invite them later, the process is straightforward.
-
-### Understanding collaboration in sandbox environments
-{: #understand-collaborate}
-
 If you added users to the sandbox during the initial creation process, they automatically receive email notifications with access instructions. These team members can immediately start collaborating with you in the shared environment.
 
 ### Adding collaborators after sandbox creation
 {: #adding-collaborate}
 
-You can invite additional team members to your sandbox at any time during the 14-day trial period. Follow these detailed steps:
+You can invite additional team members to your sandbox at any time during the 14-day trial period. Following are the detailed steps:
 
 1. **Access your sandbox details page**
    - From the IBM Cloud dashboard, locate your active sandbox in the resource list
