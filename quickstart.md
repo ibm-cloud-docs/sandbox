@@ -20,7 +20,7 @@ content-type: release-note
 
 On this Quick Start page, you can create the resources quickly. You can create virtual server or bare metal instance for compute. You can also add optional services using the default configuration.
 
-You can see the Create resources for Sandbox on the Quick Start page.
+You can see the **Create resources for Sandbox** on the Quick Start page.
 
 1. On the main **Sandbox Quick Start** page, click **Create** tab.
 
@@ -29,7 +29,7 @@ You can see the Create resources for Sandbox on the Quick Start page.
 
     ![Sandbox - Quickstart](images/ui-sandbox-quick-start.png "Sandbox - Quickstart"){: caption="Sandbox - Quickstart" caption-side="bottom"}
 
-2. Under **Server Configuration**, select the Server instances.
+2. Under **Server Configuration**, select the profile instances.
 
 3. Select the image to configure the instances.
 
@@ -39,7 +39,7 @@ You can see the Create resources for Sandbox on the Quick Start page.
 
     ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
-5. Under **Additional services**, you can enable and customize the services.
+5. Under **Additional services**, you can enable and verfify the configuration for the services.
 
     * **Cloud Object Storage** - Deploy scalable object storage for data, backups, and application content
 
@@ -51,4 +51,4 @@ You can see the Create resources for Sandbox on the Quick Start page.
 
 6. Accept the terms and conditions, click **Create resources**.
 
-7. To check the resources, go to the navigation menu > **Resource list**. You can see all the resources that you have created.
+7. You can view the created resources under **Resource list**.
