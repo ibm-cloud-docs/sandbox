@@ -44,12 +44,14 @@ Collaboration is more effective when team members are involved from the start:
 
 * Identify all stakeholders who should participate in the evaluation
 * Add team members during sandbox creation rather than inviting them later
-* Assign appropriate permission levels based on each member's role:
-  - **Administrators** for team leads who need full control
-  - **Editors** for developers and engineers who will create and modify resources
-  - **Viewers** for stakeholders who need visibility without making changes
-* Schedule kickoff meetings to align on objectives and responsibilities
-* Establish communication channels for sharing findings and coordinating activities
+* Assign appropriate permission levels based on each members role:
+
+    - **Administrators** for team leads who need full control
+    - **Editors** for developers and engineers who will create and modify resources
+    - **Viewers** for stakeholders who need visibility without making changes
+
+* Schedule kickoff meetings to align on objectives and responsibilities.
+* Establish communication channels for sharing findings and coordinating activities.
 
 ### Document your current environment
 {: #document-environment}
@@ -118,6 +120,7 @@ Follow these guidelines when creating Virtual Server Instances or Bare Metal Ser
 Select the appropriate server type based on your workload characteristics:
 
 * **Use Virtual Server Instances (VSI) for:**
+
   - Development and testing environments
   - Web applications and microservices
   - Workloads with variable resource demands

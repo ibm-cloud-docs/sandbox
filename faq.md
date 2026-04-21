@@ -44,14 +44,15 @@ The Sandbox is available for a limited trial period of 2 weeks. Extensions may b
 
 The Sandbox environment supports a predefined set of operating system images for Virtual Server Instances (VSIs) and Bare Metal Servers. These are the only OS images available for use within the Sandbox for pre-provisioning:
 
-- CentOS Stream – 9.x, 10.x
-- Ubuntu LTS – 22.04.x, 24.04.x
-- Enterprise Linux (RHEL Equivalent) – 9.4, 9.6 (minimal install)
-- Rocky Linux – 9.6, 10
-- Debian – 11.x, 13.x
-- Windows Server 2019 – Full Standard 64-bit
-- Customer-installed OS – available only on Bare Metal profiles
-
+- ibm-debian-13-2-minimal-amd64
+- ibm-ubuntu-24-04-4-minimal-amd64-2
+- ibm-ubuntu-22-04-5-minimal-amd64
+- ibm-windows-server-2019-full-standard-amd64
+- ibm-debian-11-11-minimal-amd64
+- ibm-rocky-linux-9-7-minimal-amd64-3
+- ibm-centos-stream-10-amd64
+- ibm-centos-stream-9-amd64
+- ibm-rocky-linux-10-1-minimal-amd64-3
 
 ## Can I extend my sandbox trial period beyond 14 days?
 {: #faq-extend-trial}

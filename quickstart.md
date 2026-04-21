@@ -39,7 +39,7 @@ You can see the **Create resources for Sandbox** on the Quick Start page.
 
     ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
-5. Under **Additional services**, you can enable and verfify the configuration for the services.
+5. Under **Additional services**, you can enable and customize the services.
 
     * **Cloud Object Storage** - Deploy scalable object storage for data, backups, and application content
 
@@ -49,6 +49,8 @@ You can see the **Create resources for Sandbox** on the Quick Start page.
 
     * **Transit Gateway** - Connect multiple VPCs or integrate with on-premises networks for hybrid cloud scenarios
 
-6. Accept the terms and conditions, click **Create resources**.
+6. On the right-side, you can see the **Summary** and verify the configuration of the services created.
 
-7. You can view the created resources under **Resource list**.
+7. Accept the terms and conditions, click **Create resources**.
+
+8. You can view the created resources under **Resource list**.
