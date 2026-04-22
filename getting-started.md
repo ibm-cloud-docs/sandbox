@@ -224,7 +224,7 @@ Your Sandbox environment has a 14-day trial period. To track your remaining time
 After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. Ensure you save any important data or configurations before the expiration date.
 {: important}
 
-If you need to extend your evaluation, you can create a new Sandbox environment or migrate your workloads to your own IBM Cloud account.
+If you need to extend your evaluation, you must save the configuration by downloading the Terraform package and running it in your own customer account
 
 ## Next steps
 {: #next-steps}
