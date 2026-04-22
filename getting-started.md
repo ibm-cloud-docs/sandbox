@@ -99,15 +99,13 @@ Only one Sandbox creation is allowed per allow-listed customer account.
 
 After your Sandbox is provisioned, you will receive access for the trusted profile.
 
-1. Check your email for the Sandbox access notification or
+1. Check your email for the Sandbox access notification or click on **Trusted profiles** in the left navigation.
 
-2. Click on **Trusted profiles** in the left navigation.
+2. Locate your Sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
 
-3. Locate your Sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
+3. Switch from current account to the trusted profile.
 
-4. Switch from current account to the trusted profile.
-
-5. Click **Create Resources** to access the resource creation page. The Quick Start page appears where you can begin provisioning the resources.
+4. Click **Create Resources** to access the resource creation page. The Quick Start page appears where you can begin provisioning the resources.
 
    Only user with write access can create the resources (administrator, editor, operator).
    {: note}
