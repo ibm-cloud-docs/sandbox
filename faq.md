@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-04-22"
 
 keywords:
 
@@ -30,7 +30,7 @@ Yes, the Sandbox is completely free to use for 2 weeks trial period. There are n
 {: #faq-content-include}
 {: faq}
 
-The Sandbox is available for a limited trial period of 2 weeks. Extensions may be possible based on availability and use case requirements and for only 2 days.
+The sandbox is available for 14 days by default. With an extension, the total duration can be up to 16 days (14 days + 2-day extension).
 
 ## What is the mapping between IBM Cloud Classic resources and equivalent VPC resources?
 {: #faq-content-include}
@@ -58,7 +58,7 @@ The Sandbox environment supports a predefined set of operating system images for
 {: #faq-extend-trial}
 {: faq}
 
-Yes, you can request a one-time extension of up to 2 days for your sandbox environment. Extensions are granted based on availability and use case requirements. To request an extension, contact IBM Cloud support before your trial period expires. Note that extensions are not guaranteed and are evaluated on a case-by-case basis.
+Yes, you can request a one-time extension of up to 2 days(48 hours) for your sandbox environment.
 
 ## What happens to my resources when the sandbox trial period ends?
 {: #faq-trial-expiry}
@@ -70,7 +70,45 @@ When your 14-day trial period expires, all resources within your sandbox environ
 {: #faq-collaboration}
 {: faq}
 
-Yes, you can invite team members to collaborate in your sandbox environment. You can add users during the initial sandbox creation or invite them later through the sandbox details page. Simply navigate to **Manage users** or **Add collaborators**, enter their IBMids or email addresses, assign appropriate permission levels (Viewer, Editor, or Administrator), and send invitations. All collaborators share the same 14-day trial period.
+Yes, you can invite team members to collaborate in your sandbox environment. You can add users during the initial sandbox creation or invite them later through the sandbox details page.
+
+* Navigate to **Manage users** or **Add collaborators**.
+* Enter their IBMids or email addresses.
+* Assign appropriate permission levels (Viewer, Editor, or Administrator)
+* Send the invitations. All collaborators share the same 14-day trial period.
+
+Invited users must have an IBM Cloud account.
+{: note}
+
+## Can I save my sandbox configuration?
+{: #faq-save}
+{: faq}
+
+Yes, you can save your sandbox configuration by downloading it as a ZIP file.
+
+## What happens if I do not create any resources?
+{: #faq-create}
+{: faq}
+
+If no resources are created by the end of day 7, your account will be suspended on day 8.
+
+## Can I delete my sandbox early?
+{: #faq-delete}
+{: faq}
+
+Yes, you can delete your sandbox account at any time using the **Delete Sandbox** or **End Sandbox** option.
+
+## Can I create multiple sandboxes?
+{: #faq-multiple}
+{: faq}
+
+No, only one active sandbox is allowed per allow-listed customer account.
+
+## Can I deploy Bare Metal (BM) in all regions?
+{: #faq-bm}
+{: faq}
+
+No, Bare Metal servers are not available in all regions. You must select a region where Bare Metal is available during sandbox creation.
 
 ## What is the difference between Virtual Server Instances (VSI) and Bare Metal Servers in the sandbox?
 {: #faq-vsi-vs-baremetal}

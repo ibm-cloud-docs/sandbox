@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-20"
+lastupdated: "2026-04-22"
 
 keywords:
 
@@ -34,7 +34,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     * **Region** - Region where the instance is provisioned.
 
-    Only one active sandbox is permitted per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
+    Only one sandbox is allowed per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
     {: note}
 
     * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
@@ -52,12 +52,12 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 6. Accept the terms and conditions, click **Create Sandbox**.
 
-7. Sandbox account is provisioned now. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
+7. Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days(48 hours) extension. User access is limited to the region selected during provisioning.
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
 
 
-6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
+6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 2 days(48 hours) extension. User access is limited to the region selected during provisioning.
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
 
@@ -68,7 +68,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 8. A welcome email is sent and you can successfully log in to the Sandbox account.
 
-9. Sandbox account is created for provisioning. This includes a 14-day trial period with a 48-hour extension. User access is limited to the region selected during provisioning.
+9. Sandbox account is created for provisioning. This includes a 14-day trial period with a 2 days(48 hours) extension. User access is limited to the region selected during provisioning.
 
 11. You will be redirected to the trusted profile by clicking **Continue**.
 
@@ -105,7 +105,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
 
-    * **Extend Sandbox** - extend the duration of the Sandbox trial environment. The extension is for 48 hours.
+    * **Extend Sandbox** - extend the duration of the Sandbox trial environment. The extension is for 2 days(48 hours).
 
     ![Sandbox - Extend](images/sandbox-extend.png "Sandbox - Extend"){: caption="Sandbox - Extend" caption-side="bottom"}
 

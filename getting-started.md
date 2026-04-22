@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-04-22"
 
 keywords:
 
@@ -25,7 +25,7 @@ The IBM Cloud Sandbox is ideal for:
 
 - **Existing IBM Cloud Classic customers** running workloads on Classic Virtual Server or Bare Metal Server who want to explore VPC features, validate workload compatibility, and prepare for migration to next-generation VPC infrastructure.
 
-- **Existing IBM Cloud users** who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
+- **Existing IBM Cloud users** who want hands-on experience with IBM Cloud services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
 
 ## Before you begin
 {: #before-you-begin}
@@ -36,14 +36,12 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 
 * You have a valid IBMid for authentication.
 
-## Request sandbox access
+## Creating Sandbox account
 {: #sandbox-request}
 {: step}
 
 1. An email notification is sent to all the allow-listed customers to experience the Cloud Sandbox environment.
-2. After clicking **Request**, you will be redirected to the dashboard catalog page to get started. Update the required information.
-3. Accept the terms and conditions.
-4. Click **Join** account.
+2. After clicking **Request**, you will be redirected to the sandbox provisioning page to get started. Update the required information.
 
 You will receive **Welcome to your IBM Cloud Sandbox** email. Now you are ready to deploy workloads, test configurations, and experience how VPC helps you build secure, scalable cloud environments.
 
@@ -51,9 +49,9 @@ You will receive **Welcome to your IBM Cloud Sandbox** email. Now you are ready 
 {: #sandbox-catalog}
 {: step}
 
-The Cloud Sandbox is available through the IBM Cloud Catalog.
+The Cloud Sandbox is available through the IBM Cloud Catalog for the allowlisted customers.
 
-1. Log in to the [IBM Cloud catlog](https://cloud.ibm.com){: external} page.
+1. Log in to the [IBM Cloud catlog](https://cloud.ibm.com/catalog#all_products){: external} page.
 2. Search for **Cloud Sandbox**.
 3. Click **Cloud Sandbox** tile to view the service details.
 
@@ -63,6 +61,11 @@ For more information on provisioning, see [Provisioning the IBM Cloud Sandbox](/
 {: #sandbox-create}
 {: step}
 
+Only users with administrator access in the Cloud Sandbox are authorized to create sandbox accounts.
+{: important}
+
+You need to assign administrator access to yourself or to other users in your account who will be creating the sandbox. Perform the following steps:
+
 1. On the Sandbox provision page, click **Create** tab.
 
 2. Enter the required details:
@@ -71,7 +74,10 @@ For more information on provisioning, see [Provisioning the IBM Cloud Sandbox](/
 
    * **Resource group** - Choose an existing resource group or create a new one to organize your sandbox resources. For more information on creating a new resource group, see [Creating a resource group](/docs/sandbox?topic=sandbox-create-resource-group).
 
-   * **Region** - Select the geographic location where your sandbox resources will be deployed (for example, us-south, eu-de, jp-tok and so on). User should be clear about the region, once selected you cannot change later during provisioning.
+   * **Region** - Select the geographic location where your sandbox resources will be provisioned (for example, us-south, eu-de and so on). Users and their assigned roles cannot be changed later; any updates made afterward will not reflect in the trusted profile sandbox account.
+
+   Users should be certain about the region selection, as it cannot be changed later during provisioning or resource creation. All subsequent resources can only be created in the selected region.
+   {: note}
 
    * **Tags** - Use the tags to organize your resources (for example, testing, team-alpha).
 
@@ -79,10 +85,14 @@ For more information on provisioning, see [Provisioning the IBM Cloud Sandbox](/
 
 3. Review the sandbox configuration and trial period information (14 days).
 
-4. Click **Create sandbox** to submit your request.
+   Before the 14‑day trial period, if no resources are created by day 7, the account is suspended on day 8; abuse reports also result in suspension.
 
-The sandbox provisioning process typically takes 5-10 minutes. You will receive a notification when your sandbox environment is ready.
-{: note}
+4. Click **Create sandbox** to submit your request. The sandbox provisioning process typically takes 5-10 minutes. You will receive a notification when your sandbox environment is ready.
+
+5. After the sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the sandbox and all associated resources.
+
+Only one sandbox creation is allowed per allow-listed customer account.
+{: tip}
 
 ## Access your sandbox through trusted profile
 {: #sandbox-access-profile}
@@ -90,15 +100,18 @@ The sandbox provisioning process typically takes 5-10 minutes. You will receive 
 
 After your sandbox is provisioned, you will receive access for the trusted profile.
 
-1. Check your email for the sandbox access notification.
+1. Check your email for the sandbox access notification or
 
 2. Click on **Trusted profiles** in the left navigation.
 
-3. Locate your sandbox trusted profile (it will include your sandbox name).
+3. Locate your sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
 
-4. Click **Apply** or **Switch to profile** to activate the trusted profile.
+4. Switch from current account to the trusted profile.
 
-5. Click **Create** to access the resource creation page. The **Quick Start** page appears where you can begin provisioning resources.
+5. Click **Create Resources** to access the resource creation page. The Quick Start page appears where you can begin provisioning the resources.
+
+   Only user with write access can create the resources (administrator, editor, operator).
+   {: note}
 
 The trusted profile provides secure, time-limited access to your sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
