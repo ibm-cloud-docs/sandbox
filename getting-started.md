@@ -61,7 +61,7 @@ For more information on provisioning, see [Provisioning the IBM Cloud Sandbox](/
 {: #sandbox-create}
 {: step}
 
-Only users with administrator access in the Cloud Sandbox are authorized to create sandbox accounts.
+Only users with **administrator** access in the Cloud Sandbox are authorized to create Sandbox accounts.
 {: important}
 
 You need to assign administrator access to yourself or to other users in your account who will be creating the sandbox. Perform the following steps:
@@ -70,41 +70,40 @@ You need to assign administrator access to yourself or to other users in your ac
 
 2. Enter the required details:
 
-   * **Sandbox name** - Provide a unique, descriptive name for your sandbox environment (for example, "sandbox-month-date")
+   * **Sandbox name** - Provide a unique, descriptive name for your Sandbox environment (for example, "sandbox-month-date")
 
    * **Resource group** - Choose an existing resource group or create a new one to organize your sandbox resources. For more information on creating a new resource group, see [Creating a resource group](/docs/sandbox?topic=sandbox-create-resource-group).
 
-   * **Region** - Select the geographic location where your sandbox resources will be provisioned (for example, us-south, eu-de and so on). Users and their assigned roles cannot be changed later; any updates made afterward will not reflect in the trusted profile sandbox account.
+   * **Region** - Select the geographic location where your Sandbox resources will be provisioned (for example, us-south, eu-de and so on). Users and their assigned roles cannot be changed later; any updates made afterward will not reflect in the trusted profile Sandbox account.
 
    Users should be certain about the region selection, as it cannot be changed later during provisioning or resource creation. All subsequent resources can only be created in the selected region.
    {: note}
 
    * **Tags** - Use the tags to organize your resources (for example, testing, team-alpha).
 
-   * **Users** - Specify additional users who should have access to collaborate in this sandbox environment (enter IBMids or email addresses). For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
+   * **Users** - Specify additional users who should have access to collaborate in this Sandbox environment (enter IBMids or email addresses). For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
 
-3. Review the sandbox configuration and trial period information (14 days).
-
+3. Review the Sandbox configuration and trial period information (14 days).
    Before the 14‑day trial period, if no resources are created by day 7, the account is suspended on day 8; abuse reports also result in suspension.
 
-4. Click **Create sandbox** to submit your request. The sandbox provisioning process typically takes 5-10 minutes. You will receive a notification when your sandbox environment is ready.
+4. Click **Create sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive a notification when your Sandbox environment is ready.
 
-5. After the sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the sandbox and all associated resources.
+5. After the sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the Sandbox and all associated resources.
 
-Only one sandbox creation is allowed per allow-listed customer account.
+Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
 
 ## Access your sandbox through trusted profile
 {: #sandbox-access-profile}
 {: step}
 
-After your sandbox is provisioned, you will receive access for the trusted profile.
+After your Sandbox is provisioned, you will receive access for the trusted profile.
 
-1. Check your email for the sandbox access notification or
+1. Check your email for the Sandbox access notification or
 
 2. Click on **Trusted profiles** in the left navigation.
 
-3. Locate your sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
+3. Locate your Sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
 
 4. Switch from current account to the trusted profile.
 
@@ -113,20 +112,20 @@ After your sandbox is provisioned, you will receive access for the trusted profi
    Only user with write access can create the resources (administrator, editor, operator).
    {: note}
 
-The trusted profile provides secure, time-limited access to your sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
+The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
 
 ## Provision resources using Quick Start
 {: #sandbox-quickstart}
 {: step}
 
-The sandbox environment includes Quick Start options to help you deploy common infrastructure resources. For more information, see [Quick Start](/docs/sandbox?topic=sandbox-quickstart) topic.
+The Sandbox environment includes Quick Start options to help you deploy common infrastructure resources. For more information, see [Quick Start](/docs/sandbox?topic=sandbox-quickstart) topic.
 
 ## Explore and test VPC capabilities
 {: #sandbox-explore}
 {: step}
 
-After provisioning resources, use your sandbox environment to explore VPC features and capabilities.
+After provisioning resources, use your Sandbox environment to explore VPC features and capabilities.
 
 ### Test networking features
 {: #sandbox-test-networking}
@@ -164,20 +163,20 @@ After provisioning resources, use your sandbox environment to explore VPC featur
 {: #sandbox-collaborate}
 {: step}
 
-If you added users to the sandbox during the initial creation process, they automatically receive email notifications with access instructions. These team members can immediately start collaborating with you in the shared environment.
+If you added users to the Sandbox during the initial creation process, they automatically receive email notifications with access instructions. These team members can immediately start collaborating with you in the shared environment.
 
 ### Adding collaborators after sandbox creation
 {: #adding-collaborate}
 
-You can invite additional team members to your sandbox at any time during the 14-day trial period. Following are the detailed steps:
+You can invite additional team members to your Sandbox at any time during the 14-day trial period. Following are the detailed steps:
 
 1. **Access your sandbox details page**
-   - From the IBM Cloud dashboard, locate your active sandbox in the resource list
-   - Click on the sandbox name to open its details page
-   - Alternatively, navigate to **Manage** > **Account** > **Sandboxes** and select your sandbox
+   - From the IBM Cloud dashboard, locate your active Sandbox in the resource list
+   - Click on the Sandbox name to open its details page
+   - Alternatively, navigate to **Manage** > **Account** > **Sandboxes** and select your Sandbox
 
 2. **Open the user management interface**
-   - On the sandbox details page, look for the **Manage users** button in the top-right corner or the **Add collaborators** option in the access management section
+   - On the Sandbox details page, look for the **Manage users** button in the top-right corner or the **Add collaborators** option in the access management section
    - Click this button to open the user invitation dialog
 
 3. **Enter team member information**
@@ -200,34 +199,34 @@ You can invite additional team members to your sandbox at any time during the 14
 ### What collaborators can expect?
 {: #what-collaborate}
 
-- **Email notification**: Invited users receive an email containing a link to access the sandbox and instructions for getting started
-- **Shared trial period**: All collaborators share the same 14-day trial period, which starts from the sandbox creation date
-- **Resource access**: Based on their assigned permissions, collaborators can view, create, modify, and manage resources within the sandbox environment
-- **Real-time collaboration**: Multiple users can work simultaneously in the sandbox, making it ideal for team training, proof-of-concepts, and collaborative development
-- **Unified billing**: All resource usage within the sandbox is tracked under the sandbox account, with no individual billing concerns during the trial period
+- **Email notification**: Invited users receive an email containing a link to access the Sandbox and instructions for getting started
+- **Shared trial period**: All collaborators share the same 14-day trial period, which starts from the Sandbox creation date
+- **Resource access**: Based on their assigned permissions, collaborators can view, create, modify, and manage resources within the Sandbox environment
+- **Real-time collaboration**: Multiple users can work simultaneously in the Sandbox, making it ideal for team training, proof-of-concepts, and collaborative development
+- **Unified billing**: All resource usage within the Sandbox is tracked under the Sandbox account, with no individual billing concerns during the trial period
 
 ### Best practices for team collaboration
 {: #best-collaborate}
 
-- Communicate with your team about the sandbox's purpose and scope before inviting them
+- Communicate with your team about the purpose and scope before inviting them
 - Assign appropriate permission levels based on each member's role and responsibilities
 - Regularly review active collaborators and remove access for users who no longer need it
-- Coordinate resource creation to avoid conflicts and stay within sandbox limits
+- Coordinate resource creation to avoid conflicts and stay within Sandbox limits
 - Plan your 14-day trial period effectively to maximize team productivity
 
 ## Monitor your sandbox lifecycle
 {: #sandbox-lifecycle}
 
-Your sandbox environment has a 14-day trial period. To track your remaining time:
+Your Sandbox environment has a 14-day trial period. To track your remaining time:
 
-1. View the trial period countdown on the sandbox landing page.
+1. View the trial period countdown on the Sandbox landing page.
 2. Check your email for reminder notifications (typically sent at 7 days, 3 days, and 1 day before expiry).
-3. Review the sandbox details page for expiration date and time.
+3. Review the Sandbox details page for expiration date and time.
 
-After the 14-day trial period expires, all resources in the sandbox environment are automatically deleted. Ensure you save any important data or configurations before the expiration date.
+After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. Ensure you save any important data or configurations before the expiration date.
 {: important}
 
-If you need to extend your evaluation, you can create a new sandbox environment or migrate your workloads to your own IBM Cloud account.
+If you need to extend your evaluation, you can create a new Sandbox environment or migrate your workloads to your own IBM Cloud account.
 
 ## Next steps
 {: #next-steps}
