@@ -51,7 +51,7 @@ You will receive **Welcome to your IBM Cloud Sandbox** email. Now you are ready 
 
 The Cloud Sandbox is available through the IBM Cloud Catalog for the allowlisted customers.
 
-1. Log in to the [IBM Cloud catlog](https://cloud.ibm.com/catalog#all_products){: external} page.
+1. Log in to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#all_products){: external} page.
 2. Search for **Cloud Sandbox**.
 3. Click **Cloud Sandbox** tile to view the service details.
 
