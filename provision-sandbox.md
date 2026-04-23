@@ -23,7 +23,6 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 ## Creating the account using UI
 {: #create-ui}
 
-
 1. Navigate to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}

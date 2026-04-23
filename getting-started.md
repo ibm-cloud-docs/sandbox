@@ -125,37 +125,37 @@ The Sandbox environment includes Quick Start options to help you deploy common i
 
 After provisioning resources, use your Sandbox environment to explore VPC features and capabilities.
 
-### Test networking features
+### Testing network features
 {: #sandbox-test-networking}
 
-- Configure and test subnets, security groups, and network ACLs
-- Set up public and private connectivity
-- Test network performance and latency
-- Experiment with VPN and Transit Gateway configurations
+Configure and validate network components by setting up the subnets, security groups, and network ACLs. Establish the public and private connectivity by testing latency and performance and experimenting with VPN and Transit Gateway configurations.
 
-### Evaluate compute options
+* For more information see transit gateway, [Creating a Transit Gateway].
+* For more information see on subnets, see [Working with subnets](/docs/vpc?topic=vpc-subnets-configure&interface=ui).
+* For more information see network ACL, see [Creating a network ACL](/docs/vpc?topic=vpc-acl-create-ui&interface=ui).
+* For more information see on security group, see [Setting up a security group for your resource](/docs/vpc?topic=vpc-configuring-the-security-group&interface=ui).
+
+
+### Evaluating compute options
 {: #sandbox-test-compute}
 
-- Deploy workloads on different instance profiles
-- Test application performance and scalability
-- Compare VSI and Bare Metal Server capabilities
-- Evaluate auto-scaling configurations
+Deploy and compare workloads across different compute profiles to evaluating the performance, scalability, bare metal versus VSI capabilities, and auto-scaling behavior.
+
+* For more information see on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
 
 ### Assess storage solutions
 {: #sandbox-test-storage}
 
-- Attach and manage block storage volumes
-- Test Cloud Object Storage integration
-- Evaluate storage performance for your workloads
-- Experiment with backup and snapshot capabilities
+Manage and evaluate storage by attaching block volumes, integrating Cloud Object Storage (COS), testing performance, and experimenting with backup and snapshot features.
+
+* For more information see on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
 
 ### Configure load balancing
 {: #sandbox-test-loadbalancing}
 
-- Set up application load balancers
-- Test traffic distribution across instances
-- Configure health checks and monitoring
-- Evaluate high availability scenarios
+Configure and test application load balancing by distributing traffic across instances, setting up health checks and monitoring, and validating high availability scenarios.
+
+* For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
 ## Collaborate with team members
 {: #sandbox-collaborate}
@@ -165,26 +165,17 @@ Users can be added only during the initial provisioning page, not during resourc
 
 All sandbox resource usage is tracked under the sandbox account, with no billing during the trial period.
 
-### Best practices for team collaboration
-{: #best-collaborate}
-
-- Communicate with your team about the purpose and scope before inviting them
-- Assign appropriate permission levels based on each member's role and responsibilities
-- Coordinate resource creation to avoid conflicts and stay within Sandbox limits
-- Plan your 14-day trial period effectively to maximize team productivity
-
 ## Monitor your sandbox lifecycle
 {: #sandbox-lifecycle}
 
 Your Sandbox environment has a 14-day trial period. To track your remaining time:
 
 1. View the trial period countdown on the Sandbox landing page.
+
 2. Check your email for reminder notifications (typically sent at 7 days, 3 days, and 1 day before expiry).
 
-After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. Ensure you save any important data or configurations before the expiration date.
+After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. You must save the configuration by downloading the Terraform package and running it in your own customer account.
 {: important}
-
-If you need to extend your evaluation, you must save the configuration by downloading the Terraform package and running it in your own customer account
 
 ## Next steps
 {: #next-steps}
