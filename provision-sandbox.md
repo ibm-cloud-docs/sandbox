@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-04-23"
 
 keywords:
 
@@ -24,7 +24,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 {: #create-ui}
 
 
-1. Navigate to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
+1. Navigate to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-04-23"
 
 keywords:
 
@@ -161,54 +161,15 @@ After provisioning resources, use your Sandbox environment to explore VPC featur
 {: #sandbox-collaborate}
 {: step}
 
-If you added users to the Sandbox during the initial creation process, they automatically receive email notifications with access instructions. These team members can immediately start collaborating with you in the shared environment.
+Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
 
-### Adding collaborators after sandbox creation
-{: #adding-collaborate}
-
-You can invite additional team members to your Sandbox at any time during the 14-day trial period. Following are the detailed steps:
-
-1. **Access your sandbox details page**
-   - From the IBM Cloud dashboard, locate your active Sandbox in the resource list
-   - Click on the Sandbox name to open its details page
-   - Alternatively, navigate to **Manage** > **Account** > **Sandboxes** and select your Sandbox
-
-2. **Open the user management interface**
-   - On the Sandbox details page, look for the **Manage users** button in the top-right corner or the **Add collaborators** option in the access management section
-   - Click this button to open the user invitation dialog
-
-3. **Enter team member information**
-   - In the invitation form, enter the IBMids or email addresses of the team members you want to invite
-   - You can add multiple users at once by separating email addresses with commas or adding them one per line
-   - Ensure the email addresses are accurate to avoid delivery issues
-
-4. **Configure access levels and permissions**
-   - Select the appropriate access level for each user (for example, Viewer, Editor, Administrator)
-   - **Viewer**: Can view resources and configurations but cannot make changes
-   - **Editor**: Can create, modify, and delete resources within the sandbox
-   - **Administrator**: Has full control including user management capabilities
-   - Consider your team's needs and assign permissions accordingly to maintain security while enabling productivity
-
-5. **Send the invitations**
-   - Review the list of users and their assigned permissions
-   - Click **Invite** or **Send invitations** to dispatch access notifications
-   - Each invited user will receive an email with instructions on how to access the sandbox environment
-
-### What collaborators can expect?
-{: #what-collaborate}
-
-- **Email notification**: Invited users receive an email containing a link to access the Sandbox and instructions for getting started
-- **Shared trial period**: All collaborators share the same 14-day trial period, which starts from the Sandbox creation date
-- **Resource access**: Based on their assigned permissions, collaborators can view, create, modify, and manage resources within the Sandbox environment
-- **Real-time collaboration**: Multiple users can work simultaneously in the Sandbox, making it ideal for team training, proof-of-concepts, and collaborative development
-- **Unified billing**: All resource usage within the Sandbox is tracked under the Sandbox account, with no individual billing concerns during the trial period
+All sandbox resource usage is tracked under the sandbox account, with no billing during the trial period.
 
 ### Best practices for team collaboration
 {: #best-collaborate}
 
 - Communicate with your team about the purpose and scope before inviting them
 - Assign appropriate permission levels based on each member's role and responsibilities
-- Regularly review active collaborators and remove access for users who no longer need it
 - Coordinate resource creation to avoid conflicts and stay within Sandbox limits
 - Plan your 14-day trial period effectively to maximize team productivity
 
@@ -219,7 +180,6 @@ Your Sandbox environment has a 14-day trial period. To track your remaining time
 
 1. View the trial period countdown on the Sandbox landing page.
 2. Check your email for reminder notifications (typically sent at 7 days, 3 days, and 1 day before expiry).
-3. Review the Sandbox details page for expiration date and time.
 
 After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. Ensure you save any important data or configurations before the expiration date.
 {: important}

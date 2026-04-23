@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-20"
+lastupdated: "2026-04-23"
 
 keywords:
 
@@ -73,7 +73,7 @@ The IBM Cloud Sandbox architecture consists of three primary layers that work to
 ### User access
 {: #user-access}
 
-Users access the IBM Cloud Sandbox through the IBM Cloud Console. After authentication, users can request access to a sandbox environment, which triggers the provisioning workflow.
+Users access the Cloud Sandbox through the IBM Cloud Console. After authentication, users can create the sandbox environment, which triggers the provisioning workflow.
 
 ### Customers account
 {: #customer-account}
@@ -83,7 +83,7 @@ The customers account serves as the entry point for sandbox provisioning and man
 #### IBM Cloud catalog
 {: #cloud-catalog}
 
-The IBM Cloud Catalog provides the Cloud Sandbox service offering, allowing users to discover and request sandbox environments directly from the catalog interface.
+The IBM Cloud Catalog provides the Cloud Sandbox service offering, allowing users to discover and create the sandbox environments directly from the catalog interface.
 
 #### Cloud Console
 {: #cloud-console}

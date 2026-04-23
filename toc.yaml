@@ -18,16 +18,13 @@ toc:
   - navgroup:
       id: howto
       topics:
-      - deploying-sandbox.md
+      - provision-sandbox.md
       - quickstart.md
       - sandbox-quotas.md
       - iam-permissions.md
       - create-resource-group.md
       - create-user.md
-      - topicgroup:
-          label: Observability
-          topics:
-          - at-events.md
+      - at-events.md
   - navgroup:
       id: help
       topics:
