@@ -36,15 +36,14 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 
 * You have a valid IBMid for authentication.
 
+* You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
+
 ## Creating Sandbox account
 {: #sandbox-request}
 {: step}
 
 1. An email notification is sent to all the allow-listed customers to experience the Cloud Sandbox environment.
-2. After clicking **Request**, you will be redirected to the sandbox provisioning page to get started. Update the required information.
-
-You will receive **Welcome to your IBM Cloud Sandbox** email.
-You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
+2. After clicking **Request**, you will be redirected to the Sandbox provisioning page to get started. Update the required information.
 
 ## Accessing the IBM Cloud Catalog
 {: #sandbox-catalog}
@@ -67,29 +66,27 @@ Only users with **administrator** access in the Cloud Sandbox are authorized to 
 
 Perform the following steps to provision the Sandbox:
 
-1. On the Sandbox provision page, click **Create** tab.
-
-2. Enter the required details:
+1. On the Sandbox provision page, enter the required details:
 
    * **Sandbox name** - Provide a unique, descriptive name for your Sandbox environment (for example, "sandbox-month-date")
 
    * **Resource group** - Choose an existing resource group or create a new one to organize your sandbox resources. For more information on creating a new resource group, see [Creating a resource group](/docs/sandbox?topic=sandbox-create-resource-group).
 
-   * **Region** - Select the geographic location where your Sandbox resources will be provisioned (for example, us-south, eu-de and so on). Users and their assigned roles cannot be changed later; any updates made afterward will not reflect in the trusted profile Sandbox account.
+   * **Region** - Select the geographic location where your Sandbox resources will be provisioned (for example, us-south, eu-de and so on).
 
-   Users should be certain about the region selection, as it cannot be changed later during provisioning or resource creation. All subsequent resources can only be created in the selected region.
+   The region cannot be changed after provisioning, and all resources will be created in the selected region.
    {: note}
 
-   * **Tags** - Use the tags to organize your resources (for example, testing, team-alpha).
+   * *Optional*: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag&interface=ui).
 
-   * **Users** - Specify additional users who should have access to collaborate in this Sandbox environment (enter IBMids or email addresses). For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
+   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
 
-3. Review the Sandbox configuration and trial period information (14 days).
-   Before the 14‑day trial period, if no resources are created by day 7, the account is suspended on day 8; abuse reports also result in suspension.
+   The users added cannot be changed during provisioning.
+   {: note}
 
-4. Click **Create sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive a notification when your Sandbox environment is ready.
+2. Click **Create sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
 
-5. After the sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the Sandbox and all associated resources.
+3. After the Sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the Sandbox and all associated resources.
 
 Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
@@ -161,9 +158,9 @@ Configure and test application load balancing by distributing traffic across ins
 {: #sandbox-collaborate}
 {: step}
 
-Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
+Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
 
-All sandbox resource usage is tracked under the sandbox account, with no billing during the trial period.
+All Sandbox resource usage is tracked under the Sandbox account, with no billing during the trial period.
 
 ## Monitor your sandbox lifecycle
 {: #sandbox-lifecycle}
