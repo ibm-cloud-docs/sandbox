@@ -24,6 +24,7 @@ toc:
       - iam-permissions.md
       - create-resource-group.md
       - create-user.md
+      - create-vpc.md
       - at-events.md
   - navgroup:
       id: help

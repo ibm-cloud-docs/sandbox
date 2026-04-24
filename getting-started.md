@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-23"
+lastupdated: "2026-04-24"
 
 keywords:
 
@@ -43,9 +43,10 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 1. An email notification is sent to all the allow-listed customers to experience the Cloud Sandbox environment.
 2. After clicking **Request**, you will be redirected to the sandbox provisioning page to get started. Update the required information.
 
-You will receive **Welcome to your IBM Cloud Sandbox** email. Now you are ready to deploy workloads, test configurations, and experience how VPC helps you build secure, scalable cloud environments.
+You will receive **Welcome to your IBM Cloud Sandbox** email.
+You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
 
-## Access the IBM Cloud Catalog
+## Accessing the IBM Cloud Catalog
 {: #sandbox-catalog}
 {: step}
 
@@ -57,14 +58,14 @@ The Cloud Sandbox is available through the IBM Cloud Catalog for the allowlisted
 
 For more information on provisioning, see [Provisioning the IBM Cloud Sandbox](/docs-draft/sandbox?topic=sandbox-deploy) topic.
 
-## Create your sandbox environment
+## Creating your Sandbox environment
 {: #sandbox-create}
 {: step}
 
 Only users with **administrator** access in the Cloud Sandbox are authorized to create Sandbox accounts.
 {: important}
 
-You need to assign administrator access to yourself or to other users in your account who will be creating the sandbox. Perform the following steps:
+Perform the following steps to provision the Sandbox:
 
 1. On the Sandbox provision page, click **Create** tab.
 
@@ -93,7 +94,7 @@ You need to assign administrator access to yourself or to other users in your ac
 Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
 
-## Access your sandbox through trusted profile
+## Accessing your Sandbox through trusted profile
 {: #sandbox-access-profile}
 {: step}
 
@@ -113,13 +114,13 @@ After your Sandbox is provisioned, you will receive access for the trusted profi
 The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
 
-## Provision resources using Quick Start
+## Provisioning resources using Quick Start
 {: #sandbox-quickstart}
 {: step}
 
 The Sandbox environment includes Quick Start options to help you deploy common infrastructure resources. For more information, see [Quick Start](/docs/sandbox?topic=sandbox-quickstart) topic.
 
-## Explore and test VPC capabilities
+## Exploring VPC capabilities
 {: #sandbox-explore}
 {: step}
 
@@ -135,7 +136,6 @@ Configure and validate network components by setting up the subnets, security gr
 * For more information see network ACL, see [Creating a network ACL](/docs/vpc?topic=vpc-acl-create-ui&interface=ui).
 * For more information see on security group, see [Setting up a security group for your resource](/docs/vpc?topic=vpc-configuring-the-security-group&interface=ui).
 
-
 ### Evaluating compute options
 {: #sandbox-test-compute}
 
@@ -143,21 +143,21 @@ Deploy and compare workloads across different compute profiles to evaluating the
 
 * For more information see on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
 
-### Assess storage solutions
+### Accessing storage solutions
 {: #sandbox-test-storage}
 
 Manage and evaluate storage by attaching block volumes, integrating Cloud Object Storage (COS), testing performance, and experimenting with backup and snapshot features.
 
 * For more information see on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
 
-### Configure load balancing
+### Configuring load balancing
 {: #sandbox-test-loadbalancing}
 
 Configure and test application load balancing by distributing traffic across instances, setting up health checks and monitoring, and validating high availability scenarios.
 
 * For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
-## Collaborate with team members
+## Collaborating with team members
 {: #sandbox-collaborate}
 {: step}
 
