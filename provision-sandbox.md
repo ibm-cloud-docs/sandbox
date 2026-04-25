@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-23"
+lastupdated: "2026-04-25"
 
 keywords:
 
@@ -100,7 +100,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
 19. On the **Sandbox Overview** page, you can also:
 
-    * **Manage Sandbox** - save the configuration by downloading the Terraform package and running it in your customer account.
+    * **Manage Sandbox** - save the configuration by downloading the Terraform package and running it in your customer account. To run Terraform, the saved configuration must be run in the customer’s account with the necessary permissions for the required resources, and the account must have a Pay‑As‑You‑Go subscription type.
 
     ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
 
@@ -108,6 +108,6 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     ![Sandbox - Extend](images/sandbox-extend.png "Sandbox - Extend"){: caption="Sandbox - Extend" caption-side="bottom"}
 
-    * **End Sandbox** - manually delete the Sandbox environment and all the associated resources.
+    * **End Sandbox** - manually delete the Sandbox environment and all the associated resources. Once the sandbox is ended from the sandbox account, the corresponding resources must be manually deleted from the resource list for the changes to be reflected.
 
     ![Sandbox - End](images/sandbox-end.png "Sandbox - End"){: caption="Sandbox - End" caption-side="bottom"}
