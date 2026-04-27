@@ -49,58 +49,65 @@ Only one sandbox is allowed per allowlisted customer account.
 
 6. Accept the terms and conditions, click **Create Sandbox**.
 
-    Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days (48 hours) extension. User access is limited to the region selected during provisioning.
+Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days (48 hours) extension. User access is limited to the region selected during provisioning.
 
-    ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
+## Accessing Sandbox
+{: #access-sandbox}
 
-6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 2 days(48 hours) extension. User access is limited to the region selected during provisioning.
+The Sandbox instance is displayed in the Resource list. To access the Sandbox environment:
 
-    ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
+1. Click on the Sandbox instance name in the **Resource list**
 
-7. The Sandbox instance is displayed for provisioning in the **Resource list**.
+2. Select the trusted profile in the account switcher.
+
+3. Click on the link in the welcome email.
 
     ![Sandbox - Resource list](images/sandbox-resource-list.png "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
 
-8. A welcome email is sent and you can successfully log in to the Sandbox account.
+## Creating resources in the Sandbox environment
+{: #create-resources-sb}
 
-9. Sandbox account is created for provisioning. This includes a 14-day trial period with a 2 days(48 hours) extension. User access is limited to the region selected during provisioning.
+You can create virtual servers or bare metal servers along with other VPC services.
 
-11. You will be redirected to the trusted profile by clicking **Continue**.
+1. On the Sandbox overview page, click on Create resources.
 
-12. On the main **Sandbox Quick Start** page, click **Create** tab.
+2. Select an image and profile for the instance. To select from all available images, click Change image. To select from all available profiles, click Change profile.
 
-13. Under **Server Configuration**, select the server instances.
+3. Under Additional services, you can enable and customize the services.
 
-14. Select the image to configure the instances.
-
-    ![Select image - Server instance](images/sandbox-select-image.png "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
-
-15. Select the instance profile type.
-
-    ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
-
-16. Under **Additional services**, you can enable and customize the services.
     * Cloud Object Storage
     * Load Balancer
     * VPN for VPC
+        you are required to enter …..
     * Transit Gateway
 
-17. Accept the terms and conditions, click **Create resources**.
+4. Accept the terms and conditions, click **Create resources**.
 
-    ![Sandbox - Quickstart](images/ui-sandbox-quick-start.png "Sandbox - Quickstart"){: caption="Sandbox - Quickstart" caption-side="bottom"}
+Once resources have been created, you can view them from the Resource list.
 
-18. In the Resource list, you can see all the resources that you have created.
+## Supported actions
+{: #actions-sb}
 
-19. On the **Sandbox Overview** page, you can also:
+Following are the supported actions available on the Sandbox Oveview page:
 
-    * **Manage Sandbox** - save the configuration by downloading the Terraform package and running it in your customer account. To run Terraform, the saved configuration must be run in the customer’s account with the necessary permissions for the required resources, and the account must have a Pay‑As‑You‑Go subscription type.
+* Extend the Sandbox trial
+* End the Sandbox early
+* Save the configuration
 
-    ![Sandbox - Manage](images/sandbox-save-config.png "Sandbox - Manage"){: caption="Sandbox - Manage" caption-side="bottom"}
+### Extending Sandbox
+{: #extend-sb}
 
-    * **Extend Sandbox** - extend the duration of the Sandbox trial environment. The extension is for 2 days(48 hours).
+You can optionally extend the Sandbox trial for 2 days (48 hours) by clicking on **Extend Sandbox**. You will get an email confirming extension was granted and the countdown banner will increase by 2 days.
 
-    ![Sandbox - Extend](images/sandbox-extend.png "Sandbox - Extend"){: caption="Sandbox - Extend" caption-side="bottom"}
+### End Sandbox
+{: #end-sb}
 
-    * **End Sandbox** - manually delete the Sandbox environment and all the associated resources. Once the sandbox is ended from the sandbox account, the corresponding resources must be manually deleted from the resource list for the changes to be reflected.
+You can optionally end the Sandbox trial any time by clicking **End Sandbox**. If you do so, the account will be suspended and you will not be able to access the resources you have created.
 
-    ![Sandbox - End](images/sandbox-end.png "Sandbox - End"){: caption="Sandbox - End" caption-side="bottom"}
+It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
+{: tip}
+
+## Save configuration
+{: #save-config-sb}
+
+The Sandbox environment configuration can be downloaded as a Terraform packaging by clicking on **Save configuration**.
