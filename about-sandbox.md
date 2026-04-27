@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-23"
+lastupdated: "2026-04-27"
 
 keywords:
 
@@ -48,11 +48,9 @@ Following are the key features:
 
 * **Time limited access** - A 14-day trial period with automatic resource cleanup.
 
-* **Pre-configured services** - Quick Start templates for common infrastructure use cases..
+* **Pre-configured services** - Quick start templates for common infrastructure use cases.
 
 * **Trusted profile security** - Fine-grained access control through IBM Cloud IAM.
-
-* **Automated provisioning** - Simplified onboarding through the cloud console.
 
 * **Collaborative access** - Ability to invite team members to the sandbox environment.
 
@@ -103,7 +101,7 @@ Once the form is submitted, the sandbox is provisioned in the backend infrastruc
 
 The Sandbox Enterprise POC Master Account is the central infrastructure that hosts all customer sandbox environments. Each customer receives a dedicated sub-account with a trusted profile that provides isolated access to sandbox resources. This sub-account has a 14-day trial period and includes:
 
-* **Quick Start** - Under the **Overview** page, you can create the resources for Sandbox by clicking **Create Resources**.
+* **Quick start** - Under the **Overview** page, you can create the resources for Sandbox by clicking **Create Resources**.
 
 * **Servers** - You can provision the Virtual Server Instances (VSIs) or Bare Metal servers for testing workloads.
 

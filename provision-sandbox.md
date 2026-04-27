@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-25"
+lastupdated: "2026-04-27"
 
 keywords:
 
@@ -23,6 +23,9 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 ## Creating the account using UI
 {: #create-ui}
 
+Only one sandbox is allowed per allowlisted customer account.
+{: note}
+
 1. Navigate to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
@@ -33,33 +36,26 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 
     * **Region** - Region where the instance is provisioned.
 
-    Only one sandbox is allowed per allowlisted customer account. Region selection applies only to IAM-based resource restrictions, not sandbox provisioning.
+    You will not be able to change the region once selected during the provisioning.
     {: note}
 
-    * **Resource group** - Name from your IBM Cloud account where the VPC resources must be deployed.
+    * **Resource group** - Name from your IBM Cloud account where the Sandbox resource will be deployed.
 
     * **Tags** (optional) - Use the tags to organize your resources.
 
     ![Sandbox - Create](images/sandbox-create.png "Sandbox - Create"){: caption="Sandbox - Create" caption-side="bottom"}
 
-3. In the **Users** section, you can invite users from your account to be part of the Sandbox environment. For more information, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
-
-4. In the **About** tab, you get all the details and overview of the service.
-
-
-5. In the **Users** section, you can invite users from your account to be part of the Sandbox environment.
+3. In the **Users** section, you can select users from your account. For more information, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
 
 6. Accept the terms and conditions, click **Create Sandbox**.
 
-7. Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days(48 hours) extension. User access is limited to the region selected during provisioning.
+    Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days (48 hours) extension. User access is limited to the region selected during provisioning.
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
-
 
 6. Sandbox account is created for provisioning. This includes a 14-day trial period with a 2 days(48 hours) extension. User access is limited to the region selected during provisioning.
 
     ![Sandbox - Create account](images/sandbox-create-account.png "Sandbox - Create account"){: caption="Sandbox - Create account" caption-side="bottom"}
-
 
 7. The Sandbox instance is displayed for provisioning in the **Resource list**.
 
@@ -72,9 +68,6 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 11. You will be redirected to the trusted profile by clicking **Continue**.
 
 12. On the main **Sandbox Quick Start** page, click **Create** tab.
-
-    You will not be able to change the region once selected during the provisioning.
-    {: note}
 
 13. Under **Server Configuration**, select the server instances.
 

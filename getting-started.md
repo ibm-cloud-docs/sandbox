@@ -81,8 +81,7 @@ Perform the following steps to provision the Sandbox:
 
    * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
 
-   The users added cannot be changed during provisioning.
-   {: note}
+   Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
 
 2. Click **Create sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
 
@@ -154,14 +153,6 @@ Configure and test application load balancing by distributing traffic across ins
 
 * For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
-## Collaborating with team members
-{: #sandbox-collaborate}
-{: step}
-
-Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
-
-All Sandbox resource usage is tracked under the Sandbox account, with no billing during the trial period.
-
 ## Monitor your sandbox lifecycle
 {: #sandbox-lifecycle}
 
@@ -174,10 +165,8 @@ Your Sandbox environment has a 14-day trial period. To track your remaining time
 After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. You must save the configuration by downloading the Terraform package and running it in your own customer account.
 {: important}
 
-## Next steps
+## Learn more
 {: #next-steps}
 
-- [Understanding VPC templates](/docs/vpc?topic=vpc-sandbox-templates)
-- [Migrating from Classic to VPC](/docs/vpc?topic=vpc-sandbox-migration-guide)
 - [VPC networking concepts](/docs/vpc?topic=vpc-about-networking-for-vpc)
 - [Managing VPC resources](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console)
