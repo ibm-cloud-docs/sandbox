@@ -15,7 +15,7 @@ subcollection: sandbox
 # Connecting to servers and migrating data
 {: #connect-migrate}
 
-After your Sandbox environment is active, you can securely access Linux or Windows Virtual Server Instances (VSIs) and migrate data between IBM Classic infrastructure and VPC.
+After your Sandbox environment is active, you can securely access Linux or Windows Virtual Server Instances (VSIs) and migrate data between IBM Classic infrastructure and VPC infrastructure.
 
 ## Before you begin
 {: #before-you-begin}
@@ -27,22 +27,23 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 - Reserve and associate a floating IP address to your instance
 
 ## Connecting to Linux or Windows servers
-{: #connect}
+{: #connecting-servers}
 
 ### Step 1: Identify the Floating IP
-{: #fp}
+{: #identify-floating-ip}
 
 1. In the IBM Cloud console, go to **Resource List** → **Compute** → **Virtual Server Instances**.
 2. Select your VSI and click the **Networking** tab.
 3. Copy the **Floating IP** address from the table.
 
 ### Step 2: Download the SSH key from Secrets Manager
-{: #secret-manager}
+{: #download-ssh-key}
+
 
 1. Go to **Resource List** → **Security** → **Secrets Manager**.
 2. Open your Sandbox Secrets Manager instance.
 3. Locate your SSH private key secret, click the overflow menu (⋮), and select **View Secret**.
-4. Copy the secret contents and save to a file (for example, `key.pem`).
+4. Download the secret key and save to a file (for example, `key.pem`).
 5. Set appropriate permissions:
    ```sh
    chmod 400 key.pem
@@ -52,17 +53,22 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 {: #connect-server}
 
 #### Linux server (SSH)
-{: #ssh}
+{: #linux-ssh}
 
+The following instance are the common for both Linux and Windows servers:
+```sh
+   ibmcloud is instance INSTANCE
+   ```
 1. Open your terminal.
-2. Run the following command:
+2. Run the following linux command:
    ```sh
    ssh -i <path-to-key.pem> root@<Floating-IP>
    ```
 3. Accept the fingerprint when prompted.
 
 #### Windows server (RDP)
-{: #rdp}
+{: #windows-rdp}
+
 
 1. Check instance status:
    ```sh
@@ -82,17 +88,18 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 
 4. Open Remote Desktop Connection (RDP) on your computer.
 5. Enter the Floating IP as the computer address.
-6. Log in with username `Administrator` and the retrieved password.
+6. Log in with username `Administrator` and the retrieved password from step 2.
 
 For more information, see [Connecting to Windows instances](/docs/vpc?topic=vpc-vsi_is_connecting_windows).
 
 ## Creating a Transit Gateway for Classic-to-VPC connectivity
-{: #create-tg-overview}
+{: #create-transit-gateway}
+
 
 A Transit Gateway enables secure private network communication between IBM Classic infrastructure and VPC environments for application migration and data transfer.
 
 ### Step 1: Create the Transit Gateway
-{: #create-tg}
+{: #create-tgw-step1}
 
 1. In the IBM Cloud console, go to **Menu** → **Infrastructure** → **Network** → **Transit Gateway**.
 2. Click **Create Transit Gateway**.
@@ -122,7 +129,7 @@ A Transit Gateway enables secure private network communication between IBM Class
 5. Click **Add**.
 
 ### Step 4: Verify connections
-{: #verify-connection}
+{: #verify-connections}
 
 1. Confirm both connections show **Attached** status.
 2. Test connectivity using private IP addresses:
@@ -133,7 +140,7 @@ A Transit Gateway enables secure private network communication between IBM Class
 For more information, see [Getting started with IBM Cloud Transit Gateway](/docs/transit-gateway?topic=transit-gateway-getting-started).
 
 ## Copying data from Classic to VPC using SCP
-{: #copy-data}
+{: #copy-data-scp}
 
 ### Step 1: Identify IP addresses
 {: #ip}
@@ -143,19 +150,19 @@ You need the private IP addresses of both servers:
 - **VPC server**: Go to **Infrastructure** → **Virtual server instances** → **Reserved IP** column
 
 ### Step 2: Get SSH credentials
-{: #ssh-cred}
+{: #get-ssh-credentials}
 
 Refer to [Connecting to Linux or Windows servers](#connecting-to-linux-or-windows-servers) for SSH key retrieval.
 
 ### Step 3: Transfer data
 {: #transfer-data}
 
-Copy from Classic to VPC:
+Copy file from Classic to VPC:
 ```sh
 scp -i /path/to/vpc-key.pem /path/to/file user@<VPC-Private-IP>:/destination/path
 ```
 
-Copy from VPC to Classic:
+Copy file from VPC to Classic:
 ```sh
 scp -i /path/to/classic-key.pem /path/to/file user@<Classic-Private-IP>:/destination/path
 ```
@@ -166,11 +173,12 @@ scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
 ```
 
 ### Step 4: Verify the transfer
-{: #verify-data}
+{: #verify-transfer}
 
 Check the destination directory:
 ```sh
 ls -lh /destination/path
+du -sh /destination/path
 ```
 
 Verify file size, timestamps, and contents to confirm successful transfer.
