@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-24"
+lastupdated: "2026-04-27"
 
 keywords:
 
@@ -97,13 +97,13 @@ Only one Sandbox creation is allowed per allow-listed customer account.
 
 After your Sandbox is provisioned, you will receive access for the trusted profile.
 
-1. Check your email for the Sandbox access notification or click on **Trusted profiles** in the left navigation.
+1. Click on the link from the email or switch to the Sandbox Trusted Profile from the account drop down.
 
 2. Locate your Sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
 
 3. Switch from current account to the trusted profile.
 
-4. Click **Create Resources** to access the resource creation page. The Quick Start page appears where you can begin provisioning the resources.
+4. Click **Create Resources** to access the resource creation page.
 
    Only user with write access can create the resources (administrator, editor, operator).
    {: note}
@@ -143,7 +143,7 @@ Deploy and compare workloads across different compute profiles to evaluating the
 ### Accessing storage solutions
 {: #sandbox-test-storage}
 
-Manage and evaluate storage by attaching block volumes, integrating Cloud Object Storage (COS), testing performance, and experimenting with backup and snapshot features.
+Manage and evaluate storage by attaching block volumes, integrating Cloud Object Storage (COS), and testing performance.
 
 * For more information see on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
 
