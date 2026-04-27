@@ -56,7 +56,7 @@ Sandbox account is provisioned now. This includes a 14-day trial period with a 2
 
 The Sandbox instance is displayed in the Resource list. To access the Sandbox environment:
 
-1. Click on the Sandbox instance name in the **Resource list**
+1. Click on the Sandbox instance name in the **Resource list**.
 
 2. Select the trusted profile in the account switcher.
 
@@ -69,26 +69,25 @@ The Sandbox instance is displayed in the Resource list. To access the Sandbox en
 
 You can create virtual servers or bare metal servers along with other VPC services.
 
-1. On the Sandbox overview page, click on Create resources.
+1. On the **Sandbox Overview** page, click **Create resources**.
 
-2. Select an image and profile for the instance. To select from all available images, click Change image. To select from all available profiles, click Change profile.
+2. To select from all the available images, click **Change image**. To select from all the available profiles, click **Change profile**.
 
-3. Under Additional services, you can enable and customize the services.
+3. Under **Additional services**, you can enable and customize the services.
 
     * Cloud Object Storage
     * Load Balancer
     * VPN for VPC
-        you are required to enter …..
     * Transit Gateway
 
 4. Accept the terms and conditions, click **Create resources**.
 
-Once resources have been created, you can view them from the Resource list.
+Once resources hss been created, you can view them from the **Resource list**.
 
 ## Supported actions
 {: #actions-sb}
 
-Following are the supported actions available on the Sandbox Oveview page:
+Following are the supported actions available on the **Sandbox Oveview** page:
 
 * Extend the Sandbox trial
 * End the Sandbox early
@@ -107,7 +106,7 @@ You can optionally end the Sandbox trial any time by clicking **End Sandbox**. I
 It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
 {: tip}
 
-## Save configuration
+### Save configuration
 {: #save-config-sb}
 
 The Sandbox environment configuration can be downloaded as a Terraform packaging by clicking on **Save configuration**.

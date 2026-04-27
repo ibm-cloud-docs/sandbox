@@ -104,8 +104,8 @@ After your Sandbox is provisioned, you will receive access for the trusted profi
 
 4. Click **Create Resources** to access the resource creation page.
 
-   Only user with write access can create the resources (administrator, editor, operator).
-   {: note}
+Only user with write access can create the resources (administrator, editor, operator).
+{: note}
 
 The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
@@ -137,21 +137,21 @@ Configure and validate network components by setting up the subnets, security gr
 
 Deploy and compare workloads across different compute profiles to evaluating the performance, scalability, bare metal versus VSI capabilities, and auto-scaling behavior.
 
-* For more information see on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
+For more information see on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
 
 ### Accessing storage solutions
 {: #sandbox-test-storage}
 
 Manage and evaluate storage by attaching block volumes, integrating Cloud Object Storage (COS), and testing performance.
 
-* For more information see on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
+For more information see on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
 
 ### Configuring load balancing
 {: #sandbox-test-loadbalancing}
 
 Configure and test application load balancing by distributing traffic across instances, setting up health checks and monitoring, and validating high availability scenarios.
 
-* For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
+For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
 ## Monitor your sandbox lifecycle
 {: #sandbox-lifecycle}

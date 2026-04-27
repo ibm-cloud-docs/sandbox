@@ -64,42 +64,15 @@ Following are the key features:
 
 The IBM Cloud Sandbox architecture consists of three primary layers that work together to provide a secure and isolated trial environment:
 
-1. **User access layer** - The users can authenticate and access the IBM Cloud Sandbox.
-2. **Customer account** - For provisioning and management interface
-3. **Sandbox Enterprise POC Master Account** - The backend infrastructure hosting customer sandbox environments.
+1. **User access layer** - Users access the Cloud Sandbox through the IBM Cloud Console. After authentication, users can create the sandbox environment, which triggers the provisioning workflow.
 
-### User access
-{: #user-access}
+2. **Customer account** - The customers account serves as the entry point for sandbox provisioning and management. This layer includes:
 
-Users access the Cloud Sandbox through the IBM Cloud Console. After authentication, users can create the sandbox environment, which triggers the provisioning workflow.
+    * *IBM Cloud catalog* - The IBM Cloud Catalog provides the Cloud Sandbox service offering, allowing users to discover and create the sandbox environments directly from the catalog interface.
 
-### Customers account
-{: #customer-account}
+    * *Cloud Console* - The Cloud Console provides the user interface for creating and managing sandbox environments. You can create sandbox by providing the following details:
 
-The customers account serves as the entry point for sandbox provisioning and management. This layer includes:
-
-#### IBM Cloud catalog
-{: #cloud-catalog}
-
-The IBM Cloud Catalog provides the Cloud Sandbox service offering, allowing users to discover and create the sandbox environments directly from the catalog interface.
-
-#### Cloud Console
-{: #cloud-console}
-
-The Cloud Console provides the user interface for creating and managing sandbox environments. You can create sandbox by providing the following details:
-
-* **Sandbox name** - A unique identifier for the sandbox environment
-* **Region** - The geographic location where resources will be deployed
-* **Resource group** - The organizational unit for resource management
-* **Tags** - Metadata labels for resource organization and tracking
-* **Users list** - Collaborators who will have access to the sandbox environment
-
-Once the form is submitted, the sandbox is provisioned in the backend infrastructure.
-
-### Sandbox Enterprise POC Master Account
-{: #sandbox-enterprise-master}
-
-The Sandbox Enterprise POC Master Account is the central infrastructure that hosts all customer sandbox environments. Each customer receives a dedicated sub-account with a trusted profile that provides isolated access to sandbox resources. This sub-account has a 14-day trial period and includes:
+3. **Sandbox Enterprise POC Master Account** - The Sandbox Enterprise POC Master Account is the central infrastructure that hosts all customer sandbox environments. Each customer receives a dedicated sub-account with a trusted profile that provides isolated access to sandbox resources. This sub-account has a 14-day trial period and includes:
 
 * **Quick start** - Under the **Overview** page, you can create the resources for Sandbox by clicking **Create Resources**.
 
