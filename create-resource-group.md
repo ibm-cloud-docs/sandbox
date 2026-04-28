@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-20"
+lastupdated: "2026-04-28"
 
 keywords:
 
@@ -22,6 +22,8 @@ subcollection: sandbox
 
 # Creating a resource group
 {: #create-resource-group}
+
+Following are the steps to create a resource group:
 
 1. In the IBM Cloud console, click **Manage** > **Account**.
 

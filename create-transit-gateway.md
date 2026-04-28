@@ -15,32 +15,33 @@ subcollection: sandbox
 # Connecting to servers and migrating data
 {: #connect-migrate}
 
-After your Sandbox environment is active, you can securely access Linux or Windows Virtual Server Instances (VSIs) and migrate data between IBM Classic infrastructure and VPC infrastructure.
+After your Sandbox environment is active, you can securely access Linux or Windows virtual server instance (VSIs) and migrate data between IBM Classic infrastructure and VPC infrastructure.
 
 ## Before you begin
 {: #before-you-begin}
 
-- Ensure you have the private key associated with the public SSH key used to create the server
-- Download and install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started) and the infrastructure-service plug-in
-- For Windows servers, have Microsoft Remote Desktop client software available
-- Verify security group settings allow required traffic (SSH port 22 for Linux, RDP port 3389 for Windows)
-- Reserve and associate a floating IP address to your instance
+- Ensure you have the private key associated with the public SSH key used to create the server.
+- Download and install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started) and the infrastructure-service plug-in.
+- For Windows servers, have Microsoft Remote Desktop client software available.
+- Verify security group settings allow required traffic (SSH port 22 for Linux, RDP port 3389 for Windows).
+- Reserve and associate a floating IP address to your instance.
 
 ## Connecting to Linux or Windows servers
 {: #connecting-servers}
 
-### Step 1: Identify the Floating IP
+### Identify the Floating IP
 {: #identify-floating-ip}
+{: step}
 
-1. In the IBM Cloud console, go to **Resource List** → **Compute** → **Virtual Server Instances**.
+1. In the IBM Cloud console, go to **Resource List** > **Compute** > **Virtual Server Instances**.
 2. Select your VSI and click the **Networking** tab.
 3. Copy the **Floating IP** address from the table.
 
-### Step 2: Download the SSH key from Secrets Manager
+### Download the SSH key from Secrets Manager
 {: #download-ssh-key}
+{: step}
 
-
-1. Go to **Resource List** → **Security** → **Secrets Manager**.
+1. Go to **Resource List** > **Security** > **Secrets Manager**.
 2. Open your Sandbox Secrets Manager instance.
 3. Locate your SSH private key secret, click the overflow menu (⋮), and select **View Secret**.
 4. Download the secret key and save to a file (for example, `key.pem`).
@@ -49,8 +50,9 @@ After your Sandbox environment is active, you can securely access Linux or Windo
    chmod 400 key.pem
    ```
 
-### Step 3: Connect to the server
+### Connect to the server
 {: #connect-server}
+{: step}
 
 #### Linux server (SSH)
 {: #linux-ssh}
@@ -95,21 +97,22 @@ For more information, see [Connecting to Windows instances](/docs/vpc?topic=vpc-
 ## Creating a Transit Gateway for Classic-to-VPC connectivity
 {: #create-transit-gateway}
 
-
 A Transit Gateway enables secure private network communication between IBM Classic infrastructure and VPC environments for application migration and data transfer.
 
-### Step 1: Create the Transit Gateway
+### Create the Transit Gateway
 {: #create-tgw-step1}
+{: step}
 
-1. In the IBM Cloud console, go to **Menu** → **Infrastructure** → **Network** → **Transit Gateway**.
+1. In the IBM Cloud console, go to **Menu** > **Infrastructure** > **Network** > **Transit Gateway**.
 2. Click **Create Transit Gateway**.
 3. Enter a name (for example, `sandbox-classic-vpc-tgw`).
 4. Select your Sandbox resource group.
 5. Choose the location where your VPC exists.
 6. Click **Create**.
 
-### Step 2: Attach Classic infrastructure
+### Attach Classic infrastructure
 {: #attach-classic}
+{: step}
 
 1. Open your Transit Gateway.
 2. Go to **Connections** → **Add connection**.
@@ -119,8 +122,9 @@ A Transit Gateway enables secure private network communication between IBM Class
 6. Select the Classic account and required VLAN(s).
 7. Click **Add**.
 
-### Step 3: Attach the VPC
+### Attach the VPC
 {: #attach-vpc}
+{: step}
 
 1. Click **Add connection** again.
 2. Select **VPC** as the connection type.
@@ -128,8 +132,9 @@ A Transit Gateway enables secure private network communication between IBM Class
 4. Optionally, provide a connection name.
 5. Click **Add**.
 
-### Step 4: Verify connections
+### Verify connections
 {: #verify-connections}
+{: step}
 
 1. Confirm both connections show **Attached** status.
 2. Test connectivity using private IP addresses:
@@ -142,20 +147,23 @@ For more information, see [Getting started with IBM Cloud Transit Gateway](/docs
 ## Copying data from Classic to VPC using SCP
 {: #copy-data-scp}
 
-### Step 1: Identify IP addresses
+### Identify IP addresses
 {: #ip}
+{: step}
 
 You need the private IP addresses of both servers:
-- **Classic server**: Go to **Classic Infrastructure** → **Devices** → **Device List** → **Private IP** column
+- **Classic server**: Go to **Classic Infrastructure** > **Devices** > **Device List** > **Private IP** column
 - **VPC server**: Go to **Infrastructure** → **Virtual server instances** → **Reserved IP** column
 
-### Step 2: Get SSH credentials
+### Get SSH credentials
 {: #get-ssh-credentials}
+{: step}
 
 Refer to [Connecting to Linux or Windows servers](#connecting-to-linux-or-windows-servers) for SSH key retrieval.
 
-### Step 3: Transfer data
+### Transfer data
 {: #transfer-data}
+{: step}
 
 Copy file from Classic to VPC:
 ```sh
@@ -172,8 +180,9 @@ To copy entire directories, add the `-r` flag:
 scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
 ```
 
-### Step 4: Verify the transfer
+### Verify the transfer
 {: #verify-transfer}
+{: step}
 
 Check the destination directory:
 ```sh

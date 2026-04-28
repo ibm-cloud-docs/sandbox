@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-27"
+lastupdated: "2026-04-28"
 
 keywords:
 
@@ -77,7 +77,7 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
     * Cloud Object Storage
     * Load Balancer
-    * VPN for VPC
+    * VPN for VPC - You need to enter the IP address
     * Transit Gateway
 
 4. Accept the terms and conditions, click **Create resources**.
