@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-04-28"
 
 keywords:
 
@@ -59,6 +59,18 @@ The Sandbox environment supports a predefined set of operating system images for
 {: faq}
 
 Yes, you can request a one-time extension of up to 2 days(48 hours) for your sandbox environment.
+
+## Is it possible to provision the VPC infrastructure on all available cloud regions?
+{: #faq-vpc-cr}
+{: faq}
+
+No, the sandbox VPC infrastructure resources could be provisioned only at a single region that was selected during the sandbox service provisioning through IBM Cloud Catalog.
+
+## Can users with least permissions provision sandbox environment?
+{: #faq-permissions}
+{: faq}
+
+No, to provision the sandbox service through IBM cloud catalog the user should have administrator permission to trigger the deployment. A user with minimal permissions will not be able to provision the service.
 
 ## What happens to my resources when the sandbox trial period ends?
 {: #faq-trial-expiry}
