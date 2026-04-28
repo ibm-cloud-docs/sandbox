@@ -46,7 +46,7 @@ Following are the do's and dont's for the Security guidelines:
 
 * Do not share Floating IP addresses publicly or with untrusted users. Treat them as access points to your test environment
 
-## Protection of Credentials and Access Keys
+## Protection of credentials and access keys
 {: #cred}
 
 Following are the do's and dont's for the protection of credentials and access keys:
@@ -67,7 +67,7 @@ Following are the do's and dont's for the protection of credentials and access k
 
 * Avoid distributing screenshots containing sensitive account information.
 
-## Compute Infrastructure Guidelines
+## Compute infrastructure guidelines
 {: #compute-infra}
 
 Following are the do's and dont's for the compute infrastructure guidelines:
@@ -84,7 +84,7 @@ For Bare Metal servers (if enabled), follow recommended lifecycle actions and al
 
 * Do not attach unauthorized storage or network interfaces that violate your Sandbox limits.
 
-## General Usage Conduct
+## General usage conduct
 {: #general}
 
 Following are the do's and dont's for the general usage conduct:
