@@ -18,13 +18,14 @@ toc:
       id: howto
       topics:
       - provision-sandbox.md
-      - quickstart.md
+      - create-resource.md
       - sandbox-quotas.md
       - iam-permissions.md
+      - create-cos.md
+      - create-transit-gateway.md
+      - create-vpc.md
       - create-resource-group.md
       - create-user.md
-      - create-vpc.md
-      - create-transit-gateway.md
       - at-events.md
   - navgroup:
       id: help
