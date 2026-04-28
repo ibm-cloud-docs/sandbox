@@ -81,7 +81,8 @@ Perform the following steps to provision the Sandbox:
 
    * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
 
-   Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
+    Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
+    {: important}
 
 2. Click **Create sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
 

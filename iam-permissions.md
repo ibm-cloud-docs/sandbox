@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-20"
+lastupdated: "2026-04-28"
 
 keywords:
 
@@ -32,16 +32,16 @@ Following is the list of custom IAM Policies assigned to trusted profile:
    | Catalog Management | All | Editor |
    | DNS Services | All | Manager, Editor |
    | Resource group only | All resource groups in the account | Editor |
-   | Secrets Manager | Region string equals us-east | Manager, Editor, SecretsReader |
+   | Secrets Manager |  | Manager, Editor, SecretsReader |
    | Transit Gateway | All | Manager, Editor |
    | User Management | All | Viewer |
-   | VPC Infrastructure Services | Region string equals us-east | \n * SandboxVirtualServerforVPCRole, \n * SandboxVirtualPrivateCloudRole, \n * SandboxVNetworkInterfaceRole, \n * SandboxSSHKeyforVPCRole, \n * SandboxSubnetRole, \n * SandboxSecGroupforVPCRole, \n * SandboxFloatingIPforVPCRole, \n * SandboxClientVPNforVPCRole, \n * SandboxBMServersforVPCRole, \n * SandboxNetworkACLRole, \n * SandboxLoadBalancerforVPCRole, \n * SandboxImageServiceforVPCRole, \n * SandboxBlockStorageforVPCRole |
+   | VPC Infrastructure Services |  | \n * SandboxVirtualServerforVPCRole, \n * SandboxVirtualPrivateCloudRole, \n * SandboxVNetworkInterfaceRole, \n * SandboxSSHKeyforVPCRole, \n * SandboxSubnetRole, \n * SandboxSecGroupforVPCRole, \n * SandboxFloatingIPforVPCRole, \n * SandboxClientVPNforVPCRole, \n * SandboxBMServersforVPCRole, \n * SandboxNetworkACLRole, \n * SandboxLoadBalancerforVPCRole, \n * SandboxImageServiceforVPCRole, \n * SandboxBlockStorageforVPCRole |
    {: caption="IAM policies" caption-side="bottom"}
 
 ## Sandbox IAM policies
 {: #sandbox-iam-policies}
 
-Following is the list of IAM policies defined for our Sandbox service:
+Following is the list of IAM policies defined for the Sandbox service:
 
    | Action | Display name | Roles |
    | ------- | --------- | ---- |

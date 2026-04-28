@@ -47,7 +47,7 @@ Only one sandbox is allowed per allowlisted customer account.
 
 3. In the **Users** section, you can select users from your account. For more information, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
 
-6. Accept the terms and conditions, click **Create Sandbox**.
+4. Accept the terms and conditions, click **Create Sandbox**.
 
 Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days (48 hours) extension. User access is limited to the region selected during provisioning.
 

@@ -37,4 +37,4 @@ Following are the steps to create a resource group:
 
 6. Click **Create** to finalize the resource group creation.
 
-7. The new resource group will now appear in your resource groups list and can be selected when creating a sandbox environment.
+The new resource group will now appear in your resource groups list and can be selected when creating a sandbox environment.

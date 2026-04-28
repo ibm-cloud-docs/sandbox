@@ -21,15 +21,14 @@ To create and configure your VPC in the Cloud Sandbox account, perform the folow
 
 1. In the [IBM Cloud console](/catalog#highlights), navigate to **Menu** > **Infrastructure** > **Network** > **VPCs**.
 
-    ![VPC homepage](images/vpc-homepage.png "VPC homepage"){: caption="VPC homepage" caption-side="bottom"}
-
 2. Click **Create**.
 
 3. Under the **Create** tab, update the following details:
 
     * Under **Location**, you need to select the **Geography** and **Region** same as the one updated during the Sandbox provisioning.
 
-    ![VPC region](images/vpc-region.png "VPC region"){: caption="VPC region" caption-side="bottom"}
+    The provisioning fails if the regions do not match.
+    {: note}
 
     * Under **Details**, provide a unique name. Use lowercase alphanumeric characters and hyphens only (without spaces).
 
@@ -37,18 +36,10 @@ To create and configure your VPC in the Cloud Sandbox account, perform the folow
 
     * Tags (Optional)
 
-    ![VPC details](images/vpc-details.png "VPC details"){: caption="VPC details" caption-side="bottom"}
-
-4. Under **Default security group**, select whether the VPC's default security group allows inbound SSH and ping traffic. You can modify the default security group later. Enable the checkboxes.
-
-5. Under **Subnets**, you can view the subnet created.
+4. Under **Subnets**, you can view the subnet created.
 
     ![VPC subnet](images/vpc-subnet.png "VPC subnet"){: caption="VPC subnet" caption-side="bottom"}
 
-6. Click **Create virtual private cloud**.
+5. Click **Create virtual private cloud**.
 
-* You will be redirected to the page where your VPC is created.
-
-If the **Geography** and **Region** provided are different from those used during provisioning, VPC creation fails.
-
-![VPC creation - fail](images/vpc-create-fails.png "VPC creation - fail"){: caption="VPC creation - fail" caption-side="bottom"}
+You will be redirected to the page where your VPC is created.

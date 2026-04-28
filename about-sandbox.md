@@ -44,9 +44,9 @@ IBM Cloud Sandbox enables users to:
 
 Following are the key features:
 
-* **Isolated environments** - Each customer is provided with a dedicated sub-account that is strictly isolated from all other users.
+* **Isolated environments** - Every customer is assigned a separate sub-account, isolated from other users.
 
-* **Time limited access** - A 14-day trial period with automatic resource cleanup.
+* **Time limited access** - A 14‑day trial with automatic cleanup of provisioned resources.
 
 * **Trusted profile security** - Fine-grained access control through IBM Cloud IAM.
 

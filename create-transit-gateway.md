@@ -20,7 +20,6 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 ## Before you begin
 {: #before-you-begin}
 
-- Ensure you have the private key associated with the public SSH key used to create the server.
 - Download and install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started) and the infrastructure-service plug-in.
 - For Windows servers, have Microsoft Remote Desktop client software available.
 - Verify security group settings allow required traffic (SSH port 22 for Linux, RDP port 3389 for Windows).
@@ -46,6 +45,7 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 3. Locate your SSH private key secret, click the overflow menu (⋮), and select **View Secret**.
 4. Download the secret key and save to a file (for example, `key.pem`).
 5. Set appropriate permissions:
+
    ```sh
    chmod 400 key.pem
    ```
@@ -58,32 +58,39 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 {: #linux-ssh}
 
 The following instance are the common for both Linux and Windows servers:
+
 ```sh
    ibmcloud is instance INSTANCE
    ```
+
 1. Open your terminal.
 2. Run the following linux command:
+
    ```sh
    ssh -i <path-to-key.pem> root@<Floating-IP>
    ```
-3. Accept the fingerprint when prompted.
+
+3. When prompted, confirm the fingerprint.
 
 #### Windows server (RDP)
 {: #windows-rdp}
 
-
 1. Check instance status:
+
    ```sh
    ibmcloud is instance INSTANCE
    ```
+
    Wait until the instance status is `running`.
 
-2. Retrieve the Windows Administrator password:
+2. Retrieve the Windows administrator password:
+
    ```sh
    ibmcloud is instance-initialization-values INSTANCE --private-key "@~/.ssh/id_rsa"
    ```
 
-3. If needed, assign a floating IP:
+3. If needed, assign a Floating IP:
+
    ```sh
    ibmcloud is floating-ip-reserve FLOATING_IP_NAME --nic NIC_NAME
    ```
@@ -115,7 +122,7 @@ A Transit Gateway enables secure private network communication between IBM Class
 {: step}
 
 1. Open your Transit Gateway.
-2. Go to **Connections** → **Add connection**.
+2. Go to **Connections** > **Add connection**.
 3. Select **Classic infrastructure** as the connection type.
 4. Choose **Request connection to a network in another account**.
 5. Provide the Cloud account ID and connection name.
@@ -138,6 +145,7 @@ A Transit Gateway enables secure private network communication between IBM Class
 
 1. Confirm both connections show **Attached** status.
 2. Test connectivity using private IP addresses:
+
    ```sh
    ping <private-IP-of-other-server>
    ```
@@ -152,8 +160,9 @@ For more information, see [Getting started with IBM Cloud Transit Gateway](/docs
 {: step}
 
 You need the private IP addresses of both servers:
-- **Classic server**: Go to **Classic Infrastructure** > **Devices** > **Device List** > **Private IP** column
-- **VPC server**: Go to **Infrastructure** → **Virtual server instances** → **Reserved IP** column
+
+- **Classic server**: Go to **Classic Infrastructure** > **Devices** > **Device List** > **Private IP** column.
+- **VPC server**: Go to **Infrastructure** → **Virtual server instances** → **Reserved IP** column.
 
 ### Get SSH credentials
 {: #get-ssh-credentials}
@@ -166,16 +175,19 @@ Refer to [Connecting to Linux or Windows servers](#connecting-to-linux-or-window
 {: step}
 
 Copy file from Classic to VPC:
+
 ```sh
 scp -i /path/to/vpc-key.pem /path/to/file user@<VPC-Private-IP>:/destination/path
 ```
 
 Copy file from VPC to Classic:
+
 ```sh
 scp -i /path/to/classic-key.pem /path/to/file user@<Classic-Private-IP>:/destination/path
 ```
 
 To copy entire directories, add the `-r` flag:
+
 ```sh
 scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
 ```
@@ -185,6 +197,7 @@ scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
 {: step}
 
 Check the destination directory:
+
 ```sh
 ls -lh /destination/path
 du -sh /destination/path
