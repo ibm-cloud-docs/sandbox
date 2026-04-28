@@ -110,11 +110,11 @@ Only user with write access can create the resources (administrator, editor, ope
 The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
 
-## Provisioning resources using Quick Start
-{: #sandbox-quickstart}
+## Provisioning resources
+{: #sandbox-create-resources}
 {: step}
 
-The Sandbox environment includes Quick Start options to help you deploy common infrastructure resources. For more information, see [Quick Start](/docs/sandbox?topic=sandbox-quickstart) topic.
+In the Sandbox environment, you can create the resources from the Overview page.For more information, see [Creating resources in Sandbox](/docs/sandbox?topic=sandbox-quickstart) topic.
 
 ## Exploring VPC capabilities
 {: #sandbox-explore}

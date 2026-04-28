@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-27"
+lastupdated: "2026-04-28"
 
 keywords:
 
@@ -48,8 +48,6 @@ Following are the key features:
 
 * **Time limited access** - A 14-day trial period with automatic resource cleanup.
 
-* **Pre-configured services** - Quick start templates for common infrastructure use cases.
-
 * **Trusted profile security** - Fine-grained access control through IBM Cloud IAM.
 
 * **Collaborative access** - Ability to invite team members to the sandbox environment.
@@ -74,7 +72,7 @@ The IBM Cloud Sandbox architecture consists of three primary layers that work to
 
 3. **Sandbox Enterprise POC Master Account** - The Sandbox Enterprise POC Master Account is the central infrastructure that hosts all customer sandbox environments. Each customer receives a dedicated sub-account with a trusted profile that provides isolated access to sandbox resources. This sub-account has a 14-day trial period and includes:
 
-* **Quick start** - Under the **Overview** page, you can create the resources for Sandbox by clicking **Create Resources**.
+* **Sandbox Overview page** - Under the **Overview** page, you can create the resources for Sandbox by clicking **Create Resources**.
 
 * **Servers** - You can provision the Virtual Server Instances (VSIs) or Bare Metal servers for testing workloads.
 

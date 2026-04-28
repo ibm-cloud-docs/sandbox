@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-27"
+lastupdated: "2026-04-28"
 
 keywords: sandbox troubleshooting, sandbox provisioning issues, sandbox access problems, sandbox connectivity, sandbox resources
 
@@ -138,7 +138,7 @@ Try the following solutions:
 
 VPC resource creation fails with an error message.
 
-When attempting to create VPC resources through Quick Start, you receive error messages such as "VPC creation failed" or "Unable to provision network resources".
+When attempting to create VPC resources in Sandbox Overview page, you receive error messages such as "VPC creation failed" or "Unable to provision network resources".
 {: tsSymptoms}
 
 VPC creation can fail due to:
@@ -156,7 +156,7 @@ Try the following solutions:
 2. Check for any existing VPC resources that might conflict with the new configuration.
 3. Review your resource quotas to ensure you haven't exceeded limits for VPCs, subnets, or security groups.
 4. Try creating the VPC with default settings first, then customize after successful creation.
-5. If using Quick Start, ensure all required fields are properly filled out.
+5. Ensure that all the required fields are properly filled out in the Sandbox Overview page.
 6. Wait a few minutes and retry the operation, as temporary service issues may resolve automatically.
 
 ## Why cannot I SSH into my Virtual Server Instance?
