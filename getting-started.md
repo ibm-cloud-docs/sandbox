@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-28"
+lastupdated: "2026-04-29"
 
 keywords:
 
@@ -104,9 +104,6 @@ After your Sandbox is provisioned, you will receive access for the trusted profi
 3. Switch from current account to the trusted profile.
 
 4. Click **Create Resources** to access the resource creation page.
-
-Only user with write access can create the resources (administrator, editor, operator).
-{: note}
 
 The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}

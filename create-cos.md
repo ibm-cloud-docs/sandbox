@@ -60,8 +60,14 @@ Following are the steps to create a COS bucket:
 5. For a custom bucket, configure:
 
     - A unique name is provided. Review or enter a new name.
+
     - Choose the Resiliency and Location.
+
+    The location should be same as the one selected during Sandbox provisioning.
+    {: important}
+
     - Select the Storage Class (Standard, Vault, Cold Vault, Flex)
+
     - Configure any other options as required.
 
 6. Click **Create bucket**.

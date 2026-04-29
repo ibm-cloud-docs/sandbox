@@ -20,13 +20,13 @@ toc:
       - provision-sandbox.md
       - create-resource.md
       - sandbox-quotas.md
-      - iam-permissions.md
+      - connect-servers.md
       - create-cos.md
       - create-transit-gateway.md
       - create-vpc.md
-      - create-resource-group.md
       - create-user.md
       - at-events.md
+      - save-config.md
   - navgroup:
       id: help
       topics:
