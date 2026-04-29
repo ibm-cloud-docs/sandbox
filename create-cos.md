@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-28"
+lastupdated: "2026-04-29"
 
 keywords:
 
@@ -16,7 +16,9 @@ content-type: tutorial
 # Creating a Cloud Object Storage (COS) instance
 {: #create-cos}
 
-Following are the steps to Cloud Object Storage (COS) instance:
+IBM Cloud Object Storage is strongly consistent for all data operations, and eventually consistent for bucket configuration operations. For more information, see [Getting started with IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage).
+
+Following are the steps to create an instance of IBM Cloud Object Storage:
 
 1. Navigate to **Menu** > **Infrastructure** > **Storage** > **Object storage**.
 
@@ -35,8 +37,7 @@ Following are the steps to Cloud Object Storage (COS) instance:
 
 6. Configure the credentials:
 
-    - If you do not wish to use Secrets Manager, turn off the toggle.
-    - You can click **Create** to create a secret manager.
+    - If you do not wish to use Secrets Manager, turn off the toggle or click **Create** to create a secret manager.
     - Enter the credential information.
 
     ![COS credentials](images/add-credentials.png "COS credentials"){: caption="COS credentials" caption-side="bottom"}
@@ -45,6 +46,8 @@ Following are the steps to Cloud Object Storage (COS) instance:
 
 ## Creating a COS bucket
 {: #create-cos-bucket}
+
+Following are the steps to create a COS bucket:
 
 1. Navigate to **Menu** > **Infrastructure** > **Storage** > **Object storage**.
 
