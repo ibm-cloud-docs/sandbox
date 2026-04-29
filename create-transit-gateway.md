@@ -30,7 +30,6 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 
 ### Identify the Floating IP
 {: #identify-floating-ip}
-{: step}
 
 1. In the IBM Cloud console, go to **Resource List** > **Compute** > **Virtual Server Instances**.
 2. Select your VSI and click the **Networking** tab.
@@ -38,7 +37,6 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 
 ### Download the SSH key from Secrets Manager
 {: #download-ssh-key}
-{: step}
 
 1. Go to **Resource List** > **Security** > **Secrets Manager**.
 2. Open your Sandbox Secrets Manager instance.
@@ -50,11 +48,7 @@ After your Sandbox environment is active, you can securely access Linux or Windo
    chmod 400 key.pem
    ```
 
-### Connect to the server
-{: #connect-server}
-{: step}
-
-#### Linux server (SSH)
+### Connect to the Linux server (SSH)
 {: #linux-ssh}
 
 The following instance are the common for both Linux and Windows servers:
@@ -72,7 +66,7 @@ The following instance are the common for both Linux and Windows servers:
 
 3. When prompted, confirm the fingerprint.
 
-#### Windows server (RDP)
+### Connect to the Windows server (RDP)
 {: #windows-rdp}
 
 1. Check instance status:
@@ -108,7 +102,6 @@ A Transit Gateway enables secure private network communication between IBM Class
 
 ### Create the Transit Gateway
 {: #create-tgw-step1}
-{: step}
 
 1. In the IBM Cloud console, go to **Menu** > **Infrastructure** > **Network** > **Transit Gateway**.
 2. Click **Create Transit Gateway**.
@@ -119,7 +112,6 @@ A Transit Gateway enables secure private network communication between IBM Class
 
 ### Attach Classic infrastructure
 {: #attach-classic}
-{: step}
 
 1. Open your Transit Gateway.
 2. Go to **Connections** > **Add connection**.
@@ -131,7 +123,6 @@ A Transit Gateway enables secure private network communication between IBM Class
 
 ### Attach the VPC
 {: #attach-vpc}
-{: step}
 
 1. Click **Add connection** again.
 2. Select **VPC** as the connection type.
@@ -141,7 +132,6 @@ A Transit Gateway enables secure private network communication between IBM Class
 
 ### Verify connections
 {: #verify-connections}
-{: step}
 
 1. Confirm both connections show **Attached** status.
 2. Test connectivity using private IP addresses:
@@ -157,7 +147,6 @@ For more information, see [Getting started with IBM Cloud Transit Gateway](/docs
 
 ### Identify IP addresses
 {: #ip}
-{: step}
 
 You need the private IP addresses of both servers:
 
@@ -166,13 +155,11 @@ You need the private IP addresses of both servers:
 
 ### Get SSH credentials
 {: #get-ssh-credentials}
-{: step}
 
 Refer to [Connecting to Linux or Windows servers](#connecting-to-linux-or-windows-servers) for SSH key retrieval.
 
 ### Transfer data
 {: #transfer-data}
-{: step}
 
 Copy file from Classic to VPC:
 
@@ -194,7 +181,6 @@ scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
 
 ### Verify the transfer
 {: #verify-transfer}
-{: step}
 
 Check the destination directory:
 

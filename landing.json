@@ -11,20 +11,20 @@
         "href": "/docs/sandbox?topic=sandbox-getting-started-sandbox"
       },
       {
-        "title": "Deploying the IBM Cloud Sandbox",
+        "title": "Provisioning IBM Cloud Sandbox",
         "href": "/docs/sandbox?topic=sandbox-deploy"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "About IBM Cloud Sandbox",
+        "href": "/docs/sandbox?topic=sandbox-architecture"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "FAQs",
+        "href": "/docs/sandbox?topic=sandbox-my-service-faq"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Release notes",
+        "href": "/docs/sandbox?topic=sandbox-sandbox-relnotes"
       }
     ]
   },
