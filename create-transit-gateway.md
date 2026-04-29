@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2024, 2026
+  years: 2026
 lastupdated: "2026-04-23"
 
 keywords: transit gateway, classic to vpc, ssh access, rdp access, server connection, data migration
@@ -17,19 +17,23 @@ subcollection: sandbox
 
 After your Sandbox environment is active, you can securely access Linux or Windows virtual server instance (VSIs) and migrate data between IBM Classic infrastructure and VPC infrastructure.
 
+When your Sandbox environment is provisioned, an SSH key pair is automatically created for secure server access. The private key is stored in IBM Cloud Secrets Manager for you to download and use. The following steps guide you through retrieving this key and connecting to your servers.
+
 ## Before you begin
 {: #before-you-begin}
 
-- Download and install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started) and the infrastructure-service plug-in.
-- For Windows servers, have Microsoft Remote Desktop client software available.
-- Verify security group settings allow required traffic (SSH port 22 for Linux, RDP port 3389 for Windows).
-- Reserve and associate a floating IP address to your instance.
+- Download and install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started) and the [VPC infrastructure CLI plug-in](/docs/cli?topic=cli-vpc-reference)
+- For Windows servers, have Microsoft Remote Desktop Protocol (RDP) client software available
 
 ## Connecting to Linux or Windows servers
 {: #connecting-servers}
 
-### Identify the Floating IP
-{: #identify-floating-ip}
+### Step 1: Reserve and identify the Floating IP
+{: #reserve-floating-ip}
+
+If you haven't already reserved a floating IP address for your instance, follow the instructions in [Reserving a floating IP address](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console#reserving-a-floating-ip-address).
+
+After reserving the floating IP:
 
 1. In the IBM Cloud console, go to **Resource List** > **Compute** > **Virtual Server Instances**.
 2. Select your VSI and click the **Networking** tab.
@@ -45,53 +49,51 @@ After your Sandbox environment is active, you can securely access Linux or Windo
 5. Set appropriate permissions:
 
    ```sh
-   chmod 400 key.pem
+   $ chmod 400 key.pem
    ```
 
-### Connect to the Linux server (SSH)
+### Step 3: Check instance status
+{: #check-instance-status}
+
+Before connecting, verify your CLI is targeting the correct region. If needed, see [Targeting a region](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target).
+
+First, list all your instances to get the instance ID:
+```sh
+$ ibmcloud is instances
+```
+
+Then check the instance status using the ID from the previous command:
+```sh
+$ ibmcloud is instance INSTANCE_ID
+```
+Replace `INSTANCE_ID` with the ID or name of your instance. Wait until the instance status is `running`.
+
+### Step 4: Connect to the server
+{: #connect-server}
+
+#### Linux server (SSH)
 {: #linux-ssh}
 
-The following instance are the common for both Linux and Windows servers:
-
-```sh
-   ibmcloud is instance INSTANCE
-   ```
-
-1. Open your terminal.
-2. Run the following linux command:
+1. Run the following command:
 
    ```sh
-   ssh -i <path-to-key.pem> root@<Floating-IP>
+   $ ssh -i <path-to-key.pem> root@<Floating-IP>
    ```
+   
+2. Accept the fingerprint when prompted.
 
 3. When prompted, confirm the fingerprint.
 
-### Connect to the Windows server (RDP)
-{: #windows-rdp}
-
-1. Check instance status:
+1. Retrieve the Windows Administrator password using the private key:
 
    ```sh
-   ibmcloud is instance INSTANCE
+   $ ibmcloud is instance-initialization-values INSTANCE_ID --private-key "@~/.ssh/id_rsa"
    ```
+   Replace `INSTANCE_ID` with your instance ID or name.
 
-   Wait until the instance status is `running`.
-
-2. Retrieve the Windows administrator password:
-
-   ```sh
-   ibmcloud is instance-initialization-values INSTANCE --private-key "@~/.ssh/id_rsa"
-   ```
-
-3. If needed, assign a Floating IP:
-
-   ```sh
-   ibmcloud is floating-ip-reserve FLOATING_IP_NAME --nic NIC_NAME
-   ```
-
-4. Open Remote Desktop Connection (RDP) on your computer.
-5. Enter the Floating IP as the computer address.
-6. Log in with username `Administrator` and the retrieved password from step 2.
+2. Open Remote Desktop Connection (RDP) on your computer.
+3. Enter the Floating IP as the computer address.
+4. Log in with username `Administrator` and the retrieved password.
 
 For more information, see [Connecting to Windows instances](/docs/vpc?topic=vpc-vsi_is_connecting_windows).
 
@@ -137,7 +139,7 @@ A Transit Gateway enables secure private network communication between IBM Class
 2. Test connectivity using private IP addresses:
 
    ```sh
-   ping <private-IP-of-other-server>
+   $ ping <private-IP-of-other-server>
    ```
 
 For more information, see [Getting started with IBM Cloud Transit Gateway](/docs/transit-gateway?topic=transit-gateway-getting-started).
@@ -164,19 +166,19 @@ Refer to [Connecting to Linux or Windows servers](#connecting-to-linux-or-window
 Copy file from Classic to VPC:
 
 ```sh
-scp -i /path/to/vpc-key.pem /path/to/file user@<VPC-Private-IP>:/destination/path
+$ scp -i /path/to/vpc-key.pem /path/to/file user@<VPC-Private-IP>:/destination/path
 ```
 
 Copy file from VPC to Classic:
 
 ```sh
-scp -i /path/to/classic-key.pem /path/to/file user@<Classic-Private-IP>:/destination/path
+$ scp -i /path/to/classic-key.pem /path/to/file user@<Classic-Private-IP>:/destination/path
 ```
 
 To copy entire directories, add the `-r` flag:
 
 ```sh
-scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
+$ scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
 ```
 
 ### Verify the transfer
@@ -185,8 +187,8 @@ scp -r -i vpc-key.pem /path/to/folder user@<VPC-Private-IP>:/target/location
 Check the destination directory:
 
 ```sh
-ls -lh /destination/path
-du -sh /destination/path
+$ ls -lh /destination/path
+$ du -sh /destination/path
 ```
 
 Verify file size, timestamps, and contents to confirm successful transfer.
