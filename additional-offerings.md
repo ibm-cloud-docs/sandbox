@@ -16,7 +16,6 @@ subcollection: sandbox
 {: #sandbox-add-offerings}
 
 IBM Cloud Sandbox offers some additional services that are automatically provisioned with default configurations when you create your Sandbox. They enhance your environments capabilities and are ready to use immediately without additional setup.
-
 Following are the additional services offered:
 
 ## Cloud Object Storage

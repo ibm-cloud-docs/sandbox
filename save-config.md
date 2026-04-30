@@ -18,6 +18,8 @@ subcollection: sandbox
 The Save configuration feature allows you to export your IBM Cloud Sandbox environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
 {: shortdesc}
 
+When you go to the [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page, you have can save your configurations to use it later.
+
 After your 14-day trial period expires, all Sandbox resources are automatically deleted. Use the **Save configuration** feature to preserve your infrastructure setup before the trial ends.
 {: important}
 
@@ -135,19 +137,17 @@ The following resources are not included in the generated Terraform configuratio
 
 To save your Sandbox configuration and download the Terraform package:
 
-1. Log in to your IBM Cloud Sandbox account by using the trusted profile.
+1. Navigate to the [**Sandbox Overview**](https://cloud.ibm.com/sandbox/overview) page from your resource list.
 
-2. Navigate to the **Sandbox Overview** page from your resource list.
-
-3. In the **Manage Sandbox** section, click **Save Configuration**.
+2. In the **Manage Sandbox** section, click **Save Configuration**.
 
    ![Sandbox - Save configuration](images/sandbox-save-config.png "Sandbox - Save configuration"){: caption="Figure 1. Save configuration option" caption-side="bottom"}
 
-4. The system generates the Terraform configuration files from your live environment. This process can take a few minutes depending on the number of resources in your account.
+3. Click **Download Terraform**. The system generates the Terraform configuration files from your live environment. This process can take a few minutes depending on the number of resources in your account.
 
-5. After generation is complete, a `.zip` file is automatically downloaded to your local machine.
+4. After generation is complete, a `.zip` file is automatically downloaded to your local machine.
 
-6. Extract the `.zip` file to access the Terraform configuration files.
+![Sandbox - Save configuration](images/save-config.png "Sandbox - Save configuration"){: caption="Sandbox - Save configuration" caption-side="bottom"}
 
 ## Applying the configuration in your production account
 {: #save-config-apply}
@@ -157,7 +157,7 @@ After downloading the Terraform configuration, you can apply it to your producti
 ### Before you begin
 {: #save-config-prereqs}
 
-* Help ensure that you have a Pay-As-You-Go IBM Cloud account
+* Ensure that you are logged into a Pay-As-You-Go IBM Cloud account.
 * Install [Terraform CLI](https://www.terraform.io/downloads){: external} (version 1.0 or later)
 * Install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started)
 * Have an IBM Cloud API key with appropriate permissions for the resources you want to create
@@ -170,7 +170,7 @@ After downloading the Terraform configuration, you can apply it to your producti
 2. Navigate to the extracted directory:
 
    ```sh
-   cd /path/to/extracted/terraform-config
+   $ cd /path-to-extractedterraform-config
    ```
    {: pre}
 
@@ -178,7 +178,7 @@ After downloading the Terraform configuration, you can apply it to your producti
 
    ```hcl
    ibmcloud_api_key = "your-api-key"
-   region = "us-south"
+   region = "<<enter the region>>"
    ```
    {: codeblock}
 
