@@ -20,6 +20,7 @@ toc:
       - provision-sandbox.md
       - create-resource.md
       - sandbox-quotas.md
+      - additional-offerings.md
       - connect-servers.md
       - create-cos.md
       - create-transit-gateway.md
