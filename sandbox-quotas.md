@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-29"
+lastupdated: "2026-04-30"
 
 keywords:
 
@@ -29,7 +29,7 @@ Following is the table list of Sandbox resource capacity and Quota limits:
 | Cloud Object Storage | 4096 GB \n 1 COS instance | Approaching capacity limits may cause upload failures or degraded performance. Monitor bucket usage, archive or delete unused data, apply lifecycle policies, and scale the storage plan if needed. Any COS storage exceeding 4096 GB will be deleted. |
 | Virtual Private Cloud | Creation of 2 VPC in the selected region | Additional VPCs cannot be provisioned, preventing new environment creation. Verify the current VPC count and reuse existing VPCs or remove unused ones. |
 | Subnets for VPC | 2 subnets per VPC, total count is 4 | Additional subnets cannot be created, which may block network segmentation. Plan subnet allocation in advance and reuse existing subnets. |
-| Floating IPs | 1 FIP | Additional FIPs cannot be created, preventing public access for required instances and causing connectivity issues. Review FIP usage, release unused IPs, and reassign existing ones where possible. |
+| Floating IPs | 4 FIP | Additional FIPs cannot be created, preventing public access for required instances and causing connectivity issues. Review FIP usage, release unused IPs, and reassign existing ones where possible. |
 | Load Balancer | 1 load balancer | Additional load balancers cannot be provisioned, limiting traffic distribution and high‑availability setups. Reuse existing load balancers with multiple listeners or pools and optimize configurations. |
 | Client VPN | 1 VPN instance | Additional VPNs cannot be provisioned, preventing secure access for new users or environments. Review existing VPN usage and reuse the current VPN by adding users or configurations. |
 | Transit Gateway | 1 Transit Gateway | Additional TGWs cannot be provisioned, limiting multi‑VPC or hybrid connectivity expansion. |
