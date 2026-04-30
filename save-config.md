@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-29"
+lastupdated: "2026-04-30"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -15,24 +15,24 @@ subcollection: sandbox
 # Saving your Sandbox configuration
 {: #save-config}
 
-The Save Configuration feature allows you to export your IBM Cloud Sandbox environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
+The Save configuration feature allows you to export your IBM Cloud Sandbox environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
 {: shortdesc}
 
-After your 14-day trial period expires, all Sandbox resources are automatically deleted. Use the Save Configuration feature to preserve your infrastructure setup before the trial ends.
+After your 14-day trial period expires, all Sandbox resources are automatically deleted. Use the **Save configuration** feature to preserve your infrastructure setup before the trial ends.
 {: important}
 
-## How Save Configuration works
+## How it works
 {: #save-config-how-it-works}
 
-The Save Configuration feature uses the POST `/v1/configuration/save` API to generate Terraform files from your live Sandbox environment. The process includes the following steps:
+The **Save configuration** feature uses the POST `/v1/configuration/save` API to generate terraform files from your live Sandbox environment. The process includes the following steps:
 
 1. **Authentication** - The system authenticates into your Sandbox account by using a trusted profile and generates a temporary token to access your resources.
 
 2. **Resource discovery** - Using the temporary token, the system calls IBM Cloud APIs to retrieve the complete configuration of all resources in your specified account and region.
 
-3. **Terraform generation** - All discovered resources are converted into Terraform configuration files with proper resource definitions, data sources, and variables.
+3. **Terraform generation** - All discovered resources are converted into terraform configuration files with proper resource definitions, data sources, and variables.
 
-4. **Package creation** - The generated Terraform files are packaged into a `.zip` archive in memory.
+4. **Package creation** - The generated terraform files are packaged into a `.zip` archive in memory.
 
 5. **Download** - The `.zip` file is sent to you as a downloadable package that you can apply in your production account.
 
@@ -48,19 +48,19 @@ The downloaded `.zip` archive contains the following Terraform configuration fil
 | `variables.tf` | Input variable declarations (region, API key, and resource-specific variables) |
 | `data.tf` | Data source lookups for existing resources and dependencies |
 | `terraform.tfvars` | Placeholder file for user credentials and variable values |
-{: caption="Table 1. Generated Terraform files" caption-side="bottom"}
+{: caption="Generated Terraform files" caption-side="bottom"}
 
 ## Supported resources
 {: #save-config-supported-resources}
 
-The Save Configuration feature fetches and converts the following IBM Cloud resources into Terraform configuration:
+The Save sonfiguration feature retrieves and converts the following IBM Cloud resources into Terraform configuration:
 
 ### VPC infrastructure resources
 {: #save-config-vpc-resources}
 
 | Resource | Terraform resource type |
 |----------|------------------------|
-| SSH Keys | `ibm_is_ssh_key` |
+| SSH keys | `ibm_is_ssh_key` |
 | VPCs | `ibm_is_vpc` |
 | Subnets | `ibm_is_subnet` |
 | Virtual Server Instances (VSIs) | `ibm_is_instance` |
@@ -73,9 +73,9 @@ The Save Configuration feature fetches and converts the following IBM Cloud reso
 | Routes | `ibm_is_vpc_routing_table_route` |
 | Placement Groups | `ibm_is_placement_group` |
 | Bare Metal Servers | `ibm_is_bare_metal_server` |
-{: caption="Table 2. VPC infrastructure resources" caption-side="bottom"}
+{: caption="VPC infrastructure resources" caption-side="bottom"}
 
-### Load balancing and VPN resources
+### Load balancers and VPN resources
 {: #save-config-lb-vpn-resources}
 
 | Resource | Terraform resource type |
@@ -88,7 +88,7 @@ The Save Configuration feature fetches and converts the following IBM Cloud reso
 | VPN Servers (Client-to-Site) | `ibm_is_vpn_server` |
 | IKE Policies | `ibm_is_ike_policy` |
 | IPsec Policies | `ibm_is_ipsec_policy` |
-{: caption="Table 3. Load balancing and VPN resources" caption-side="bottom"}
+{: caption="Load balancing and VPN resources" caption-side="bottom"}
 
 ### Network connectivity resources
 {: #save-config-network-resources}
@@ -98,7 +98,7 @@ The Save Configuration feature fetches and converts the following IBM Cloud reso
 | Transit Gateways | `ibm_tg_gateway` |
 | Transit Gateway Connections | `ibm_tg_connection` |
 | Direct Link Gateways | `ibm_dl_gateway` |
-{: caption="Table 4. Network connectivity resources" caption-side="bottom"}
+{: caption="Network connectivity resources" caption-side="bottom"}
 
 ### Platform services
 {: #save-config-platform-resources}
@@ -111,7 +111,7 @@ The Save Configuration feature fetches and converts the following IBM Cloud reso
 | Cloud Internet Services Instances | `ibm_resource_instance` |
 | CIS Domains | `ibm_cis_domain` |
 | CIS DNS Records | `ibm_cis_dns_record` |
-{: caption="Table 5. Platform services" caption-side="bottom"}
+{: caption="Platform services" caption-side="bottom"}
 
 ### IAM resources
 {: #save-config-iam-resources}
@@ -122,15 +122,12 @@ The Save Configuration feature fetches and converts the following IBM Cloud reso
 | Access Group Members | `ibm_iam_access_group_members` |
 | Access Group Dynamic Rules | `ibm_iam_access_group_dynamic_rule` |
 | Access Group Policies | `ibm_iam_access_group_policy` |
-{: caption="Table 6. IAM resources" caption-side="bottom"}
-
-## Resources not included
-{: #save-config-excluded-resources}
+{: caption="IAM resources" caption-side="bottom"}
 
 The following resources are not included in the generated Terraform configuration:
 
-* **IAM Users** - User identities are account-specific and typically not managed through Terraform
-* **Schematics Workspaces** - Workspace configurations are not exported
+* **IAM users** - User identities are account-specific and typically not managed through Terraform
+* **Schematics workspaces** - Workspace configurations are not exported
 * **IBM Cloud Projects** - Project resources are not included in the export
 
 ## Saving your configuration
