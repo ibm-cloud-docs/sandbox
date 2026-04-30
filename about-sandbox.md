@@ -23,7 +23,7 @@ subcollection: sandbox
 # About IBM Cloud Sandbox
 {: #architecture}
 
-The Sandbox platform provides a secure, automated, and scalable environment that enables users to discover IBM Cloud offerings from the IBM Cloud Catalog, provision sandbox environment, deploy workloads, and evaluate IBM Cloud VPC capabilities with minimal setup effort.
+The Sandbox platform provides a secure, automated, and scalable environment that enables users to discover IBM Cloud offerings from the IBM Cloud Catalog. You can provision Sandbox environment, deploy workloads, and evaluate IBM Cloud VPC capabilities with minimal setup effort.
 
 IBM Cloud Sandbox enables users to:
 
