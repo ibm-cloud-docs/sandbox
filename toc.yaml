@@ -21,10 +21,8 @@ toc:
       - create-resource.md
       - sandbox-quotas.md
       - additional-offerings.md
+      - access-sandbox-cli.md
       - connect-servers.md
-      - create-cos.md
-      - create-transit-gateway.md
-      - create-vpc.md
       - create-user.md
       - at-events.md
       - save-config.md

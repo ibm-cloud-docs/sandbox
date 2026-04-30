@@ -4,7 +4,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-14"
+lastupdated: "2026-04-30"
 
 keywords:
 
@@ -24,7 +24,8 @@ If you experience an issue or have questions when using IBM Cloud Sandbox, you c
 
 If you need assistance with IBM Cloud Sandbox:
 
-- Review the [IBM Cloud VPC documentation](/docs/vpc)
-- Contact the Classic to VPC Migration Program team
-- Open a support case through the IBM Cloud console
-- Join the IBM Cloud community forums
+- Review the [IBM Cloud VPC documentation](/docs/vpc).
+- Contact the Classic to VPC Migration Program team.
+- Open a support case through the IBM Cloud console.
+- Join the IBM Cloud community forums.
+- [Using the Support Center](/docs/support?topic=support-using-avatar).

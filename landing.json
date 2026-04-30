@@ -2,7 +2,8 @@
   "version": 2,
   "title": "IBM Cloud Sandbox",
   "introduction": "Find useful information to learn about IBM Cloud Sandbox.",
-  "product_page": "https://www.ibm.com/products/product-value",
+  "deployment_url": "https://cloud.ibm.com/sandbox/provision?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2Fc2VhcmNoPXNhbmRib3gjc2VhcmNoX3Jlc3VsdHM%3D",
+  "product_page": "https://cloud.ibm.com/sandbox/provision?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2Fc2VhcmNoPXNhbmRib3gjc2VhcmNoX3Jlc3VsdHM%3D",
   "console_page": "/relative/console/path",
   "section_topics": {
     "links": [
