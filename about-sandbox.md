@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-29"
+lastupdated: "2026-04-30"
 
 keywords:
 
@@ -78,39 +78,12 @@ The IBM Cloud Sandbox architecture consists of few primary layers that work toge
 
 * **Additional services** - These are additional services that are automatically provisioned with default configurations when you create your Sandbox. They enhance your environments capabilities and are ready to use immediately without additional setup.
 
-    * **Cloud Object Storage** - A highly scalable and durable storage solution designed for unstructured data. You can use this service to:
-        - Store and retrieve large amounts of data such as images, videos, documents, and backups.
-        - Archive data for long-term retention with cost-effective storage tiers.
-        - Serve static content for web applications (HTML, CSS, JavaScript files).
-        - Store application logs and analytics data.
-        - Create data lakes for big data and analytics workloads.
-        - The service provides automatic redundancy and high availability, ensuring your data is protected and accessible when needed.
+    * **Cloud Object Storage** - A highly scalable and durable storage solution designed for unstructured data.
 
-    * **Load Balancer** - An intelligent traffic distribution service that improves application availability and performance. You can use this service to:
-        - Distribute incoming traffic across multiple servers to avoid overloading any single one.
-        - Ensure high availability by automatically redirecting traffic away from unhealthy or failed servers.
-        - Scale your applications horizontally by adding or removing servers without disrupting service.
-        - Improve response times by directing users to the nearest or least-loaded server.
-        - Support both HTTP/HTTPS web traffic and TCP-based applications.
-        - Monitor server health with automatic health checks and failover capabilities.
-        - Ideal for web applications, APIs, and microservices architectures that require reliability and scalability.
+    * **Load Balancer** - An intelligent traffic distribution service that improves application availability and performance.
 
-    * **VPN for VPC** - A secure Virtual Private Network solution that provides encrypted connectivity to your Virtual Private Cloud environment. You can use this service to:
-        - Establish secure, encrypted connections from your on-premises network or remote locations to your VPC resources.
-        - Access private resources in your Sandbox environment without exposing them to the public.
-        - Extend your corporate network into the cloud securely.
-        - Enable remote team members to access sandbox resources safely.
-        - Support site-to-site VPN connections for hybrid cloud scenarios.
-        - Maintain data privacy and security with industry-standard encryption protocols (IPsec).
-        - Essential for development teams working remotely or organizations with strict security requirements.
+    * **VPN for VPC** - A secure Virtual Private Network solution that provides encrypted connectivity to your Virtual Private Cloud environment.
 
-    * **Transit Gateway** - A centralized network hub that simplifies connectivity between different network environments. You can use this service to:
-        - Seamlessly connect Classic Infrastructure and VPC resources within your Sandbox.
-        - Create a unified network architecture without complex routing configurations.
-        - Enable communication between resources in different network zones.
-        - Simplify network management by centralizing connectivity through a single gateway.
-        - Scale your network connections as your Sandbox environment grows.
-        - Reduce network complexity and potential configuration errors.
-        - Particularly useful when you need resources in both Classic and VPC environments to work together, such as legacy applications communicating with modern cloud-native services.
+    * **Transit Gateway** - A centralized network hub that simplifies connectivity between different network environments.
 
 The trusted profile ensures that customers have appropriate access controls and can only interact with resources within their allocated Sandbox environment. All resources are automatically cleaned up after the 14-day trial period expires.

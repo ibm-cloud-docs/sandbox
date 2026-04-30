@@ -232,4 +232,4 @@ It is recommended to save the configuration, so that you can easily replicate yo
 ### Save configuration
 {: #save-config-sb}
 
-The Sandbox environment configuration can be downloaded as a Terraform packaging by clicking on **Save configuration**.
+The Sandbox environment configuration can be downloaded as a Terraform packaging by clicking on **Save configuration**. For more information, see [Save configuration](/docs-draft/sandbox?topic=sandbox-save-config) topic.

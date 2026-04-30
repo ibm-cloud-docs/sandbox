@@ -13,7 +13,7 @@ subcollection: sandbox
 {{site.data.keyword.attribute-definition-list}}
 
 # Accessing Sandbox - CLI
-{: #save-config}
+{: #access-cli}
 
 To access Sandbox using CLI, you need the following commands:
 
