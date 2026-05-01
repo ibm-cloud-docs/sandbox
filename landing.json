@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "title": "IBM Cloud Sandbox",
+  "introduction": "Find useful information to learn about IBM Cloud Sandbox.",
+  "deployment_url": "https://cloud.ibm.com/sandbox/provision?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2Fc2VhcmNoPXNhbmRib3gjc2VhcmNoX3Jlc3VsdHM%3D",
+  "product_page": "https://www.ibm.com/products/product-value",
+  "console_page": "/relative/console/path",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting Started with IBM Cloud Sandbox",
+        "href": "/docs/sandbox?topic=sandbox-getting-started-sandbox"
+      },
+      {
+        "title": "Provisioning IBM Cloud Sandbox",
+        "href": "/docs/sandbox?topic=sandbox-deploy"
+      },
+      {
+        "title": "About IBM Cloud Sandbox",
+        "href": "/docs/sandbox?topic=sandbox-architecture"
+      },
+      {
+        "title": "FAQs",
+        "href": "/docs/sandbox?topic=sandbox-my-service-faq"
+      },
+      {
+        "title": "Release notes",
+        "href": "/docs/sandbox?topic=sandbox-sandbox-relnotes"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Resource title",
+      "description": "Short description of resource content.",
+      "href": "https://www.example.ibm.com/link/to/resource",
+      "type": "blog"
+    }
+  ],
+  "section_devtools": {
+    "api": "/apidocs/acme-test-v1/acme-test-v1.2.0",
+    "cli": "/docs/acme-test",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group"
+  }
+}

@@ -1,0 +1,51 @@
+---
+
+copyright:
+  years: 2026
+lastupdated: "2026-04-29"
+
+keywords:
+
+subcollection: sandbox
+
+content-type: release-note
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+
+# Creating resources in Sandbox
+{: #create-resource}
+
+On the **Sandbox Overview** page, you can create the resources, virtual servers or bare metal instance for compute. You can also add optional services using the default configuration.
+
+1. From the Sandbox Overview page, click **Create resources**.
+
+    ![Sandbox - Overview](images/ui-sandbox-quick-start.png "Sandbox - Overview"){: caption="Sandbox - Overview" caption-side="bottom"}
+
+2. Under **Server Configuration**:
+
+    * The image is selected by default. But you can change if required by clicking **Change image**.
+
+    ![Select image - Server instance](images/sandbox-select-image.png "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
+
+    * The profile type is selected by default. But you can change if required by clicking **Change profile**.
+
+    ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
+
+3. Under **Additional services**, you can enable and customize the services.
+
+    * **Cloud Object Storage** - Deploy scalable object storage for data, backups, and application content.
+
+    * **Load Balancer** - Configure load balancers to distribute traffic across multiple server instances for high availability.
+
+    * **VPN for VPC** - Set up secure VPN connectivity to access your sandbox environment from on-premises networks or remote locations.
+
+    * **Transit Gateway** - Connect multiple VPCs or integrate with on-premises networks for hybrid cloud scenarios.
+
+4. You can verify the resources to be created in the **Summary** and accept the terms and conditions.
+
+5. Click **Create resources**.
+
+You can view the created resources under **Resource list**.
