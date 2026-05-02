@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-29"
+lastupdated: "2026-05-01"
 
 keywords:
 
@@ -26,6 +26,9 @@ The IBM Cloud Sandbox is ideal for:
 - **Existing IBM Cloud Classic customers** running workloads on Classic Virtual Server or Bare Metal Server who want to explore VPC features, validate workload compatibility, and prepare for migration to next-generation VPC infrastructure.
 
 - **Existing IBM Cloud users** who want hands-on experience with IBM Cloud services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
+
+To provision the Sandbox service from the IBM Cloud catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service.
+{: important}
 
 ## Before you begin
 {: #before-you-begin}
