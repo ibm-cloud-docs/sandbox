@@ -25,6 +25,9 @@ When your Sandbox environment is provisioned, an SSH key pair is automatically c
 - Download and install the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started) and the [VPC infrastructure CLI plug-in](/docs/cli?topic=cli-vpc-reference)
 - For Windows servers, have Microsoft Remote Desktop Protocol (RDP) client software available
 
+Logging into a VSI using an SSH key from Secrets Manager is supported only when the VSI is created through the Quickstart page. If a user creates a VSI from the IBM Cloud UI instead, they must provide their own SSH key. For more information, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&interface=ui).
+{: important}
+
 ## Connecting to Linux or Windows servers
 {: #connecting-servers}
 

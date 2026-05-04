@@ -33,11 +33,15 @@ Users can only be added during Sandbox provisioning from the catalog tile. To ad
 
 4. Enter the email addresses.
 
-5. Select **Access policy** and search for Sandbox you want to assign.
+5. Select **Access policy**. Ensure that you add access policies and grant administrator-level access to the following services:
 
-6. Select **Access policy**. Search for Sandbox and select it. Click **Next**.
+    * All Identity and Access–enabled services
+    * All Account Management services
+    * Cloud Sandbox
 
-7. Select Roles and Action and assign the level of action you want to provide for the user. Click **Review**.
+6. Click **Next**.
+
+7. Select **Roles and Action** and assign **Administrator** as the platform access to the user. Click **Review**.
 
 8. To add this level of access for these users, click **Add**. It will be added to the summary panel. You can add additional access policies if desired, or click **Invite** to send email invitations.
 
