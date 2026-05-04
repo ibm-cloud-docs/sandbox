@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-30"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -20,12 +20,12 @@ subcollection: sandbox
 {:beta: .beta}
 {:important: .important}
 
-# About IBM Cloud Sandbox
+# About {{site.data.keyword.sandbox_full_notm}}
 {: #architecture}
 
-The Sandbox platform provides a secure, automated, and scalable environment that enables users to discover IBM Cloud offerings from the IBM Cloud Catalog. You can provision Sandbox environment, deploy workloads, and evaluate IBM Cloud VPC capabilities with minimal setup effort.
+The Sandbox platform provides a secure, automated, and scalable environment that enables users to discover {{site.data.keyword.Bluemix_notm}} offerings from the {{site.data.keyword.Bluemix_notm}} Catalog. You can provision Sandbox environment, deploy workloads, and evaluate {{site.data.keyword.Bluemix_notm}} VPC capabilities with minimal setup effort.
 
-IBM Cloud Sandbox enables users to:
+{{site.data.keyword.sandbox_full_notm}} enables users to:
 
 * Familiarize with {{site.data.keyword.vpc_short}} features, functions, and deployment workflows.
 
@@ -48,25 +48,25 @@ Following are the key features:
 
 * **Time limited access** - A 14‑day trial with automatic cleanup of provisioned resources.
 
-* **Trusted profile security** - Fine-grained access control through IBM Cloud IAM.
+* **Trusted profile security** - Fine-grained access control through {{site.data.keyword.Bluemix_notm}} IAM.
 
 * **Collaborative access** - Ability to invite team members to the sandbox environment.
 
 ## Architecture diagram
 {: #arch-diagram}
 
-![Architecture diagram](images/sandbox_architecture.svg "IBM Cloud Sandbox architecture diagram"){: caption="IBM Cloud Sandbox architecture diagram" caption-side="bottom"}
+![Architecture diagram](images/sandbox_architecture.svg "{{site.data.keyword.sandbox_full_notm}} architecture diagram"){: caption="{{site.data.keyword.sandbox_full_notm}} architecture diagram" caption-side="bottom"}
 
 ## How it works
 {: #how-it-works}
 
-The IBM Cloud Sandbox architecture consists of few primary layers that work together to provide a secure and isolated trial environment:
+The {{site.data.keyword.sandbox_full_notm}} architecture consists of few primary layers that work together to provide a secure and isolated trial environment:
 
-1. **Users** - Users access the Cloud Sandbox through the IBM Cloud Console. After authentication, users can create the sandbox environment, which triggers the provisioning workflow.
+1. **Users** - Users access the Cloud Sandbox through the {{site.data.keyword.Bluemix_notm}} Console. After authentication, users can create the sandbox environment, which triggers the provisioning workflow.
 
 2. **Customer account** - The customer account serves as the entry point for Sandbox provisioning and management. This layer includes:
 
-    * ***IBM Cloud catalog*** - The IBM Cloud catalog provides the Cloud Sandbox service offering, allowing users to discover and create the Sandbox environment directly from the catalog interface.
+    * ***{{site.data.keyword.Bluemix_notm}} catalog*** - The {{site.data.keyword.Bluemix_notm}} catalog provides the Cloud Sandbox service offering, allowing users to discover and create the Sandbox environment directly from the catalog interface.
 
     * ***Cloud Console*** - The Cloud Console provides the user interface for creating and managing Sandbox environments.
 
@@ -78,7 +78,7 @@ The IBM Cloud Sandbox architecture consists of few primary layers that work toge
 
 * **Additional services** - These are additional services that are automatically provisioned with default configurations when you create your Sandbox. They enhance your environments capabilities and are ready to use immediately without additional setup.
 
-    * **Cloud Object Storage** - A highly scalable and durable storage solution designed for unstructured data.
+    * **{{site.data.keyword.cos_full_notm}}** - A highly scalable and durable storage solution designed for unstructured data.
 
     * **Load Balancer** - An intelligent traffic distribution service that improves application availability and performance.
 

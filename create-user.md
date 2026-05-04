@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-04-28"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -25,7 +25,7 @@ subcollection: sandbox
 
 Users can only be added during Sandbox provisioning from the catalog tile. To add users to your account, follow these steps:
 
-1. In the IBM Cloud console, **select Manage** > **Access (IAM)**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, **select Manage** > **Access (IAM)**.
 
 2. In the *IAM navigation* menu, select **Users**.
 

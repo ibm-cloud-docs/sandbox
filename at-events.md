@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2026
-lastupdated: "2026-04-23"
+lastupdated: "2026-05-04"
 
 keywords: activity tracking, events, sandbox
 
@@ -16,14 +16,17 @@ subcollection: sandbox
 Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
 {: shortdesc}
 
-You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
+Account administrators can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in the account to destinations of their choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
 
-You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+Account administrators can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in the account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+
+Users with trusted profiles may not have access to view Activity Tracker or Logs data. Contact your account administrator for access to auditing information.
+{: note}
 
 ## Locations where activity tracking events are generated
 {: #at-locations}
 
-IBM Cloud Sandbox sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
+{{site.data.keyword.sandbox_full_notm}} sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
 
 | Dallas ( `us-south` ) | Washington ( `us-east` ) | Toronto ( `ca-tor` ) | Montreal ( `ca-mon` ) | Sao Paulo ( `br-sao` ) |
 |---|---|---|---|---|
@@ -52,22 +55,20 @@ IBM Cloud Sandbox sends activity tracking events by {{site.data.keyword.atracker
 {: tab-group="atracker"}
 {: class="simple-tab-table"}
 
-## Enabling activity tracking events for IBM Cloud Sandbox
+## Enabling activity tracking events for {{site.data.keyword.sandbox_full_notm}}
 {: #at-enable}
 
-No special steps are required. Activity tracking events for IBM Cloud Sandbox are automatically enabled and forwarded to {{site.data.keyword.logs_full_notm}} via {{site.data.keyword.atracker_full_notm}}.
+No special steps are required. Activity tracking events for {{site.data.keyword.sandbox_full_notm}} are automatically enabled and forwarded to {{site.data.keyword.logs_full_notm}} via {{site.data.keyword.atracker_full_notm}}.
 
-## Viewing activity tracking events for IBM Cloud Sandbox
+## Viewing activity tracking events for {{site.data.keyword.sandbox_full_notm}}
 {: #at-viewing}
 
-You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+Account administrators can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in the account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
-### Launching {{site.data.keyword.logs_full_notm}} from the IBM Cloud Sandbox dashboard
-{: #log-launch-integrated}
+Users with trusted profiles typically do not have permissions to access {{site.data.keyword.logs_full_notm}} or {{site.data.keyword.atracker_full_notm}} data. If you need to view activity tracking events, contact your account administrator.
+{: important}
 
-IBM Cloud Sandbox does not currently support integrated dashboard launching for {{site.data.keyword.logs_full_notm}}. Please use the Observability page.
-
-### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
+### Launching {{site.data.keyword.logs_full_notm}}
 {: #log-launch-standalone}
 
 For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation](/docs/cloud-logs?topic=cloud-logs-instance-launch).
@@ -87,7 +88,7 @@ The following table lists the management actions that generate activity tracking
 | `sandbox.user.create` | Generated when bulk user data is added or updated. |
 {: caption="Actions that generate management events" caption-side="bottom"}
 
-## Analyzing IBM Cloud Sandbox activity tracking events
+## Analyzing {{site.data.keyword.sandbox_full_notm}} activity tracking events
 {: #at_events_iam_analyze}
 
 Use the following fields in the CADF event to filter and correlate sandbox events:

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-28"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -17,10 +17,10 @@ content-type: faq
 # FAQs
 {: #my-service-faq}
 
-This document provides a list of frequently asked questions and answers about a specific topic for IBM Cloud Sandbox.
+This document provides a list of frequently asked questions and answers about a specific topic for {{site.data.keyword.sandbox_full_notm}}.
 {: shortdesc}
 
-## Is the IBM Cloud Sandbox free?
+## Is the {{site.data.keyword.sandbox_full_notm}} free?
 {: #faq-page-setup}
 {: faq}
 
@@ -32,13 +32,13 @@ Yes, the Sandbox is completely free to use for 2 weeks trial period. There are n
 
 The sandbox is available for 14 days by default. With an extension, the total duration can be up to 16 days (14 days + 2-day extension).
 
-## What is the mapping between IBM Cloud Classic resources and equivalent VPC resources?
+## What is the mapping between {{site.data.keyword.Bluemix_notm}} Classic resources and equivalent VPC resources?
 {: #faq-content-include}
 {: faq}
 
 {{site.data.keyword.vpc_short}} provides modern equivalents for many Classic infrastructure components. Here is a quick reference mapping to understand how Classic infrastructure capabilities translate into the VPC.
 
-## Which operating system images are supported in the IBM Cloud Sandbox?
+## Which operating system images are supported in the {{site.data.keyword.sandbox_full_notm}}?
 {: #faq-content-include}
 {: faq}
 
@@ -64,7 +64,7 @@ Yes, you can request a one-time extension of up to 2 days(48 hours) for your san
 {: #faq-vpc-cr}
 {: faq}
 
-No, the sandbox VPC infrastructure resources could be provisioned only at a single region that was selected during the sandbox service provisioning through IBM Cloud Catalog.
+No, the sandbox VPC infrastructure resources could be provisioned only at a single region that was selected during the sandbox service provisioning through {{site.data.keyword.Bluemix_notm}} Catalog.
 
 ## Can users with least permissions provision sandbox environment?
 {: #faq-permissions}
@@ -76,7 +76,7 @@ No, to provision the sandbox service through IBM cloud catalog the user should h
 {: #faq-trial-expiry}
 {: faq}
 
-When your 14-day trial period expires, all resources within your sandbox environment are automatically cleaned up and deleted. This includes Virtual Server Instances, Bare Metal Servers, Cloud Object Storage buckets, Load Balancers, VPN configurations, and Transit Gateways. Make sure to export any important data, configurations, or learnings before the trial period ends, as this cleanup process is irreversible.
+When your 14-day trial period expires, all resources within your sandbox environment are automatically cleaned up and deleted. This includes Virtual Server Instances, Bare Metal Servers, {{site.data.keyword.cos_full_notm}} buckets, Load Balancers, VPN configurations, and Transit Gateways. Make sure to export any important data, configurations, or learnings before the trial period ends, as this cleanup process is irreversible.
 
 ## Can I invite team members to collaborate in my sandbox?
 {: #faq-collaboration}
@@ -89,7 +89,7 @@ Yes, you can invite team members to collaborate in your sandbox environment. You
 * Assign appropriate permission levels (Viewer, Editor, or Administrator)
 * Send the invitations. All collaborators share the same 14-day trial period.
 
-Invited users must have an IBM Cloud account.
+Invited users must have an {{site.data.keyword.Bluemix_notm}} account.
 {: note}
 
 ## Can I save my sandbox configuration?
@@ -132,13 +132,13 @@ Virtual Server Instances (VSI) are virtual machines that offer flexibility, quic
 {: #faq-additional-services}
 {: faq}
 
-Your sandbox environment automatically includes four complementary services with default configurations: Cloud Object Storage for scalable data storage and backups, Load Balancer for distributing traffic across server instances, VPN for VPC for secure encrypted connectivity to your environment, and Transit Gateway for connecting Classic and VPC resources. These services are ready to use immediately without additional setup.
+Your sandbox environment automatically includes four complementary services with default configurations: {{site.data.keyword.cos_full_notm}} for scalable data storage and backups, Load Balancer for distributing traffic across server instances, VPN for VPC for secure encrypted connectivity to your environment, and Transit Gateway for connecting Classic and VPC resources. These services are ready to use immediately without additional setup.
 
 ## Can I choose which region my sandbox is deployed in?
 {: #faq-region-selection}
 {: faq}
 
-Yes, during sandbox creation you can select the geographic region where your resources will be deployed, such as us-south, eu-de, jp-tok, and others. However, once you select a region and create the sandbox, you cannot change it later. Choose your region carefully based on your location, latency requirements, and the specific IBM Cloud services you want to test.
+Yes, during sandbox creation you can select the geographic region where your resources will be deployed, such as us-south, eu-de, jp-tok, and others. However, once you select a region and create the sandbox, you cannot change it later. Choose your region carefully based on your location, latency requirements, and the specific {{site.data.keyword.Bluemix_notm}} services you want to test.
 
 ## What compute profiles are available in the sandbox?
 {: #faq-compute-profiles}
@@ -186,10 +186,10 @@ The sandbox includes several security features: Each customer receives a dedicat
 {: #faq-production-use}
 {: faq}
 
-No, the sandbox is strictly for testing, evaluation, and learning purposes only. It should not be used for production workloads, customer-facing applications, or storing sensitive production data. The 14-day trial period, automatic resource cleanup, and resource limitations make it unsuitable for production use. Use the sandbox to evaluate IBM Cloud capabilities, test configurations, and validate your architecture before deploying to a production environment in your own IBM Cloud account.
+No, the sandbox is strictly for testing, evaluation, and learning purposes only. It should not be used for production workloads, customer-facing applications, or storing sensitive production data. The 14-day trial period, automatic resource cleanup, and resource limitations make it unsuitable for production use. Use the sandbox to evaluate {{site.data.keyword.Bluemix_notm}} capabilities, test configurations, and validate your architecture before deploying to a production environment in your own {{site.data.keyword.Bluemix_notm}} account.
 
 ## What support is available if I encounter issues in the sandbox?
 {: #faq-support}
 {: faq}
 
-IBM Cloud provides documentation, tutorials, and FAQs to help you navigate the sandbox environment. If you encounter technical issues or have questions, you can access IBM Cloud support resources through the console. For sandbox-specific questions about provisioning, access, or trial period extensions, contact IBM Cloud support. Keep in mind that the sandbox is a trial environment, so support focuses on helping you successfully evaluate IBM Cloud capabilities rather than production-level SLAs.
+{{site.data.keyword.Bluemix_notm}} provides documentation, tutorials, and FAQs to help you navigate the sandbox environment. If you encounter technical issues or have questions, you can access {{site.data.keyword.Bluemix_notm}} support resources through the console. For sandbox-specific questions about provisioning, access, or trial period extensions, contact {{site.data.keyword.Bluemix_notm}} support. Keep in mind that the sandbox is a trial environment, so support focuses on helping you successfully evaluate {{site.data.keyword.Bluemix_notm}} capabilities rather than production-level SLAs.

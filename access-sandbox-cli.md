@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-05-04"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -17,50 +17,62 @@ subcollection: sandbox
 
 To access Sandbox using CLI, you need the following commands:
 
-1. In the IBM Cloud console, go to https://cloud.ibm.com URL.
+1. Log into the {{site.data.keyword.Bluemix_notm}} console at https://cloud.ibm.com.
 
-2. Login to your account.
+2. On your profile icon, click **Log in to CLI and API** from the drop-down.
 
-3. On your profile icon, click **Log in to CLI and API** from the drop-down.
+3. A pop-up window appears with **One-time passcode**. Copy the {{site.data.keyword.Bluemix_notm}} CLI login command:
 
-4. A pop-up window appears with **One-time passcode**. Copy the IBM Cloud CLI login command:
+    ```text
+    ibmcloud login -a https://cloud.ibm.com --sso -r <enter the region> -g Default
+    ```
+    {: codeblock}
 
-    `ibmcloud login -a https://cloud.ibm.com --sso -r us-south -g Default`
+4. Install VPC Plugin using the command:
 
-5. Install VPC Plugin using the command:
+    ```text
+    ibmcloud plugin install vpc-infrastructure
+    ```
+    {: codeblock}
 
-    `ibmcloud plugin install vpc-infrastructure`
+5. Verify the installed plugins using the command:
 
-6. Verify the installed plugins using the command:
+    ```text
+    ibmcloud plugin list
+    ```
+    {: codeblock}
 
-    `ibmcloud plugin list`
+6. Set the resource group using the command:
 
-7. Login to IBM Cloud using the command:
+    ```text
+    ibmcloud target -g <<enter the resource group>>
+    ```
+    {: codeblock}
 
-    `ibmcloud loginFor SSO / One-time passcode login:ibmcloud login -a https://cloud.ibm.com --sso -r us-south -g Default`
+The following are the commands to list and check the resources:
 
-8. Set the resource group using the command:
+    | Command | Description |
+    | ------- | --------- |
+    | ibmcloud is vpcs | List the VPCs |
+    | ibmcloud is subnets | List the subnets |
+    | ibmcloud is instances | List the virtual server instances |
+    | ibmcloud is regions | Check the region |
+    | ibmcloud is zones | Check the zones |
+    {: caption="Commands" caption-side="bottom"}
 
-    `ibmcloud target -g sandbox-rg`
+7. Following are the basic CLI verification commands:
 
-9. List the VPCs using the command:
+    ```text
+    ibmcloud --version
+    ```
+    {: codeblock}
 
-    `ibmcloud is vpcs`
+    ```text
+    ibmcloud help
+    ```
+    {: codeblock}
 
-10. List the subnets using the command:
-
-    `ibmcloud is subnets`
-
-11. List the virtual server instances using the command:
-    `ibmcloud is instances`
-
-12. Check the regions and zones using the commands:
-
-    `ibmcloud is regions`
-    `ibmcloud is zones`
-
-13. Following are the basic CLI verification commands:
-
-* `ibmcloud --version`
-* `ibmcloud help`
-* `ibmcloud target`
+    ```text
+    ibmcloud target
+    ```
+    {: codeblock}

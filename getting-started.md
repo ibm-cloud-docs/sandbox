@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-01"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -13,21 +13,21 @@ content-type: tutorial
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting Started with IBM Cloud Sandbox
+# Getting Started with {{site.data.keyword.sandbox_full_notm}}
 {: #getting-started-sandbox}
 
-The IBM Cloud Sandbox is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the IBM Cloud infrastructure performs, behaves, and scales for their use cases before making production..
+The {{site.data.keyword.sandbox_full_notm}} is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the {{site.data.keyword.Bluemix_notm}} infrastructure performs, behaves, and scales for their use cases before making production..
 {: shortdesc}
 
 It gives users a 2-week trial to experiment with, test, and assess their applications or workloads using {{site.data.keyword.vpc_short}} features.
 
-The IBM Cloud Sandbox is ideal for:
+The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 
-- **Existing IBM Cloud Classic customers** running workloads on Classic Virtual Server or Bare Metal Server who want to explore VPC features, validate workload compatibility, and prepare for migration to next-generation VPC infrastructure.
+- **Existing {{site.data.keyword.Bluemix_notm}} Classic customers** running workloads on Classic Virtual Server or Bare Metal Server who want to explore VPC features, validate workload compatibility, and prepare for migration to next-generation VPC infrastructure.
 
-- **Existing IBM Cloud users** who want hands-on experience with IBM Cloud services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
+- **Existing {{site.data.keyword.Bluemix_notm}} users** who want hands-on experience with {{site.data.keyword.Bluemix_notm}} services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
 
-To provision the Sandbox service from the IBM Cloud catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service.
+To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service.
 {: important}
 
 ## Before you begin
@@ -35,7 +35,7 @@ To provision the Sandbox service from the IBM Cloud catalog, the user must have 
 
 Before you access the Cloud Sandbox, ensure that the following requirements are met:
 
-* You need to have an active IBM Cloud account.
+* You need to have an active {{site.data.keyword.Bluemix_notm}} account.
 
 * You have a valid IBMid for authentication.
 
@@ -58,7 +58,7 @@ The Cloud Sandbox is available through the IBM Cloud Catalog for the allowlisted
 2. Search for **Cloud Sandbox**.
 3. Click **Cloud Sandbox** tile to view the service details.
 
-For more information on provisioning, see [Provisioning the IBM Cloud Sandbox](/docs-draft/sandbox?topic=sandbox-deploy) topic.
+For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs-draft/sandbox?topic=sandbox-deploy) topic.
 
 ## Creating your Sandbox environment
 {: #sandbox-create}
@@ -143,7 +143,7 @@ For more information see on bare metal, see [Creating Bare Metal Servers on VPC]
 ### Accessing storage solutions
 {: #sandbox-test-storage}
 
-Manage and evaluate storage by attaching block volumes, integrating Cloud Object Storage (COS), and testing performance.
+Manage and evaluate storage by attaching block volumes, integrating {{site.data.keyword.cos_full_notm}} (COS), and testing performance.
 
 For more information see on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
 

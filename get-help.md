@@ -4,7 +4,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -16,16 +16,16 @@ subcollection: sandbox
 
 
 
-# Getting help and support for IBM Cloud Sandbox
+# Getting help and support for {{site.data.keyword.sandbox_full_notm}}
 {: #help-and-support}
 
-If you experience an issue or have questions when using IBM Cloud Sandbox, you can use the following resources before you open a support case.
+If you experience an issue or have questions when using {{site.data.keyword.sandbox_full_notm}}, you can use the following resources before you open a support case.
 {: shortdesc}
 
-If you need assistance with IBM Cloud Sandbox:
+If you need assistance with {{site.data.keyword.sandbox_full_notm}}:
 
-- Review the [IBM Cloud VPC documentation](/docs/vpc).
+- Review the [{{site.data.keyword.Bluemix_notm}} VPC documentation](/docs/vpc).
 - Contact the Classic to VPC Migration Program team.
-- Open a support case through the IBM Cloud console.
-- Join the IBM Cloud community forums.
+- Open a support case through the {{site.data.keyword.Bluemix_notm}} console.
+- Join the {{site.data.keyword.Bluemix_notm}} community forums.
 - [Using the Support Center](/docs/support?topic=support-using-avatar).

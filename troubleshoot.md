@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-28"
+lastupdated: "2026-05-04"
 
 keywords: sandbox troubleshooting, sandbox provisioning issues, sandbox access problems, sandbox connectivity, sandbox resources
 
@@ -14,10 +14,10 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Troubleshooting IBM Cloud Sandbox
+# Troubleshooting {{site.data.keyword.sandbox_full_notm}}
 {: #troubleshoot-sandbox}
 
-General troubleshooting tips and answers to common questions about using IBM Cloud Sandbox.
+General troubleshooting tips and answers to common questions about using {{site.data.keyword.sandbox_full_notm}}.
 {: shortdesc}
 
 ## Why cannot I create a sandbox?
@@ -46,8 +46,8 @@ Try the following solutions:
 
 1. Check if you already have an active sandbox by navigating to your [Resource list](https://cloud.ibm.com/resources){: external} and searching for "sandbox".
 2. If you have an existing sandbox that you no longer need, delete it using the **End Sandbox** option before creating a new one.
-3. Verify that your account is allow-listed by checking for the sandbox invitation email or contacting IBM Cloud support.
-4. Ensure you have administrator access in your IBM Cloud account. Contact your account administrator to grant the necessary permissions.
+3. Verify that your account is allow-listed by checking for the sandbox invitation email or contacting {{site.data.keyword.Bluemix_notm}} support.
+4. Ensure you have administrator access in your {{site.data.keyword.Bluemix_notm}} account. Contact your account administrator to grant the necessary permissions.
 
 ## Why is my sandbox provisioning taking longer than expected?
 {: #ts-slow-provisioning}
@@ -62,7 +62,7 @@ The sandbox provisioning status shows "In Progress" for an extended period, typi
 Sandbox provisioning typically takes 5-10 minutes but can be delayed due to:
 {: tsCauses}
 
-- High demand on IBM Cloud infrastructure in the selected region
+- High demand on {{site.data.keyword.Bluemix_notm}} infrastructure in the selected region
 - Backend service availability issues
 - Network connectivity problems during provisioning
 
@@ -73,7 +73,7 @@ Try the following solutions:
 2. Refresh your browser and check the [Resource list](https://cloud.ibm.com/resources){: external} to see if the sandbox appears.
 3. Check your email for the "Welcome to your IBM Cloud Sandbox" notification, which confirms successful provisioning.
 4. If provisioning fails or takes longer than 30 minutes, delete the failed instance and try creating a new sandbox in a different region.
-5. Contact IBM Cloud support if the issue persists.
+5. Contact {{site.data.keyword.Bluemix_notm}} support if the issue persists.
 
 ## Why cannot I access my sandbox trusted profile?
 {: #ts-cannot-access-profile}
@@ -98,7 +98,7 @@ Try the following solutions:
 
 1. Verify that you received the "Welcome to your IBM Cloud Sandbox" email, which indicates successful provisioning.
 2. Check the account drop-down menu for a trusted profile with the tag `sandbox expires mm/dd`.
-3. Clear your browser cache and cookies, then log out and log back in to IBM Cloud.
+3. Clear your browser cache and cookies, then log out and log back in to {{site.data.keyword.Bluemix_notm}}.
 4. If the sandbox trial period has expired, the trusted profile is automatically deleted. You'll need to create a new sandbox.
 5. Verify that you were added as a user during the initial sandbox creation. If not, contact the sandbox creator to be added.
 6. Try accessing the sandbox from a different browser or in incognito/private mode.
@@ -185,7 +185,7 @@ Try the following solutions:
 2. Ensure you're using the correct SSH private key that corresponds to the public key configured during VSI creation.
 3. Check that your VSI has a public IP address assigned if you're connecting from outside the VPC. Navigate to the VSI details page to verify.
 4. Review network ACL rules to ensure they're not blocking SSH traffic.
-5. Verify that the VSI status is "Running" in the IBM Cloud Console.
+5. Verify that the VSI status is "Running" in the {{site.data.keyword.Bluemix_notm}} Console.
 6. If using VPN for VPC, ensure your VPN connection is active and properly configured.
 7. Try connecting from a different network or location to rule out local firewall issues.
 
@@ -250,7 +250,7 @@ Try the following solutions:
 
 Resources you created in the sandbox are not visible in the resource list.
 
-After creating resources in your sandbox, they don't appear in the IBM Cloud resource list or sandbox overview page.
+After creating resources in your sandbox, they don't appear in the {{site.data.keyword.Bluemix_notm}} resource list or sandbox overview page.
 {: tsSymptoms}
 
 Resources may not be visible due to:
@@ -293,7 +293,7 @@ Try the following solutions:
 
 1. If suspended due to inactivity (no resources created by day 7), create resources immediately to reactivate the sandbox.
 2. Review the suspension email for specific reasons and required actions.
-3. Contact IBM Cloud support to understand the suspension reason and request reactivation if appropriate.
+3. Contact {{site.data.keyword.Bluemix_notm}} support to understand the suspension reason and request reactivation if appropriate.
 4. Ensure you're using the sandbox for legitimate testing and evaluation purposes only.
 5. If the suspension cannot be resolved, you may need to create a new sandbox after the current one expires.
 
@@ -398,13 +398,13 @@ VPN connectivity issues can occur due to:
 Try the following solutions:
 {: tsResolve}
 
-1. Verify that you're using the correct VPN gateway IP address and pre-shared key from the IBM Cloud Console.
+1. Verify that you're using the correct VPN gateway IP address and pre-shared key from the {{site.data.keyword.Bluemix_notm}} Console.
 2. Ensure your local firewall allows UDP traffic on ports 500 and 4500 for IPsec VPN.
 3. Check that your VPN client supports the IPsec protocols configured in VPN for VPC.
 4. Review security group rules to allow VPN traffic to your VPC resources.
 5. Verify network ACL rules are not blocking VPN connections.
 6. Try connecting from a different network to rule out local network restrictions.
-7. Check VPN gateway status in the IBM Cloud Console to ensure it's active.
+7. Check VPN gateway status in the {{site.data.keyword.Bluemix_notm}} Console to ensure it's active.
 
 ## Why is my Transit Gateway not connecting Classic and VPC resources?
 {: #ts-transit-gateway-issues}
@@ -433,21 +433,21 @@ Try the following solutions:
 4. Verify security group rules allow traffic between Classic and VPC resources.
 5. Check that both source and destination resources have appropriate network configurations.
 6. Test connectivity using ping or traceroute to identify where traffic is being blocked.
-7. Review Transit Gateway status and connection state in the IBM Cloud Console.
+7. Review Transit Gateway status and connection state in the {{site.data.keyword.Bluemix_notm}} Console.
 
 ## Getting help and support
 {: #ts-getting-help}
 
-If you continue to experience issues with IBM Cloud Sandbox after trying these troubleshooting steps, you can get help through the following resources:
+If you continue to experience issues with {{site.data.keyword.sandbox_full_notm}} after trying these troubleshooting steps, you can get help through the following resources:
 
-- Review the [IBM Cloud Sandbox documentation](/docs/sandbox)
+- Review the [{{site.data.keyword.sandbox_full_notm}} documentation](/docs/sandbox)
 - Check the [FAQ](/docs/sandbox?topic=sandbox-my-service-faq) for common questions
-- Contact [IBM Cloud Support](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}
-- Search for similar issues in the [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home){: external}
+- Contact [{{site.data.keyword.Bluemix_notm}} Support](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}
+- Search for similar issues in the [{{site.data.keyword.Bluemix_notm}} Community](https://community.ibm.com/community/user/cloud/home){: external}
 
 When contacting support, provide the following information:
 - Your sandbox name and creation date
 - The specific error messages you're receiving
 - Steps you've already taken to troubleshoot
 - Screenshots of the issue (if applicable)
-- Your IBM Cloud account ID
+- Your {{site.data.keyword.Bluemix_notm}} account ID

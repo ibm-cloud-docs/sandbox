@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-29"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -34,9 +34,13 @@ On the **Sandbox Overview** page, you can create the resources, virtual servers 
 
     ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
+    Users can choose from different images and profiles apart from those included in the Quickstart.
+    {: note}
+
+
 3. Under **Additional services**, you can enable and customize the services.
 
-    * **Cloud Object Storage** - Deploy scalable object storage for data, backups, and application content.
+    * **{{site.data.keyword.cos_full_notm}}** - Deploy scalable object storage for data, backups, and application content.
 
     * **Load Balancer** - Configure load balancers to distribute traffic across multiple server instances for high availability.
 

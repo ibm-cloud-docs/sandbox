@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-28"
+lastupdated: "2026-05-04"
 
 keywords: sandbox troubleshooting, sandbox provisioning issues, sandbox access problems, sandbox connectivity, sandbox resources
 
@@ -17,7 +17,7 @@ content-type: troubleshoot
 # Limitations
 {: #limitation}
 
-This section describes known constraints and limitations of IBM Cloud Sandbox. The Sandbox is designed for safe evaluation and testing of IBM Cloud VPC capabilities. Follow the guidelines below to safeguard your account and data, ensure responsible resource usage, and maintain security:
+This section describes known constraints and limitations of {{site.data.keyword.sandbox_full_notm}}. The Sandbox is designed for safe evaluation and testing of {{site.data.keyword.Bluemix_notm}} VPC capabilities. Follow the guidelines below to safeguard your account and data, ensure responsible resource usage, and maintain security:
 
 ## Security guidelines
 {: #security-guidlines}
