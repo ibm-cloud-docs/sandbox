@@ -167,7 +167,7 @@ After downloading and extracting the Terraform configuration, you can apply it t
 1. Navigate to the extracted directory:
 
    ```sh
-   $ cd /path-to-extracted-terraform-config
+   cd /path-to-extracted-terraform-config
    ```
    {: pre}
 
