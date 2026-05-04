@@ -30,6 +30,15 @@ The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service.
 {: important}
 
+## Pre-requisite
+{: #pre-req}
+
+Ensure that you add access policies and grant administrator-level access to the following services:
+
+* All Identity and Access–enabled services
+* All Account Management services
+* Cloud Sandbox
+
 ## Before you begin
 {: #before-you-begin}
 
