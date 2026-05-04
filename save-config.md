@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-05-04"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -143,15 +143,15 @@ To save your Sandbox configuration and download the Terraform package:
 
    ![Sandbox - Save configuration](images/sandbox-save-config.png "Sandbox - Save configuration"){: caption="Figure 1. Save configuration option" caption-side="bottom"}
 
-3. Click **Download Terraform**. The system generates the Terraform configuration files from your live environment. This process can take a few minutes depending on the number of resources in your account.
+3. Click **Download Terraform**. The system generates the Terraform configuration files from your live environment. This process can take a few minutes depending on the number of resources in your account. After generation is complete, a `.zip` file is automatically downloaded to your local machine.
 
-4. After generation is complete, a `.zip` file is automatically downloaded to your local machine.
+4. Extract the downloaded `.zip` file to a working directory.
 
 
 ## Applying the configuration in your production account
 {: #save-config-apply}
 
-After downloading the Terraform configuration, you can apply it to your production IBM Cloud account:
+After downloading and extracting the Terraform configuration, you can apply it to your production IBM Cloud account:
 
 ### Before you begin
 {: #save-config-prereqs}
@@ -164,16 +164,14 @@ After downloading the Terraform configuration, you can apply it to your producti
 ### Procedure
 {: #save-config-apply-steps}
 
-1. Extract the downloaded `.zip` file to a working directory.
-
-2. Navigate to the extracted directory:
+1. Navigate to the extracted directory:
 
    ```sh
-   $ cd /path-to-extractedterraform-config
+   $ cd /path-to-extracted-terraform-config
    ```
    {: pre}
 
-3. Update the `terraform.tfvars` file with your IBM Cloud credentials and desired values:
+3. Update the `terraform.tfvars` file with your IBM Cloud credentials and desired values. For available region values, see [Creating a VPC in a different region](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli).
 
    ```hcl
    ibmcloud_api_key = "your-api-key"
