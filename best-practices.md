@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-05-04"
 
 keywords: sandbox best practices, vpc best practices, cloud sandbox optimization, sandbox security, resource management
 
@@ -12,10 +12,10 @@ subcollection: sandbox
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Best practices for IBM Cloud Sandbox
+# Best practices for {{site.data.keyword.sandbox_full_notm}}
 {: #sandbox-best-practices}
 
-This document provides recommended best practices for effectively using the IBM Cloud Sandbox environment. Following these guidelines helps you maximize the value of your 14-day trial period, optimize resource usage, and gain meaningful insights for your cloud migration or evaluation journey.
+This document provides recommended best practices for effectively using the {{site.data.keyword.sandbox_full_notm}} environment. Following these guidelines helps you maximize the value of your 14-day trial period, optimize resource usage, and gain meaningful insights for your cloud migration or evaluation journey.
 {: shortdesc}
 
 ## Planning and preparation
@@ -29,7 +29,7 @@ Proper planning before creating your sandbox environment ensures you make the mo
 Before requesting sandbox access, establish specific goals for your evaluation:
 
 * Identify the workloads or applications you want to test
-* List the IBM Cloud services and features you need to evaluate
+* List the {{site.data.keyword.Bluemix_notm}} services and features you need to evaluate
 * Define success criteria for your evaluation (performance benchmarks, feature validation, migration readiness)
 * Create a timeline for testing activities within the 14-day period
 * Document any compliance or security requirements that need validation
@@ -101,7 +101,7 @@ Focus on your most important use cases first:
 
 Regularly check your resource usage to avoid hitting limits:
 
-* Review active resources in the IBM Cloud Console daily
+* Review active resources in the {{site.data.keyword.Bluemix_notm}} Console daily
 * Track the number of running instances, storage volumes, and network resources
 * Identify and delete unused or idle resources promptly
 * Monitor storage consumption and clean up unnecessary data
@@ -184,7 +184,7 @@ Manage user access and permissions carefully:
 * Follow the principle of least privilege when assigning user permissions
 * Regularly review the list of collaborators and remove access for users who no longer need it
 * Use strong, unique passwords for all server instances and services
-* Enable multi-factor authentication (MFA) for your IBM Cloud account
+* Enable multi-factor authentication (MFA) for your {{site.data.keyword.Bluemix_notm}} account
 * Avoid sharing credentials between team members
 
 ### Secure your servers
@@ -352,7 +352,7 @@ Record all important configuration details:
 
 * Server specifications (compute profiles, operating systems, storage)
 * Network configurations (VPCs, subnets, security groups, firewall rules)
-* Service configurations (Load Balancer, VPN, Transit Gateway, Cloud Object Storage)
+* Service configurations (Load Balancer, VPN, Transit Gateway, {{site.data.keyword.cos_full_notm}})
 * Integration settings and connection details
 * Custom scripts, automation, or infrastructure-as-code templates
 
@@ -476,13 +476,13 @@ Effective problem-solving maximizes your sandbox productivity.
 ### Leverage available resources
 {: #leverage-resources}
 
-Use IBM Cloud documentation and support:
+Use {{site.data.keyword.Bluemix_notm}} documentation and support:
 
-* Consult IBM Cloud documentation for service-specific guidance
+* Consult {{site.data.keyword.Bluemix_notm}} documentation for service-specific guidance
 * Review tutorials and how-to guides for common tasks
 * Check the FAQ section for answers to common questions
-* Use IBM Cloud support channels for technical assistance
-* Participate in IBM Cloud community forums and discussions
+* Use {{site.data.keyword.Bluemix_notm}} support channels for technical assistance
+* Participate in {{site.data.keyword.Bluemix_notm}} community forums and discussions
 
 ### Document issues and resolutions
 {: #document-issues}
@@ -493,14 +493,14 @@ Keep track of problems and solutions:
 * Document troubleshooting steps and resolutions
 * Share solutions with team members to prevent duplicate efforts
 * Note any workarounds or limitations discovered
-* Report bugs or documentation gaps to IBM Cloud support
+* Report bugs or documentation gaps to {{site.data.keyword.Bluemix_notm}} support
 
 ### Escalate appropriately
 {: #escalate-appropriately}
 
 Know when to seek additional help:
 
-* Contact IBM Cloud support for technical issues beyond your expertise
+* Contact {{site.data.keyword.Bluemix_notm}} support for technical issues beyond your expertise
 * Request assistance if you encounter service outages or critical problems
 * Ask for guidance on complex configurations or best practices
 * Seek clarification on service limitations or capabilities
@@ -549,7 +549,7 @@ Determine your path forward:
 
 Help improve the sandbox experience:
 
-* Share feedback about the sandbox environment with IBM Cloud
+* Share feedback about the sandbox environment with {{site.data.keyword.Bluemix_notm}}
 * Suggest improvements or additional features
 * Report any issues or limitations encountered
 * Recommend documentation enhancements
@@ -558,7 +558,7 @@ Help improve the sandbox experience:
 ## Summary
 {: #summary}
 
-Following these best practices helps you maximize the value of your IBM Cloud Sandbox experience. Key takeaways include:
+Following these best practices helps you maximize the value of your {{site.data.keyword.sandbox_full_notm}} experience. Key takeaways include:
 
 * Plan thoroughly before creating your sandbox environment
 * Manage resources efficiently to complete all testing objectives
@@ -568,13 +568,13 @@ Following these best practices helps you maximize the value of your IBM Cloud Sa
 * Use sandbox insights to optimize production deployments
 * Export critical information before the trial period ends
 
-By applying these guidelines, you'll gain meaningful insights into IBM Cloud VPC capabilities and be well-prepared for successful production implementation or migration.
+By applying these guidelines, you'll gain meaningful insights into {{site.data.keyword.Bluemix_notm}} VPC capabilities and be well-prepared for successful production implementation or migration.
 
 ## Related information
 {: #related-information}
 
-* [Getting started with IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-getting-started-sandbox)
-* [About IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-architecture)
+* [Getting started with {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-getting-started-sandbox)
+* [About {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-architecture)
 * [Deploying the Sandbox](/docs/sandbox?topic=sandbox-deploy)
 * [FAQs](/docs/sandbox?topic=sandbox-my-service-faq)
 * [Troubleshooting](/docs/sandbox?topic=sandbox-troubleshoot)

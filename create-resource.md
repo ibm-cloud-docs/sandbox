@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-29"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -36,7 +36,7 @@ On the **Sandbox Overview** page, you can create the resources, virtual servers 
 
 3. Under **Additional services**, you can enable and customize the services.
 
-    * **Cloud Object Storage** - Deploy scalable object storage for data, backups, and application content.
+    * **{{site.data.keyword.cos_full_notm}}** - Deploy scalable object storage for data, backups, and application content.
 
     * **Load Balancer** - Configure load balancers to distribute traffic across multiple server instances for high availability.
 

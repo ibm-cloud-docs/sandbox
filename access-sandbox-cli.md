@@ -17,11 +17,11 @@ subcollection: sandbox
 
 To access Sandbox using CLI, you need the following commands:
 
-1. Log into the IBM Cloud console at https://cloud.ibm.com.
+1. Log into the {{site.data.keyword.Bluemix_notm}} console at https://cloud.ibm.com.
 
 2. On your profile icon, click **Log in to CLI and API** from the drop-down.
 
-3. A pop-up window appears with **One-time passcode**. Copy the IBM Cloud CLI login command:
+3. A pop-up window appears with **One-time passcode**. Copy the {{site.data.keyword.Bluemix_notm}} CLI login command:
 
     ```text
     ibmcloud login -a https://cloud.ibm.com --sso -r us-south -g Default

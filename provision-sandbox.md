@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-05-04"
 
 keywords:
 
@@ -15,10 +15,10 @@ content-type: release-note
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Provisioning the IBM Cloud Sandbox
+# Provisioning the {{site.data.keyword.sandbox_full_notm}}
 {: #deploy}
 
-The solution uses the IBM Cloud Catalog service to ensure a unified and consistent approach.
+The solution uses the {{site.data.keyword.Bluemix_notm}} Catalog service to ensure a unified and consistent approach.
 
 ## Creating the account using UI
 {: #create-ui}
@@ -26,7 +26,7 @@ The solution uses the IBM Cloud Catalog service to ensure a unified and consiste
 Only one sandbox is allowed per allowlisted customer account.
 {: note}
 
-1. Navigate to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
+1. Navigate to the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
 
     ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 
@@ -39,7 +39,7 @@ Only one sandbox is allowed per allowlisted customer account.
     You will not be able to change the region once selected during the provisioning.
     {: note}
 
-    * **Resource group** - Name from your IBM Cloud account where the Sandbox resource will be deployed.
+    * **Resource group** - Name from your {{site.data.keyword.Bluemix_notm}} account where the Sandbox resource will be deployed.
 
     * **Tags** (optional) - Use the tags to organize your resources.
 
@@ -75,7 +75,7 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
 3. Under **Additional services**, you can enable and customize the services.
 
-    * Cloud Object Storage
+    * {{site.data.keyword.cos_full_notm}}
     * Load Balancer
     * VPN for VPC
     * Transit Gateway
@@ -87,7 +87,7 @@ Once resources hss been created, you can view them from the **Resource list**.
 ## Additional offerings
 {: #sandbox-additional-offerings}
 
-### Cloud Object Storage
+### {{site.data.keyword.cos_full_notm}}
 {: #cos}
 
 A highly scalable and durable storage solution designed for unstructured data. You can use this service to:
@@ -95,18 +95,18 @@ A highly scalable and durable storage solution designed for unstructured data. Y
 * Store and retrieve large amounts of data such as images, videos, documents, and backups.
 * Archive data for long-term retention with cost-effective storage tiers.
 
-You can create a Cloud Object Storage (COS) instance either from the **IBM Cloud UI** or through the **Sandbox Overview** page.
+You can create a {{site.data.keyword.cos_full_notm}} (COS) instance either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
-1. **IBM Cloud UI** - Refer [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic.
+1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic.
 
 2. **Sandbox Overview** page: All steps remain the same mentioned in [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic, but when selecting a resource group, you can either choose Default or any available resource group.
 
-The supported capacity for Cloud Object Storage for Sandbox is 1 instance.
+The supported capacity for {{site.data.keyword.cos_full_notm}} for Sandbox is 1 instance.
 
 #### Learn more
 {: #learnmore-cos}
 
-* [Getting started with IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)
+* [Getting started with {{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)
 
 * [Creating a bucket on COS](/docs/cloud-object-storage?topic=cloud-object-storage-secure-content-store#create-cos-bucket-step)
 
@@ -123,9 +123,9 @@ An intelligent traffic distribution service that improves application availabili
 
 * Improve response times by directing users to the nearest or least-loaded server.
 
-You can create a load balancer either from the **IBM Cloud UI** or through the **Sandbox Overview** page.
+You can create a load balancer either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
-1. **IBM Cloud UI** - Refer [Creating a load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) topic.
+1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Creating a load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) topic.
 
 2. **Sandbox Overview** page: All steps remain the same mentioned in [Creating a load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) topic, but when selecting a resource group, you can either choose Default or any available resource group.
 
@@ -153,9 +153,9 @@ A secure Virtual Private Network solution that provides encrypted connectivity t
 
 * Enable remote team members to access sandbox resources safely.
 
-You can create a load balancer either from the **IBM Cloud UI** or through the **Sandbox Overview** page.
+You can create a load balancer either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
-1. **IBM Cloud UI** - Refer [Setting up VPC VPN connectivity](/docs/containers?topic=containers-vpc-vpnaas) topic.
+1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Setting up VPC VPN connectivity](/docs/containers?topic=containers-vpc-vpnaas) topic.
 
 2. **Sandbox Overview** page: All steps remain the same mentioned in [Setting up VPC VPN connectivity](/docs/containers?topic=containers-vpc-vpnaas) topic, but when selecting a resource group, you can either choose Default or any available resource group.
 
@@ -182,9 +182,9 @@ A centralized network hub that simplifies connectivity between different network
 
 * Scale your network connections as your Sandbox environment grows.
 
-You can create a load balancer either from the **IBM Cloud UI** or through the **Sandbox Overview** page.
+You can create a load balancer either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
-1. **IBM Cloud UI** - Refer [Creating a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui) topic.
+1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Creating a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui) topic.
 
 2. **Sandbox Overview** page: All steps remain the same mentioned in [Creating a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui) topic, but when selecting a resource group, you can either choose Default or any available resource group.
 

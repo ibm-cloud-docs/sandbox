@@ -15,7 +15,7 @@ subcollection: sandbox
 # Saving your Sandbox configuration
 {: #save-config}
 
-The Save configuration feature allows you to export your IBM Cloud Sandbox environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
+The Save configuration feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
 {: shortdesc}
 
 You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page.
@@ -30,7 +30,7 @@ The **Save configuration** feature uses the POST `/v1/configuration/save` API to
 
 1. **Authentication** - The system authenticates into your Sandbox account by using a trusted profile and generates a temporary token to access your resources.
 
-2. **Resource discovery** - Using the temporary token, the system calls IBM Cloud APIs to retrieve the complete configuration of all resources in your specified account and region.
+2. **Resource discovery** - Using the temporary token, the system calls {{site.data.keyword.Bluemix_notm}} APIs to retrieve the complete configuration of all resources in your specified account and region.
 
 3. **Terraform generation** - All discovered resources are converted into terraform configuration files with proper resource definitions, data sources, and variables.
 
@@ -45,7 +45,7 @@ The downloaded `.zip` archive contains the following Terraform configuration fil
 
 | File name | Description |
 |-----------|-------------|
-| `provider.tf` | IBM Cloud provider configuration and authentication setup |
+| `provider.tf` | {{site.data.keyword.Bluemix_notm}} provider configuration and authentication setup |
 | `main.tf` | All resource definitions for your infrastructure components |
 | `variables.tf` | Input variable declarations (region, API key, and resource-specific variables) |
 | `data.tf` | Data source lookups for existing resources and dependencies |
@@ -55,7 +55,7 @@ The downloaded `.zip` archive contains the following Terraform configuration fil
 ## Supported resources
 {: #save-config-supported-resources}
 
-The Save sonfiguration feature retrieves and converts the following IBM Cloud resources into Terraform configuration:
+The Save sonfiguration feature retrieves and converts the following {{site.data.keyword.Bluemix_notm}} resources into Terraform configuration:
 
 ### VPC infrastructure resources
 {: #save-config-vpc-resources}
@@ -107,8 +107,8 @@ The Save sonfiguration feature retrieves and converts the following IBM Cloud re
 
 | Resource | Terraform resource type |
 |----------|------------------------|
-| Cloud Object Storage Instances | `ibm_resource_instance` |
-| Cloud Object Storage Buckets | `ibm_cos_bucket` |
+| {{site.data.keyword.cos_full_notm}} Instances | `ibm_resource_instance` |
+| {{site.data.keyword.cos_full_notm}} Buckets | `ibm_cos_bucket` |
 | Secrets Manager Instances | `ibm_resource_instance` (Secrets Manager) |
 | Cloud Internet Services Instances | `ibm_resource_instance` |
 | CIS Domains | `ibm_cis_domain` |
@@ -130,7 +130,7 @@ The following resources are not included in the generated Terraform configuratio
 
 * **IAM users** - User identities are account-specific and typically not managed through Terraform
 * **Schematics workspaces** - Workspace configurations are not exported
-* **IBM Cloud Projects** - Project resources are not included in the export
+* **{{site.data.keyword.Bluemix_notm}} Projects** - Project resources are not included in the export
 
 ## Saving your configuration
 {: #save-config-procedure}
@@ -151,15 +151,15 @@ To save your Sandbox configuration and download the Terraform package:
 ## Applying the configuration in your production account
 {: #save-config-apply}
 
-After downloading and extracting the Terraform configuration, you can apply it to your production IBM Cloud account:
+After downloading and extracting the Terraform configuration, you can apply it to your production {{site.data.keyword.Bluemix_notm}} account:
 
 ### Before you begin
 {: #save-config-prereqs}
 
-* Ensure that you are logged into a Pay-As-You-Go IBM Cloud account.
+* Ensure that you are logged into a Pay-As-You-Go {{site.data.keyword.Bluemix_notm}} account.
 * Install [Terraform CLI](https://www.terraform.io/downloads){: external} (version 1.0 or later)
-* Install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started)
-* Have an IBM Cloud API key with appropriate permissions for the resources you want to create
+* Install the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started)
+* Have an {{site.data.keyword.Bluemix_notm}} API key with appropriate permissions for the resources you want to create
 
 ### Procedure
 {: #save-config-apply-steps}
@@ -171,7 +171,7 @@ After downloading and extracting the Terraform configuration, you can apply it t
    ```
    {: pre}
 
-3. Update the `terraform.tfvars` file with your IBM Cloud credentials and desired values. For available region values, see [Creating a VPC in a different region](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli).
+3. Update the `terraform.tfvars` file with your {{site.data.keyword.Bluemix_notm}} credentials and desired values. For available region values, see [Creating a VPC in a different region](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli).
 
    ```hcl
    ibmcloud_api_key = "your-api-key"

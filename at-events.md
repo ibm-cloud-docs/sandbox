@@ -26,7 +26,7 @@ Users with trusted profiles may not have access to view Activity Tracker or Logs
 ## Locations where activity tracking events are generated
 {: #at-locations}
 
-IBM Cloud Sandbox sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
+{{site.data.keyword.sandbox_full_notm}} sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
 
 | Dallas ( `us-south` ) | Washington ( `us-east` ) | Toronto ( `ca-tor` ) | Montreal ( `ca-mon` ) | Sao Paulo ( `br-sao` ) |
 |---|---|---|---|---|
@@ -55,12 +55,12 @@ IBM Cloud Sandbox sends activity tracking events by {{site.data.keyword.atracker
 {: tab-group="atracker"}
 {: class="simple-tab-table"}
 
-## Enabling activity tracking events for IBM Cloud Sandbox
+## Enabling activity tracking events for {{site.data.keyword.sandbox_full_notm}}
 {: #at-enable}
 
-No special steps are required. Activity tracking events for IBM Cloud Sandbox are automatically enabled and forwarded to {{site.data.keyword.logs_full_notm}} via {{site.data.keyword.atracker_full_notm}}.
+No special steps are required. Activity tracking events for {{site.data.keyword.sandbox_full_notm}} are automatically enabled and forwarded to {{site.data.keyword.logs_full_notm}} via {{site.data.keyword.atracker_full_notm}}.
 
-## Viewing activity tracking events for IBM Cloud Sandbox
+## Viewing activity tracking events for {{site.data.keyword.sandbox_full_notm}}
 {: #at-viewing}
 
 Account administrators can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in the account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
@@ -88,7 +88,7 @@ The following table lists the management actions that generate activity tracking
 | `sandbox.user.create` | Generated when bulk user data is added or updated. |
 {: caption="Actions that generate management events" caption-side="bottom"}
 
-## Analyzing IBM Cloud Sandbox activity tracking events
+## Analyzing {{site.data.keyword.sandbox_full_notm}} activity tracking events
 {: #at_events_iam_analyze}
 
 Use the following fields in the CADF event to filter and correlate sandbox events:

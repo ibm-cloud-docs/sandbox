@@ -17,12 +17,12 @@ subcollection: sandbox
 
 After your Sandbox environment is active, you can securely access Linux or Windows virtual server instance (VSIs) and migrate data between IBM Classic infrastructure and VPC infrastructure.
 
-When your Sandbox environment is provisioned, an SSH key pair is automatically created for secure server access. The private key is stored in IBM Cloud Secrets Manager for you to download and use. The following steps guide you through retrieving this key and connecting to your servers.
+When your Sandbox environment is provisioned, an SSH key pair is automatically created for secure server access. The private key is stored in {{site.data.keyword.Bluemix_notm}} Secrets Manager for you to download and use. The following steps guide you through retrieving this key and connecting to your servers.
 
 ## Before you begin
 {: #before-you-begin}
 
-- Download and install the [IBM Cloud CLI](/docs/cli?topic=cli-getting-started) and the [VPC infrastructure CLI plug-in](/docs/cli?topic=cli-vpc-reference)
+- Download and install the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started) and the [VPC infrastructure CLI plug-in](/docs/cli?topic=cli-vpc-reference)
 - For Windows servers, have Microsoft Remote Desktop Protocol (RDP) client software available
 
 ## Connecting to Linux or Windows servers
@@ -35,7 +35,7 @@ If you haven't already reserved a floating IP address for your instance, follow 
 
 After reserving the floating IP:
 
-1. In the IBM Cloud console, go to **Resource List** > **Compute** > **Virtual Server Instances**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Resource List** > **Compute** > **Virtual Server Instances**.
 2. Select your VSI and click the **Networking** tab.
 3. Copy the **Floating IP** address from the table.
 
