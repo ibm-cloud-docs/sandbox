@@ -22,8 +22,8 @@ When your Sandbox environment is provisioned, an SSH key pair is automatically c
 ## Before you begin
 {: #before-you-begin}
 
-- Download and install the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started) and the [VPC infrastructure CLI plug-in](/docs/cli?topic=cli-vpc-reference)
-- For Windows servers, have Microsoft Remote Desktop Protocol (RDP) client software available
+- Download and install the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started) and the [VPC infrastructure CLI plug-in](/docs/cli?topic=cli-vpc-reference).
+- For Windows servers, have Microsoft Remote Desktop Protocol (RDP) client software available.
 
 Logging into a VSI using an SSH key from Secrets Manager is supported only when the VSI is created through the Quickstart page. If a user creates a VSI from the IBM Cloud UI instead, they must provide their own SSH key. For more information, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&interface=ui).
 {: important}
@@ -51,9 +51,10 @@ After reserving the floating IP:
 4. Download the secret key and save to a file (for example, `key.pem`).
 5. Set appropriate permissions:
 
-   ```sh
-   $ chmod 400 key.pem
+   ```text
+   chmod 400 key.pem
    ```
+   {: codeblock}
 
 ### Step 3: Check instance status
 {: #check-instance-status}
@@ -61,14 +62,19 @@ After reserving the floating IP:
 Before connecting, verify your CLI is targeting the correct region. If needed, see [Targeting a region](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target).
 
 First, list all your instances to get the instance ID:
-```sh
-$ ibmcloud is instances
+
+```text
+ibmcloud is instances
 ```
+{: codeblock}
 
 Then check the instance status using the ID from the previous command:
-```sh
-$ ibmcloud is instance INSTANCE_ID
+
+```text
+ibmcloud is instance INSTANCE_ID
 ```
+{: codeblock}
+
 Replace `INSTANCE_ID` with the ID or name of your instance. Wait until the instance status is `running`.
 
 ### Step 4: Connect to the server
@@ -79,9 +85,10 @@ Replace `INSTANCE_ID` with the ID or name of your instance. Wait until the insta
 
 1. Run the following command:
 
-   ```sh
-   $ ssh -i <path-to-key.pem> root@<Floating-IP>
+   ```text
+   ssh -i <path-to-key.pem> root@<Floating-IP>
    ```
+   {: codeblock}
 
 2. Accept the fingerprint when prompted.
 
@@ -89,9 +96,10 @@ Replace `INSTANCE_ID` with the ID or name of your instance. Wait until the insta
 
 1. Retrieve the Windows Administrator password using the private key:
 
-   ```sh
-   $ ibmcloud is instance-initialization-values INSTANCE_ID --private-key "@~/.ssh/id_rsa"
+   ```text
+   ibmcloud is instance-initialization-values INSTANCE_ID --private-key "@~/.ssh/id_rsa"
    ```
+   {: codeblock}
    Replace `INSTANCE_ID` with your instance ID or name.
 
 2. Open Remote Desktop Connection (RDP) on your computer.
