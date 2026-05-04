@@ -24,7 +24,7 @@ To access Sandbox using CLI, you need the following commands:
 3. A pop-up window appears with **One-time passcode**. Copy the {{site.data.keyword.Bluemix_notm}} CLI login command:
 
     ```text
-    ibmcloud login -a https://cloud.ibm.com --sso -r us-south -g Default
+    ibmcloud login -a https://cloud.ibm.com --sso -r <enter the region> -g Default
     ```
     {: codeblock}
 
@@ -51,14 +51,14 @@ To access Sandbox using CLI, you need the following commands:
 
 The following are the commands to list and check the resources:
 
-| Command | Description |
-| ------- | --------- |
-| ibmcloud is vpcs | List the VPCs |
-| ibmcloud is subnets | List the subnets |
-| ibmcloud is instances | List the virtual server instances |
-| ibmcloud is regions | Check the region |
-| ibmcloud is zones | Check the zones |
-{: caption="Commands" caption-side="bottom"}
+    | Command | Description |
+    | ------- | --------- |
+    | ibmcloud is vpcs | List the VPCs |
+    | ibmcloud is subnets | List the subnets |
+    | ibmcloud is instances | List the virtual server instances |
+    | ibmcloud is regions | Check the region |
+    | ibmcloud is zones | Check the zones |
+    {: caption="Commands" caption-side="bottom"}
 
 7. Following are the basic CLI verification commands:
 

@@ -34,6 +34,10 @@ On the **Sandbox Overview** page, you can create the resources, virtual servers 
 
     ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
+    Users can choose from different images and profiles apart from those included in the Quickstart.
+    {: note}
+
+
 3. Under **Additional services**, you can enable and customize the services.
 
     * **{{site.data.keyword.cos_full_notm}}** - Deploy scalable object storage for data, backups, and application content.
