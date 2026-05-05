@@ -13,9 +13,18 @@ subcollection: sandbox
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing user access for Sandbox
-{: #create-user}
+{: #manage-user-access-sandbox}
 
-## How to add "Cloud Sandbox" permission to existing users to provision sandbox
+Manage user access for {{site.data.keyword.sandbox_full_notm}} by adding Cloud Sandbox permissions to existing users or inviting new users with the required access.
+{: shortdesc}
+
+## Before you begin
+{: #before-you-begin}
+* Ensure that you have the required permissions to manage users in your account.
+
+![Permission for provision](images/Permission-provision.png "Permission for provision"){: caption="Permission for provision" caption-side="bottom"}
+
+## Adding Cloud Sandbox permission to existing users to provision sandbox
 {: #add-sandbox-permission}
 
 To add Cloud Sandbox permission to existing users in your account, follow these steps:
@@ -36,7 +45,7 @@ To add Cloud Sandbox permission to existing users in your account, follow these 
 
 8. Click **Finish**.
 
-## How to create/invite a user and add "Cloud Sandbox" permission
+## Creating or inviting a user and add Cloud Sandbox permission
 {: #invite-user-sandbox}
 
 To create or invite a new user and grant them Cloud Sandbox permission, follow these steps:
@@ -62,8 +71,6 @@ To create or invite a new user and grant them Cloud Sandbox permission, follow t
 8. To add this level of access for these users, click **Add**. It will be added to the summary panel. You can add additional access policies if desired, or click **Invite** to send email invitations.
 
 9. On the right-hand side, click **Invite**.
-
-![Permission for provision](images/Permission-provision.png "Permission for provision"){: caption="Permission for provision" caption-side="bottom"}
 
 The user gets an email invitation with the link to complete the process. This will add the user in the User list and to the Sandbox provisioning page.
 

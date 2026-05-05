@@ -119,7 +119,7 @@ Perform the following steps to provision the Sandbox:
 
    * *Optional*: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag&interface=ui).
 
-   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Managing user access for Sandbox](/docs/sandbox?topic=sandbox-manage-user-access).
+   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Managing user access for Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
 
     Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
     {: important}
