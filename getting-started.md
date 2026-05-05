@@ -119,7 +119,7 @@ Perform the following steps to provision the Sandbox:
 
    * *Optional*: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag&interface=ui).
 
-   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
+   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Managing user access for Sandbox](/docs/sandbox?topic=sandbox-manage-user-access).
 
     Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
     {: important}
@@ -131,19 +131,27 @@ Perform the following steps to provision the Sandbox:
 Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
 
-## Accessing your Sandbox through trusted profile
+## Accessing your Sandbox through email
 {: #sandbox-access-profile}
 {: step}
 
-After your Sandbox is provisioned, you will receive access for the trusted profile.
+After your Sandbox is provisioned, an email is sent to all users with access details and supporting links to explore the Sandbox environment.
 
-1. Click on the link from the email or switch to the Sandbox Trusted Profile from the account drop down.
+1. Click the access link in the **Welcome to your IBM Cloud Sandbox** email to open the Sandbox environment.
 
-2. Locate your Sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
+2. When prompted, provide your {{site.data.keyword.Bluemix_notm}} credentials to authenticate.
 
-3. Switch from current account to the trusted profile.
+3. If two-factor authentication is enabled on your account, complete the verification process by providing the required authentication code.
 
-4. Click **Create Resources** to access the resource creation page.
+4. After successful authentication, you are redirected to the Sandbox trusted profile page.
+
+![Access the link](images/Access-link.png "Access the link"){: caption="Access the link" caption-side="bottom"}
+
+5. If the Sandbox account is not visible on the account page, select the trusted profile from the account drop-down menu. The trusted profile is labeled with the tag `sandbox expires mm/dd`.
+
+6. After switching to the trusted profile, you are navigated to the Sandbox trusted profile account.
+
+7. Access the [Sandbox Overview page](https://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
 
 The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}

@@ -23,7 +23,7 @@ toc:
       - additional-offerings.md
       - access-sandbox-cli.md
       - connect-servers.md
-      - create-user.md
+      - manage-user-access.md
       - save-config.md
       - at-events.md
   - navgroup:
