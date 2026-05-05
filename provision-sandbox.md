@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords:
 
@@ -20,7 +20,7 @@ content-type: release-note
 
 The solution uses the {{site.data.keyword.Bluemix_notm}} Catalog service to ensure a unified and consistent approach.
 
-## Creating the account using UI
+## Creating a Sandbox instance
 {: #create-ui}
 
 Only one sandbox is allowed per allowlisted customer account.

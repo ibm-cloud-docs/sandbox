@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords:
 
@@ -10,17 +10,9 @@ subcollection: sandbox
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:external: target="_blank" .external}
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:beta: .beta}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
-# Creating a user
+# Adding users to your account for Sandbox access
 {: #create-user}
 
 Users can only be added during Sandbox provisioning from the catalog tile. To add users to your account, follow these steps:
