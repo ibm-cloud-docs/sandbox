@@ -175,7 +175,7 @@ Configure and validate network components by setting up the subnets, security gr
 
 Deploy and compare workloads across different compute profiles to evaluating the performance, scalability, bare metal versus VSI capabilities, and auto-scaling behavior.
 
-For more information see on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
+For more information on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
 
 ### Accessing storage solutions
 {: #sandbox-test-storage}
