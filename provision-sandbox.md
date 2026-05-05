@@ -214,7 +214,7 @@ The supported capacity for Transit Gateway for Sandbox is 1.
 
 * [Deleting a transit gateway](/docs/transit-gateway?topic=transit-gateway-delete-gateway&interface=ui)
 
-For more information on Sandbox quota limits see [here](/docs/sandbox?topic=sandbox-sandbox-quota).
+For more information on Sandbox quota limits see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
 
 ## Supported actions
 {: #actions-sb}
