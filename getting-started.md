@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords:
 
@@ -30,15 +30,6 @@ The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service.
 {: important}
 
-## Pre-requisite
-{: #pre-req}
-
-Ensure that you add access policies and grant administrator-level access to the following services:
-
-* All Identity and Access–enabled services
-* All Account Management services
-* Cloud Sandbox
-
 ## Before you begin
 {: #before-you-begin}
 
@@ -49,6 +40,47 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 * You have a valid IBMid for authentication.
 
 * You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
+
+## Understanding Sandbox boundaries and constraints
+{: #sandbox-boundaries}
+
+The Sandbox environment has specific limitations to ensure fair usage and maintain security:
+
+### Service availability
+{: #service-availability}
+
+The Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrastructure as a Service (IaaS) offerings, including:
+
+* Virtual Server for VPC and Bare Metal Servers for VPC
+* Block Storage and Instance Storage for VPC
+* {{site.data.keyword.cos_full_notm}}
+* Virtual Private Cloud (VPC) networking components
+* Load Balancer, Client VPN, and Transit Gateway
+* DNS and Secrets Manager
+
+Other {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings are not available in the Sandbox environment.
+
+### Resource constraints
+{: #resource-constraints}
+
+The Sandbox enforces quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Key constraints include:
+
+* **Compute**: Limited vCPU (128) and RAM (1028 GB) for Virtual Servers, and 1 Bare Metal Server
+* **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and {{site.data.keyword.cos_full_notm}} to 4096 GB
+* **Network**: Maximum of 2 VPCs, 4 subnets, 4 Floating IPs, and 10 security groups
+* **Services**: 1 instance each for Load Balancer, VPN, Transit Gateway, DNS, and Secrets Manager
+
+For complete quota details, see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
+
+### Terms and conditions
+{: #terms-conditions}
+
+By using the Sandbox, you agree to:
+
+* Use the environment for evaluation and testing purposes only, not for production workloads
+* Follow security best practices and usage guidelines as outlined in [Limitations](/docs/sandbox?topic=sandbox-limitation)
+* Accept that all resources will be automatically deleted after the 14-day trial period expires
+* Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies
 
 ## Creating Sandbox account
 {: #sandbox-request}
@@ -61,11 +93,7 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 {: #sandbox-catalog}
 {: step}
 
-The Cloud Sandbox is available through the IBM Cloud Catalog for the allowlisted customers.
-
-1. Log in to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#all_products){: external} page.
-2. Search for **Cloud Sandbox**.
-3. Click **Cloud Sandbox** tile to view the service details.
+After clicking **Request** in the email notification, you will be redirected to the Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
 
 For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs-draft/sandbox?topic=sandbox-deploy) topic.
 

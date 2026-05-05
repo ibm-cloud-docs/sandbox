@@ -20,6 +20,15 @@ content-type: release-note
 
 The solution uses the {{site.data.keyword.Bluemix_notm}} Catalog service to ensure a unified and consistent approach.
 
+## Pre-requisite
+{: #pre-req}
+
+Ensure that you add access policies and grant administrator-level access to the following services:
+
+* All Identity and Access–enabled services
+* All Account Management services
+* Cloud Sandbox
+
 ## Creating a Sandbox instance
 {: #create-ui}
 
