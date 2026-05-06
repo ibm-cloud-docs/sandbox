@@ -137,7 +137,7 @@ Only one Sandbox creation is allowed per allow-listed customer account.
 
 After your Sandbox is provisioned, an email is sent to all users with access details and supporting links to explore the Sandbox environment.
 
-1. Click the access link in the **Welcome to your IBM Cloud Sandbox** email to open the Sandbox environment.
+1. In the email, click the **Access the link and explore the Sandbox** link to open the Sandbox environment.
 
 2. When prompted, provide your {{site.data.keyword.Bluemix_notm}} credentials to authenticate.
 
