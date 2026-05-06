@@ -145,7 +145,7 @@ After your Sandbox is provisioned, an email is sent to all users with access det
 
 4. After successful authentication, you are redirected to the Sandbox trusted profile page.
 
-   ![Select a trusted profile](images/Access-link.png "Select a trusted profile"){: caption="Select a trusted profile" caption-side="bottom"}
+    ![Select a trusted profile](images/Access-link.png "Select a trusted profile"){: caption="Select a trusted profile" caption-side="bottom"}
 
 5. If the Sandbox account is not visible on the account page, select the trusted profile from the account drop-down menu. The trusted profile is labeled with the tag `sandbox expires mm/dd`.
 
