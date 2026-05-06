@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2026-05-05"
+  years: 2026
+lastupdated: "2026-05-06"
 
 keywords:
 
@@ -20,7 +20,7 @@ Manage user access for {{site.data.keyword.sandbox_full_notm}} by adding Cloud S
 
 ## Before you begin
 {: #before-you-begin}
-* Ensure that you have the required permissions to manage users in your account.
+Before you can manage user access for {{site.data.keyword.sandbox_full_notm}}, ensure that you have Administrator access to Identity and Access Management (IAM) in your {{site.data.keyword.Bluemix_notm}} account. This permission level is required to invite users, assign access policies, and grant Cloud Sandbox permissions. If the required permissions are not added, you cannot provision the sandbox, and an error message will be displayed on the catalog tile.
 
 ![Permission for provision](images/Permission-provision.png "Permission for provision"){: caption="Permission for provision" caption-side="bottom"}
 
