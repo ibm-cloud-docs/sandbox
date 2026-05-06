@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-05"
+lastupdated: "2026-05-06"
 
 keywords:
 
@@ -192,10 +192,10 @@ No, the sandbox is strictly for testing, evaluation, and learning purposes only.
 {: #faq-support}
 {: faq}
 
+{{site.data.keyword.Bluemix_notm}} provides documentation, tutorials, and FAQs to help you navigate the sandbox environment. If you encounter technical issues or have questions, you can access {{site.data.keyword.Bluemix_notm}} support resources through the console. For sandbox-specific questions about provisioning, access, or trial period extensions, contact {{site.data.keyword.Bluemix_notm}} support. Keep in mind that the sandbox is a trial environment, so support focuses on helping you successfully evaluate {{site.data.keyword.Bluemix_notm}} capabilities rather than production-level SLAs.
 
 ## Which bucket type should I select?
 {: #faq-bucket-type}
 {: faq}
 
 Select "Create a Custom Bucket".
-{{site.data.keyword.Bluemix_notm}} provides documentation, tutorials, and FAQs to help you navigate the sandbox environment. If you encounter technical issues or have questions, you can access {{site.data.keyword.Bluemix_notm}} support resources through the console. For sandbox-specific questions about provisioning, access, or trial period extensions, contact {{site.data.keyword.Bluemix_notm}} support. Keep in mind that the sandbox is a trial environment, so support focuses on helping you successfully evaluate {{site.data.keyword.Bluemix_notm}} capabilities rather than production-level SLAs.
