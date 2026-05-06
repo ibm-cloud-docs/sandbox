@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-06"
 
 keywords:
 
@@ -18,7 +18,13 @@ content-type: release-note
 # Creating resources in Sandbox
 {: #create-resource}
 
-On the **Sandbox Overview** page, you can create the resources, virtual servers or bare metal instance for compute. You can also add optional services using the default configuration.
+Create and configure compute resources such as Virtual Server Instances or Bare Metal servers in your {{site.data.keyword.sandbox_full_notm}} environment, along with optional services like {{site.data.keyword.cos_short}}, Load Balancer, VPN, and Transit Gateway.
+{: shortdesc}
+
+Before you create resources, switch to the trusted profile by using the account switcher in the console menu bar
+   {: note}
+
+On the **Sandbox Overview** page, you can create compute resources such as Virtual Server Instances or Bare Metal servers. You can also add optional services using the default configuration.
 
 1. From the Sandbox Overview page, click **Create resources**.
 
