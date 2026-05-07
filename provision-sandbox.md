@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords:
 
@@ -20,7 +20,16 @@ content-type: release-note
 
 The solution uses the {{site.data.keyword.Bluemix_notm}} Catalog service to ensure a unified and consistent approach.
 
-## Creating the account using UI
+## Pre-requisite
+{: #pre-req}
+
+Ensure that you add access policies and grant administrator-level access to the following services:
+
+* All Identity and Access–enabled services
+* All Account Management services
+* Cloud Sandbox
+
+## Creating a Sandbox instance
 {: #create-ui}
 
 Only one sandbox is allowed per allowlisted customer account.
@@ -205,7 +214,7 @@ The supported capacity for Transit Gateway for Sandbox is 1.
 
 * [Deleting a transit gateway](/docs/transit-gateway?topic=transit-gateway-delete-gateway&interface=ui)
 
-For more information on Sandbox quota limits see [here](/docs/sandbox?topic=sandbox-sandbox-quota).
+For more information on Sandbox quota limits see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
 
 ## Supported actions
 {: #actions-sb}

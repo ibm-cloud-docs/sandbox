@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-06"
 
 keywords:
 
@@ -41,6 +41,47 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 
 * You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
 
+## Understanding Sandbox boundaries and constraints
+{: #sandbox-boundaries}
+
+The Sandbox environment has specific limitations to ensure fair usage and maintain security:
+
+### Service availability
+{: #service-availability}
+
+The Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrastructure as a Service (IaaS) offerings, including:
+
+* Virtual Server for VPC and Bare Metal Servers for VPC
+* Block Storage and Instance Storage for VPC
+* {{site.data.keyword.cos_full_notm}}
+* Virtual Private Cloud (VPC) networking components
+* Load Balancer, Client VPN, and Transit Gateway
+* DNS and Secrets Manager
+
+Other {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings are not available in the Sandbox environment.
+
+### Resource constraints
+{: #resource-constraints}
+
+The Sandbox enforces quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Key constraints include:
+
+* **Compute**: Limited vCPU (128) and RAM (1028 GB) for Virtual Servers, and 1 Bare Metal Server
+* **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and {{site.data.keyword.cos_full_notm}} to 4096 GB
+* **Network**: Maximum of 2 VPCs, 4 subnets, 4 Floating IPs, and 10 security groups
+* **Services**: 1 instance each for Load Balancer, VPN, Transit Gateway, DNS, and Secrets Manager
+
+For more details on quota limits, see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
+
+### Terms and conditions
+{: #terms-conditions}
+
+By using the Sandbox, you agree to:
+
+* Use the environment for evaluation and testing purposes only, not for production workloads
+* Follow security best practices and usage guidelines as outlined in [Limitations](/docs/sandbox?topic=sandbox-limitation)
+* Accept that all resources will be automatically deleted after the 14-day trial period expires
+* Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies
+
 ## Creating Sandbox account
 {: #sandbox-request}
 {: step}
@@ -52,11 +93,7 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 {: #sandbox-catalog}
 {: step}
 
-The Cloud Sandbox is available through the IBM Cloud Catalog for the allowlisted customers.
-
-1. Log in to the [IBM Cloud catalog](https://cloud.ibm.com/catalog#all_products){: external} page.
-2. Search for **Cloud Sandbox**.
-3. Click **Cloud Sandbox** tile to view the service details.
+After clicking **Request** in the email notification, you will be redirected to the Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
 
 For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs-draft/sandbox?topic=sandbox-deploy) topic.
 
@@ -82,7 +119,7 @@ Perform the following steps to provision the Sandbox:
 
    * *Optional*: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag&interface=ui).
 
-   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Creating a user](/docs/sandbox?topic=sandbox-create-user).
+   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Managing user access for Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
 
     Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
     {: important}
@@ -94,19 +131,27 @@ Perform the following steps to provision the Sandbox:
 Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
 
-## Accessing your Sandbox through trusted profile
+## Accessing your Sandbox through email
 {: #sandbox-access-profile}
 {: step}
 
-After your Sandbox is provisioned, you will receive access for the trusted profile.
+After your Sandbox is provisioned, an email is sent to all users with access details and supporting links to explore the Sandbox environment.
 
-1. Click on the link from the email or switch to the Sandbox Trusted Profile from the account drop down.
+1. In the email, click the **Access the link and explore the Sandbox** link to open the Sandbox environment.
 
-2. Locate your Sandbox trusted profile from the account drop-down with the tag `sandbox expires mm/dd`.
+2. When prompted, provide your {{site.data.keyword.Bluemix_notm}} credentials to authenticate.
 
-3. Switch from current account to the trusted profile.
+3. If two-factor authentication is enabled on your account, complete the verification process by providing the required authentication code.
 
-4. Click **Create Resources** to access the resource creation page.
+4. After successful authentication, you are redirected to the Sandbox trusted profile page.
+
+    ![Select a trusted profile](images/Access-link.png "Select a trusted profile"){: caption="Select a trusted profile" caption-side="bottom"}
+
+5. If the Sandbox account is not visible on the account page, select the trusted profile from the account drop-down menu. The trusted profile is labeled with the tag `sandbox expires mm/dd`.
+
+6. After switching to the trusted profile, you are navigated to the Sandbox trusted profile account.
+
+7. Access the [Sandbox Overview page](https://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
 
 The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
@@ -128,24 +173,24 @@ After provisioning resources, use your Sandbox environment to explore VPC featur
 
 Configure and validate network components by setting up the subnets, security groups, and network ACLs. Establish the public and private connectivity by testing latency and performance and experimenting with VPN and Transit Gateway configurations.
 
-* For more information see transit gateway, [Creating a Transit Gateway](/docs/sandbox?topic=sandbox-connect-migrate#create-transit-gateway).
-* For more information see on subnets, see [Working with subnets](/docs/vpc?topic=vpc-subnets-configure&interface=ui).
-* For more information see network ACL, see [Creating a network ACL](/docs/vpc?topic=vpc-acl-create-ui&interface=ui).
-* For more information see on security group, see [Setting up a security group for your resource](/docs/vpc?topic=vpc-configuring-the-security-group&interface=ui).
+* For more information on transit gateway, see [Creating a Transit Gateway](/docs/sandbox?topic=sandbox-connect-migrate#create-transit-gateway).
+* For more information on subnets, see [Working with subnets](/docs/vpc?topic=vpc-subnets-configure&interface=ui).
+* For more information on network ACL, see [Creating a network ACL](/docs/vpc?topic=vpc-acl-create-ui&interface=ui).
+* For more information on security group, see [Setting up a security group for your resource](/docs/vpc?topic=vpc-configuring-the-security-group&interface=ui).
 
 ### Evaluating compute options
 {: #sandbox-test-compute}
 
 Deploy and compare workloads across different compute profiles to evaluating the performance, scalability, bare metal versus VSI capabilities, and auto-scaling behavior.
 
-For more information see on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
+For more information on bare metal, see [Creating Bare Metal Servers on VPC](/docs/vpc?topic=vpc-creating-bare-metal-servers&interface=ui).
 
 ### Accessing storage solutions
 {: #sandbox-test-storage}
 
 Manage and evaluate storage by attaching block volumes, integrating {{site.data.keyword.cos_full_notm}} (COS), and testing performance.
 
-For more information see on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
+For more information on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
 
 ### Configuring load balancing
 {: #sandbox-test-loadbalancing}

@@ -55,7 +55,7 @@ The downloaded `.zip` archive contains the following Terraform configuration fil
 ## Supported resources
 {: #save-config-supported-resources}
 
-The Save sonfiguration feature retrieves and converts the following {{site.data.keyword.Bluemix_notm}} resources into Terraform configuration:
+The Save configuration feature retrieves and converts the following {{site.data.keyword.Bluemix_notm}} resources into Terraform configuration:
 
 ### VPC infrastructure resources
 {: #save-config-vpc-resources}

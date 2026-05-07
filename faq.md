@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-06"
 
 keywords:
 
@@ -17,7 +17,7 @@ content-type: faq
 # FAQs
 {: #my-service-faq}
 
-This document provides a list of frequently asked questions and answers about a specific topic for {{site.data.keyword.sandbox_full_notm}}.
+This document provides a list of frequently asked questions and answers about {{site.data.keyword.sandbox_full_notm}}.
 {: shortdesc}
 
 ## Is the {{site.data.keyword.sandbox_full_notm}} free?
@@ -38,7 +38,7 @@ The sandbox is available for 14 days by default. With an extension, the total 
 
 {{site.data.keyword.vpc_short}} provides modern equivalents for many Classic infrastructure components. Here is a quick reference mapping to understand how Classic infrastructure capabilities translate into the VPC.
 
-## Which operating system images are supported in the {{site.data.keyword.sandbox_full_notm}}?
+## Which operating system images are supported by the {{site.data.keyword.sandbox_full_notm}}?
 {: #faq-content-include}
 {: faq}
 
@@ -193,3 +193,9 @@ No, the sandbox is strictly for testing, evaluation, and learning purposes only.
 {: faq}
 
 {{site.data.keyword.Bluemix_notm}} provides documentation, tutorials, and FAQs to help you navigate the sandbox environment. If you encounter technical issues or have questions, you can access {{site.data.keyword.Bluemix_notm}} support resources through the console. For sandbox-specific questions about provisioning, access, or trial period extensions, contact {{site.data.keyword.Bluemix_notm}} support. Keep in mind that the sandbox is a trial environment, so support focuses on helping you successfully evaluate {{site.data.keyword.Bluemix_notm}} capabilities rather than production-level SLAs.
+
+## Which bucket type should I select?
+{: #faq-bucket-type}
+{: faq}
+
+Select "Create a Custom Bucket".

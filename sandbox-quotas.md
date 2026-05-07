@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-07"
 
 keywords:
 
@@ -14,6 +14,8 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
+The resource capacity and quota limits that apply to {{site.data.keyword.sandbox_full_notm}} environments, including restrictions for compute, storage, networking, and security resources.
+{: shortdesc}
 
 # Sandbox quota limits
 {: #sandbox-quota}
