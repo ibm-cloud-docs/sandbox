@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-06"
+lastupdated: "2026-05-12"
 
 keywords:
 
@@ -199,3 +199,9 @@ No, the sandbox is strictly for testing, evaluation, and learning purposes only.
 {: faq}
 
 Select "Create a Custom Bucket".
+
+## Is it possible to create an image from a VSI file in a Sandbox account?
+{: #faq-vsi}
+{: faq}
+
+Yes, it is possible. You need to ensure that the VSI is stopped by clicking on **Actions > Stop**, as the “Create Image” option is only available when the VSI is in a stopped state.
