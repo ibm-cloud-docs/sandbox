@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-06"
+lastupdated: "2026-05-13"
 
 keywords:
 
@@ -27,8 +27,9 @@ The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 
 - **Existing {{site.data.keyword.Bluemix_notm}} users** who want hands-on experience with {{site.data.keyword.Bluemix_notm}} services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
 
-To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service.
-{: important}
+To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service. The administrator should have the below two permissions:
+* All Identity and Access enabled services 
+* All Account Management services
 
 ## Before you begin
 {: #before-you-begin}
@@ -210,6 +211,9 @@ Your Sandbox environment has a 14-day trial period. To track your remaining time
 
 After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. You must save the configuration by downloading the Terraform package and running it in your own customer account.
 {: important}
+
+Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
+{: important} 
 
 ## Learn more
 {: #next-steps}

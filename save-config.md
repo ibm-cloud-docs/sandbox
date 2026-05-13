@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-13"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -135,18 +135,17 @@ The following resources are not included in the generated Terraform configuratio
 ## Saving your configuration
 {: #save-config-procedure}
 
-To save your Sandbox configuration and download the Terraform package:
+Following are the steps to save your Sandbox configuration and download the Terraform package:
 
 1. Navigate to the [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page from your resource list.
 
 2. In the **Manage Sandbox** section, click **Save Configuration**.
 
-   ![Sandbox - Save configuration](images/sandbox-save-config.png "Sandbox - Save configuration"){: caption="Figure 1. Save configuration option" caption-side="bottom"}
+   ![Sandbox - Save configuration](images/sandbox-save-config.png "Sandbox - Save configuration"){: caption="Save configuration option" caption-side="bottom"}
 
 3. Click **Download Terraform**. The system generates the Terraform configuration files from your live environment. This process can take a few minutes depending on the number of resources in your account. After generation is complete, a `.zip` file is automatically downloaded to your local machine.
 
 4. Extract the downloaded `.zip` file to a working directory.
-
 
 ## Applying the configuration in your production account
 {: #save-config-apply}
