@@ -54,9 +54,6 @@ As an administrator, if you want to allow other users to join or provision the C
     
 * Or, if you want to retain the admin control by allowing the user to only provision the Sandbox then you can assign **Cloud Sandbox** and **Resource group only** specific permissions to the user. In that case, the user can only provision the Sandbox but cannot do any IAM or account level changes.
 
-This is on customer account and nothing related to sandbox trusted profile account.
-{: note}
-
 * The added Admin can invite new users and grant them **Cloud Sandbox** permissions, allowing them to provision the Sandbox.
 
 * This permission level is required to invite users, assign access policies, and provision Cloud Sandbox permissions. 
@@ -97,7 +94,7 @@ To create or invite a new user and grant them Cloud Sandbox permission, follow t
 
 5. Select **Access policy**. Ensure that you add access policies and grant administrator-level access to the following services:
 
-    * All Identity and Access–enabled services
+    * All Identity and Access enabled services
     * All Account Management services
 
     For more information, see [Administrator permissions](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#administrator-permissions).
