@@ -30,9 +30,6 @@ Manage user access for {{site.data.keyword.sandbox_full_notm}} by adding Cloud S
 ## Administrator Permissions for Cloud Sandbox
 {: admin-permissions}
 
-### Overview
-{: #admin-overview}
-
 Cloud Sandbox provisioning and management require appropriate **Identity and Access Management (IAM)** permissions in IBM Cloud. These permissions determine whether a user can manage account-level settings, administer IAM policies, and provision Cloud Sandbox environments.
 
 ### Required Administrator Permissions
@@ -112,7 +109,7 @@ To add Cloud Sandbox permission to existing users in your account, follow these 
 
 4. Select **Access policy**.
 
-5. Add **Cloud Sandbox** permission.
+5. Add **Cloud Sandbox** permission. For more information, see [Administrator Permissions for Cloud Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#administrator-permissions-for-cloud-sandbox).
 
 6. Click **Next**.
 
@@ -138,7 +135,7 @@ To create or invite a new user and grant them Cloud Sandbox permission, follow t
     * All Identity and Access enabled services
     * All Account Management services
 
-    For more information, see [Administrator permissions](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#administrator-permissions).
+    For more information, see [Administrator Permissions for Cloud Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#administrator-permissions-for-cloud-sandbox).
 
 6. Click **Next**.
 
