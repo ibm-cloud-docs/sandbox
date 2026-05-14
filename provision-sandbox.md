@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-05"
+lastupdated: "2026-05-14"
 
 keywords:
 
@@ -28,6 +28,9 @@ Ensure that you add access policies and grant administrator-level access to the 
 * All Identity and Access–enabled services
 * All Account Management services
 * Cloud Sandbox
+
+Bare metal is subjected to capacity validation.
+{: note}
 
 ## Creating a Sandbox instance
 {: #create-ui}

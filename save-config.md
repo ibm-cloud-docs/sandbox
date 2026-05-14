@@ -210,15 +210,11 @@ After downloading and extracting the Terraform configuration, you can apply it t
 ## Security and Data handling
 {: #security-data}
 
-In this section, you understand how the data is accessed and managed after provisioning the Sandbox.
-
-### Data deletion validation
-{: #data-valid}
+**Data deletion validation**
 
 When a Sandbox account is suspended after a trial period, customers must delete the COS bucket created during the provisioning. If the COS buclet is not deleted, the account remains suspended and the associated resources are automatically deleted. Therefore, it is recommended to back up data using the **Save Configuration** option before the trial expires.
 
-### No recovery guaranteed after deletion
-{: #no-recovery}
+**No recovery guaranteed after deletion**
 
 You will not get access to any of your data or information post Sandbox account suspension. You need to backup the data.
 
