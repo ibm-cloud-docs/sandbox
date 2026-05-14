@@ -130,12 +130,7 @@ To create or invite a new user and grant them Cloud Sandbox permission, follow t
 
 4. Enter the email addresses.
 
-5. Select **Access policy**. Ensure that you add access policies and grant administrator-level access to the following services:
-
-    * All Identity and Access enabled services
-    * All Account Management services
-
-    For more information, see [Administrator Permissions for Cloud Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#administrator-permissions-for-cloud-sandbox).
+5. Select **Access policy**. Ensure that you add access policies and grant administrator-level access to the following services. For more information, see [Administrator Permissions for Cloud Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#administrator-permissions-for-cloud-sandbox).
 
 6. Click **Next**.
 

@@ -42,10 +42,10 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 
 * You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
 
-## Understanding Sandbox boundaries and constraints
+## Understanding the limits and constraints of the Sandbox environment
 {: #sandbox-boundaries}
 
-The Sandbox environment has specific limitations to ensure fair usage and maintain security:
+The Sandbox environment has specific limitations to ensure fair usage and maintain security.
 
 ### Service availability
 {: #service-availability}
