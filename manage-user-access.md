@@ -35,31 +35,31 @@ Manage user access for {{site.data.keyword.sandbox_full_notm}} by adding Cloud S
 
 As an administrator, you must have the two default permissions:
 
-  * All Identity and Access enabled services 
-  * All Account Management services. 
+* All Identity and Access enabled services
+* All Account Management services.
     
-  These permissions are automatically assigned to the user who creates an IBM Cloud account. With these privileges, you can also invite users to your account.
+These permissions are automatically assigned to the user who creates an IBM Cloud account. With these privileges, you can also invite users to your account.
 
 ### Scenario 2
 {: #scenario2}
 
-If you already have the administrator permissions, then you can directly create a Sandbox. However, you need the **Cloud Sandbox** and a **Resource group only** permissions. These permissions are covered by the All Identity and Access enabled services and All Account Management services.
+If you already have administrator permissions, then you can directly create a Sandbox. However, you need the **Cloud Sandbox** and a **Resource group only** permissions. These permissions are covered by the All Identity and Access enabled services and All Account Management services.
 
 ### Scenario 3
 {: #scenario3}
 
 As an administrator, if you want to allow other users to join or provision the Cloud Sandbox, then you have two options:
 
-  * You can grant the **Administrator** access to other user by assigning **All Identity and Access enabled services** and **All Account Management services** permissions. This will ensure that the allowed user is also an admin with the same administrative privileges. 
+* You can grant the **Administrator** access to other user by assigning **All Identity and Access enabled services** and **All Account Management services** permissions. This will ensure that the allowed user is also an admin with the same administrative privileges. 
     
-  * Or, if you want to retain the admin control by allowing the user to only provision the Sandbox then you can assign **Cloud Sandbox** and **Resource group only** specific permissions to the user. In that case, the user can only provision the Sandbox but cannot do any IAM or account level changes.
+* Or, if you want to retain the admin control by allowing the user to only provision the Sandbox then you can assign **Cloud Sandbox** and **Resource group only** specific permissions to the user. In that case, the user can only provision the Sandbox but cannot do any IAM or account level changes.
 
-  This is on customer account and nothing related to sandbox trusted profile account.
-    {: note}
+This is on customer account and nothing related to sandbox trusted profile account.
+{: note}
 
-  * The added Admin can invite new users and grant them **Cloud Sandbox** permissions, allowing them to provision the sandbox.
+* The added Admin can invite new users and grant them **Cloud Sandbox** permissions, allowing them to provision the Sandbox.
 
-  * This permission level is required to invite users, assign access policies, and provision Cloud Sandbox permissions. 
+* This permission level is required to invite users, assign access policies, and provision Cloud Sandbox permissions. 
 
 ## Adding permissions to existing users to provision Sandbox
 {: #add-sandbox-permission}
