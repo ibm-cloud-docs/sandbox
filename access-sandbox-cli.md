@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-05-14"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -17,7 +17,6 @@ subcollection: sandbox
 
 To access and manage {{site.data.keyword.sandbox_full_notm}} resources using the {{site.data.keyword.Bluemix_notm}} CLI, including installation steps, authentication, and essential commands for VPC infrastructure management.
 {: shortdesc}
-
 
 To access Sandbox using CLI, you need the following commands:
 

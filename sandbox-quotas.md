@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-05-14"
 
 keywords:
 
@@ -17,16 +17,18 @@ content-type: release-note
 The resource capacity and quota limits that apply to {{site.data.keyword.sandbox_full_notm}} environments, including restrictions for compute, storage, networking, and security resources.
 {: shortdesc}
 
+If the capacity usage exceeds the defined quota limit, then the corresponding action will be taken and will be notified accordingly.
+
 # Sandbox quota limits
 {: #sandbox-quota}
 
 Following is the table list of Sandbox resource capacity and Quota limits:
 
-| Resource name | Supported capacity | Impact |
+| Resource name | Supported capacity | What happens |
 | ------- | --------- | ---- |
 | Virtual Server for VPC | vCPU: 128 \n RAM:1028GB | Instance provisioning may fail or stay in a pending state due to insufficient quota. |
 | Bare Metal Servers for VPC | 1 | No additional bare metal can be provisioned once the limit is reached. |
-| Block Storage for VPC | Allowed is 4096GB of data volume per VSI | Any volume larger than 4096 GB will be deleted. |
+| Block Storage for VPC | Allowed is 4096GB of data volume per VSI | Any volume larger than 4096 GB will be detached. |
 | Instance Storage for VPC | 1024 GB of instance storage | New volume creation may fail and existing workloads could face storage constraints. |
 | {{site.data.keyword.cos_full_notm}} | 4096 GB \n 1 COS instance | Approaching capacity limits may cause upload failures or degraded performance. Monitor bucket usage, archive or delete unused data, apply lifecycle policies, and scale the storage plan if needed. Any COS storage exceeding 4096 GB will be deleted. |
 | Virtual Private Cloud | Creation of 2 VPC in the selected region | Additional VPCs cannot be provisioned, preventing new environment creation. Verify the current VPC count and reuse existing VPCs or remove unused ones. |

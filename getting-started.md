@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-13"
+lastupdated: "2026-05-14"
 
 keywords:
 
@@ -16,7 +16,7 @@ content-type: tutorial
 # Getting Started with {{site.data.keyword.sandbox_full_notm}}
 {: #getting-started-sandbox}
 
-The {{site.data.keyword.sandbox_full_notm}} is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the {{site.data.keyword.Bluemix_notm}} infrastructure performs, behaves, and scales for their use cases before making production..
+The {{site.data.keyword.sandbox_full_notm}} is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the {{site.data.keyword.Bluemix_notm}} infrastructure performs, behaves, and scales for their use cases before making production.
 {: shortdesc}
 
 It gives users a 2-week trial to experiment with, test, and assess their applications or workloads using {{site.data.keyword.vpc_short}} features.
@@ -28,7 +28,7 @@ The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 - **Existing {{site.data.keyword.Bluemix_notm}} users** who want hands-on experience with {{site.data.keyword.Bluemix_notm}} services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
 
 To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service. The administrator should have the below two permissions:
-* All Identity and Access enabled services 
+* All Identity and Access enabled services
 * All Account Management services
 
 ## Before you begin

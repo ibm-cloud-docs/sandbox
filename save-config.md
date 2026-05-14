@@ -15,7 +15,9 @@ subcollection: sandbox
 # Saving your Sandbox configuration
 {: #save-config}
 
-The Save configuration feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
+Before suspending the Sandbox account, customers must delete all the resources created during provisioning. If these resources are not removed, the account will remain suspended and the resources will be deleted automatically. Therefore, it is recommended to back-up data using the **Save configuration** option before the trial period expires.
+
+The **Save configuration** feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
 {: shortdesc}
 
 You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page.
@@ -206,17 +208,6 @@ After downloading and extracting the Terraform configuration, you can apply it t
    {: pre}
 
 6. When prompted, type `yes` to confirm the resource creation.
-
-## Security and Data handling
-{: #security-data}
-
-**Data deletion validation**
-
-When a Sandbox account is suspended after a trial period, customers must delete the COS bucket created during the provisioning. If the COS buclet is not deleted, the account remains suspended and the associated resources are automatically deleted. Therefore, it is recommended to back up data using the **Save Configuration** option before the trial expires.
-
-**No recovery guaranteed after deletion**
-
-You will not get access to any of your data or information post Sandbox account suspension. You need to backup the data.
 
 ## Best practices
 {: #save-config-best-practices}
