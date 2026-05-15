@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-05-15"
 
 keywords:
 
@@ -30,7 +30,7 @@ Manage user access for {{site.data.keyword.sandbox_full_notm}} by adding Cloud S
 ## Administrator Permissions for Cloud Sandbox
 {: admin-permissions}
 
-Cloud Sandbox provisioning and management require appropriate **Identity and Access Management (IAM)** permissions in IBM Cloud. These permissions determine whether a user can manage account-level settings, administer IAM policies, and provision Cloud Sandbox environments.
+Cloud Sandbox provisioning require appropriate **Identity and Access Management (IAM)** permissions in IBM Cloud. These permissions determine whether a user can manage account-level settings, administer IAM policies, and provision Cloud Sandbox environments.
 
 ### Required Administrator Permissions
 {: #reqd-permission}

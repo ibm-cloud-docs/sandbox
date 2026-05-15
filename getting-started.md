@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-05-15"
 
 keywords:
 
@@ -42,7 +42,7 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 
 * You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
 
-## Understanding the limits and constraints of the Sandbox environment
+## Understanding the limitations of the Sandbox environment
 {: #sandbox-boundaries}
 
 The Sandbox environment has specific limitations to ensure fair usage and maintain security.
@@ -61,10 +61,10 @@ The Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrast
 
 Other {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings are not available in the Sandbox environment.
 
-### Resource constraints
-{: #resource-constraints}
+### Resource limitations
+{: #resource-limit}
 
-The Sandbox enforces quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Key constraints include:
+The Sandbox applies quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Following are the key limitations:
 
 * **Compute**: Limited vCPU (128) and RAM (1028 GB) for Virtual Servers, and 1 Bare Metal Server
 * **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and {{site.data.keyword.cos_full_notm}} to 4096 GB
@@ -78,10 +78,10 @@ For more details on quota limits, see [Sandbox quota limits](/docs/sandbox?topic
 
 By using the Sandbox, you agree to:
 
-* Use the environment for evaluation and testing purposes only, not for production workloads
-* Follow security best practices and usage guidelines as outlined in [Limitations](/docs/sandbox?topic=sandbox-limitation)
-* Accept that all resources will be automatically deleted after the 14-day trial period expires
-* Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies
+* Use the environment for evaluation and testing purposes only, not for production workloads.
+* Follow security best practices and usage guidelines as outlined in [Limitations](/docs/sandbox?topic=sandbox-limitation).
+* Accept that all resources will be automatically deleted after the 14-day trial period expires.
+* Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies.
 
 ## Creating Sandbox account
 {: #sandbox-request}
