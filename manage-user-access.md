@@ -15,17 +15,17 @@ subcollection: sandbox
 # IAM Permissions
 {: #manage-user-access-sandbox}
 
-Manage user access for {{site.data.keyword.sandbox_full_notm}} by adding Cloud Sandbox permissions to existing users or inviting new users with the required access.
+You can manage the user access for {{site.data.keyword.sandbox_full_notm}} by adding required permissions to existing users or inviting new users with the required access.
 {: shortdesc}
+
+
 
 ## Before you begin
 {: #before-you-begin}
 
-* Before you provision the IBM Cloud Sandbox, ensure that you have Administrator access to Identity and Access Management (IAM) in your IBM Cloud account.
-
-* If the required permissions are not added, you cannot provision the Sandbox, and an error message will be displayed on the catalog tile.
-
-![Permission for provision](images/Permission-provision.png "Permission for provision"){: caption="Permission for provision" caption-side="bottom"}
+* Account should be whitelisted.
+* Access to [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog#highlights){: external} to provision the Sandbox.
+* Users should have access to IAM (Admin access) permissions.
 
 ## Administrator Permissions for Cloud Sandbox
 {: admin-permissions}
