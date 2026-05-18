@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-15"
+lastupdated: "2026-05-18"
 
 keywords:
 
@@ -178,6 +178,7 @@ Configure and validate network components by setting up the subnets, security gr
 * For more information on subnets, see [Working with subnets](/docs/vpc?topic=vpc-subnets-configure&interface=ui).
 * For more information on network ACL, see [Creating a network ACL](/docs/vpc?topic=vpc-acl-create-ui&interface=ui).
 * For more information on security group, see [Setting up a security group for your resource](/docs/vpc?topic=vpc-configuring-the-security-group&interface=ui).
+* For more information on VPN for VPC, see [VPNs for VPC overview](/docs/vpc?topic=vpc-vpn-overview).
 
 ### Evaluating compute options
 {: #sandbox-test-compute}
@@ -191,7 +192,9 @@ For more information on bare metal, see [Creating Bare Metal Servers on VPC](/do
 
 Manage and evaluate storage by attaching block volumes, integrating {{site.data.keyword.cos_full_notm}} (COS), and testing performance.
 
-For more information on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
+* For more information on block volumes, see [Creating Block Storage for VPC volumes](/docs/vpc?topic=vpc-creating-block-storage&interface=ui).
+
+* For more information on IBM Cloud Object Storage, see [Getting started with IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage).
 
 ### Configuring load balancing
 {: #sandbox-test-loadbalancing}
