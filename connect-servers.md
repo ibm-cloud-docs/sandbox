@@ -100,6 +100,7 @@ Replace `INSTANCE_ID` with the ID or name of your instance. Wait until the insta
    ibmcloud is instance-initialization-values INSTANCE_ID --private-key "@~/.ssh/id_rsa"
    ```
    {: codeblock}
+   
    Replace `INSTANCE_ID` with your instance ID or name.
 
 2. Open Remote Desktop Connection (RDP) on your computer.

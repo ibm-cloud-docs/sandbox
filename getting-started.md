@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-05-19"
 
 keywords:
 
@@ -96,7 +96,7 @@ By using the Sandbox, you agree to:
 
 After clicking **Request** in the email notification, you will be redirected to the Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
 
-For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs-draft/sandbox?topic=sandbox-deploy) topic.
+For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-deploy) topic.
 
 ## Creating your Sandbox environment
 {: #sandbox-create}

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-19"
 
 keywords: activity tracking, events, sandbox
 
@@ -103,3 +103,4 @@ Use the following fields in the CADF event to filter and correlate sandbox event
 | `correlationId` | Links related events together — especially the initial `pending` and final completion events for asynchronous provisioning operations (`sandbox.resource.create`). |
 | `reason.reasonCode` | The HTTP status code of the operation. |
 | `reason.reasonType` | A human-readable reason for the outcome, populated for all `failure` events. Includes detailed IBM IAM authorization deny reasons. |
+{: caption="CADF event="bottom"}
