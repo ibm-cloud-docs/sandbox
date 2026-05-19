@@ -86,7 +86,7 @@ Replace `INSTANCE_ID` with the ID or name of your instance. Wait until the insta
 1. Run the following command:
 
    ```text
-   ssh -i <path-to-key.pem> root@<Floating-IP>
+   ssh -i <path-to-key.pem> <enter the username>@<Floating-IP>
    ```
    {: codeblock}
 

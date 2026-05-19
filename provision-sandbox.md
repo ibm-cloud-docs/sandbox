@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-05-19"
 
 keywords:
 
@@ -236,7 +236,7 @@ You can optionally extend the Sandbox trial for 2 days (48 hours) by clicking on
 ### End Sandbox
 {: #end-sb}
 
-You can optionally end the Sandbox trial any time by clicking **End Sandbox**. If you do so, the account will be suspended and you will not be able to access the resources you have created. The data will be securely stored in COS bucket with object lock enabled and retained for 60 days. After this period, resources will be deleted, reclaim processes will be completed, and the account will be suspended.
+You can optionally end the Sandbox trial any time by clicking **End Sandbox**. If you do so, the account will be suspended and you will not be able to access the resources you have created. The data will be securely stored in COS bucket with object lock enabled. After this period, resources will be deleted, reclaim processes will be completed, and the account will be suspended.
 
 It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
 {: tip}
