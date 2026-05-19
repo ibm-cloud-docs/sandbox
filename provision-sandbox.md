@@ -94,7 +94,7 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
 4. Accept the terms and conditions, click **Create resources**.
 
-Once resources hss been created, you can view them from the **Resource list**.
+Once resources has been created, you can view them from the **Resource list**.
 
 ## Additional offerings
 {: #sandbox-additional-offerings}

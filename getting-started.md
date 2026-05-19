@@ -19,7 +19,7 @@ content-type: tutorial
 The {{site.data.keyword.sandbox_full_notm}} is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the {{site.data.keyword.Bluemix_notm}} infrastructure performs, behaves, and scales for their use cases before making production.
 {: shortdesc}
 
-It gives users a 2-week trial to experiment with, test, and assess their applications or workloads using {{site.data.keyword.vpc_short}} features.
+It gives users a 2-week trial to experiment, test, and assess their applications or workloads using {{site.data.keyword.vpc_short}} features.
 
 The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 

@@ -85,7 +85,7 @@ With this access model, users can provision and manage Sandbox environments with
 This approach allows organizations to maintain centralized administrative control while enabling users to work with Cloud Sandbox resources.
 
 ## Best Practices
-{: best-prac}
+{: #best-prac}
 
 Following are the best practices when assigning permissions:
 

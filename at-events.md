@@ -11,6 +11,7 @@ subcollection: sandbox
 {{site.data.keyword.attribute-definition-list}}
 
 # Activity tracking events for Sandbox
+
 {: #at_events}
 
 Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
@@ -24,6 +25,7 @@ Users with trusted profiles may not have access to view Activity Tracker or Logs
 {: note}
 
 ## Locations where activity tracking events are generated
+
 {: #at-locations}
 
 {{site.data.keyword.sandbox_full_notm}} sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
@@ -56,11 +58,13 @@ Users with trusted profiles may not have access to view Activity Tracker or Logs
 {: class="simple-tab-table"}
 
 ## Enabling activity tracking events for {{site.data.keyword.sandbox_full_notm}}
+
 {: #at-enable}
 
 No special steps are required. Activity tracking events for {{site.data.keyword.sandbox_full_notm}} are automatically enabled and forwarded to {{site.data.keyword.logs_full_notm}} via {{site.data.keyword.atracker_full_notm}}.
 
 ## Viewing activity tracking events for {{site.data.keyword.sandbox_full_notm}}
+
 {: #at-viewing}
 
 Account administrators can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in the account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
@@ -69,11 +73,13 @@ Users with trusted profiles typically do not have permissions to access {{site.d
 {: important}
 
 ### Launching {{site.data.keyword.logs_full_notm}}
+
 {: #log-launch-standalone}
 
 For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation](/docs/cloud-logs?topic=cloud-logs-instance-launch).
 
 ## List of management events
+
 {: #at_actions}
 
 The following table lists the management actions that generate activity tracking events in Sandbox.
@@ -89,6 +95,7 @@ The following table lists the management actions that generate activity tracking
 {: caption="Actions that generate management events" caption-side="bottom"}
 
 ## Analyzing {{site.data.keyword.sandbox_full_notm}} activity tracking events
+
 {: #at_events_iam_analyze}
 
 Use the following fields in the CADF event to filter and correlate sandbox events:
