@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-19"
+lastupdated: "2026-05-21"
 
 keywords:
 
@@ -111,7 +111,7 @@ Perform the following steps to provision the Sandbox:
 
    * **Sandbox name** - Provide a unique, descriptive name for your Sandbox environment (for example, "sandbox-month-date")
 
-   * **Resource group** - Choose an existing resource group or create a new one to organize your sandbox resources. For more information on creating a new resource group, see [Creating a resource group](/docs/sandbox?topic=sandbox-create-resource-group).
+   * **Resource group** - Choose an existing resource group or create a new one to organize your sandbox resources.
 
    * **Region** - Select the geographic location where your Sandbox resources will be provisioned (for example, us-south, eu-de and so on).
 
@@ -161,7 +161,7 @@ The trusted profile provides secure, time-limited access to your Sandbox environ
 {: #sandbox-create-resources}
 {: step}
 
-In the Sandbox environment, you can create the resources from the Overview page.For more information, see [Creating resources in Sandbox](/docs/sandbox?topic=sandbox-quickstart) topic.
+In the Sandbox environment, you can create the resources from the Overview page.For more information, see [Creating resources in Sandbox](/docs-draft/sandbox?topic=sandbox-create-resource) topic.
 
 ## Exploring VPC capabilities
 {: #sandbox-explore}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-05-21"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -20,7 +20,7 @@ Before suspending the Sandbox account, customers must delete all the resources c
 The **Save configuration** feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
 {: shortdesc}
 
-You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page.
+You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview){: external} page.
 
 After your 14-day trial period expires, all Sandbox resources are automatically deleted. Use the **Save configuration** feature to preserve your infrastructure setup before the trial ends.
 {: important}
@@ -139,7 +139,7 @@ The following resources are not included in the generated Terraform configuratio
 
 Following are the steps to save your Sandbox configuration and download the Terraform package:
 
-1. Navigate to the [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page from your resource list.
+1. Navigate to the [Sandbox Overview](https://cloud.ibm.com/sandbox/overview){: external} page from your resource list.
 
 2. In the **Manage Sandbox** section, click **Save Configuration**.
 
