@@ -100,8 +100,7 @@ Try the following solutions:
 2. Check the account drop-down menu for a trusted profile with the tag `sandbox expires mm/dd`.
 3. Clear your browser cache and cookies, then log out and log back in to {{site.data.keyword.Bluemix_notm}}.
 4. If the sandbox trial period has expired, the trusted profile is automatically deleted. You'll need to create a new sandbox.
-5. Verify that you were added as a user during the initial sandbox creation. If not, contact the sandbox creator to be added.
-6. Try accessing the sandbox from a different browser or in incognito/private mode.
+5. Try accessing the sandbox from a different browser or in incognito/private mode.
 
 ## Why cannot I create resources in my sandbox?
 {: #ts-cannot-create-resources}
