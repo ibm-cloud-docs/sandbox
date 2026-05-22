@@ -241,3 +241,21 @@ Use a larger CIDR block within the allowed range, such as `/21` (2,048 IPs) or `
 {: faq}
 
 In some cases, provisioning may take longer due to backend processing delays, infrastructure dependencies, or resource availability. While most environments are set up within 10–15 minutes, occasional delays can occur and may not be directly controllable from the UI or user side.
+
+## Why do I receive an “access denied” error during bucket creation?
+{: #faq-bucket}
+{: faq}
+
+As part of this release, users may temporarily see an “Access Denied” message during bucket creation. However, the bucket will still be created in the backend. Once you navigate to the COS instance, you should be able to see the bucket being provisioned. If the issue persists, contact ibm-cloud-sandbox-support@wwpdl.vnet.ibm.com.
+
+## Is IBM Aspera download and upload supported in sandbox environments?
+{: #faq-aspera}
+{: faq}
+
+IBM Aspera downloads and uploads are currently not supported in Sandbox environments. Use the **Standard Transfer** for all the download and upload operations in Sandbox environments.
+
+## What should I do if I get logged out after clicking Sandbox in Resource List?
+{: #faq-rl}
+{: faq}
+
+You can login again and click **Continue**, and then select the Sandbox account from the account switcher under the **Trusted Profiles** section.
