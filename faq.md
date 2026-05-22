@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-22"
 
 keywords:
 
@@ -205,3 +205,33 @@ Select "Create a Custom Bucket".
 {: faq}
 
 Yes, it is possible. You need to ensure that the VSI is stopped by clicking on **Actions > Stop**, as the “Create Image” option is only available when the VSI is in a stopped state.
+
+## How do I find my VPC's address prefix?
+{: #faq-vpcs}
+{: faq}
+
+Verify your VPC configuration in the IBM Cloud Console under** VPC > Address Prefixes**.
+
+## Can I change the client IP pool after creation?
+{: #faq-ippool}
+{: faq}
+
+You cannot update the existing configuration, delete the VPN server and recreate it with a new client IP pool.
+
+## What happens if I use an overlapping range?** 
+{: #faq-overlap}
+{: faq}
+
+The VPN server creation will fail due to an address overlap error, and no resources will be provisioned.
+
+## Why does my client IP pool need to be between /9 and /22?**  
+{: #faq-ip}
+{: faq}
+
+This range provides sufficient IP addresses for VPN clients (at least 1,024 with a /22) while remaining manageable in size (up to a /9).
+
+## What if I need more than 1,024 VPN connections?** 
+{: #faq-vpn}
+{: faq}
+
+Use a larger CIDR block within the allowed range, such as `/21` (2,048 IPs) or `/20` (4,096 IPs).

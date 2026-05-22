@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-22"
 
 keywords: sandbox troubleshooting, sandbox provisioning issues, sandbox access problems, sandbox connectivity, sandbox resources
 
@@ -256,7 +256,7 @@ After creating resources in your sandbox, they don't appear in the {{site.data.k
 Resources may not be visible due to:
 {: tsCauses}
 
-- You're viewing the wrong account (not switched to the sandbox trusted profile)
+- You are viewing the wrong account (not switched to the sandbox trusted profile)
 - Resource provisioning is still in progress
 - Browser cache issues
 - Resource creation actually failed but didn't show an error
@@ -434,6 +434,24 @@ Try the following solutions:
 5. Check that both source and destination resources have appropriate network configurations.
 6. Test connectivity using ping or traceroute to identify where traffic is being blocked.
 7. Review Transit Gateway status and connection state in the {{site.data.keyword.Bluemix_notm}} Console.
+
+## What happens when VPC address prefix overlap?
+{: #ts-vpc-overlap}
+{: troubleshoot}
+{: support}
+
+The following error message is displayed when the client IP pool overlaps with VPC address prefix:
+
+```pre
+CreateVPNServer API call: The provided client IP pool overlaps with VPC address prefix '10.0.0.0/16'
+```
+{: tsSymptoms}
+
+The client IP pool you selected conflicts with the address ranges used by your VPC infrastructure network.
+{: tsCauses}
+
+Select a client IP pool from a private address range that does not overlap with your VPC.
+{: tsResolve}
 
 ## Getting help and support
 {: #ts-getting-help}

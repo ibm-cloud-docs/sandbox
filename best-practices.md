@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-22"
 
 keywords: sandbox best practices, vpc best practices, cloud sandbox optimization, sandbox security, resource management
 
@@ -109,6 +109,14 @@ Regularly check your resource usage to avoid hitting limits:
 
 Proactive monitoring prevents resource exhaustion and ensures you can complete all planned testing activities.
 
+### VPN Client IP Pool Configuration
+{: #vpn-client-pool}
+
+* **Plan Ahead**: Document your IP addressing scheme before creating VPN servers.
+* **Use Non-Overlapping Ranges**: Choose client IP pools from different private IP blocks than your VPC.
+* **Consider Growth**: Select a CIDR size that accommodates future VPN user growth.
+* **Coordinate with Network Team**: Ensure alignment with overall network architecture.
+
 ## Server provisioning best practices
 {: #server-provisioning}
 
@@ -121,18 +129,19 @@ Select the appropriate server type based on your workload characteristics:
 
 * **Use Virtual Server Instances (VSI) for:**
 
-  - Development and testing environments
-  - Web applications and microservices
-  - Workloads with variable resource demands
-  - Quick deployment and iteration cycles
-  - Most evaluation and learning scenarios
+- Development and testing environments
+- Web applications and microservices
+- Workloads with variable resource demands
+- Quick deployment and iteration cycles
+- Most evaluation and learning scenarios
 
 * **Use Bare Metal Servers for:**
-  - High-performance computing requirements
-  - Database servers with intensive I/O operations
-  - Applications requiring consistent, dedicated resources
-  - Workloads with strict compliance or isolation requirements
-  - Performance benchmarking against physical infrastructure
+
+- High-performance computing requirements
+- Database servers with intensive I/O operations
+- Applications requiring consistent, dedicated resources
+- Workloads with strict compliance or isolation requirements
+- Performance benchmarking against physical infrastructure
 
 VSIs are recommended for most sandbox users due to faster provisioning times and greater flexibility.
 {: tip}

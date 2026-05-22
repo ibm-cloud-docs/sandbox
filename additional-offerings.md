@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-22"
 
 keywords: sandbox best practices, vpc best practices, cloud sandbox optimization, sandbox security, resource management
 
@@ -95,6 +95,63 @@ The supported capacity for VPN for VPC for Sandbox is 1 instance.
 
 By default, the `Full-tunnel` VPN mode is selected. You need to change it to `Split-tunnel` mode.
 {: important}
+
+### VPN Client IP Pool Configuration
+{: #vpn-pool}
+
+When configuring a VPN server for IBM Cloud VPC, the client IP pool must be carefully selected to avoid conflicts with existing network infrastructure.
+
+Our system performs the following validations on VPN client IP pools:
+
+#### CIDR Format Validation
+{: #cidr}
+
+- Ensures the client IP pool is a valid CIDR notation (e.g., `192.168.100.0/24`)
+
+#### Netmask Range
+{: #netmask}
+
+- Must be between `/9` and `/22`
+- Provides sufficient IP addresses while maintaining security
+
+#### Network Boundary Check
+{: #nw-check}
+
+- Ensures CIDR uses proper network address (not a host address)
+
+#### Overlap Prevention
+{: #overlap}
+
+- **Existing VPN Pools**: Checks against other VPN client IP pools in your account
+- **Same Request**: Validates multiple VPN configurations within the same request don't overlap
+- **VPC Address Prefix**: Prevents overlap with VPC address prefix (`10.0.0.0/16`)
+- **VPC Subnets**: Prevents overlap with VPC subnet CIDRs (`10.0.1.0/24`)
+
+### Recommended Client IP Pool Ranges
+{: #rec-ip}
+
+Use these ranges to avoid common conflicts:
+
+| CIDR Range | Description | Recommended Use |
+|------------|-------------|-----------------|
+| `172.16.0.0/12` | Private Class B range | Recommended for most deployments |
+| `192.168.0.0/16` | Private Class C range | Good for smaller deployments |
+| `10.240.0.0/16` | High-range Class A | If VPC uses lower `10.x` ranges |
+{: caption="Recommended Client IP Pool Ranges" caption-side="bottom"}
+
+### Multi-Subnet VPCs
+{: #multi-subnet}
+
+If your VPC contains multiple subnets, make sure the client IP pool does not overlap with any of them.
+
+### Hybrid Cloud Scenarios
+{: #hybrid-cloud}
+
+If using Transit Gateway, Direct Link, or VPN Gateway to connect to on-premises networks:
+
+- Avoid IP ranges used in your on-premises network
+- Avoid ranges advertised through Transit Gateway
+- Coordinate with your network team to prevent conflicts
 
 ### Learn more
 {: #learnmore-vpn}
