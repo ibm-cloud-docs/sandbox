@@ -99,27 +99,25 @@ By default, the `Full-tunnel` VPN mode is selected. You need to change it to `Sp
 ### VPN Client IP Pool Configuration
 {: #vpn-pool}
 
-When configuring a VPN server for IBM Cloud VPC, the client IP pool must be carefully selected to avoid conflicts with existing network infrastructure.
+When configuring a VPN server for IBM Cloud VPC, the client IP pool must be carefully selected to avoid conflicts with existing network infrastructure. Our system performs the following validations on VPN client IP pools:
 
-Our system performs the following validations on VPN client IP pools:
-
-#### CIDR Format Validation
+#### CIDR format validation
 {: #cidr}
 
-- Ensures the client IP pool is a valid CIDR notation (e.g., `192.168.100.0/24`)
+Ensures the client IP pool is a valid CIDR notation (e.g., `192.168.100.0/24`)
 
-#### Netmask Range
+#### Netmask range
 {: #netmask}
 
 - Must be between `/9` and `/22`
 - Provides sufficient IP addresses while maintaining security
 
-#### Network Boundary Check
+#### Network boundary check
 {: #nw-check}
 
-- Ensures CIDR uses proper network address (not a host address)
+Ensures CIDR uses proper network address (not a host address)
 
-#### Overlap Prevention
+#### Overlap prevention
 {: #overlap}
 
 - **Existing VPN Pools**: Checks against other VPN client IP pools in your account
@@ -132,7 +130,7 @@ Our system performs the following validations on VPN client IP pools:
 
 Use these ranges to avoid common conflicts:
 
-| CIDR Range | Description | Recommended Use |
+| CIDR Range | Description | Recommended use |
 |------------|-------------|-----------------|
 | `172.16.0.0/12` | Private Class B range | Recommended for most deployments |
 | `192.168.0.0/16` | Private Class C range | Good for smaller deployments |
@@ -147,7 +145,7 @@ If your VPC contains multiple subnets, make sure the client IP pool does not ove
 ### Hybrid Cloud Scenarios
 {: #hybrid-cloud}
 
-If using Transit Gateway, Direct Link, or VPN Gateway to connect to on-premises networks:
+If your using Transit Gateway, Direct Link, or VPN Gateway to connect to on-premises networks:
 
 - Avoid IP ranges used in your on-premises network
 - Avoid ranges advertised through Transit Gateway

@@ -453,6 +453,19 @@ The client IP pool you selected conflicts with the address ranges used by your V
 Select a client IP pool from a private address range that does not overlap with your VPC.
 {: tsResolve}
 
+## Why is my environment provisioning taking longer than the expected 10–15 minutes?
+{: #ts-provisiom}
+{: troubleshoot}
+{: support}
+
+Provisioning may take longer due to backend processing delays, infrastructure dependencies, or resource availability. While most environments are set up within 10–15 minutes, occasional delays can occur and may not be directly controllable from the UI or user side.
+{: tsSymptoms}
+
+{: tsCauses}
+
+{: tsResolve}
+
+
 ## Getting help and support
 {: #ts-getting-help}
 

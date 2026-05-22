@@ -206,11 +206,11 @@ Select "Create a Custom Bucket".
 
 Yes, it is possible. You need to ensure that the VSI is stopped by clicking on **Actions > Stop**, as the “Create Image” option is only available when the VSI is in a stopped state.
 
-## How do I find my VPC's address prefix?
+## How do I find my VPCs address prefix?
 {: #faq-vpcs}
 {: faq}
 
-Verify your VPC configuration in the IBM Cloud Console under** VPC > Address Prefixes**.
+Verify your VPC configuration in the IBM Cloud Console under **VPC > Address Prefixes**.
 
 ## Can I change the client IP pool after creation?
 {: #faq-ippool}
@@ -218,20 +218,26 @@ Verify your VPC configuration in the IBM Cloud Console under** VPC > Address Pre
 
 You cannot update the existing configuration, delete the VPN server and recreate it with a new client IP pool.
 
-## What happens if I use an overlapping range?** 
+## What happens if I use an overlapping range?
 {: #faq-overlap}
 {: faq}
 
 The VPN server creation will fail due to an address overlap error, and no resources will be provisioned.
 
-## Why does my client IP pool need to be between /9 and /22?**  
+## Why does my client IP pool need to be between /9 and /22?
 {: #faq-ip}
 {: faq}
 
 This range provides sufficient IP addresses for VPN clients (at least 1,024 with a /22) while remaining manageable in size (up to a /9).
 
-## What if I need more than 1,024 VPN connections?** 
+## What if I need more than 1,024 VPN connections?
 {: #faq-vpn}
 {: faq}
 
 Use a larger CIDR block within the allowed range, such as `/21` (2,048 IPs) or `/20` (4,096 IPs).
+
+## Why is my environment provisioning taking longer than the expected 10–15 minutes?
+{: #faq-provision}
+{: faq}
+
+In some cases, provisioning may take longer due to backend processing delays, infrastructure dependencies, or resource availability. While most environments are set up within 10–15 minutes, occasional delays can occur and may not be directly controllable from the UI or user side.
