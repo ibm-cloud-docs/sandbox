@@ -134,7 +134,6 @@ Use these ranges to avoid common conflicts:
 |------------|-------------|-----------------|
 | `172.16.0.0/12` | Private Class B range | Recommended for most deployments |
 | `192.168.0.0/16` | Private Class C range | Good for smaller deployments |
-| `10.240.0.0/16` | High-range Class A | If VPC uses lower `10.x` ranges |
 {: caption="Recommended Client IP Pool Ranges" caption-side="bottom"}
 
 ### Multi-Subnet VPCs
