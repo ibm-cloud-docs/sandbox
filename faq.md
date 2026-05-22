@@ -280,4 +280,4 @@ Yes. This is an expected behavior and a special capability available in the Sand
 {: #faq-data}
 {: faq}
 
-In the IBM Cloud Sandbox environment, a Cloud Object Storage (COS) bucket supports storing objects with a maximum file size of up to 4096 GB (4 TB) per object.
+In the IBM Cloud Sandbox environment, a Cloud Object Storage (COS) bucket supports storing objects with a maximum file size of up to 4096 GB (4 TB).
