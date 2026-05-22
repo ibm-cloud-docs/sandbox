@@ -270,7 +270,7 @@ Our IBM Cloud Sandbox offering allows users to create buckets only using the **C
 * Archive your data
 * Host a static website
 
-## I am able to create buckets in other regions. Is that expected?
+## Is it expected behavior that I can create buckets in other regions?
 {: #faq-region}
 {: faq}
 
