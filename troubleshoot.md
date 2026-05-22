@@ -436,7 +436,7 @@ Try the following solutions:
 7. Review Transit Gateway status and connection state in the {{site.data.keyword.Bluemix_notm}} Console.
 
 ## What happens when VPC address prefix overlap?
-{: #ts-vpc-overlap}
+{: #ts-overlap}
 {: troubleshoot}
 {: support}
 

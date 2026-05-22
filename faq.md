@@ -258,4 +258,26 @@ IBM Aspera downloads and uploads are currently not supported in Sandbox environm
 {: #faq-rl}
 {: faq}
 
-You can login again and click **Continue**, and then select the Sandbox account from the account switcher under the **Trusted Profiles** section.
+You need to login again and click **Continue**, and then select the Sandbox account from the account switcher under the **Trusted Profiles** section.
+
+## Why am I unable to create a bucket using Quickly Get Started, Archive Your Data, or Host a Static Website?
+{: #faq-account}
+{: faq}
+
+Our IBM Cloud Sandbox offering allows users to create buckets only using the **Custom Bucket** option. The following predefined options are currently unavailable in Sandbox environments:
+
+* Quickly get started
+* Archive your data
+* Host a static website
+
+## I am able to create buckets in other regions. Is that expected?
+{: #faq-region}
+{: faq}
+
+Yes. This is an expected behavior and a special capability available in the Sandbox offering. Users are allowed to create buckets across different supported regions even when operating within a Sandbox account.
+
+## How much data can I store in a single bucket?
+{: #faq-data}
+{: faq}
+
+In the IBM Cloud Sandbox environment, a Cloud Object Storage (COS) bucket supports storing objects with a maximum file size of up to 4096 GB (4 TB) per object.
