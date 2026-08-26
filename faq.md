@@ -36,7 +36,7 @@ The Sandbox is available for 14 days by default. With an extension, the total 
 {: #faq-content-include}
 {: faq}
 
-{{site.data.keyword.vpc_short}} provides modern equivalents for many Classic infrastructure components. Here is a quick reference mapping to understand how Classic infrastructure capabilities translate into the VPC.
+{{site.data.keyword.vpc_short}} provides modern equivalents for many Classic infrastructure components. Here is a [quick reference mapping](/docs/classic-to-vpc?topic=classic-to-vpc-migrate-classic-to-vpc&utm_source=chatgpt.com#map-resources) to understand how Classic infrastructure capabilities translate into the VPC.
 
 ## Which operating system images are supported by the Sandbox?
 {: #faq-content-include}
