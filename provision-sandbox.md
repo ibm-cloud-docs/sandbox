@@ -84,6 +84,17 @@ The Sandbox instance is displayed in the Resource list. To access the Sandbox en
     - Click **Launch Sandbox** to provision the required resources.
     - From the **Actions** drop-down, you can **View docs**, Extend the Sandbox duration, and End the Sandbox early.
     - Under the **Users** section, you can add new users or remove the existing users.
+    - Under Actions drop-down, you have an options:
+
+        - View docs - Click to explore the cloud Sandbox documentation.
+        - Extend - You can extend the Sandbox trial for 2 days (48 hours).
+        - End - You can end the Sandbox trial any time by clicking **End early**.
+
+        The data will be securely stored in COS bucket with object lock enabled. It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
+        {: important}
+
+        If you want to reclaim the Sandbox account during the trial period, contact the Sandbox team.
+        {: tip}
 
     For additional information, use the **Helpful Links** section to access **Documentation**, **Videos**, and **Feedback resources**.
 
@@ -132,9 +143,6 @@ Users can create up to three Sandboxes per year, with only one active Sandbox al
 
 The 21-day cooling period begins on the date the Sandbox is terminated, regardless of whether it ends normally or is ended early by the user. A new Sandbox can be created only after the cooling period has been completed.
 {: important}
-
-It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
-{: tip}
 
 ### Videos
 {: #video-sb}

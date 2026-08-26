@@ -20,8 +20,6 @@ content-type: release-note
 Provision and configure compute resources in your {{site.data.keyword.sandbox_full_notm}} environment, including Virtual Server Instances (VSIs) or Bare Metal servers, along with optional services such as {{site.data.keyword.cos_short}}, Load Balancer, VPN, and Transit Gateway.
 {: shortdesc}
 
-This section outlines the steps to create and configure resources within the Sandbox environment.
-
 On the **Sandbox Overview** page, you can create compute resources such as Virtual Server Instances or Bare Metal servers. You can also add optional services using the default configuration.
 
 1. On the **Sandbox Overview** page, click **Create resources**.
