@@ -28,13 +28,5 @@
         "href": "/docs/sandbox?topic=sandbox-sandbox-relnotes"
       }
     ]
-  },
-  "section_highlights": [
-    {
-      "title": "Resource title",
-      "description": "Short description of resource content.",
-      "href": "https://www.example.ibm.com/link/to/resource",
-      "type": "blog"
-    }
-  ]
+  }
 }

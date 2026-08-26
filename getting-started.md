@@ -174,9 +174,13 @@ After provisioning resources, use your Sandbox environment to explore VPC featur
 Configure and validate network components by setting up the subnets, security groups, and network ACLs. Establish the public and private connectivity by testing latency and performance and experimenting with VPN and Transit Gateway configurations.
 
 * For more information on transit gateway, see [Creating a Transit Gateway](/docs/sandbox?topic=sandbox-connect-migrate#create-transit-gateway).
+
 * For more information on subnets, see [Working with subnets](/docs/vpc?topic=vpc-subnets-configure&interface=ui).
+
 * For more information on network ACL, see [Creating a network ACL](/docs/vpc?topic=vpc-acl-create-ui&interface=ui).
+
 * For more information on security group, see [Setting up a security group for your resource](/docs/vpc?topic=vpc-configuring-the-security-group&interface=ui).
+
 * For more information on VPN for VPC, see [VPNs for VPC overview](/docs/vpc?topic=vpc-vpn-overview).
 
 ### Evaluating compute options

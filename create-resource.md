@@ -28,25 +28,25 @@ On the **Sandbox Overview** page, you can create compute resources such as Virtu
 
 2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
 
-3. To select from all the available images, click **Change image**. 
+3. To choose an operating system image from the available options, click **Change image**.
 
     ![Select image - Server instance](images/sandbox-select-image.png "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
 
-4. To select from all the available profiles, click **Change profile**.
+4. To choose an instance profile from the available options, click **Change profile**.
 
     ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
-5. Under **Additional services**, you can enable and customize the services.
+5. Under **Additional services**, enable the optional services that you want to use:
 
     * **{{site.data.keyword.cos_full_notm}}** - Deploy scalable object storage for data, backups, and application content.
 
-    * **Load Balancer** - Configure load balancers to distribute traffic across multiple server instances for high availability.
+    * **Load Balancer** - Distribute network traffic across multiple server instances to enhance availability and reliability.
 
-    * **VPN for VPC** - Set up secure VPN connectivity to access your Sandbox environment from on-premises networks or remote locations.
+    * **VPN for VPC** - Establish a secure connection between your Sandbox VPC and an external or on-premises network.
 
-    * **Transit Gateway** - Connect multiple VPCs or integrate with on-premises networks for hybrid cloud scenarios.
+    * **Transit Gateway** - Connect multiple VPCs and integrate with on-premises networks to support hybrid cloud connectivity.
 
-4. You can verify the resources to be created in the **Summary** and accept the terms and conditions.
+4. Review the resources listed in the **Summary**, accept the terms and conditions, and click **Create resources**.
 
 5. Click **Create resources**.
 

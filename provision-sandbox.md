@@ -28,9 +28,13 @@ Ensure that you add access policies and grant administrator-level access to the 
 * All Identity and Access–enabled services
 * All Account Management services
 * Cloud Sandbox
+* Resource Group
+
+The user needs Cloud Sandbox access along with the required Resource Group access to create the Sandbox.
+{: note}
 
 Bare metal is subjected to capacity validation.
-{: note}
+{: important}
 
 ## Creating a Sandbox instance
 {: #create-ui}
@@ -92,7 +96,7 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
 1. On the **Sandbox Overview** page, click **Create resources**.
 
-2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
+2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server. For more information on creating SSH key, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&locale=en&interface=ui).
 
 3. To select from all the available images, click **Change image**. To select from all the available profiles, click **Change profile**.
 
@@ -115,7 +119,7 @@ Once resources have been created, you can view them from the **Resource list**.
 Following are the supported actions available on the **Sandbox Overview** page:
 
 * Extend the Sandbox trial
-* End the Sandbox early
+* Explore the video tutorials
 * Save the configuration
 
 ### Extending Sandbox
@@ -126,16 +130,16 @@ You can optionally extend the Sandbox trial for 2 days (48 hours) by clicking on
 Users can create up to three Sandboxes per year, with only one active Sandbox allowed at any given time.
 {: important}
 
-### End Sandbox
-{: #end-sb}
-
-You can optionally end the Sandbox trial any time by clicking **End Sandbox**. If you do so, the account will be suspended and you will not be able to access the resources you have created. The data will be securely stored in COS bucket with object lock enabled. After this period, resources will be deleted, reclaim processes will be completed, and the account will be suspended.
-
 The 21-day cooling period begins on the date the Sandbox is terminated, regardless of whether it ends normally or is ended early by the user. A new Sandbox can be created only after the cooling period has been completed.
 {: important}
 
 It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
 {: tip}
+
+### Videos
+{: #video-sb}
+
+You can explore the video tutorials to learn more about the Sandbox features and perform common the administrative tasks. Click on **Videos** to access the [Sandbox Video Tutorials](/docs-draft/sandbox?topic=sandbox-sandbox-feature-video) page.
 
 ### Save configuration
 {: #save-config-sb}
