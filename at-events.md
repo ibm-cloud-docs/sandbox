@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2026
-lastupdated: "2026-05-19"
+lastupdated: "2026-08-26"
 
 keywords: activity tracking, events, sandbox
 
@@ -86,19 +86,21 @@ The following table lists the management actions that generate activity tracking
 
 | Action | Description |
 |---|---|
-| `sandbox.invite.create` | Generated when a user submits a request to create a sandbox invitation. |
-| `sandbox.resource.create` | Generated when sandbox resources are provisioned for an approved invite. This is an asynchronous operation. |
-| `sandbox.invite.update` | Generated when a user extends the sandbox trial period for an existing invite. |
-| `sandbox.invite.delete` | Generated when a sandbox invitation is deleted. |
-| `sandbox.configuration.export` | Generated when a user exports the Terraform configuration for a sandbox. |
-| `sandbox.user.create` | Generated when bulk user data is added or updated. |
+| `sandbox.user.add` | Generated to add users in trusted profile within the Sandbox account. |
+| `sandbox.user.remove` | Generated to remove the user for the Sandbox account. |
+| `sandbox.invite.create` | Generated when a user submits a request to create a Sandbox invitation. |
+| `sandbox.resource.create` | Generated when Sandbox resources are provisioned for an approved invite. This is an asynchronous operation. |
+| `sandbox.invite.update` | Generated when a user extends the Sandbox trial period for an existing invite. |
+| `sandbox.invite.delete` | Generated when a Sandbox invitation is deleted. |
+| `sandbox.configuration.export` | Generated when a user exports the Terraform configuration for a Sandbox. |
+| `sandbox.user.create` | Generated when Sandbox users are added during initial Sandbox provisioning. |
 {: caption="Actions that generate management events" caption-side="bottom"}
 
 ## Analyzing {{site.data.keyword.sandbox_full_notm}} activity tracking events
 
 {: #at_events_iam_analyze}
 
-Use the following fields in the CADF event to filter and correlate sandbox events:
+Use the following fields in the CADF event to filter and correlate Sandbox events:
 
 | Field | Description |
 |---|---|
@@ -110,4 +112,4 @@ Use the following fields in the CADF event to filter and correlate sandbox event
 | `correlationId` | Links related events together — especially the initial `pending` and final completion events for asynchronous provisioning operations (`sandbox.resource.create`). |
 | `reason.reasonCode` | The HTTP status code of the operation. |
 | `reason.reasonType` | A human-readable reason for the outcome, populated for all `failure` events. Includes detailed IBM IAM authorization deny reasons. |
-{: caption="CADF event="bottom"}
+{: caption="CADF event" caption-side="bottom"}

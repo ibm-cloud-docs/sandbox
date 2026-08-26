@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-08-26"
 
 keywords:
 
@@ -30,9 +30,10 @@ Following is the table list of Sandbox resource capacity and Quota limits:
 | Bare Metal Servers for VPC | 1 | No additional bare metal can be provisioned once the limit is reached. |
 | Instance Storage for VPC | 1024 GB of instance storage | New volume creation may fail and existing workloads could face storage constraints. |
 | {{site.data.keyword.cos_full_notm}} | 4096 GB \n 1 COS instance | Approaching capacity limits may cause upload failures or degraded performance. Monitor bucket usage, archive or delete unused data, apply lifecycle policies, and scale the storage plan if needed. Any COS storage exceeding 4096 GB will be deleted. |
+| IBM Cloud Block Storage | Provision 10 volumes per region | A maximum of 10 volumes can be created per region or account. |
 | Virtual Private Cloud | Creation of 2 VPC in the selected region | Additional VPCs cannot be provisioned, preventing new environment creation. Verify the current VPC count and reuse existing VPCs or remove unused ones. |
 | Subnets for VPC | 2 subnets per VPC, total count is 4 | Additional subnets cannot be created, which may block network segmentation. Plan subnet allocation in advance and reuse existing subnets. |
-| Floating IPs | 4 per zone | Additional FIPs cannot be created, preventing public access for required instances and causing connectivity issues. Review FIP usage, release unused IPs, and reassign existing ones where possible. |
+| Floating IPs (FIPs) | Creation of 4 FIPs per zone. A selected region supports a maximum of 12 FIPs. | Additional FIPs cannot be created, preventing public access for required instances and causing connectivity issues. Review FIP usage, release unused IPs, and reassign existing ones where possible. |
 | Client VPN | 1 VPN instance | Additional VPNs cannot be provisioned, preventing secure access for new users or environments. Review existing VPN usage and reuse the current VPN by adding users or configurations. |
 | Transit Gateway | 1 Transit Gateway | Additional TGWs cannot be provisioned, limiting multi‑VPC or hybrid connectivity expansion. |
 | DNS (Cloud DNS Service) | 1 DNS instance | Additional DNS instances cannot be created, limiting domain segregation and environment isolation. |

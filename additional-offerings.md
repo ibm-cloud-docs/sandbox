@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-22"
+lastupdated: "2026-08-26"
 
 keywords: sandbox best practices, vpc best practices, cloud sandbox optimization, sandbox security, resource management
 
@@ -15,24 +15,23 @@ subcollection: sandbox
 # Additional offerings
 {: #sandbox-add-offerings}
 
-{{site.data.keyword.sandbox_full_notm}} offers some additional services that are automatically provisioned with default configurations when you create your Sandbox. They enhance your environments capabilities and are ready to use immediately without additional setup.
-Following are the additional services offered:
+{{site.data.keyword.sandbox_full_notm}} offers additional services that are automatically provisioned with default settings when your Sandbox is created. These services enhance your environment's capabilities and are available for immediate use without any extra configuration.
 
 ## {{site.data.keyword.cos_full_notm}}
 {: #cos}
 
-A highly scalable and durable storage solution designed for unstructured data. You can use this service to:
+{{site.data.keyword.cos_full_notm}} is a highly scalable and durable storage service designed for unstructured data. You can use this service to:
 
-* Store and retrieve large amounts of data such as images, videos, documents, and backups.
-* Archive data for long-term retention with cost-effective storage tiers.
+* Store and retrieve large volumes of data, including images, videos, documents, and backup files.
+* Archive data for long-term retention using cost-effective storage tiers.
 
 You can create a {{site.data.keyword.cos_full_notm}} (COS) instance either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
 1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic.
 
-2. **Sandbox Overview** page: All steps remain the same mentioned in [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic, but when selecting a resource group, you can either choose Default or any available resource group.
+2. **Sandbox Overview** page: Follow the same procedure described in [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-The supported capacity for {{site.data.keyword.cos_full_notm}} for Sandbox is 1 instance.
+For Sandbox environments, the supported capacity is one {{site.data.keyword.cos_full_notm}} instance.
 
 ### Learn more
 {: #learnmore-cos}
@@ -44,7 +43,6 @@ The supported capacity for {{site.data.keyword.cos_full_notm}} for Sandbox is 1 
 * [Choosing a plan and creating an instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision)
 
 * [Deleting a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#delete-instance)
-
 
 ## Load Balancer
 {: #lb}
@@ -59,9 +57,9 @@ You can create a load balancer either from the **{{site.data.keyword.Bluemix_not
 
 1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Creating a load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) topic.
 
-2. **Sandbox Overview** page: All steps remain the same mentioned in [Creating a load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) topic, but when selecting a resource group, you can either choose Default or any available resource group.
+2. **Sandbox Overview** page: Follow the same procedure described in [Creating a load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-The supported capacity for Load Balancer for Sandbox is 1.
+The supported capacity for Load Balancer for Sandbox is one instance.
 
 ### Learn more
 {: #learnmore-lb}
@@ -85,15 +83,15 @@ A secure Virtual Private Network solution that provides encrypted connectivity t
 
 * Enable remote team members to access sandbox resources safely.
 
-You can create a load balancer either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
+You can create a VPN for VPC either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
 1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Setting up VPC VPN connectivity](/docs/containers?topic=containers-vpc-vpnaas) topic.
 
-2. **Sandbox Overview** page: All steps remain the same mentioned in [Setting up VPC VPN connectivity](/docs/containers?topic=containers-vpc-vpnaas) topic, but when selecting a resource group, you can either choose Default or any available resource group.
+2. **Sandbox Overview** page: Follow the same procedure described in [Setting up VPC VPN connectivity](/docs/containers?topic=containers-vpc-vpnaas) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-The supported capacity for VPN for VPC for Sandbox is 1 instance.
+The supported capacity for VPN for VPC for Sandbox is one instance.
 
-By default, the `Full-tunnel` VPN mode is selected. You need to change it to `Split-tunnel` mode.
+By default, the `Full-tunnel` VPN mode is selected. But when you are provisioning from Quickstart, then VPN mode will be set to  `Split-tunnel` mode.
 {: important}
 
 ### VPN Client IP Pool Configuration
@@ -168,13 +166,13 @@ A centralized network hub that simplifies connectivity between different network
 
 * Scale your network connections as your Sandbox environment grows.
 
-You can create a load balancer either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
+You can create transit gateway either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
 1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Creating a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui) topic.
 
-2. **Sandbox Overview** page: All steps remain the same mentioned in [Creating a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui) topic, but when selecting a resource group, you can either choose Default or any available resource group.
+2. **Sandbox Overview** page: Follow the same procedure described in [Creating a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-The supported capacity for Transit Gateway for Sandbox is 1.
+The supported capacity for Transit Gateway for Sandbox is one instance.
 
 ### Learn more
 {: #learnmore-tg}

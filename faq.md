@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-22"
+lastupdated: "2026-08-26"
 
 keywords:
 
@@ -38,7 +38,7 @@ The Sandbox is available for 14 days by default. With an extension, the total 
 
 {{site.data.keyword.vpc_short}} provides modern equivalents for many Classic infrastructure components. Here is a quick reference mapping to understand how Classic infrastructure capabilities translate into the VPC.
 
-## Which operating system images are supported by the {{site.data.keyword.sandbox_full_notm}}?
+## Which operating system images are supported by the Sandbox?
 {: #faq-content-include}
 {: faq}
 
@@ -198,7 +198,7 @@ No, the Sandbox is strictly for testing, evaluation, and learning purposes only.
 {: #faq-bucket-type}
 {: faq}
 
-Select "Create a Custom Bucket".
+Select **Create a Custom Bucket** to create and configure a bucket based on your specific storage requirements.
 
 ## Is it possible to create an image from a VSI file in a Sandbox account?
 {: #faq-vsi}
@@ -242,23 +242,11 @@ Use a larger CIDR block within the allowed range, such as `/21` (2,048 IPs) or `
 
 In some cases, provisioning may take longer due to backend processing delays, infrastructure dependencies, or resource availability. While most environments are set up within 10–15 minutes, occasional delays can occur and may not be directly controllable from the UI or user side.
 
-## Why do I receive an “access denied” error during bucket creation?
-{: #faq-bucket}
-{: faq}
-
-As part of this release, users may temporarily see an “Access Denied” message during bucket creation. However, the bucket will still be created in the backend. Once you navigate to the COS instance, you should be able to see the bucket being provisioned. If the issue persists, contact ibm-cloud-sandbox-support@wwpdl.vnet.ibm.com.
-
 ## Is IBM Aspera download and upload supported in Sandbox environments?
 {: #faq-aspera}
 {: faq}
 
 IBM Aspera downloads and uploads are currently not supported in Sandbox environments. Use the **Standard Transfer** for all the download and upload operations in Sandbox environments.
-
-## What should I do if I get logged out after clicking Sandbox in Resource List?
-{: #faq-rl}
-{: faq}
-
-You need to login again and click **Continue** on the account selection screen. Select the Sandbox trusted profile from the account switcher under the **Trusted Profiles** section.
 
 ## Why am I unable to create a bucket using Quickly Get Started, Archive Your Data, or Host a Static Website?
 {: #faq-account}

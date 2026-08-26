@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-22"
+lastupdated: "2026-08-26"
 
 keywords: sandbox best practices, vpc best practices, cloud sandbox optimization, sandbox security, resource management
 
@@ -21,12 +21,12 @@ This document provides recommended best practices for effectively using the {{si
 ## Planning and preparation
 {: #planning-preparation}
 
-Proper planning before creating your sandbox environment ensures you make the most of your trial period.
+Proper planning before creating your Sandbox environment ensures you make the most of your trial period.
 
 ### Define clear objectives
 {: #define-objectives}
 
-Before requesting sandbox access, establish specific goals for your evaluation:
+Before requesting Sandbox access, establish specific goals for your evaluation:
 
 * Identify the workloads or applications you want to test
 * List the {{site.data.keyword.Bluemix_notm}} services and features you need to evaluate
@@ -43,7 +43,7 @@ Having clear objectives helps you focus your efforts and ensures you gather the 
 Collaboration is more effective when team members are involved from the start:
 
 * Identify all stakeholders who should participate in the evaluation
-* Add team members during sandbox creation rather than inviting them later
+* Add team members during Sandbox creation rather than inviting them later
 * Assign appropriate permission levels based on each members role:
 
     - **Administrators** for team leads who need full control
@@ -64,12 +64,12 @@ Understanding your existing infrastructure helps you design effective tests:
 * Note any custom configurations or integrations that need testing
 * Capture security and compliance requirements that must be maintained
 
-This documentation serves as a reference point for comparing sandbox performance and capabilities.
+This documentation serves as a reference point for comparing Sandbox performance and capabilities.
 
 ## Resource management
 {: #resource-management}
 
-Efficient resource management ensures you can test all necessary scenarios within sandbox limits.
+Efficient resource management ensures you can test all necessary scenarios within Sandbox limits.
 
 ### Start with minimal configurations
 {: #minimal-configs}
@@ -112,6 +112,8 @@ Proactive monitoring prevents resource exhaustion and ensures you can complete a
 ### VPN Client IP Pool Configuration
 {: #vpn-client-pool}
 
+Following are the best practices for VPN client:
+
 * **Plan Ahead**: Document your IP addressing scheme before creating VPN servers.
 * **Use Non-Overlapping Ranges**: Choose client IP pools from different private IP blocks than your VPC.
 * **Consider Growth**: Select a CIDR size that accommodates future VPN user growth.
@@ -143,7 +145,7 @@ Select the appropriate server type based on your workload characteristics:
 - Workloads with strict compliance or isolation requirements
 - Performance benchmarking against physical infrastructure
 
-VSIs are recommended for most sandbox users due to faster provisioning times and greater flexibility.
+VSIs are recommended for most Sandbox users due to faster provisioning times and greater flexibility.
 {: tip}
 
 ### Select appropriate compute profiles
@@ -211,15 +213,15 @@ Apply security measures to all provisioned servers:
 ### Protect sensitive data
 {: #protect-data}
 
-Handle data responsibly in the sandbox environment:
+Handle data responsibly in the Sandbox environment:
 
-* Avoid using production data or personally identifiable information (PII) in the sandbox
+* Avoid using production data or personally identifiable information (PII) in the Sandbox
 * Use synthetic or anonymized data for testing purposes
 * Encrypt sensitive data at rest and in transit
 * Implement proper data retention and deletion policies
 * Remember that all data will be permanently deleted when the trial period ends
 
-Do not store sensitive production data or customer information in the sandbox environment.
+Do not store sensitive production data or customer information in the Sandbox environment.
 {: important}
 
 ## Collaboration best practices
@@ -232,7 +234,7 @@ Effective collaboration maximizes team productivity and learning.
 
 Set up communication channels and protocols:
 
-* Create a dedicated Slack channel, Teams group, or email thread for sandbox-related discussions
+* Create a dedicated Slack channel, Teams group, or email thread for Sandbox-related discussions
 * Schedule regular sync meetings to share progress and findings
 * Document decisions, configurations, and test results in a shared location
 * Use descriptive naming conventions for resources to indicate ownership and purpose
@@ -283,7 +285,7 @@ Collect quantitative data to support decision-making:
 
 * Establish performance baselines before making changes
 * Measure response times, throughput, and resource utilization
-* Compare sandbox performance against current infrastructure
+* Compare Sandbox performance against current infrastructure
 * Document any performance bottlenecks or limitations encountered
 * Capture metrics that align with your success criteria
 
@@ -352,7 +354,7 @@ If you need more time, plan your extension request:
 ## Documentation and knowledge capture
 {: #documentation}
 
-Thorough documentation ensures you retain value from your sandbox experience.
+Thorough documentation ensures you retain value from your Sandbox experience.
 
 ### Document configurations
 {: #document-configs}
@@ -383,7 +385,7 @@ Prepare for production deployment:
 
 * Document step-by-step procedures for recreating successful configurations
 * List prerequisites and dependencies for production deployment
-* Identify differences between sandbox and production requirements
+* Identify differences between Sandbox and production requirements
 * Create checklists for migration or deployment activities
 * Note any lessons learned or pitfalls to avoid
 
@@ -398,13 +400,13 @@ Save critical information before the trial ends:
 * Export monitoring data and performance metrics
 * Back up any code or applications developed during testing
 
-All sandbox resources are permanently deleted when the trial period ends. Export any important data before expiration.
+All Sandbox resources are permanently deleted when the trial period ends. Export any important data before expiration. The corresponding resource item in the customer's account is not removed automatically and must be deleted manually by the customer, as the Sandbox service cannot perform the cleanup in the customer's account.
 {: important}
 
 ## Cost optimization for production
 {: #cost-optimization}
 
-Use sandbox insights to optimize future costs.
+Use Sandbox insights to optimize future costs.
 
 ### Identify right-sizing opportunities
 {: #right-sizing}
@@ -431,9 +433,9 @@ Assess different service options and tiers:
 ### Plan for production efficiency
 {: #production-efficiency}
 
-Apply sandbox learnings to production planning:
+Apply Sandbox learnings to production planning:
 
-* Use sandbox findings to create accurate cost estimates for production
+* Use Sandbox findings to create accurate cost estimates for production
 * Identify opportunities for reserved capacity or committed use discounts
 * Plan resource allocation strategies based on actual usage patterns
 * Document cost optimization opportunities discovered during testing
@@ -442,7 +444,7 @@ Apply sandbox learnings to production planning:
 ## Migration preparation
 {: #migration-preparation}
 
-If planning to migrate from Classic infrastructure, use the sandbox to prepare.
+If planning to migrate from Classic infrastructure, use the Sandbox to prepare.
 
 ### Validate workload compatibility
 {: #validate-compatibility}
@@ -480,7 +482,7 @@ Prepare your team for VPC operations:
 ## Troubleshooting and support
 {: #troubleshooting-support}
 
-Effective problem-solving maximizes your sandbox productivity.
+Effective problem-solving maximizes your Sandbox productivity.
 
 ### Leverage available resources
 {: #leverage-resources}
@@ -515,7 +517,7 @@ Know when to seek additional help:
 * Seek clarification on service limitations or capabilities
 * Request trial extensions if needed to complete critical testing
 
-## Post-sandbox actions
+## Post-Sandbox actions
 {: #post-sandbox}
 
 Complete these activities before and after your trial ends.
@@ -534,13 +536,13 @@ Save everything you need before the trial expires:
 ### Conduct a retrospective
 {: #conduct-retrospective}
 
-Review your sandbox experience with your team:
+Review your Sandbox experience with your team:
 
 * Discuss what worked well and what could be improved
 * Review whether you achieved your evaluation objectives
 * Identify gaps in testing or areas needing further investigation
 * Capture lessons learned for future cloud initiatives
-* Make go/no-go decisions based on sandbox findings
+* Make go/no-go decisions based on Sandbox findings
 
 ### Plan next steps
 {: #plan-next-steps}
@@ -556,9 +558,9 @@ Determine your path forward:
 ### Provide feedback
 {: #provide-feedback}
 
-Help improve the sandbox experience:
+Help improve the Sandbox experience:
 
-* Share feedback about the sandbox environment with {{site.data.keyword.Bluemix_notm}}
+* Share feedback about the Sandbox environment with {{site.data.keyword.Bluemix_notm}}
 * Suggest improvements or additional features
 * Report any issues or limitations encountered
 * Recommend documentation enhancements
@@ -569,12 +571,12 @@ Help improve the sandbox experience:
 
 Following these best practices helps you maximize the value of your {{site.data.keyword.sandbox_full_notm}} experience. Key takeaways include:
 
-* Plan thoroughly before creating your sandbox environment
+* Plan thoroughly before creating your Sandbox environment
 * Manage resources efficiently to complete all testing objectives
 * Implement security best practices even in trial environments
 * Collaborate effectively with your team
 * Document everything for future reference
-* Use sandbox insights to optimize production deployments
+* Use Sandbox insights to optimize production deployments
 * Export critical information before the trial period ends
 
 By applying these guidelines, you'll gain meaningful insights into {{site.data.keyword.Bluemix_notm}} VPC capabilities and be well-prepared for successful production implementation or migration.
@@ -582,8 +584,8 @@ By applying these guidelines, you'll gain meaningful insights into {{site.data.k
 ## Related information
 {: #related-information}
 
-* [Getting started with {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-getting-started-sandbox)
-* [About {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-architecture)
-* [Deploying the Sandbox](/docs/sandbox?topic=sandbox-deploy)
-* [FAQs](/docs/sandbox?topic=sandbox-my-service-faq)
-* [Troubleshooting](/docs/sandbox?topic=sandbox-troubleshoot)
+* [Getting started with {{site.data.keyword.sandbox_full_notm}}](/docs/allowlist/sandbox?topic=sandbox-getting-started-sandbox)
+* [About {{site.data.keyword.sandbox_full_notm}}](/docs/allowlist/sandbox?topic=sandbox-architecture)
+* [Provisioning the IBM Cloud Sandbox](/docs/allowlist/sandbox?topic=sandbox-deploy)
+* [FAQs](/docs/allowlist/sandbox?topic=sandbox-my-service-faq)
+* [Troubleshooting](/docs/allowlist/sandbox?topic=sandbox-troubleshoot-sandbox)

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-21"
+lastupdated: "2026-08-26"
 
 keywords:
 
@@ -34,11 +34,11 @@ To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} cat
 ## Before you begin
 {: #before-you-begin}
 
-Before you access the Cloud Sandbox, ensure that the following requirements are met:
+Before you access the Sandbox, ensure that the following requirements are met:
 
 * You need to have an active {{site.data.keyword.Bluemix_notm}} account.
 
-* You have a valid IBMid for authentication.
+* You need a valid IBMid for authentication.
 
 * You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
 
@@ -60,6 +60,7 @@ The Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrast
 * DNS and Secrets Manager
 
 Other {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings are not available in the Sandbox environment.
+{: note}
 
 ### Resource limitations
 {: #resource-limit}
@@ -71,23 +72,23 @@ The Sandbox applies quota limits on compute, network, and storage resources to e
 * **Network**: Maximum of 2 VPCs, 4 subnets, 4 Floating IPs, and 10 security groups
 * **Services**: 1 instance each for Load Balancer, VPN, Transit Gateway, DNS, and Secrets Manager
 
-For more details on quota limits, see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
+For more details on quota limits, see [Sandbox quota limits](/docs/allowlist/sandbox?topic=sandbox-sandbox-quota).
 
 ### Terms and conditions
 {: #terms-conditions}
 
-By using the Sandbox, you agree to:
+By using the Sandbox, you agree to the following:
 
 * Use the environment for evaluation and testing purposes only, not for production workloads.
-* Follow security best practices and usage guidelines as outlined in [Limitations](/docs/sandbox?topic=sandbox-limitation).
-* Accept that all resources will be automatically deleted after the 14-day trial period expires.
+* Adhere to security best practices and the usage guidelines outlined in the [Limitations](/docs/allowlist/sandbox?topic=sandbox-limitation) section.
+* Accept that all resources will be automatically deleted at the end of the 14-day trial period.
 * Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies.
 
 ## Creating Sandbox account
 {: #sandbox-request}
 {: step}
 
-1. An email notification is sent to all the allow-listed customers to experience the Cloud Sandbox environment.
+1. An email notification is sent to all the **allow-listed** customers to experience the Cloud Sandbox environment.
 2. After clicking **Request**, you will be redirected to the Sandbox provisioning page to get started. Update the required information.
 
 ## Accessing the IBM Cloud Catalog
@@ -96,22 +97,22 @@ By using the Sandbox, you agree to:
 
 After clicking **Request** in the email notification, you will be redirected to the Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
 
-For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-deploy) topic.
+For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs/allowlist/sandbox?topic=sandbox-deploy) topic.
 
 ## Creating your Sandbox environment
 {: #sandbox-create}
 {: step}
 
-Only users with **administrator** access in the Cloud Sandbox are authorized to create Sandbox accounts.
+Only users with **administrator** access in the Sandbox are authorized to create Sandbox accounts.
 {: important}
 
 Perform the following steps to provision the Sandbox:
 
 1. On the Sandbox provision page, enter the required details:
 
-   * **Sandbox name** - Provide a unique, descriptive name for your Sandbox environment (for example, "sandbox-month-date")
+   * **Sandbox name** - Provide a unique, descriptive name for your Sandbox environment (for example, "sandbox-month-date").
 
-   * **Resource group** - Choose an existing resource group or create a new one to organize your sandbox resources.
+   * **Resource group** - Choose an existing resource group or create a new one to organize your Sandbox resources.
 
    * **Region** - Select the geographic location where your Sandbox resources will be provisioned (for example, us-south, eu-de and so on).
 
@@ -120,12 +121,12 @@ Perform the following steps to provision the Sandbox:
 
    * *Optional*: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag&interface=ui).
 
-   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating/adding users, see [Managing user access for Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
+   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating or adding users, see [Creating or inviting a user and add Cloud Sandbox permission](/docs/allowlist/sandbox?topic=sandbox-manage-user-access-sandbox#invite-user-sandbox).
 
-    Users can be added only during the initial provisioning page, not during resource creation. Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
+    **Users can only be added during Sandbox account creation and not later.** Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
     {: important}
 
-2. Click **Create sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
+2. Click **Create Sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
 
 3. After the Sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the Sandbox and all associated resources.
 
@@ -146,11 +147,9 @@ After your Sandbox is provisioned, an email is sent to all users with access det
 
 4. After successful authentication, you are redirected to the Sandbox trusted profile page.
 
-    ![Select a trusted profile](images/Access-link.png "Select a trusted profile"){: caption="Select a trusted profile" caption-side="bottom"}
+5. Select the trusted profile account (`sandbox expires mm/dd`) from the page.
 
-5. If the Sandbox account is not visible on the account page, select the trusted profile from the account drop-down menu. The trusted profile is labeled with the tag `sandbox expires mm/dd`.
-
-6. After switching to the trusted profile, you are navigated to the Sandbox trusted profile account.
+6. You are navigated to the Sandbox trusted profile account.
 
 7. Access the [Sandbox Overview page](https://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
 
@@ -161,7 +160,7 @@ The trusted profile provides secure, time-limited access to your Sandbox environ
 {: #sandbox-create-resources}
 {: step}
 
-In the Sandbox environment, you can create the resources from the Overview page.For more information, see [Creating resources in Sandbox](/docs-draft/sandbox?topic=sandbox-create-resource) topic.
+In the Sandbox environment, you can create the resources from the Overview page. For more information, see [Creating resources in Sandbox](/docs/allowlist/sandbox?topic=sandbox-create-resource) topic.
 
 ## Exploring VPC capabilities
 {: #sandbox-explore}
@@ -203,7 +202,7 @@ Configure and test application load balancing by distributing traffic across ins
 
 For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
-## Monitor your sandbox lifecycle
+## Monitor your Sandbox lifecycle
 {: #sandbox-lifecycle}
 
 Your Sandbox environment has a 14-day trial period. To track your remaining time:
