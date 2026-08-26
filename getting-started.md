@@ -72,7 +72,7 @@ The Sandbox applies quota limits on compute, network, and storage resources to e
 * **Network**: Maximum of 2 VPCs, 4 subnets, 4 Floating IPs, and 10 security groups
 * **Services**: 1 instance each for Load Balancer, VPN, Transit Gateway, DNS, and Secrets Manager
 
-For more details on quota limits, see [Sandbox quota limits](/docs/allowlist/sandbox?topic=sandbox-sandbox-quota).
+For more details on quota limits, see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
 
 ### Terms and conditions
 {: #terms-conditions}
@@ -80,7 +80,7 @@ For more details on quota limits, see [Sandbox quota limits](/docs/allowlist/san
 By using the Sandbox, you agree to the following:
 
 * Use the environment for evaluation and testing purposes only, not for production workloads.
-* Adhere to security best practices and the usage guidelines outlined in the [Limitations](/docs/allowlist/sandbox?topic=sandbox-limitation) section.
+* Adhere to security best practices and the usage guidelines outlined in the [Limitations](/docs/sandbox?topic=sandbox-limitation) section.
 * Accept that all resources will be automatically deleted at the end of the 14-day trial period.
 * Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies.
 
@@ -97,7 +97,7 @@ By using the Sandbox, you agree to the following:
 
 After clicking **Request** in the email notification, you will be redirected to the Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
 
-For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs/allowlist/sandbox?topic=sandbox-deploy) topic.
+For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-deploy) topic.
 
 ## Creating your Sandbox environment
 {: #sandbox-create}
@@ -121,7 +121,7 @@ Perform the following steps to provision the Sandbox:
 
    * *Optional*: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag&interface=ui).
 
-   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating or adding users, see [Creating or inviting a user and add Cloud Sandbox permission](/docs/allowlist/sandbox?topic=sandbox-manage-user-access-sandbox#invite-user-sandbox).
+   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating or adding users, see [Creating or inviting a user and add Cloud Sandbox permission](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#invite-user-sandbox).
 
     **Users can only be added during Sandbox account creation and not later.** Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
     {: important}
@@ -160,7 +160,7 @@ The trusted profile provides secure, time-limited access to your Sandbox environ
 {: #sandbox-create-resources}
 {: step}
 
-In the Sandbox environment, you can create the resources from the Overview page. For more information, see [Creating resources in Sandbox](/docs/allowlist/sandbox?topic=sandbox-create-resource) topic.
+In the Sandbox environment, you can create the resources from the Overview page. For more information, see [Creating resources in Sandbox](/docs/sandbox?topic=sandbox-create-resource) topic.
 
 ## Exploring VPC capabilities
 {: #sandbox-explore}

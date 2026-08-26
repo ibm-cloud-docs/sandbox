@@ -584,8 +584,8 @@ By applying these guidelines, you'll gain meaningful insights into {{site.data.k
 ## Related information
 {: #related-information}
 
-* [Getting started with {{site.data.keyword.sandbox_full_notm}}](/docs/allowlist/sandbox?topic=sandbox-getting-started-sandbox)
-* [About {{site.data.keyword.sandbox_full_notm}}](/docs/allowlist/sandbox?topic=sandbox-architecture)
-* [Provisioning the IBM Cloud Sandbox](/docs/allowlist/sandbox?topic=sandbox-deploy)
-* [FAQs](/docs/allowlist/sandbox?topic=sandbox-my-service-faq)
-* [Troubleshooting](/docs/allowlist/sandbox?topic=sandbox-troubleshoot-sandbox)
+* [Getting started with {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-getting-started-sandbox)
+* [About {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-architecture)
+* [Provisioning the IBM Cloud Sandbox](/docs/sandbox?topic=sandbox-deploy)
+* [FAQs](/docs/sandbox?topic=sandbox-my-service-faq)
+* [Troubleshooting](/docs/sandbox?topic=sandbox-troubleshoot-sandbox)

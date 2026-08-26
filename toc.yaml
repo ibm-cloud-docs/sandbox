@@ -3,7 +3,6 @@ toc:
     subcollection: sandbox
     path: sandbox
     href: /docs/sandbox
-    allowlist-id: 5f07e845-d2d7-58fb-09dc-14b7076c15ef
     service-name: service
     audience: software
     label: IBM Cloud Sandbox

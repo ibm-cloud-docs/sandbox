@@ -238,4 +238,4 @@ After downloading and extracting the Terraform configuration, you can apply it t
 
 * [Understanding Terraform basics](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started)
 * [Managing infrastructure with Terraform](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-manage_resources)
-* [Extending your Sandbox trial](/docs/allowlist/sandbox?topic=sandbox-deploy)
+* [Extending your Sandbox trial](/docs/sandbox?topic=sandbox-deploy)
