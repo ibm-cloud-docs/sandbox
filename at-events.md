@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords: activity tracking, events, sandbox
 
@@ -10,7 +10,7 @@ subcollection: sandbox
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Activity tracking events for Sandbox
+# Activity tracking events for Cloud Sandbox
 
 {: #at_events}
 
@@ -82,30 +82,30 @@ For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [L
 
 {: #at_actions}
 
-The following table lists the management actions that generate activity tracking events in Sandbox.
+The following table lists the management actions that generate activity tracking events in Cloud Sandbox.
 
 | Action | Description |
 |---|---|
-| `sandbox.user.add` | Generated to add users in trusted profile within the Sandbox account. |
-| `sandbox.user.remove` | Generated to remove the user for the Sandbox account. |
-| `sandbox.invite.create` | Generated when a user submits a request to create a Sandbox invitation. |
-| `sandbox.resource.create` | Generated when Sandbox resources are provisioned for an approved invite. This is an asynchronous operation. |
-| `sandbox.invite.update` | Generated when a user extends the Sandbox trial period for an existing invite. |
-| `sandbox.invite.delete` | Generated when a Sandbox invitation is deleted. |
-| `sandbox.configuration.export` | Generated when a user exports the Terraform configuration for a Sandbox. |
-| `sandbox.user.create` | Generated when Sandbox users are added during initial Sandbox provisioning. |
+| `sandbox.user.add` | Generated to add users in trusted profile within the Cloud Sandbox account. |
+| `sandbox.user.remove` | Generated to remove the user for the Cloud Sandbox account. |
+| `sandbox.invite.create` | Generated when a user submits a request to create a Cloud Sandbox invitation. |
+| `sandbox.resource.create` | Generated when Cloud Sandbox resources are provisioned for an approved invite. This is an asynchronous operation. |
+| `sandbox.invite.update` | Generated when a user extends the Cloud Sandbox trial period for an existing invite. |
+| `sandbox.invite.delete` | Generated when a Cloud Sandbox invitation is deleted. |
+| `sandbox.configuration.export` | Generated when a user exports the Terraform configuration for a Cloud Sandbox. |
+| `sandbox.user.create` | Generated when Cloud Sandbox users are added during an initial provisioning. |
 {: caption="Actions that generate management events" caption-side="bottom"}
 
 ## Analyzing {{site.data.keyword.sandbox_full_notm}} activity tracking events
 
 {: #at_events_iam_analyze}
 
-Use the following fields in the CADF event to filter and correlate Sandbox events:
+Use the following fields in the CADF event to filter and correlate Cloud Sandbox events:
 
 | Field | Description |
 |---|---|
 | `action` | The AT action string (for example, `sandbox.invite.create`). Use this field to filter events by operation type. |
-| `target.id` | The CRN of the sandbox resource on which the action was performed. |
+| `target.id` | The CRN of the Cloud Sandbox resource on which the action was performed. |
 | `outcome` | The result of the operation: `success`, `failure`, or `pending`. Search for `failure` to identify problems. |
 | `severity` | The criticality of the action: `normal`, `warning`, or `critical`. Search for `critical` to surface security-relevant events such as authorization failures and deletions. |
 | `initiator.id` | The IBMid or Service ID of the entity that initiated the action. |

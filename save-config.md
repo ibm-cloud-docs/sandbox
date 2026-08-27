@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -12,25 +12,25 @@ subcollection: sandbox
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Saving your Sandbox configuration
+# Saving your Cloud Sandbox configuration
 {: #save-config}
 
-Before suspending the Sandbox account, customers must delete all the resources created during provisioning. If these resources are not removed, the account will remain suspended and the resources will be deleted automatically. Therefore, it is recommended to back-up data using the **Save configuration** option before the trial period expires.
+Before suspending the Cloud Sandbox account, customers must delete all the resources created during provisioning. If these resources are not removed, the account will remain suspended and the resources will be deleted automatically. Therefore, it is recommended to back-up data using the **Save configuration** option before the trial period expires.
 
-The **Save configuration** feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
+The **Save configuration** feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Cloud Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
 {: shortdesc}
 
 You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview){: external} page.
 
-After your 14-day trial period expires, all Sandbox resources are automatically deleted. Use the **Save configuration** feature to preserve your infrastructure setup before the trial ends.
+After your 14-day trial period expires, all Cloud Sandbox resources are automatically deleted. Use the **Save configuration** feature to preserve your infrastructure setup before the trial ends.
 {: important}
 
 ## How it works
 {: #save-config-how-it-works}
 
-The **Save configuration** feature uses the POST `/v1/configuration/save` API to generate terraform files from your live Sandbox environment. The process includes the following steps:
+The **Save configuration** feature uses the POST `/v1/configuration/save` API to generate terraform files from your live Cloud Sandbox environment. The process includes the following steps:
 
-1. **Authentication** - The system authenticates into your Sandbox account by using a trusted profile and generates a temporary token to access your resources.
+1. **Authentication** - The system authenticates into your Cloud Sandbox account by using a trusted profile and generates a temporary token to access your resources.
 
 2. **Resource discovery** - Using the temporary token, the system calls {{site.data.keyword.Bluemix_notm}} APIs to retrieve the complete configuration of all resources in your specified account and region.
 
@@ -137,7 +137,7 @@ The following resources are not included in the generated Terraform configuratio
 ## Saving your configuration
 {: #save-config-procedure}
 
-Following are the steps to save your Sandbox configuration and download the Terraform package:
+Following are the steps to save your Cloud Sandbox configuration and download the Terraform package:
 
 1. Navigate to the [Sandbox Overview](https://cloud.ibm.com/sandbox/overview){: external} page from your resource list.
 
@@ -231,7 +231,7 @@ After downloading and extracting the Terraform configuration, you can apply it t
 
 * The generated configuration uses default variable names and may require customization to match your organization naming standards.
 
-* Resource quotas and limits in your production account might differ from the Sandbox environment. Verify that your account has sufficient quota before applying the configuration.
+* Resource quotas and limits in your production account might differ from the Cloud Sandbox environment. Verify that your account has sufficient quota before applying the configuration.
 
 ## Next steps
 {: #save-config-next-steps}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords:
 
@@ -27,14 +27,14 @@ The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 
 - **Existing {{site.data.keyword.Bluemix_notm}} users** who want hands-on experience with {{site.data.keyword.Bluemix_notm}} services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
 
-To provision the Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service. The administrator should have the below two permissions:
+To provision the Cloud Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service. The administrator should have the below two permissions:
 * All Identity and Access enabled services
 * All Account Management services
 
 ## Before you begin
 {: #before-you-begin}
 
-Before you access the Sandbox, ensure that the following requirements are met:
+Before you access the Cloud Sandbox, ensure that the following requirements are met:
 
 * You need to have an active {{site.data.keyword.Bluemix_notm}} account.
 
@@ -45,12 +45,12 @@ Before you access the Sandbox, ensure that the following requirements are met:
 ## Understanding the limitations of the Sandbox environment
 {: #sandbox-boundaries}
 
-The Sandbox environment has specific limitations to ensure fair usage and maintain security.
+The Cloud Sandbox environment has specific limitations to ensure fair usage and maintain security.
 
 ### Service availability
 {: #service-availability}
 
-The Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrastructure as a Service (IaaS) offerings, including:
+The Cloud Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrastructure as a Service (IaaS) offerings, including:
 
 * Virtual Server for VPC and Bare Metal Servers for VPC
 * Block Storage and Instance Storage for VPC
@@ -59,13 +59,13 @@ The Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrast
 * Load Balancer, Client VPN, and Transit Gateway
 * DNS and Secrets Manager
 
-Other {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings are not available in the Sandbox environment.
+Other {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings are not available in the Cloud Sandbox environment.
 {: note}
 
 ### Resource limitations
 {: #resource-limit}
 
-The Sandbox applies quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Following are the key limitations:
+The Cloud Sandbox applies quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Following are the key limitations:
 
 * **Compute**: Limited vCPU (128) and RAM (1028 GB) for Virtual Servers, and 1 Bare Metal Server
 * **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and {{site.data.keyword.cos_full_notm}} to 4096 GB
@@ -89,13 +89,16 @@ By using the Sandbox, you agree to the following:
 {: step}
 
 1. An email notification is sent to all the **allow-listed** customers to experience the Cloud Sandbox environment.
-2. After clicking **Request**, you will be redirected to the Sandbox provisioning page to get started. Update the required information.
+2. After clicking **Request**, you will be redirected to the Cloud Sandbox provisioning page to get started. Update the required information.
 
 ## Accessing the IBM Cloud Catalog
 {: #sandbox-catalog}
 {: step}
 
-After clicking **Request** in the email notification, you will be redirected to the Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
+After clicking **Request** in the email notification, you will be directed to the Cloud Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
+
+This link is available only to users who have been allowlisted.
+{: note}
 
 For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-deploy) topic.
 
@@ -103,32 +106,32 @@ For more information on provisioning, see [Provisioning the {{site.data.keyword.
 {: #sandbox-create}
 {: step}
 
-Only users with **administrator** access in the Sandbox are authorized to create Sandbox accounts.
+Only users with **administrator** access in the Cloud Sandbox are authorized to create Sandbox accounts.
 {: important}
 
-Perform the following steps to provision the Sandbox:
+Perform the following steps to provision the Cloud Sandbox:
 
-1. On the Sandbox provision page, enter the required details:
+1. On the Cloud Sandbox provision page, enter the required details:
 
-   * **Sandbox name** - Provide a unique, descriptive name for your Sandbox environment (for example, "sandbox-month-date").
+   * **Sandbox name** - Provide a unique, descriptive name for your Cloud Sandbox environment (for example, "sandbox-month-date").
 
-   * **Resource group** - Choose an existing resource group or create a new one to organize your Sandbox resources.
+   * **Resource group** - Choose an existing resource group or create a new one to organize your Cloud Sandbox resources.
 
-   * **Region** - Select the geographic location where your Sandbox resources will be provisioned (for example, us-south, eu-de and so on).
+   * **Region** - Select the geographic location where your Cloud Sandbox resources will be provisioned (for example, us-south, eu-de and so on).
 
    The region cannot be changed after provisioning, and all resources will be created in the selected region.
    {: note}
 
    * *Optional*: Enter tags to help you organize and find your resources. You can add more tags later. For more information, see [Working with tags](/docs/account?topic=account-tag&interface=ui).
 
-   * **Users** - Select the users who will have access to Sandbox. All users are granted the same access level and permissions. For more information on creating or adding users, see [Creating or inviting a user and add Cloud Sandbox permission](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#invite-user-sandbox).
+   * **Users** - Select the users who will have access to Cloud Sandbox. All users are granted the same access level and permissions. For more information on creating or adding users, see [Creating or inviting a user and add Cloud Sandbox permission](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#invite-user-sandbox).
 
-    **Users can only be added during Sandbox account creation and not later.** Once users are added to a Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
+    **Users can only be added during Sandbox account creation and not later.** Once users are added to a Cloud Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
     {: important}
 
-2. Click **Create Sandbox** to submit your request. The Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
+2. Click **Create Sandbox** to submit your request. The Cloud Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
 
-3. After the Sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the Sandbox and all associated resources.
+3. After the Cloud Sandbox is created you can find them listed in the resource list of your account. You can edit the name, manage tags, or delete the Cloud Sandbox and all associated resources.
 
 Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
@@ -137,7 +140,7 @@ Only one Sandbox creation is allowed per allow-listed customer account.
 {: #sandbox-access-profile}
 {: step}
 
-After your Sandbox is provisioned, an email is sent to all users with access details and supporting links to explore the Sandbox environment.
+After your Cloud Sandbox is provisioned, an email is sent to all users with access details and supporting links to explore the Cloud Sandbox environment.
 
 1. In the email, click the **Access the link and explore the Sandbox** link to open the Sandbox environment.
 
@@ -145,15 +148,15 @@ After your Sandbox is provisioned, an email is sent to all users with access det
 
 3. If two-factor authentication is enabled on your account, complete the verification process by providing the required authentication code.
 
-4. After successful authentication, you are redirected to the Sandbox trusted profile page.
+4. After successful authentication, you are redirected to the Cloud Sandbox trusted profile page.
 
 5. Select the trusted profile account (`sandbox expires mm/dd`) from the page.
 
-6. You are navigated to the Sandbox trusted profile account.
+6. You are navigated to the Cloud Sandbox trusted profile account.
 
 7. Access the [Sandbox Overview page](https://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
 
-The trusted profile provides secure, time-limited access to your Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
+The trusted profile provides secure, time-limited access to your Cloud Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
 
 ## Provisioning resources
@@ -166,7 +169,7 @@ In the Sandbox environment, you can create the resources from the Overview page.
 {: #sandbox-explore}
 {: step}
 
-After provisioning resources, use your Sandbox environment to explore VPC features and capabilities.
+After provisioning resources, use your Cloud Sandbox environment to explore VPC features and capabilities.
 
 ### Testing network features
 {: #sandbox-test-networking}
@@ -209,13 +212,13 @@ For more information on load balancer, see [Creating an application load balance
 ## Monitor your Sandbox lifecycle
 {: #sandbox-lifecycle}
 
-Your Sandbox environment has a 14-day trial period. To track your remaining time:
+Your Cloud Sandbox environment has a 14-day trial period. To track your remaining time:
 
-1. View the trial period countdown on the Sandbox landing page.
+1. View the trial period countdown on the Cloud Sandbox landing page.
 
 2. Check your email for reminder notifications (typically sent at 7 days, 3 days, and 1 day before expiry).
 
-After the 14-day trial period expires, all resources in the Sandbox environment are automatically deleted. You must save the configuration by downloading the Terraform package and running it in your own customer account.
+After the 14-day trial period expires, all resources in the Cloud Sandbox environment are automatically deleted. You must save the configuration by downloading the Terraform package and running it in your own customer account.
 {: important}
 
 Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.

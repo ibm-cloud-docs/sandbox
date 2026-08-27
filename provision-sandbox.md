@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords:
 
@@ -36,10 +36,10 @@ The user needs Cloud Sandbox access along with the required Resource Group acces
 Bare metal is subjected to capacity validation.
 {: important}
 
-## Creating a Sandbox instance
+## Creating a Cloud Sandbox instance
 {: #create-ui}
 
-Only one Sandbox is allowed per allowlisted customer account.
+Only one Cloud Sandbox is allowed per allowlisted customer account.
 {: note}
 
 1. Navigate to the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
@@ -48,18 +48,18 @@ Only one Sandbox is allowed per allowlisted customer account.
 
 2. In the **Create** tab, provide the following information under **Details**:
 
-    * **Sandbox name** - Name of the Sandbox instance.
+    * **Sandbox name** - Name of the Cloud Sandbox instance.
 
     * **Region** - Region where the instance is provisioned.
 
     You will not be able to change the region once selected during the provisioning.
     {: note}
 
-    * **Resource group** - Name from your {{site.data.keyword.Bluemix_notm}} account where the Sandbox resource will be deployed.
+    * **Resource group** - Name from your {{site.data.keyword.Bluemix_notm}} account where the Cloud Sandbox resource will be deployed.
 
     * **Tags** (optional) - Use the tags to organize your resources.
 
-    ![Sandbox - Create](images/sandbox-create.png "Sandbox - Create"){: caption="Sandbox - Create" caption-side="bottom"}
+    ![Create Sandbox](images/sandbox-create.png "Create Sandbox"){: caption="Sandbox - Create" caption-side="bottom"}
 
 3. In the **Users** section, you can select users from your account.
 
@@ -67,40 +67,40 @@ Only one Sandbox is allowed per allowlisted customer account.
 
 Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days (48 hours) extension. User access is limited to the region selected during provisioning.
 
-A user can create up to three Sandbox environments per year. Only one Sandbox can be active at any given time.
+A user can create up to three Cloud Sandbox environments per year. Only one Sandbox can be active at any given time.
 {: note}
 
-## Accessing Sandbox
+## Accessing Cloud Sandbox
 {: #access-sandbox}
 
-The Sandbox instance is displayed in the Resource list. To access the Sandbox environment:
+The Sandbox instance is displayed in the Resource list. To access the Cloud Sandbox environment:
 
-1. Click on the Sandbox instance name in the **Resource list**.
+1. Click on the Cloud Sandbox instance name in the **Resource list**.
 
     ![Sandbox - Resource list](images/sandbox-resource-list.png "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
 
 2. On the user management page:
     
     - Click **Launch Sandbox** to provision the required resources.
-    - From the **Actions** drop-down, you can **View docs**, Extend the Sandbox duration, and End the Sandbox early.
+    - From the **Actions** drop-down, you can **View docs**, **Extend** the Sandbox duration, and **End** the Sandbox early.
     - Under the **Users** section, you can add new users or remove the existing users.
     - Under Actions drop-down, you have an options:
 
-        - View docs - Click to explore the cloud Sandbox documentation.
-        - Extend - You can extend the Sandbox trial for 2 days (48 hours).
-        - End - You can end the Sandbox trial any time by clicking **End early**.
+        - **View docs** - Click to explore the cloud Sandbox documentation.
+        - **Extend** - You can extend the Sandbox trial for 2 days (48 hours).
+        - **End** - You can end the Sandbox trial any time by clicking **End early**.
 
         The data will be securely stored in COS bucket with object lock enabled. It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
         {: important}
 
-        If you want to reclaim the Sandbox account during the trial period, contact the Sandbox team.
+        If you want to reclaim the Cloud Sandbox account during the trial period, contact the Sandbox team.
         {: tip}
 
     For additional information, use the **Helpful Links** section to access **Documentation**, **Videos**, and **Feedback resources**.
 
 3. Click on the link in the welcome email.
 
-## Creating resources in the Sandbox environment
+## Creating resources in the Cloud Sandbox environment
 {: #create-resources-sb}
 
 You can create virtual servers or bare metal servers along with other VPC services.
@@ -118,7 +118,7 @@ You can create virtual servers or bare metal servers along with other VPC servic
     * VPN for VPC
     * Transit Gateway
 
-    ![Sandbox - Create resources](images/sandbox-create-resource.png "Sandbox - Catalog page"){: caption="Sandbox - Create resources" caption-side="bottom"}
+    ![Sandbox - Create resources](images/sandbox-create-resource.png "Sandbox - Create resources"){: caption="Sandbox - Create resources" caption-side="bottom"}
 
 5. Accept the terms and conditions, click **Create resources**.
 
@@ -129,27 +129,27 @@ Once resources have been created, you can view them from the **Resource list**.
 
 Following are the supported actions available on the **Sandbox Overview** page:
 
-* Extend the Sandbox trial
+* Extend the Cloud Sandbox trial
 * Explore the video tutorials
 * Save the configuration
 
-### Extending Sandbox
+### Extending Cloud Sandbox
 {: #extend-sb}
 
-You can optionally extend the Sandbox trial for 2 days (48 hours) by clicking on **Extend Sandbox**. You will get an email confirming extension was granted and the countdown banner will increase by 2 days.
+You can optionally extend the Cloud Sandbox trial for 2 days (48 hours) by clicking on **Extend Sandbox**. You will get an email confirming extension was granted and the countdown banner will increase by 2 days.
 
-Users can create up to three Sandboxes per year, with only one active Sandbox allowed at any given time.
+Users can create up to three Cloud Sandboxes per year, with only one active Sandbox allowed at any given time.
 {: important}
 
-The 21-day cooling period begins on the date the Sandbox is terminated, regardless of whether it ends normally or is ended early by the user. A new Sandbox can be created only after the cooling period has been completed.
+The 21-day cooling period begins on the date the Cloud Sandbox is terminated, regardless of whether it ends normally or is ended early by the user. A new Cloud Sandbox can be created only after the cooling period has been completed.
 {: important}
 
 ### Videos
 {: #video-sb}
 
-You can explore the video tutorials to learn more about the Sandbox features and perform common the administrative tasks. Click on **Videos** to access the [Sandbox Video Tutorials](/docs-draft/sandbox?topic=sandbox-sandbox-feature-video) page.
+You can explore the video tutorials to learn more about the Cloud Sandbox features and perform common the administrative tasks. Click on **Videos** to access the [Sandbox Video Tutorials](/docs-draft/sandbox?topic=sandbox-sandbox-feature-video) page.
 
 ### Save configuration
 {: #save-config-sb}
 
-The Sandbox environment configuration can be downloaded as a Terraform packaging by clicking on **Save configuration**. For more information, see [Save configuration](/docs/sandbox?topic=sandbox-save-config) topic.
+The Cloud Sandbox environment configuration can be downloaded as a Terraform packaging by clicking on **Save configuration**. For more information, see [Save configuration](/docs/sandbox?topic=sandbox-save-config) topic.

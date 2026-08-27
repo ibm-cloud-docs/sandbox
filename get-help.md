@@ -4,7 +4,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords:
 
@@ -22,7 +22,7 @@ subcollection: sandbox
 If you experience an issue or have questions when using {{site.data.keyword.sandbox_full_notm}}, you can use the following resources before you open a support case.
 {: shortdesc}
 
-If you need assistance with Sandbox:
+If you need assistance with Cloud Sandbox:
 
 - Review the [{{site.data.keyword.Bluemix_notm}} VPC documentation](/docs/vpc).
 - Contact the Classic to VPC Migration Program team.

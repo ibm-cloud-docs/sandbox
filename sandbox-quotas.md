@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords:
 
@@ -22,7 +22,7 @@ If the capacity usage exceeds the defined quota limit, then the corresponding ac
 # Sandbox quota limits
 {: #sandbox-quota}
 
-Following is the table list of Sandbox resource capacity and Quota limits:
+Following is the table list of Cloud Sandbox resource capacity and Quota limits:
 
 | Resource name | Supported capacity | What happens |
 | ------- | --------- | ---- |

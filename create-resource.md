@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords:
 
@@ -14,7 +14,7 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Creating resources in Sandbox
+# Creating resources in Cloud Sandbox
 {: #create-resource}
 
 Provision and configure compute resources in your {{site.data.keyword.sandbox_full_notm}} environment, including Virtual Server Instances (VSIs) or Bare Metal servers, along with optional services such as {{site.data.keyword.cos_short}}, Load Balancer, VPN, and Transit Gateway.
@@ -40,7 +40,7 @@ On the **Sandbox Overview** page, you can create compute resources such as Virtu
 
     * **Load Balancer** - Distribute network traffic across multiple server instances to enhance availability and reliability.
 
-    * **VPN for VPC** - Establish a secure connection between your Sandbox VPC and an external or on-premises network.
+    * **VPN for VPC** - Establish a secure connection between your Cloud Sandbox VPC and an external or on-premises network.
 
     * **Transit Gateway** - Connect multiple VPCs and integrate with on-premises networks to support hybrid cloud connectivity.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords: sandbox best practices, vpc best practices, cloud sandbox optimization, sandbox security, resource management
 
@@ -15,7 +15,7 @@ subcollection: sandbox
 # Additional offerings
 {: #sandbox-add-offerings}
 
-{{site.data.keyword.sandbox_full_notm}} offers additional services that are automatically provisioned with default settings when your Sandbox is created. These services enhance your environment's capabilities and are available for immediate use without any extra configuration.
+{{site.data.keyword.sandbox_full_notm}} offers additional services that are automatically provisioned with default settings when your Cloud Sandbox is created. These services enhance your environment's capabilities and are available for immediate use without any extra configuration.
 
 ## {{site.data.keyword.cos_full_notm}}
 {: #cos}
@@ -31,7 +31,7 @@ You can create a {{site.data.keyword.cos_full_notm}} (COS) instance either from 
 
 2. **Sandbox Overview** page: Follow the same procedure described in [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-For Sandbox environments, the supported capacity is one {{site.data.keyword.cos_full_notm}} instance.
+For Cloud Sandbox environments, the supported capacity is one {{site.data.keyword.cos_full_notm}} instance.
 
 ### Learn more
 {: #learnmore-cos}
@@ -59,7 +59,7 @@ You can create a load balancer either from the **{{site.data.keyword.Bluemix_not
 
 2. **Sandbox Overview** page: Follow the same procedure described in [Creating a load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-The supported capacity for Load Balancer for Sandbox is one instance.
+The supported capacity for Load Balancer for Cloud Sandbox is one instance.
 
 ### Learn more
 {: #learnmore-lb}
@@ -79,9 +79,9 @@ A secure Virtual Private Network solution that provides encrypted connectivity t
 
 * Establish secure, encrypted connections from your on-premises network or remote locations to your VPC resources.
 
-* Access private resources in your Sandbox environment without exposing them to the public.
+* Access private resources in your Cloud Sandbox environment without exposing them to the public.
 
-* Enable remote team members to access sandbox resources safely.
+* Enable remote team members to access Cloud Sandbox resources safely.
 
 You can create a VPN for VPC either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
@@ -89,7 +89,7 @@ You can create a VPN for VPC either from the **{{site.data.keyword.Bluemix_notm}
 
 2. **Sandbox Overview** page: Follow the same procedure described in [Setting up VPC VPN connectivity](/docs/containers?topic=containers-vpc-vpnaas) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-The supported capacity for VPN for VPC for Sandbox is one instance.
+The supported capacity for VPN for VPC for Cloud Sandbox is one instance.
 
 By default, the `Full-tunnel` VPN mode is selected. But when you are provisioning from Quickstart, then VPN mode will be set to  `Split-tunnel` mode.
 {: important}
@@ -162,9 +162,9 @@ If your using Transit Gateway, Direct Link, or VPN Gateway to connect to on-prem
 
 A centralized network hub that simplifies connectivity between different network environments. You can use this service to:
 
-* Seamlessly connect Classic Infrastructure and VPC resources within your Sandbox.
+* Seamlessly connect Classic Infrastructure and VPC resources within your Cloud Sandbox.
 
-* Scale your network connections as your Sandbox environment grows.
+* Scale your network connections as your Cloud Sandbox environment grows.
 
 You can create transit gateway either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
@@ -172,7 +172,7 @@ You can create transit gateway either from the **{{site.data.keyword.Bluemix_not
 
 2. **Sandbox Overview** page: Follow the same procedure described in [Creating a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui) topic. When selecting a resource group, you can choose either the Default resource group or any other available resource group.
 
-The supported capacity for Transit Gateway for Sandbox is one instance.
+The supported capacity for Transit Gateway for Cloud Sandbox is one instance.
 
 ### Learn more
 {: #learnmore-tg}

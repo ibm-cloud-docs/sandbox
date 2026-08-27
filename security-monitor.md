@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-08-27"
 
 keywords: security group, security group rules, delete rules, sandbox, violation, compliance
 
@@ -15,7 +15,7 @@ subcollection: sandbox
 # Security group rule violations
 {: #delete-security-group-rules}
 
-When you receive a security group violation notification in your {{site.data.keyword.cloud}} Sandbox environment, you need to remove or modify the violating security group rules to maintain compliance with security policies.
+When you receive a security group violation notification in your {{site.data.keyword.cloud}} Cloud Sandbox environment, you need to remove or modify the violating security group rules to maintain compliance with security policies.
 {: shortdesc}
 
 ## Understanding security group violations
@@ -51,7 +51,7 @@ Following are the steps to locate and delete the security group rules in the con
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com){: external}.
 2. Go to **Navigation Menu** > **VPC Infrastructure** > **Security groups**.
-3. If prompted, select the region where your Sandbox environment is located.
+3. If prompted, select the region where your Cloud Sandbox environment is located.
 
 ### Identify the violating security group
 {: #identify-security-group}
@@ -186,7 +186,7 @@ ibmcloud is security-group-rules SECURITY_GROUP_ID
 ## Timeline and automated enforcement
 {: #timeline-enforcement}
 
-You have 96 hours from the initial notification to remediate the violation. If not remediated, the violating rule is automatically deleted by the Sandbox team.
+You have 96 hours from the initial notification to remediate the violation. If not remediated, the violating rule is automatically deleted by the Cloud Sandbox team.
 {: important}
 
 The notification timeline is as follows:
@@ -216,7 +216,7 @@ If you have questions or need assistance:
 
 - Review the [Sandbox documentation](/docs/sandbox) for more information.
 - Incase of any queries, [open a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}
-- Contact the Sandbox team using the email address provided in your violation notification.
+- Contact the Cloud Sandbox team using the email address provided in your violation notification.
 
 ## References
 {: #references}

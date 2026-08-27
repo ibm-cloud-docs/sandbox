@@ -17,7 +17,7 @@ subcollection: sandbox
 
 After your {{site.data.keyword.sandbox_full_notm}} environment is active, you can securely access Linux or Windows virtual server instance (VSIs) and migrate data between IBM Classic infrastructure and VPC infrastructure.
 
-When your Sandbox environment is provisioned, an SSH key pair is automatically created for secure server access. The private key is stored in {{site.data.keyword.Bluemix_notm}} Secrets Manager for you to download and use. The following steps guide you through retrieving this key and connecting to your servers.
+When your Cloud Sandbox environment is provisioned, an SSH key pair is automatically created for secure server access. The private key is stored in {{site.data.keyword.Bluemix_notm}} Secrets Manager for you to download and use. The following steps guide you through retrieving this key and connecting to your servers.
 
 ## Before you begin
 {: #before-you-begin}
@@ -46,7 +46,7 @@ After reserving the floating IP:
 {: #download-ssh-key}
 
 1. Go to **Resource List** > **Security** > **Secrets Manager**.
-2. Open your Sandbox Secrets Manager instance.
+2. Open your Cloud Sandbox Secrets Manager instance.
 3. Locate your SSH private key secret, click the overflow menu (⋮), and select **View Secret**.
 4. Download the secret key and save to a file (for example, `key.pem`).
 5. Set appropriate permissions:
