@@ -25,7 +25,7 @@ subcollection: sandbox
 * Store and retrieve large volumes of data, including images, videos, documents, and backup files.
 * Archive data for long-term retention using cost-effective storage tiers.
 
-You can create a {{site.data.keyword.cos_full_notm}} (COS) instance either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
+You can create an {{site.data.keyword.cos_full_notm}} (COS) instance either from the **{{site.data.keyword.Bluemix_notm}} UI** or through the **Sandbox Overview** page.
 
 1. **{{site.data.keyword.Bluemix_notm}} UI** - Refer [Creating a service instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision#provision-instance) topic.
 
