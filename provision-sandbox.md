@@ -15,7 +15,7 @@ content-type: release-note
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Provisioning the {{site.data.keyword.sandbox_full_notm}}
+# Provisioning the Cloud Sandbox
 {: #deploy}
 
 Provision IBM Cloud Sandbox to quickly create a secure, isolated environment for exploring IBM Cloud VPC services, where you can configure your Sandbox environment, invite users, and begin provisioning resources for testing and evaluation.
