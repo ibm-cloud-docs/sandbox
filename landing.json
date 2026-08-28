@@ -28,13 +28,5 @@
         "href": "/docs/sandbox?topic=sandbox-sandbox-relnotes"
       }
     ]
-  },
-  "section_highlights": [
-    {
-      "title": "Sandbox Video Tutorials",
-      "description": "Explore, learn, and practice.",
-      "href": "/docs/sandbox?topic=sandbox-sandbox-feature-video",
-      "type": "video"
-    }
-  ]
+  }
 }

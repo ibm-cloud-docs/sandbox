@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-08-28"
 
 keywords:
 
@@ -269,3 +269,11 @@ Yes. This is an expected behavior and a special capability available in the Clou
 {: faq}
 
 In the IBM Cloud Sandbox environment, a Cloud Object Storage (COS) bucket supports storing objects with a maximum file size of up to 4096 GB (4 TB).
+
+## Can you reclaim resources created in a Cloud Sandbox account?
+{: #faq-reclaim}
+{: faq}
+
+No. Cloud Sandbox is not responsible for reclaiming resources that have been deleted accidentally.
+
+If you accidentally delete a resource, you can reclaim only those resources that are supported by the IBM Cloud.

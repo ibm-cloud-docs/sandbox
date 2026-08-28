@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-08-28"
 
 keywords:
 
@@ -21,7 +21,7 @@ content-type: release-note
 Provision IBM Cloud Sandbox to quickly create a secure, isolated environment for exploring IBM Cloud VPC services, where you can configure your Sandbox environment, invite users, and begin provisioning resources for testing and evaluation.
 
 ## Pre-requisites
-{: #pre-req}
+{: #pre-requisites}
 
 Ensure that you add access policies and grant administrator-level access to the following services:
 
