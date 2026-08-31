@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-08-31"
 
 keywords:
 
@@ -42,7 +42,7 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 
 * You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
 
-## Understanding the limitations of the Sandbox environment
+## Understanding the limitations of the Cloud Sandbox environment
 {: #sandbox-boundaries}
 
 The Cloud Sandbox environment has specific limitations to ensure fair usage and maintain security.
@@ -84,7 +84,7 @@ By using the Sandbox, you agree to the following:
 * Accept that all resources will be automatically deleted at the end of the 14-day trial period.
 * Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies.
 
-## Creating Sandbox account
+## Creating Cloud Sandbox account
 {: #sandbox-request}
 {: step}
 
@@ -102,7 +102,7 @@ This link is available only to users who have been allowlisted.
 
 For more information on provisioning, see [Provisioning the {{site.data.keyword.sandbox_full_notm}}](/docs/sandbox?topic=sandbox-deploy) topic.
 
-## Creating your Sandbox environment
+## Creating your Cloud Sandbox environment
 {: #sandbox-create}
 {: step}
 
@@ -136,7 +136,7 @@ Perform the following steps to provision the Cloud Sandbox:
 Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
 
-## Accessing your Sandbox through email
+## Accessing your Cloud Sandbox through email
 {: #sandbox-access-profile}
 {: step}
 
