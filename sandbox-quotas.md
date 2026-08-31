@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-08-31"
 
 keywords:
 
@@ -14,13 +14,13 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
+# Cloud Sandbox quota limits
+{: #sandbox-quota}
+
 The resource capacity and quota limits that apply to {{site.data.keyword.sandbox_full_notm}} environments, including restrictions for compute, storage, networking, and security resources.
 {: shortdesc}
 
 If the capacity usage exceeds the defined quota limit, then the corresponding action will be taken and will be notified accordingly.
-
-# Sandbox quota limits
-{: #sandbox-quota}
 
 Following is the table list of Cloud Sandbox resource capacity and Quota limits:
 

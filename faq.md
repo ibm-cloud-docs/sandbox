@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-28"
+lastupdated: "2026-08-31"
 
 keywords:
 
@@ -188,7 +188,7 @@ The Cloud Sandbox includes several security features: Each customer receives a d
 
 No, the Cloud Sandbox is strictly for testing, evaluation, and learning purposes only. It should not be used for production workloads, customer-facing applications, or storing sensitive production data. The 14-day trial period, automatic resource cleanup, and resource limitations make it unsuitable for production use. Use the Cloud Sandbox to evaluate {{site.data.keyword.Bluemix_notm}} capabilities, test configurations, and validate your architecture before deploying to a production environment in your own {{site.data.keyword.Bluemix_notm}} account.
 
-## What support is available if I encounter issues in the Sandbox?
+## What support is available if I encounter issues in the Cloud Sandbox?
 {: #faq-support}
 {: faq}
 

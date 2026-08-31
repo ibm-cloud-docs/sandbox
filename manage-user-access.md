@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-08-31"
 
 keywords:
 
@@ -115,7 +115,7 @@ To add Cloud Sandbox permission to existing users in your account, follow these 
 
 8. Click **Finish**.
 
-## Creating or inviting a user and add Sandbox permission
+## Creating or inviting a user and add Cloud Sandbox permission
 {: #invite-user-sandbox}
 
 To create or invite a new user and grant them Cloud Sandbox permission, follow these steps:

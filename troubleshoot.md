@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-08-31"
 
 keywords: sandbox troubleshooting, sandbox provisioning issues, sandbox access problems, sandbox connectivity, sandbox resources
 
@@ -49,7 +49,7 @@ Try the following solutions:
 3. Verify that your account is allow-listed by checking for the Cloud Sandbox invitation email or contacting {{site.data.keyword.Bluemix_notm}} support.
 4. Ensure you have administrator access in your {{site.data.keyword.Bluemix_notm}} account. Contact your account administrator to grant the necessary permissions.
 
-## Why is my Sandbox provisioning taking longer than expected?
+## Why is my Cloud Sandbox provisioning taking longer than expected?
 {: #ts-slow-provisioning}
 {: troubleshoot}
 {: support}
@@ -75,7 +75,7 @@ Try the following solutions:
 4. If provisioning fails or takes longer than 30 minutes, delete the failed instance and try creating a new Cloud Sandbox in a different region.
 5. Contact {{site.data.keyword.Bluemix_notm}} support if the issue persists.
 
-## Why cannot I access my Sandbox trusted profile?
+## Why cannot I access my Cloud Sandbox trusted profile?
 {: #ts-cannot-access-profile}
 {: troubleshoot}
 {: support}
@@ -188,7 +188,7 @@ Try the following solutions:
 6. If using VPN for VPC, ensure your VPN connection is active and properly configured.
 7. Try connecting from a different network or location to rule out local firewall issues.
 
-## Why is my Sandbox extension failing?
+## Why is my Cloud Sandbox extension failing?
 {: #ts-extension-fails}
 {: troubleshoot}
 {: support}

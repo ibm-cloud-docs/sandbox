@@ -209,7 +209,7 @@ Configure and test application load balancing by distributing traffic across ins
 
 For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
-## Monitor your Sandbox lifecycle
+## Monitor your Cloud Sandbox lifecycle
 {: #sandbox-lifecycle}
 
 Your Cloud Sandbox environment has a 14-day trial period. To track your remaining time:
