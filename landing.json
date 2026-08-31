@@ -32,13 +32,13 @@
   "section_highlights": [
     {
       "title": "Sandbox Video Tutorials",
-      "description": "Short description of resource content.",
+      "description": "Simple video lessons that make learning engaging, practical, and easy.",
       "href": "https://cloud.ibm.com/docs/sandbox?topic=sandbox-sandbox-feature-video",
       "type": "video"
     },
     {
       "title": "VPC documentation",
-      "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
+      "description": "VPC infrastructure contains a number of Infrastructure-as-a-Service (IaaS) offerings, including Virtual Servers for VPC.",
       "href": "https://cloud.ibm.com/docs/vpc",
       "type": "training",
       "recommended": true
