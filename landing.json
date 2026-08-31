@@ -28,5 +28,20 @@
         "href": "/docs/sandbox?topic=sandbox-sandbox-relnotes"
       }
     ]
-  }
+  },
+  "section_highlights": [
+    {
+      "title": "Sandbox Video Tutorials",
+      "description": "Short description of resource content.",
+      "href": "/docs/sandbox?topic=sandbox-sandbox-feature-video",
+      "type": "video"
+    },
+    {
+      "title": "VPC documentation",
+      "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
+      "href": "/docs/vpc",
+      "type": "article",
+      "recommended": true
+    }
+  ]
 }
