@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-31"
+lastupdated: "2026-09-01"
 
 keywords:
 
@@ -216,7 +216,18 @@ Your Cloud Sandbox environment has a 14-day trial period. To track your remainin
 
 1. View the trial period countdown on the Cloud Sandbox landing page.
 
-2. Check your email for reminder notifications (typically sent at 7 days, 3 days, and 1 day before expiry).
+2. Monitor your email for reminder notifications:
+
+    * Day 3 – First reminder
+    * Day 6 – Second reminder
+    * Day 9 – Final reminder
+
+    If a Cloud Sandbox is not created by the user after receiving the final reminder, then:
+
+    * The user will be removed from Partner Center.
+    * The user will be removed from the Cloud Sandbox allowlist.
+    
+    Users who create a Cloud Sandbox within the designated timeframe will retain their allowlist status.
 
 After the 14-day trial period expires, all resources in the Cloud Sandbox environment are automatically deleted. You must save the configuration by downloading the Terraform package and running it in your own customer account.
 {: important}
