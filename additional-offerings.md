@@ -91,7 +91,7 @@ You can create a VPN for VPC either from the **{{site.data.keyword.Bluemix_notm}
 
 The supported capacity for VPN for VPC for Cloud Sandbox is one instance.
 
-For VPNs provisioned using **Quickstart** in Cloud Sandbox, Split-tunnel mode is selected by default. For more information, see [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
+For VPNs provisioned using [**Quickstart**](/docs/sandbox?topic=sandbox-create-resource) in Cloud Sandbox, Split-tunnel mode is selected by default. For more information, see [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
 {: important}
 
 ### VPN Client IP Pool Configuration
