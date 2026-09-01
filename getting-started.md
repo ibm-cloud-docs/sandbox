@@ -229,8 +229,8 @@ Your Cloud Sandbox environment has a 14-day trial period. To track your remainin
     
     Users who create a Cloud Sandbox within the designated timeframe will retain their allowlist status.
 
-After the 14-day trial period expires, all resources in the Cloud Sandbox environment are automatically deleted. You must save the configuration by downloading the Terraform package and running it in your own customer account.
-{: important}
+
+A Sandbox is available for a default period of 14 days and can be extended by additional 2 days. Once its lifecycle ends, the Sandbox enters a cooling period, during which a new Sandbox cannot be created. After expiration, all associated resources become inactive and unavailable for use.
 
 Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
 {: important} 

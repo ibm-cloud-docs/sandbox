@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-28"
+lastupdated: "2026-09-01"
 
 keywords:
 
@@ -107,7 +107,18 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
 1. On the **Sandbox Overview** page, click **Create resources**.
 
-2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server. For more information on creating SSH key, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&locale=en&interface=ui).
+2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
+
+    * Users can select one or more existing SSH keys from those available in the Cloud Sandbox account.
+    * Selecting at least one SSH key is required when creating a Virtual Server Instance (VSI).
+    * The chosen SSH key(s) must be associated with the VSI during the provisioning process.
+    * When a new SSH key is created, the corresponding private key must be available for download.
+    * Authorized Cloud Sandbox users can share the downloaded private key with other authorized users who require SSH access to the VSI.
+    * Users cannot establish an SSH connection to the VSI without the corresponding private SSH key.
+    * Non-VSI services can be provisioned without an SSH key.
+
+    For more information on creating SSH key, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&locale=en&interface=ui).
+
 
 3. To select from all the available images, click **Change image**. To select from all the available profiles, click **Change profile**.
 
