@@ -2,16 +2,18 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-01"
+lastupdated: "2026-09-02"
 
 keywords:
 
 subcollection: sandbox
-content-type: tutorial
+
+content-type: getting started
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+
 
 # Getting Started with {{site.data.keyword.sandbox_full_notm}}
 {: #getting-started-sandbox}
@@ -59,7 +61,7 @@ The Cloud Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} I
 * Load Balancer, Client VPN, and Transit Gateway
 * DNS and Secrets Manager
 
-Other {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings are not available in the Cloud Sandbox environment.
+The Cloud Sandbox environment does not provide access to {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings.
 {: note}
 
 ### Resource limitations

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-31"
+lastupdated: "2026-09-02"
 
 keywords:
 
@@ -18,6 +18,7 @@ content-type: release-note
 {: #sandbox-feature-video}
 
 Explore the video tutorials to learn how to use key {{site.data.keyword.sandbox_full_notm}} features and perform common administrative tasks. These guided demonstrations provide step-by-step instructions, helping you quickly understand Cloud Sandbox capabilities, configure settings, and follow recommended practices.
+{: shortdesc}
 
 Whether you are new to the Cloud Sandbox environment or looking to deepen your knowledge of specific features, these videos offer a practical way to get started and streamline day-to-day operations.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-08-27"
+lastupdated: "2026-09-02"
 
 keywords:
 
@@ -24,6 +24,7 @@ subcollection: sandbox
 {: #architecture}
 
 The {{site.data.keyword.sandbox_full_notm}} platform provides a secure, automated, and scalable environment that enables users to discover {{site.data.keyword.Bluemix_notm}} offerings from the {{site.data.keyword.Bluemix_notm}} Catalog. You can provision Cloud Sandbox environment, deploy workloads, and evaluate {{site.data.keyword.Bluemix_notm}} VPC capabilities with minimal setup effort.
+{: shortdesc}
 
 {{site.data.keyword.sandbox_full_notm}} enables users to:
 

@@ -19,6 +19,7 @@ content-type: release-note
 {: #deploy}
 
 Provision IBM Cloud Sandbox to quickly create a secure, isolated environment for exploring IBM Cloud VPC services, where you can configure your Sandbox environment, invite users, and begin provisioning resources for testing and evaluation.
+{: shortdesc}
 
 ## Pre-requisites
 {: #pre-requisites}
@@ -158,7 +159,7 @@ The 21-day cooling period begins on the date the Cloud Sandbox is terminated, re
 ### Videos
 {: #video-sb}
 
-You can explore the video tutorials to learn more about the Cloud Sandbox features and perform common the administrative tasks. Click on **Videos** to access the [Sandbox Video Tutorials](/docs-draft/sandbox?topic=sandbox-sandbox-feature-video) page.
+You can explore the video tutorials to learn more about the Cloud Sandbox features and perform common the administrative tasks. Click on **Videos** to access the [Sandbox Video Tutorials](/docs/sandbox?topic=sandbox-sandbox-feature-video) page.
 
 ### Save configuration
 {: #save-config-sb}

@@ -16,6 +16,7 @@ subcollection: sandbox
 {: #connect-migrate}
 
 After your {{site.data.keyword.sandbox_full_notm}} environment is active, you can securely access Linux or Windows virtual server instance (VSIs) and migrate data between IBM Classic infrastructure and VPC infrastructure.
+{: shortdesc}
 
 When your Cloud Sandbox environment is provisioned, an SSH key pair is automatically created for secure server access. The private key is stored in {{site.data.keyword.Bluemix_notm}} Secrets Manager for you to download and use. The following steps guide you through retrieving this key and connecting to your servers.
 

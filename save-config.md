@@ -16,9 +16,9 @@ subcollection: sandbox
 {: #save-config}
 
 Before suspending the Cloud Sandbox account, customers must delete all the resources created during provisioning. If these resources are not removed, the account will remain suspended and the resources will be deleted automatically. Therefore, it is recommended to back-up data using the **Save configuration** option before the trial period expires.
+{: shortdesc}
 
 The **Save configuration** feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Cloud Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
-{: shortdesc}
 
 You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview){: external} page.
 
