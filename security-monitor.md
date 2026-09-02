@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-09-02"
 
 keywords: security group, security group rules, delete rules, sandbox, violation, compliance
 
@@ -224,5 +224,5 @@ If you have questions or need assistance:
 - [Learn more about security groups](/docs/vpc?topic=vpc-using-security-groups)
 - [Review VPC security best practices](/docs/vpc?topic=vpc-security-in-your-vpc)
 
-This documentation applies specifically to IBM Cloud Sandbox environments, where security group violation monitoring and automated enforcement are integrated into the Sandbox security compliance framework.
+This documentation applies specifically to Cloud Sandbox environments, where security group violation monitoring and automated enforcement are integrated into the Sandbox security compliance framework.
 {: important}
