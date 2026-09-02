@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-09-02"
 
 keywords:
 
@@ -21,7 +21,13 @@ content-type: release-note
 The release notes describes the brief overview of the new features, enhancements, known and fixed issues added to Sandbox for the release.
 {: shortdesc}
 
-## 5 May 2026 [New release]{: tag-green}
+## 15 September 2026 [New release]{: tag-green}
+{: #subcollection-15sep}
+{: release-note}
+
+Add the updates done for the GA release.
+
+## 5 May 2026
 {: #subcollection-01may}
 {: release-note}
 

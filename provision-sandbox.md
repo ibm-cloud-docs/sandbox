@@ -31,7 +31,7 @@ Ensure that you add access policies and grant administrator-level access to the 
 * Cloud Sandbox
 * Resource Group
 
-The user needs Cloud Sandbox access along with the required Resource Group access to create the Sandbox.
+You need the Cloud Sandbox access along with the required Resource Group access to create the Sandbox.
 {: note}
 
 Bare metal is subjected to capacity validation.
@@ -56,17 +56,17 @@ Only one Cloud Sandbox is allowed per allowlisted customer account.
     You will not be able to change the region once selected during the provisioning.
     {: note}
 
-    * **Resource group** - Name from your {{site.data.keyword.Bluemix_notm}} account where the Cloud Sandbox resource will be deployed.
+    * **Resource group** - Name of the resource group from your {{site.data.keyword.Bluemix_notm}} account where the Cloud Sandbox resource is deployed.
 
-    * **Tags** (optional) - Use the tags to organize your resources.
+    * **Tags** (optional) - Use tags to organize your resources.
 
     ![Create Sandbox](images/sandbox-create.svg "Create Sandbox"){: caption="Sandbox - Create" caption-side="bottom"}
 
-3. In the **Users** section, you can select users from your account.
+3. In the **Users** section, select users from your account.
 
-4. Accept the terms and conditions, click **Create Sandbox**.
+4. Accept the terms and conditions, then click **Create Sandbox**.
 
-Sandbox account is provisioned now. This includes a 14-day trial period with a 2 days (48 hours) extension. User access is limited to the region selected during provisioning.
+The Sandbox account is now provisioned. This includes a 14-day trial period with a 2-day (48-hour) extension. User access is limited to the region selected during provisioning.
 
 A user can create up to three Cloud Sandbox environments per year. Only one Sandbox can be active at any given time.
 {: note}
@@ -80,21 +80,21 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
 
     ![Sandbox - Resource list](images/sandbox-resource-list.svg "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
 
-2. On the user management page:
+2. On the **user management** page:
     
     - Click **Launch Sandbox** to provision the required resources.
-    - From the **Actions** drop-down, you can **View docs**, **Extend** the Sandbox duration, and **End** the Sandbox early.
+    - From the **Actions** drop-down, you can: 
+
+        * **View docs** - Explore the Cloud Sandbox documentation.
+        * **Extend** - Extend the Sandbox trial by 2 days (48 hours).
+        * **End** - End the Sandbox trial early.
+
     - Under the **Users** section, you can add new users or remove the existing users.
-    - Under Actions drop-down, you have an options:
 
-        - **View docs** - Click to explore the cloud Sandbox documentation.
-        - **Extend** - You can extend the Sandbox trial for 2 days (48 hours).
-        - **End** - You can end the Sandbox trial any time by clicking **End early**.
-
-        The data will be securely stored in COS bucket with object lock enabled. It is recommended to save the configuration, so that you can easily replicate your setup in your own account.
+        Data is securely stored in a Cloud Object Storage (COS) bucket with object lock enabled. Save the configuration so that you can replicate your setup in your own account.
         {: important}
 
-        If you want to reclaim the Cloud Sandbox account during the trial period, contact the Sandbox team.
+        To reclaim the Cloud Sandbox account during the trial period, contact the Sandbox team.
         {: tip}
 
     For additional information, use the **Helpful Links** section to access **Documentation**, **Videos**, and **Feedback resources**.
@@ -110,10 +110,12 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
 2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
 
-    * Users can select one or more existing SSH keys from those available in the Cloud Sandbox account.
+    Following are the requirements when working with the SSH keys:
+
+    * You can select one or more existing SSH keys from those available in the Cloud Sandbox account.
     * Selecting at least one SSH key is required when creating a Virtual Server Instance (VSI).
     * The chosen SSH key(s) must be associated with the VSI during the provisioning process.
-    * When a new SSH key is created, the corresponding private key must be available for download.
+    * When a new SSH key is created, download the corresponding private key.
     * Authorized Cloud Sandbox users can share the downloaded private key with other authorized users who require SSH access to the VSI.
     * Users cannot establish an SSH connection to the VSI without the corresponding private SSH key.
     * Non-VSI services can be provisioned without an SSH key.
