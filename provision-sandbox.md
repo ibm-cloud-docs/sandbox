@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-01"
+lastupdated: "2026-09-02"
 
 keywords:
 
@@ -44,7 +44,7 @@ Only one Cloud Sandbox is allowed per allowlisted customer account.
 
 1. Navigate to the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog#highlights){: external} and search for the **Sandbox** offering.
 
-    ![Sandbox - Catalog page](images/sandbox-catalog-page.png "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
+    ![Sandbox - Catalog page](images/sandbox-catalog-page.svg "Sandbox - Catalog page"){: caption="Sandbox - Catalog page" caption-side="bottom"}
 
 2. In the **Create** tab, provide the following information under **Details**:
 
@@ -59,7 +59,7 @@ Only one Cloud Sandbox is allowed per allowlisted customer account.
 
     * **Tags** (optional) - Use the tags to organize your resources.
 
-    ![Create Sandbox](images/sandbox-create.png "Create Sandbox"){: caption="Sandbox - Create" caption-side="bottom"}
+    ![Create Sandbox](images/sandbox-create.svg "Create Sandbox"){: caption="Sandbox - Create" caption-side="bottom"}
 
 3. In the **Users** section, you can select users from your account.
 
@@ -77,7 +77,7 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
 
 1. Click on the Cloud Sandbox instance name in the **Resource list**.
 
-    ![Sandbox - Resource list](images/sandbox-resource-list.png "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
+    ![Sandbox - Resource list](images/sandbox-resource-list.svg "Sandbox - Resource list"){: caption="Sandbox - Resource list" caption-side="bottom"}
 
 2. On the user management page:
     
@@ -129,7 +129,7 @@ You can create virtual servers or bare metal servers along with other VPC servic
     * VPN for VPC
     * Transit Gateway
 
-    ![Sandbox - Create resources](images/sandbox-create-resource.png "Sandbox - Create resources"){: caption="Sandbox - Create resources" caption-side="bottom"}
+    ![Sandbox - Create resources](images/sandbox-create-resource.svg "Sandbox - Create resources"){: caption="Sandbox - Create resources" caption-side="bottom"}
 
 5. Accept the terms and conditions, click **Create resources**.
 

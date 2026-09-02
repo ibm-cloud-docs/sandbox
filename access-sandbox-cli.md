@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-09-02"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -52,7 +52,7 @@ To access Cloud Sandbox using CLI, you need the following commands:
     ```
     {: codeblock}
 
-The following are the commands to list and check the resources:
+    The following are the commands to list and check the resources:
 
     | Command | Description |
     | ------- | --------- |

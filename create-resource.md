@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-27"
+lastupdated: "2026-09-02"
 
 keywords:
 
@@ -28,11 +28,11 @@ On the **Sandbox Overview** page, you can create compute resources such as Virtu
 
 3. To choose an operating system image from the available options, click **Change image**.
 
-    ![Select image - Server instance](images/sandbox-select-image.png "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
+    ![Select image - Server instance](images/sandbox-select-image.svg "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
 
 4. To choose an instance profile from the available options, click **Change profile**.
 
-    ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
+    ![Select profile - Server instance](images/sandbox-select-instance-profile.svg "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
 
 5. Under **Additional services**, enable the optional services that you want to use:
 
