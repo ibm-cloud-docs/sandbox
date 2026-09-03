@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-03"
 
 keywords:
 
@@ -91,11 +91,13 @@ By using the Sandbox, you agree to the following:
 {: step}
 
 1. An email notification is sent to all the **allow-listed** customers to experience the Cloud Sandbox environment.
-2. After clicking **Request**, you will be redirected to the Cloud Sandbox provisioning page to get started. Update the required information.
+2. Click **Request** to open the Cloud Sandbox provisioning page. Then, provide the required information to begin provisioning your Cloud Sandbox.
 
 ## Accessing the IBM Cloud Catalog
 {: #sandbox-catalog}
 {: step}
+
+To access the catalog, navigate to the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog#highlights){: external}.
 
 After clicking **Request** in the email notification, you will be directed to the Cloud Sandbox provisioning page. If you need to access it later, go directly to the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}.
 

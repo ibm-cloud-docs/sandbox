@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-03"
 
 keywords:
 
@@ -112,10 +112,10 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
     Following are the requirements when working with the SSH keys:
 
-    * You can select one or more existing SSH keys from those available in the Cloud Sandbox account.
+    * You can select one or more existing SSH keys from the SSH key dropdown.
     * Selecting at least one SSH key is required when creating a Virtual Server Instance (VSI).
-    * The chosen SSH key(s) must be associated with the VSI during the provisioning process.
-    * When a new SSH key is created, download the corresponding private key.
+    * The selected SSH key is automatically attached to the VSI during provisioning.
+    * When a new SSH key is created, the corresponding private key is downloaded automatically.
     * Authorized Cloud Sandbox users can share the downloaded private key with other authorized users who require SSH access to the VSI.
     * Users cannot establish an SSH connection to the VSI without the corresponding private SSH key.
     * Non-VSI services can be provisioned without an SSH key.
