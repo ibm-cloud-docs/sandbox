@@ -74,7 +74,7 @@ Once the account is deleted, all the data also gets deleted. The configuration s
 {: step}
 
 1. An email notification is sent to all the **allow-listed** customers to experience the Cloud Sandbox environment.
-2. Click **Request** to open the [Cloud Sandbox provisioning page](https://cloud.ibm.com/catalog/services/cloud-sandbox){: external}. Then, provide the required information to begin provisioning your Cloud Sandbox.
+2. Click **Request** to open the [Cloud Sandbox provisioning page](https://cloud.ibm.com/sandbox/provision){: external}. Then, provide the required information to begin provisioning your Cloud Sandbox.
 
 This link is available only to users who have been allowlisted.
 {: note}
@@ -161,7 +161,7 @@ After provisioning resources, use your Cloud Sandbox environment to explore VPC 
 
 Configure and validate network components by setting up the subnets, security groups, and network ACLs. Establish the public and private connectivity by testing latency and performance and experimenting with VPN and Transit Gateway configurations.
 
-* For more information on transit gateway, see [Creating a Transit Gateway](/docs/sandbox?topic=sandbox-connect-migrate#create-transit-gateway).
+* For more information on transit gateway, see [Creating a Transit Gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway).
 
 * For more information on subnets, see [Working with subnets](/docs/vpc?topic=vpc-subnets-configure&interface=ui).
 
