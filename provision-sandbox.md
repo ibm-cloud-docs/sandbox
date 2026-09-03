@@ -91,6 +91,8 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
 
     - Under the **Users** section, you can add new users or remove the existing users.
 
+    ![Sandbox - user management](images/sandbox-user-management.svg "Sandbox - user management"){: caption="Sandbox - Resource list" caption-side="bottom"}
+
         Data is securely stored in a Cloud Object Storage (COS) bucket with object lock enabled. Save the configuration so that you can replicate your setup in your own account.
         {: important}
 
