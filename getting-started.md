@@ -194,7 +194,7 @@ Configure and test application load balancing by distributing traffic across ins
 
 For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
-## Understanding the limitations of the Cloud Sandbox environment
+## Limitations
 {: #sandbox-boundaries}
 
 The Cloud Sandbox environment has specific limitations to ensure fair usage and maintain security.
