@@ -139,7 +139,7 @@ After your Cloud Sandbox is provisioned, an email is sent to all users with acce
 
 6. You are navigated to the Cloud Sandbox trusted profile account.
 
-7. Access the [Sandbox Overview page](https://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
+7. Access the [Sandbox Overview page](http://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
 
 The trusted profile provides secure, time-limited access to your Cloud Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}

@@ -83,25 +83,23 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
 2. On the **user management** page:
     
     - Click **Launch Sandbox** to provision the required resources.
+
     - From the **Actions** drop-down, you can: 
 
         * **View docs** - Explore the Cloud Sandbox documentation.
         * **Extend** - Extend the Sandbox trial by 2 days (48 hours).
         * **End** - End the Sandbox trial early.
 
-    - Under the **Users** section, you can add new users or remove the existing users.
+    - For additional information, use the **Helpful Links** section to access **Documentation**, **Videos**, and **Feedback resources**.
 
-    ![Sandbox - user management](images/sandbox-user-management.svg "Sandbox - user management"){: caption="Sandbox - Resource list" caption-side="bottom"}
+    ![Sandbox - Overview](images/sandbox-overview.svg "Sandbox - Overview"){: caption="Sandbox - Overview" caption-side="bottom"}
 
-        Data is securely stored in a Cloud Object Storage (COS) bucket with object lock enabled. Save the configuration so that you can replicate your setup in your own account.
-        {: important}
+3. Under the **Users** section, you can add new users or remove existing users. Users added here are granted access to the Cloud Sandbox. Removing a user requires confirmation before the action is completed.
 
-        To reclaim the Cloud Sandbox account during the trial period, contact the Sandbox team.
-        {: tip}
-
-    For additional information, use the **Helpful Links** section to access **Documentation**, **Videos**, and **Feedback resources**.
-
-3. Click on the link in the welcome email.
+    ![Sandbox - User](images/sandbox-user-page.svg "Sandbox - User"){: caption="Sandbox - User" caption-side="bottom"}
+    
+    To reclaim the Cloud Sandbox account during the trial period, contact the Sandbox team.
+    {: tip}
 
 ## Creating resources in the Cloud Sandbox environment
 {: #create-resources-sb}
