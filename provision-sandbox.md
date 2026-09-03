@@ -132,8 +132,6 @@ You can create virtual servers or bare metal servers along with other VPC servic
     * VPN for VPC
     * Transit Gateway
 
-    ![Sandbox - Create resources](images/sandbox-create-resource.svg "Sandbox - Create resources"){: caption="Sandbox - Create resources" caption-side="bottom"}
-
 5. Accept the terms and conditions, click **Create resources**.
 
 Once resources have been created, you can view them from the **Resource list**.
