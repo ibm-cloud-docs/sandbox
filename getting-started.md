@@ -61,14 +61,14 @@ After Cloud Sandbox access is approved, a welcome email is sent with instruction
 
 For accounts where a Cloud Sandbox has not yet been created after the welcome email is sent, reminder notifications are issued during the designated period:
 
-    * Day 3 – First reminder
-    * Day 6 – Second reminder
-    * Day 9 – Final reminder
+  * Day 3 – First reminder
+  * Day 6 – Second reminder
+  * Day 9 – Final reminder
 
 If a Cloud Sandbox is still not created after the final reminder:
 
-    * The user is removed from Partner Center.
-    * The user is removed from the Cloud Sandbox allowlist.
+  * The user is removed from Partner Center.
+  * The user is removed from the Cloud Sandbox allowlist.
     
 Users who create a Cloud Sandbox within the designated timeframe retain their allowlist status.
 
@@ -124,7 +124,7 @@ Perform the following steps to provision the Cloud Sandbox:
 
    * **Users** - Select the users who will have access to Cloud Sandbox. All users are granted the same access level and permissions. For more information on creating or adding users, see [Creating or inviting a user and add Cloud Sandbox permission](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#invite-user-sandbox).
 
-    Users can be added during Sandbox account creation or at any time after the account has been provisioned. Once users are added to a Cloud Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
+    Users can be added during Sandbox account creation or at any time after the account has been provisioned.
     {: important}
 
 2. Click **Create Sandbox** to submit your request. The Cloud Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
