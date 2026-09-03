@@ -42,49 +42,32 @@ Before you access the Cloud Sandbox, ensure that the following requirements are 
 
 * You need a valid IBMid for authentication.
 
-* You will receive **Welcome to your IBM Cloud Sandbox** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
+* You will receive **Allow-listed** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
 
-## Understanding the limitations of the Cloud Sandbox environment
-{: #sandbox-boundaries}
+## Monitoring your Cloud Sandbox lifecycle
+{: #sandbox-lifecycle}
 
-The Cloud Sandbox environment has specific limitations to ensure fair usage and maintain security.
+Your Cloud Sandbox environment has a 14-day trial period. To track your remaining time:
 
-### Service availability
-{: #service-availability}
+1. View the trial period countdown on the Cloud Sandbox landing page.
 
-The Cloud Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrastructure as a Service (IaaS) offerings, including:
+2. Monitor your email for reminder notifications:
 
-* Virtual Server for VPC and Bare Metal Servers for VPC
-* Block Storage and Instance Storage for VPC
-* {{site.data.keyword.cos_full_notm}}
-* Virtual Private Cloud (VPC) networking components
-* Load Balancer, Client VPN, and Transit Gateway
-* DNS and Secrets Manager
+    * Day 3 – First reminder
+    * Day 6 – Second reminder
+    * Day 9 – Final reminder
 
-The Cloud Sandbox environment does not provide access to {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings.
-{: note}
+    If a Cloud Sandbox is not created by the user after receiving the final reminder, then:
 
-### Resource limitations
-{: #resource-limit}
+    * The user will be removed from Partner Center.
+    * The user will be removed from the Cloud Sandbox allowlist.
+    
+    Users who create a Cloud Sandbox within the designated timeframe will retain their allowlist status.
 
-The Cloud Sandbox applies quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Following are the key limitations:
+A Sandbox is available for a default period of 14 days and can be extended by additional 2 days. Once its lifecycle ends, the Sandbox enters a cooling period, during which a new Sandbox cannot be created. After expiration, all associated resources become inactive and unavailable for use.
 
-* **Compute**: Limited vCPU (128) and RAM (1028 GB) for Virtual Servers, and 1 Bare Metal Server
-* **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and {{site.data.keyword.cos_full_notm}} to 4096 GB
-* **Network**: Maximum of 2 VPCs, 4 subnets, 4 Floating IPs, and 10 security groups
-* **Services**: 1 instance each for Load Balancer, VPN, Transit Gateway, DNS, and Secrets Manager
-
-For more details on quota limits, see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
-
-### Terms and conditions
-{: #terms-conditions}
-
-By using the Sandbox, you agree to the following:
-
-* Use the environment for evaluation and testing purposes only, not for production workloads.
-* Adhere to security best practices and the usage guidelines outlined in the [Limitations](/docs/sandbox?topic=sandbox-limitation) section.
-* Accept that all resources will be automatically deleted at the end of the 14-day trial period.
-* Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies.
+Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
+{: important} 
 
 ## Creating Cloud Sandbox account
 {: #sandbox-request}
@@ -211,31 +194,47 @@ Configure and test application load balancing by distributing traffic across ins
 
 For more information on load balancer, see [Creating an application load balancer](/docs/vpc?topic=vpc-load-balancers&interface=ui).
 
-## Monitor your Cloud Sandbox lifecycle
-{: #sandbox-lifecycle}
+## Understanding the limitations of the Cloud Sandbox environment
+{: #sandbox-boundaries}
 
-Your Cloud Sandbox environment has a 14-day trial period. To track your remaining time:
+The Cloud Sandbox environment has specific limitations to ensure fair usage and maintain security.
 
-1. View the trial period countdown on the Cloud Sandbox landing page.
+### Service availability
+{: #service-availability}
 
-2. Monitor your email for reminder notifications:
+The Cloud Sandbox provides access to select {{site.data.keyword.Bluemix_notm}} Infrastructure as a Service (IaaS) offerings, including:
 
-    * Day 3 – First reminder
-    * Day 6 – Second reminder
-    * Day 9 – Final reminder
+* Virtual Server for VPC and Bare Metal Servers for VPC
+* Block Storage and Instance Storage for VPC
+* {{site.data.keyword.cos_full_notm}}
+* Virtual Private Cloud (VPC) networking components
+* Load Balancer, Client VPN, and Transit Gateway
+* DNS and Secrets Manager
 
-    If a Cloud Sandbox is not created by the user after receiving the final reminder, then:
+The Cloud Sandbox environment does not provide access to {{site.data.keyword.Bluemix_notm}} services outside of these IaaS offerings.
+{: note}
 
-    * The user will be removed from Partner Center.
-    * The user will be removed from the Cloud Sandbox allowlist.
-    
-    Users who create a Cloud Sandbox within the designated timeframe will retain their allowlist status.
+### Resource limitations
+{: #resource-limit}
 
+The Cloud Sandbox applies quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Following are the key limitations:
 
-A Sandbox is available for a default period of 14 days and can be extended by additional 2 days. Once its lifecycle ends, the Sandbox enters a cooling period, during which a new Sandbox cannot be created. After expiration, all associated resources become inactive and unavailable for use.
+* **Compute**: Limited vCPU (128) and RAM (1028 GB) for Virtual Servers, and 1 Bare Metal Server
+* **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and {{site.data.keyword.cos_full_notm}} to 4096 GB
+* **Network**: Maximum of 2 VPCs, 4 subnets, 4 Floating IPs, and 10 security groups
+* **Services**: 1 instance each for Load Balancer, VPN, Transit Gateway, DNS, and Secrets Manager
 
-Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
-{: important} 
+For more details on quota limits, see [Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
+
+### Terms and conditions
+{: #terms-conditions}
+
+By using the Sandbox, you agree to the following:
+
+* Use the environment for evaluation and testing purposes only, not for production workloads.
+* Adhere to security best practices and the usage guidelines outlined in the [Limitations](/docs/sandbox?topic=sandbox-limitation) section.
+* Accept that all resources will be automatically deleted at the end of the 14-day trial period.
+* Comply with {{site.data.keyword.Bluemix_notm}} terms of service and acceptable use policies.
 
 ## Learn more
 {: #next-steps}
