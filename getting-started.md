@@ -19,7 +19,7 @@ content-type: getting started
 {: #getting-started-sandbox}
 
 The {{site.data.keyword.sandbox_full_notm}} is a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.vpc_short}} and next-generation infrastructure. It helps users understand how the {{site.data.keyword.Bluemix_notm}} infrastructure performs, behaves, and scales for their use cases before making production.
-{: shortdesc}
+{: shortdesc} 
 
 It gives users a 2-week trial to experiment, test, and assess their applications or workloads using {{site.data.keyword.vpc_short}} features.
 
@@ -29,42 +29,55 @@ The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 
 - **Existing {{site.data.keyword.Bluemix_notm}} users** who want hands-on experience with {{site.data.keyword.Bluemix_notm}} services and VPC infrastructure. Users who require a safe, isolated environment to test VPC configurations, evaluate new compute profiles, or deploy workloads without affecting production environments.
 
-To provision the Cloud Sandbox service from the {{site.data.keyword.Bluemix_notm}} catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service. The administrator should have the below two permissions:
+Do not use the Sandbox for production workloads. Sensitive or confidential data must not be stored during the two-week Sandbox tenure.
+{: important}
+
+To provision the Cloud Sandbox service from the IBM Cloud catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service. The administrator should have the below two permissions:
+
 * All Identity and Access enabled services
 * All Account Management services
+
+or 
+
+Users should be granted Administrator permissions for the **Cloud Sandbox** policy available in the IBM Cloud account. For more information, see [IAM Permissions](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
 
 ## Before you begin
 {: #before-you-begin}
 
-Before you access the Cloud Sandbox, ensure that the following requirements are met:
+Before accessing the Cloud Sandbox, make sure you have the following:
 
-* You need to have an active {{site.data.keyword.Bluemix_notm}} account.
+* An active **{{site.data.keyword.Bluemix_notm}}** account.
 
-* You need a valid IBMid for authentication.
+* A valid **IBMid** to authenticate to IBM Cloud.
 
-* You will receive **Allow-listed** email. You are all set to deploy the workloads, verify configurations, and experience how VPC helps build secure, scalable cloud solutions.
+* An **allowlisted email address** associated with your account.
+
+Once you have been allowlisted, you are ready to access Cloud Sandbox and deploy workloads, validate configurations, and explore how IBM Cloud VPC can help you build secure and scalable cloud solutions.
 
 ## Monitoring your Cloud Sandbox lifecycle
 {: #sandbox-lifecycle}
 
-Your Cloud Sandbox environment has a 14-day trial period. To track your remaining time:
+After Cloud Sandbox access is approved, a welcome email is sent with instructions to access and create the Sandbox environment.
 
-1. View the trial period countdown on the Cloud Sandbox landing page.
-
-2. Monitor your email for reminder notifications:
+For accounts where a Cloud Sandbox has not yet been created after the welcome email is sent, reminder notifications are issued during the designated period:
 
     * Day 3 – First reminder
     * Day 6 – Second reminder
     * Day 9 – Final reminder
 
-    If a Cloud Sandbox is not created by the user after receiving the final reminder, then:
+If a Cloud Sandbox is still not created after the final reminder:
 
-    * The user will be removed from Partner Center.
-    * The user will be removed from the Cloud Sandbox allowlist.
+    * The user is removed from Partner Center.
+    * The user is removed from the Cloud Sandbox allowlist.
     
-    Users who create a Cloud Sandbox within the designated timeframe will retain their allowlist status.
+Users who create a Cloud Sandbox within the designated timeframe retain their allowlist status.
 
-A Sandbox is available for a default period of 14 days and can be extended by additional 2 days. Once its lifecycle ends, the Sandbox enters a cooling period, during which a new Sandbox cannot be created. After expiration, all associated resources become inactive and unavailable for use.
+## Sandbox expiration and extension
+{: #sandbox-expire}
+
+A Cloud Sandbox is available for a default period of 14 days and can be extended by an additional 2 days.
+
+Once the Sandbox lifecycle ends, the environment enters a cooling-off period, during which a new Sandbox cannot be created. After expiration, all resources associated with the Sandbox become inactive and are no longer available for use.
 
 Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
 {: important} 
@@ -111,7 +124,7 @@ Perform the following steps to provision the Cloud Sandbox:
 
    * **Users** - Select the users who will have access to Cloud Sandbox. All users are granted the same access level and permissions. For more information on creating or adding users, see [Creating or inviting a user and add Cloud Sandbox permission](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#invite-user-sandbox).
 
-    **Users can only be added during Sandbox account creation and not later.** Once users are added to a Cloud Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
+    Users can be added during Sandbox account creation or at any time after the account has been provisioned. Once users are added to a Cloud Sandbox account at the time of creation, they remain unchanged until the trial ends. No modifications can be made later, and the roles assigned to them at creation time also remain the same throughout the trial period.
     {: important}
 
 2. Click **Create Sandbox** to submit your request. The Cloud Sandbox provisioning process typically takes 5-10 minutes. You will receive an email when it is ready, or you can refresh and check the **Resource List** to see the instance.
