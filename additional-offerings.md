@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-04"
 
 keywords: sandbox best practices, vpc best practices, cloud sandbox optimization, sandbox security, resource management
 
@@ -15,7 +15,7 @@ subcollection: sandbox
 # Additional offerings
 {: #sandbox-add-offerings}
 
-{{site.data.keyword.sandbox_full_notm}} offers additional services that are automatically provisioned with default settings when your Cloud Sandbox is created. These services enhance your environment's capabilities and are available for immediate use without any extra configuration.
+{{site.data.keyword.sandbox_full_notm}} offers additional services that can be provisioned with a single click using the default configurations. Once provisioned, these services are immediately available, allowing you to explore more Cloud Sandbox capabilities without requiring any further setup.
 {: shortdesc}
 
 ## {{site.data.keyword.cos_full_notm}}
