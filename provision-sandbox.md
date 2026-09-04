@@ -18,7 +18,7 @@ content-type: release-note
 # Provisioning the Cloud Sandbox
 {: #deploy}
 
-Provision IBM Cloud Sandbox to quickly create a secure, isolated environment for exploring IBM Cloud VPC services, where you can configure your Sandbox environment, invite users, and begin provisioning resources for testing and evaluation.
+Get started with an IBM Cloud Sandbox to create a secure, isolated environment for exploring IBM Cloud VPC services. Easily configure your Cloud Sandbox, invite users, and provision resources to test and evaluate cloud capabilities.
 {: shortdesc}
 
 ## Pre-requisites
@@ -111,19 +111,6 @@ You can create virtual servers or bare metal servers along with other VPC servic
 1. On the **Sandbox Overview** page, click **Create resources**.
 
 2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
-
-    Following are the requirements when working with the SSH keys:
-
-    * You can select one or more existing SSH keys from the SSH key dropdown.
-    * Selecting at least one SSH key is required when creating a Virtual Server Instance (VSI).
-    * The selected SSH key is automatically attached to the VSI during provisioning.
-    * When a new SSH key is created, the corresponding private key is downloaded automatically.
-    * Authorized Cloud Sandbox users can share the downloaded private key with other authorized users who require SSH access to the VSI.
-    * Users cannot establish an SSH connection to the VSI without the corresponding private SSH key.
-    * Non-VSI services can be provisioned without an SSH key.
-
-    For more information on creating SSH key, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&locale=en&interface=ui).
-
 
 3. To select from all the available images, click **Change image**. To select from all the available profiles, click **Change profile**.
 

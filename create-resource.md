@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -24,7 +24,21 @@ On the **Sandbox Overview** page, you can create compute resources such as Virtu
 
 1. On the **Sandbox Overview** page, click **Create resources**.
 
+    ![Sandbox - Create resources](images/sandbox-create-resource.svg "Sandbox - Create resources"){: caption="Sandbox - Create resources" caption-side="bottom"}
+
 2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
+
+    Following are the requirements when working with the SSH keys:
+
+    * You can select one or more existing SSH keys from the SSH key dropdown.
+    * Selecting at least one SSH key is required when creating a Virtual Server Instance (VSI).
+    * The selected SSH key is automatically attached to the VSI during provisioning.
+    * When a new SSH key is created, the corresponding private key is downloaded automatically.
+    * Authorized Cloud Sandbox users can share the downloaded private key with other authorized users who require SSH access to the VSI.
+    * Users cannot establish an SSH connection to the VSI without the corresponding private SSH key.
+    * Non-VSI services can be provisioned without an SSH key.
+
+    For more information on creating SSH key, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&locale=en&interface=ui).
 
 3. To choose an operating system image from the available options, click **Change image**.
 
@@ -44,6 +58,8 @@ On the **Sandbox Overview** page, you can create compute resources such as Virtu
 
     * **Transit Gateway** - Connect multiple VPCs and integrate with on-premises networks to support hybrid cloud connectivity.
 
+    ![Sandbox- Additional services](images/sandbox-additional-services.svg "Sandbox- Additional services"){: caption="Sandbox- Additional services" caption-side="bottom"}
+    
 4. Review the resources listed in the **Summary**, accept the terms and conditions, and click **Create resources**.
 
 5. Click **Create resources**.
