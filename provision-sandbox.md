@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-03"
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -89,6 +89,8 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
         * **View docs** - Explore the Cloud Sandbox documentation.
         * **Extend** - Extend the Sandbox trial by 2 days (48 hours).
         * **End** - End the Sandbox trial early.
+
+    - Use the **Add Tags** section to add appropriate tags for filtering, organizing, and tracking resources.
 
     - For additional information, use the **Helpful Links** section to access **Documentation**, **Videos**, and **Feedback resources**.
 
