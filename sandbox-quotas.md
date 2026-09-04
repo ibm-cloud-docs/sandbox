@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-31"
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -37,6 +37,6 @@ Following is the table list of Cloud Sandbox resource capacity and Quota limits:
 | Client VPN | 1 VPN instance | Additional VPNs cannot be provisioned, preventing secure access for new users or environments. Review existing VPN usage and reuse the current VPN by adding users or configurations. |
 | Transit Gateway | 1 Transit Gateway | Additional TGWs cannot be provisioned, limiting multi‑VPC or hybrid connectivity expansion. |
 | DNS (Cloud DNS Service) | 1 DNS instance | Additional DNS instances cannot be created, limiting domain segregation and environment isolation. |
-| Secrets Manager | 1 instance | Additional instances cannot be provisioned, requiring environments to share a single Secrets Manager instance. |
+| Secrets Manager | 1 instance of free trial | Additional instances cannot be provisioned, requiring environments to share a single Secrets Manager instance. Furthermore, provisioning a standard version of Secrets Manager instance is not supported. |
 | Security Groups | 10 security groups | Additional security groups cannot be created, potentially blocking new rules or instance launches. Review existing groups, reuse or update rules where possible, and remove unused groups. |
 {: caption="Sandbox Quota Limits" caption-side="bottom"}

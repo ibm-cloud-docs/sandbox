@@ -25,12 +25,7 @@ You can manage the user access for {{site.data.keyword.sandbox_full_notm}} by ad
 * Access to [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog#highlights){: external} to provision the Cloud Sandbox.
 * Users should have access to IAM (Admin access) permissions.
 
-## Administrator Permissions for Cloud Sandbox
-{: #admin-permissions}
-
-Cloud Sandbox provisioning require appropriate **Identity and Access Management (IAM)** permissions in IBM Cloud. These permissions determine whether a user can manage account-level settings, administer IAM policies, and provision Sandbox environments.
-
-### Required Administrator Permissions
+## Required Administrator Permissions
 {: #reqd-permission}
 
 To provision and manage Cloud Sandbox environments, the following administrator permissions are required:

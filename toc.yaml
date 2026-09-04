@@ -25,7 +25,6 @@ toc:
       - connect-servers.md
       - iam-permissions.md
       - save-config.md
-      - at-events.md
       - security-monitor.md
   - navgroup:
       id: help
