@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-09-07"
 
 keywords:
 
@@ -39,6 +39,8 @@ On the **Sandbox Overview** page, you can create compute resources such as Virtu
     * Non-VSI services can be provisioned without an SSH key.
 
     For more information on creating SSH key, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&locale=en&interface=ui).
+
+    The **Allowed IP addresses** field will be updated to your current system IP address by default.
 
 3. To choose an operating system image from the available options, click **Change image**.
 

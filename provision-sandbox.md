@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-09-07"
 
 keywords:
 
@@ -98,6 +98,9 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
 
 3. Under the **Users** section, you can add new users or remove existing users. Users added here are granted access to the Cloud Sandbox. Removing a user requires confirmation before the action is completed.
 
+    The requester of a Cloud Sandbox account cannot be removed from the Sandbox user list.
+    {: note}
+
     ![Sandbox - User](images/sandbox-user-page.svg "Sandbox - User"){: caption="Sandbox - User" caption-side="bottom"}
     
     To reclaim the Cloud Sandbox account during the trial period, contact the Sandbox team.
@@ -112,16 +115,18 @@ You can create virtual servers or bare metal servers along with other VPC servic
 
 2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
 
-3. To select from all the available images, click **Change image**. To select from all the available profiles, click **Change profile**.
+3. The **Allowed IP addresses** field will be updated to your current system IP address by default.
 
-4. Under **Additional services**, you can enable and customize the services.
+4. To select from all the available images, click **Change image**. To select from all the available profiles, click **Change profile**.
+
+5. Under **Additional services**, you can enable and customize the services.
 
     * {{site.data.keyword.cos_full_notm}}
     * Load Balancer
     * VPN for VPC
     * Transit Gateway
 
-5. Accept the terms and conditions, click **Create resources**.
+6. Accept the terms and conditions, click **Create resources**.
 
 Once resources have been created, you can view them from the **Resource list**.
 
