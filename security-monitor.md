@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-09"
 
 keywords: security group, security group rules, delete rules, sandbox, violation, compliance
 
@@ -46,14 +46,14 @@ Deleting a security group rule immediately blocks traffic matching that rule. En
 
 Following are the steps to locate and delete the security group rules in the console:
 
-### Navigate to security groups
+### Navigating to security groups
 {: #navigate-security-groups}
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com){: external}.
 2. Go to **Navigation Menu** > **VPC Infrastructure** > **Security groups**.
 3. If prompted, select the region where your Cloud Sandbox environment is located.
 
-### Identify the violating security group
+### Identifying the violating security group
 {: #identify-security-group}
 
 1. In the **Security groups** list, locate the security group mentioned in your violation notification:
@@ -61,7 +61,7 @@ Following are the steps to locate and delete the security group rules in the con
    - The security group ID is provided in your notification email.
 2. Click the security group name to open its details page.
 
-### Review the rules
+### Reviewing the rules
 {: #review-rules}
 
 1. On the security group details page, click the **Rules** tab.
@@ -77,7 +77,7 @@ Look for rules with the following characteristics:
 | Port | 22, 3389, or All ports |
 {: caption="Characteristics of violating security group rules" caption-side="bottom"}
 
-### Delete the violating rule
+### Deleting the violating rule
 {: #delete-rule}
 
 1. Locate the specific rule that matches the violation.
@@ -95,7 +95,7 @@ Port: 22
 ```
 {: screen}
 
-### Verify the deletion
+### Verifying the deletion
 {: #verify-deletion}
 
 1. Refresh the **Rules** tab to confirm that the rule no longer appears in the list.
@@ -109,11 +109,13 @@ After deleting a violating rule, you might need to create a new rule that follow
 
 1. In the **Rules** tab, click **Create**.
 2. Configure the rule with the following settings:
+
    - **Direction**: Inbound
    - **Protocol**: TCP (or UDP as needed)
    - **Source type**: IP address or CIDR
    - **Source**: Enter your specific IP address or CIDR block (for example, 203.0.113.0/24)
    - **Port**: Specify the exact port needed (for example, 22 for SSH)
+
 3. Click **Create**.
 
 ## Deleting security group rules with the CLI
@@ -121,16 +123,17 @@ After deleting a violating rule, you might need to create a new rule that follow
 
 You can also delete security group rules by using the {{site.data.keyword.cloud_notm}} CLI.
 
-### Step 1: Install and configure the CLI
+### Step 1: Installing and configuring the CLI
 {: #install-cli}
 
 Install the {{site.data.keyword.cloud_notm}} CLI and VPC infrastructure plug-in, if not installed already:
 
 ```bash
-# Install IBM Cloud CLI (if not already installed)
 curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+```
+{: pre}
 
-# Install VPC infrastructure plug-in
+```bash
 ibmcloud plugin install vpc-infrastructure
 ```
 {: pre}
@@ -139,46 +142,44 @@ ibmcloud plugin install vpc-infrastructure
 {: #login-cli}
 
 ```bash
-# Log in to IBM Cloud
 ibmcloud login --sso
+```
+{: pre}
 
-# Target your region (for example, us-south)
+```bash
 ibmcloud target -r us-south
 ```
 {: pre}
 
-### Step 3: List security group rules
+### Step 3: Listing security group rules
 {: #list-rules-cli}
 
 ```bash
-# List all rules for a security group
 ibmcloud is security-group-rules SECURITY_GROUP_ID
 ```
 {: pre}
 
 Replace `SECURITY_GROUP_ID` with your security group ID from the notification email.
 
-### Step 4: Delete the violating rule
+### Step 4: Deleting the violating rule
 {: #delete-rule-cli}
 
 ```bash
-# Delete a specific rule
 ibmcloud is security-group-rule-delete SECURITY_GROUP_ID RULE_ID
 ```
 {: pre}
 
 Replace the following values:
 
-- `SECURITY_GROUP_ID` with your security group ID
-- `RULE_ID` with the rule ID from the previous command
+- `SECURITY_GROUP_ID` with your security group ID.
+- `RULE_ID` with the rule ID from the previous command.
 
 Confirm the deletion when prompted.
 
-### Step 5: Verify the deletion with the CLI
+### Step 5: Verifying the deletion with the CLI
 {: #verify-deletion-cli}
 
 ```bash
-# List rules again to confirm deletion
 ibmcloud is security-group-rules SECURITY_GROUP_ID
 ```
 {: pre}
