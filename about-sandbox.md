@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-09"
 
 keywords:
 
@@ -87,4 +87,4 @@ The Cloud Sandbox architecture consists of few primary layers that work together
 
     * **Transit Gateway** - A centralized network hub that simplifies connectivity between different network environments.
 
-The trusted profile ensures that customers have appropriate access controls and can only interact with resources within their allocated Cloud Sandbox environment. All resources are automatically cleaned up after the 14-day trial period expires.
+The trusted profile ensures that customers have appropriate access controls and can only interact with resources within their allocated Cloud Sandbox environment. All resources are cleaned up after the 14-day trial period expires.

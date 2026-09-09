@@ -23,7 +23,7 @@ You can manage the user access for {{site.data.keyword.sandbox_full_notm}} by ad
 
 * Account should be whitelisted.
 * Access to [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog#highlights){: external} to provision the Cloud Sandbox.
-* Users should have access to IAM (Admin access) permissions.
+* Users should have access to IAM permissions.
 
 ## Required Administrator Permissions
 {: #reqd-permission}
@@ -79,28 +79,7 @@ With this access model, users can provision and manage Cloud Sandbox environment
 
 This approach allows organizations to maintain centralized administrative control while enabling users to work with Sandbox resources.
 
-## Adding permissions to existing users to provision Cloud Sandbox
-{: #add-sandbox-permission}
-
-To add Cloud Sandbox permission to existing users in your account, follow these steps:
-
-1. In the {{site.data.keyword.Bluemix_notm}} console, **select Manage** > **Access (IAM)**.
-
-2. In the *IAM navigation* menu, select **Users**.
-
-3. Find the user you want to grant access to.
-
-4. Select **Access policy**.
-
-5. Add **Cloud Sandbox** permission. For more information, see [Administrator Permissions for Cloud Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#admin-permissions).
-
-6. Click **Next**.
-
-7. Select **Roles and Action** and assign **Administrator** as the platform access to the user. Click **Review**.
-
-8. Click **Finish**.
-
-## Creating or inviting a user and add Cloud Sandbox permission
+## Inviting a user and add Cloud Sandbox permission
 {: #invite-user-sandbox}
 
 To create or invite a new user and grant them Cloud Sandbox permission, follow these steps:
@@ -124,6 +103,28 @@ To create or invite a new user and grant them Cloud Sandbox permission, follow t
 9. On the right-hand side, click **Invite**.
 
 The user gets an email invitation with the link to complete the process. This will add the user in the User list and to the Cloud Sandbox provisioning page.
+
+## Adding permissions to existing users to provision Cloud Sandbox
+{: #add-sandbox-permission}
+
+To add Cloud Sandbox permission to existing users in your account, follow these steps:
+
+1. In the {{site.data.keyword.Bluemix_notm}} console, **select Manage** > **Access (IAM)**.
+
+2. In the *IAM navigation* menu, select **Users**.
+
+3. Find the user you want to grant access to.
+
+4. Select **Access policy**.
+
+5. Add **Cloud Sandbox** permission. For more information, see [Administrator Permissions for Cloud Sandbox](/docs/sandbox?topic=sandbox-manage-user-access-sandbox#admin-permissions).
+
+6. Click **Next**.
+
+7. Select **Roles and Action** and assign **Administrator** as the platform access to the user. Click **Review**.
+
+8. Click **Finish**.
+
 
 ## Best Practices
 {: #best-prac}

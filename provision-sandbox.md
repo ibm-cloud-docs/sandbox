@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-07"
+lastupdated: "2026-09-09"
 
 keywords:
 
@@ -30,9 +30,6 @@ Ensure that you add access policies and grant administrator-level access to the 
 * All Account Management services
 * Cloud Sandbox
 * Resource Group
-
-You need the Cloud Sandbox access along with the required Resource Group access to create the Sandbox.
-{: note}
 
 Bare metal is subjected to capacity validation.
 {: important}
@@ -62,13 +59,13 @@ Only one Cloud Sandbox is allowed per allowlisted customer account.
 
     ![Create Sandbox](images/sandbox-create.svg "Create Sandbox"){: caption="Sandbox - Create" caption-side="bottom"}
 
-3. In the **Users** section, select users from your account.
+3. In the **Users** section, select the users who should have access to the Cloud Sandbox.
 
 4. Accept the terms and conditions, then click **Create Sandbox**.
 
 The Sandbox account is now provisioned. This includes a 14-day trial period with a 2-day (48-hour) extension. User access is limited to the region selected during provisioning.
 
-A user can create up to three Cloud Sandbox environments per year. Only one Sandbox can be active at any given time.
+A user can create up to three Cloud Sandbox accounts per year. Only one Sandbox can be active at any given time.
 {: note}
 
 ## Accessing Cloud Sandbox
@@ -82,7 +79,7 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
 
 2. On the **user management** page:
     
-    - Click **Launch Sandbox** to provision the required resources.
+    - Click **[Launch Sandbox](/sandbox/overview)** to provision the required resources.
 
     - From the **Actions** drop-down, you can: 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-03"
+lastupdated: "2026-09-09"
 
 keywords:
 
@@ -61,14 +61,14 @@ After Cloud Sandbox access is approved, a welcome email is sent with instruction
 
 For accounts where a Cloud Sandbox has not yet been created after the welcome email is sent, reminder notifications are issued during the designated period:
 
-  * Day 3 – First reminder
-  * Day 6 – Second reminder
-  * Day 9 – Final reminder
+* Day 3 – First reminder
+* Day 6 – Second reminder
+* Day 9 – Final reminder
 
-If a Cloud Sandbox is still not created after the final reminder:
+If a Cloud Sandbox is still not created after the final reminder, then on the 10th day you will lose all the privileges.
 
-  * The user is removed from Partner Center.
-  * The user is removed from the Cloud Sandbox allowlist.
+* The user is removed from Partner Center.
+* The user is removed from the Cloud Sandbox allowlist.
     
 Users who create a Cloud Sandbox within the designated timeframe retain their allowlist status.
 
@@ -77,9 +77,9 @@ Users who create a Cloud Sandbox within the designated timeframe retain their al
 
 A Cloud Sandbox is available for a default period of 14 days and can be extended by an additional 2 days.
 
-Once the Sandbox lifecycle ends, the environment enters a cooling-off period, during which a new Sandbox cannot be created. After expiration, all resources associated with the Sandbox become inactive and are no longer available for use.
+Once the Sandbox trial period ends, the environment enters a cooling period, during which a new Sandbox cannot be created. After expiration, all resources associated with the Sandbox become inactive and are no longer available for use.
 
-Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
+Once the trial period ends, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
 {: important} 
 
 ## Creating Cloud Sandbox account
@@ -144,15 +144,15 @@ After your Cloud Sandbox is provisioned, an email is sent to all users with acce
 
 2. When prompted, provide your {{site.data.keyword.Bluemix_notm}} credentials to authenticate.
 
-3. If two-factor authentication is enabled on your account, complete the verification process by providing the required authentication code.
+3. Select the trusted profile account (`sandbox expires mm/dd`) from the page.
+
+4. If two-factor authentication is enabled on your account, complete the verification process by providing the required authentication code.
 
 4. After successful authentication, you are redirected to the Cloud Sandbox trusted profile page.
 
-5. Select the trusted profile account (`sandbox expires mm/dd`) from the page.
+5. You are navigated to the Cloud Sandbox trusted profile account.
 
-6. You are navigated to the Cloud Sandbox trusted profile account.
-
-7. Access the [Sandbox Overview page](http://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
+6. Access the [Sandbox Overview page](http://cloud.ibm.com/sandbox/overview){: external} (which is quickstart) to begin creating resources and exploring VPC capabilities.
 
 The trusted profile provides secure, time-limited access to your Cloud Sandbox environment with appropriate IAM permissions. It automatically expires after the 14-day trial period.
 {: important}
