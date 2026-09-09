@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-09-09"
 
 keywords:
 
@@ -79,16 +79,6 @@ With this access model, users can provision and manage Cloud Sandbox environment
 
 This approach allows organizations to maintain centralized administrative control while enabling users to work with Sandbox resources.
 
-## Best Practices
-{: #best-prac}
-
-Following are the best practices when assigning permissions:
-
-* Grant full administrator access only to users who require complete account management capabilities.
-* Use limited Cloud Sandbox access for users who only need to provision and manage Cloud Sandbox environments.
-* Apply the principle of least privilege by assigning only the permissions required for a users responsibilities.
-* Periodically review and audit user permissions to ensure continued security and compliance.
-
 ## Adding permissions to existing users to provision Cloud Sandbox
 {: #add-sandbox-permission}
 
@@ -134,3 +124,13 @@ To create or invite a new user and grant them Cloud Sandbox permission, follow t
 9. On the right-hand side, click **Invite**.
 
 The user gets an email invitation with the link to complete the process. This will add the user in the User list and to the Cloud Sandbox provisioning page.
+
+## Best Practices
+{: #best-prac}
+
+Following are the best practices when assigning permissions:
+
+* Grant full administrator access only to users who require complete account management capabilities.
+* Use limited Cloud Sandbox access for users who only need to provision and manage Cloud Sandbox environments.
+* Apply the principle of least privilege by assigning only the permissions required for a users responsibilities.
+* Periodically review and audit user permissions to ensure continued security and compliance.
