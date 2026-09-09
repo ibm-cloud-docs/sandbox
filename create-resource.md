@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-07"
+lastupdated: "2026-09-09"
 
 keywords:
 
@@ -60,7 +60,7 @@ On the **Sandbox Overview** page, you can create compute resources such as Virtu
 
     * **Transit Gateway** - Connect multiple VPCs and integrate with on-premises networks to support hybrid cloud connectivity.
 
-    ![Sandbox- Additional services](images/sandbox-additional-services.svg "Sandbox- Additional services"){: caption="Sandbox- Additional services" caption-side="bottom"}
+    ![Sandbox - Additional offerings](images/sandbox-additional-offerings.svg "Sandbox - Additional offerings"){: caption="Sandbox - Additional offerings" caption-side="bottom"}
     
 4. Review the resources listed in the **Summary**, accept the terms and conditions, and click **Create resources**.
 
