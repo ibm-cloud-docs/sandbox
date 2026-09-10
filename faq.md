@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-08-31"
+lastupdated: "2026-09-10"
 
 keywords:
 
@@ -27,19 +27,19 @@ This document provides a list of frequently asked questions and answers about {{
 Yes, the Cloud Sandbox is completely free to use for 2 weeks trial period. There are no charges for the preconfigured resources provided within the environment.
 
 ## How long can I use the Cloud Sandbox?
-{: #faq-content-include}
+{: #faq-use}
 {: faq}
 
 The Cloud Sandbox is available for 14 days by default. With an extension, the total duration can be up to 16 days (14 days + 2-day extension).
 
 ## What is the mapping between {{site.data.keyword.Bluemix_notm}} Classic resources and equivalent VPC resources?
-{: #faq-content-include}
+{: #faq-mapping}
 {: faq}
 
 {{site.data.keyword.vpc_short}} provides modern equivalents for many Classic infrastructure components. Here is a [quick reference mapping](/docs/classic-to-vpc?topic=classic-to-vpc-migrate-classic-to-vpc&utm_source=chatgpt.com#map-resources) to understand how Classic infrastructure capabilities translate into the VPC.
 
 ## Which operating system images are supported by the Cloud Sandbox?
-{: #faq-content-include}
+{: #faq-os}
 {: faq}
 
 The environment supports a predefined set of operating system images for Virtual Server Instances (VSIs) and Bare Metal Servers. These are the only OS images available for use within the Cloud Sandbox for pre-provisioning:
