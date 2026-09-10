@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-09"
+lastupdated: "2026-09-10"
 
 keywords:
 
@@ -65,10 +65,8 @@ For accounts where a Cloud Sandbox has not yet been created after the welcome em
 * Day 6 – Second reminder
 * Day 9 – Final reminder
 
-If a Cloud Sandbox is still not created after the final reminder, then on the 10th day you will lose all the privileges.
-
-* The user is removed from Partner Center.
-* The user is removed from the Cloud Sandbox allowlist.
+If a Cloud Sandbox is not created by the final reminder, all privileges will be revoked on the 10th day.
+{: important}
     
 Users who create a Cloud Sandbox within the designated timeframe retain their allowlist status.
 
