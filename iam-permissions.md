@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-09"
+lastupdated: "2026-09-11"
 
 keywords:
 
@@ -125,6 +125,8 @@ To add Cloud Sandbox permission to existing users in your account, follow these 
 
 8. Click **Finish**.
 
+Any user who wants to add other users to the account must have the appropriate IAM permissions on the customer account. Users who do not have the required permissions should reach out to the account administrator for assistance.
+{: important}
 
 ## Best Practices
 {: #best-prac}
