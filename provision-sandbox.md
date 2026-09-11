@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-09"
+lastupdated: "2026-09-11"
 
 keywords:
 
@@ -79,7 +79,7 @@ The Sandbox instance is displayed in the Resource list. To access the Cloud Sand
 
 2. On the **user management** page:
     
-    - Click **[Launch Sandbox](/sandbox/overview)** to provision the required resources.
+    - Click **[Launch Sandbox](/sandbox/overview)**{: external} to provision the required resources.
 
     - From the **Actions** drop-down, you can: 
 

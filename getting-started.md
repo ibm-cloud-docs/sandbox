@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-10"
+lastupdated: "2026-09-11"
 
 keywords:
 
@@ -32,14 +32,18 @@ The {{site.data.keyword.sandbox_full_notm}} is ideal for:
 Do not use the Sandbox for production workloads. Sensitive or confidential data must not be stored during the two-week Sandbox tenure.
 {: important}
 
-To provision the Cloud Sandbox service from the IBM Cloud catalog, the user must have administrator-level permissions to initiate the deployment. Users with minimal permissions cannot provision the service. The administrator should have the below two permissions:
+To provision the **Cloud Sandbox** service from the IBM Cloud catalog, the user must have **administrator-level permissions** in the IBM Cloud account. Users with limited or minimal permissions will not be able to provision the service.
 
-* All Identity and Access enabled services
-* All Account Management services
+The user must have either of the following:
+
+* All Identity and Access enabled services permission, and
+* All Account Management services permission,
 
 or 
 
-Users should be granted Administrator permissions for the **Cloud Sandbox** policy available in the IBM Cloud account. For more information, see [IAM Permissions](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
+* Administrator access for the Cloud Sandbox service policy in the IBM Cloud account.
+
+For more information, see [IAM Permissions](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
 
 ## Before you begin
 {: #before-you-begin}
@@ -48,7 +52,7 @@ Before accessing the Cloud Sandbox, make sure you have the following:
 
 * An active **{{site.data.keyword.Bluemix_notm}}** account.
 
-* A valid **IBMid** to authenticate to IBM Cloud.
+* A valid **IBMid** to authenticate to IBM Cloud. Your IBMid is associated with a unique email address (for example, firstname.lastname@example.com).
 
 * An **allowlisted email address** associated with your account.
 
