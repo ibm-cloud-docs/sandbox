@@ -283,17 +283,17 @@ If you accidentally delete a resource, you can reclaim only those resources that
 
 This can happen for the following reasons:
 
-* Some **Bare Metal Server (BM) profiles** are available only in specific regions and zones. The profile might be unavailable due to regional or zone-specific restrictions, or because of capacity limitations in the selected location.
+* Some **Bare Metal Server (BM)** profiles are available only in specific regions and zones. The profile might be unavailable because of regional or zone-specific restrictions or capacity limitations in the selected location.
 * The selected **Flex VSI profile** might be unavailable because of capacity constraints. In such cases, choose a different Flex VSI profile from the list of available profiles.
 
-## Can I reclaim resources and Cloud Sandbox account?
+## Can I reclaim my resources and Cloud Sandbox account?
 {: #faq-reclaim}
 {: faq}
 
 Yes, but only for supported resource types.
 
-If you accidentally delete your Sandbox account from the resource list, you can reclaim only the resources that are supported in IBM Cloud Sandbox.
-If you click **End Early** before your trial expires and later decide to continue using the remaining trial period, you can reclaim only the supported resources during the **trial reclamation period**.
+If you accidentally delete your Sandbox account from the resource list, you can reclaim only the supported resource types in IBM Cloud Sandbox.
+If you click **End Early** before your trial expires and later decide to continue using the remaining trial period, you can reclaim only the supported resources during the **reclamation period**.
 
 ## Why is my manually created SSH key not listed on the Quick Start page?
 {: #faq-ssh-key}
