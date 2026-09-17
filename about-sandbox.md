@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-09-09"
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -71,7 +71,7 @@ The Cloud Sandbox architecture consists of few primary layers that work together
 
     * ***Cloud Console*** - The Cloud Console provides the user interface for creating and managing Cloud Sandbox environments.
 
-3. **Sandbox Sub Account** - The Sandbox Sub Account is the central infrastructure that hosts all customer Cloud Sandbox environments. Each customer receives a dedicated sub-account with a trusted profile that provides isolated access to Sandbox resources. This sub-account has a 14-day trial period and includes:
+3. **Sandbox Sub Account** - The Sandbox Sub-Account serves as the core infrastructure for hosting all customer Cloud Sandbox environments. Each customer is assigned a dedicated sub-account along with a trusted profile, ensuring secure and isolated access to Sandbox resources. The sub-account is provisioned with a 14-day trial period and includes the following features:
 
 * **Sandbox Overview page** - Under the **Overview** page, you can create the resources for Cloud Sandbox by clicking **Create Resources**.
 

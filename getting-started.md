@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-11"
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -41,7 +41,7 @@ The user must have either of the following:
 
 or 
 
-* Administrator access for the Cloud Sandbox service policy in the IBM Cloud account.
+* Administrator and resource group permissions for the Cloud Sandbox service policy in the IBM Cloud account.
 
 For more information, see [IAM Permissions](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
 
@@ -135,6 +135,16 @@ Perform the following steps to provision the Cloud Sandbox:
 
 Only one Sandbox creation is allowed per allow-listed customer account.
 {: tip}
+
+## Accessing your Cloud Sandbox through UI
+{: #sandbox-access-ui}
+{: step}
+
+To access the Cloud Sandbox through UI, on the **user management** page:
+
+1. Click **[Launch Sandbox](/sandbox/overview)**{: external} to provision the required resources.
+
+For more information, see [Accessing Cloud Sandbox](/docs/sandbox?topic=sandbox-deploy#access-sandbox).
 
 ## Accessing your Cloud Sandbox through email
 {: #sandbox-access-profile}
@@ -235,7 +245,7 @@ The Cloud Sandbox environment does not provide access to {{site.data.keyword.Blu
 The Cloud Sandbox applies quota limits on compute, network, and storage resources to ensure optimal performance and fair usage. Following are the key limitations:
 
 * **Compute**: Limited vCPU (128) and RAM (1028 GB) for Virtual Servers, and 1 Bare Metal Server
-* **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and {{site.data.keyword.cos_full_notm}} to 4096 GB
+* **Storage**: Block Storage limited to 4096 GB per VSI, Instance Storage to 1024 GB, and IBM Cloud Object Storage to 4096 GB
 * **Network**: Maximum of 2 VPCs, 4 subnets, 4 Floating IPs, and 10 security groups
 * **Services**: 1 instance each for Load Balancer, VPN, Transit Gateway, DNS, and Secrets Manager
 
