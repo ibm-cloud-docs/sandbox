@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-10"
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -44,21 +44,14 @@ The Cloud Sandbox is available for 14 days by default. With an extension, the 
 
 The environment supports a predefined set of operating system images for Virtual Server Instances (VSIs) and Bare Metal Servers. These are the only OS images available for use within the Cloud Sandbox for pre-provisioning:
 
-- ibm-debian-13-2-minimal-amd64
-- ibm-ubuntu-24-04-4-minimal-amd64-2
-- ibm-ubuntu-22-04-5-minimal-amd64
-- ibm-windows-server-2019-full-standard-amd64
-- ibm-debian-11-11-minimal-amd64
-- ibm-rocky-linux-9-7-minimal-amd64-3
-- ibm-centos-stream-10-amd64
-- ibm-centos-stream-9-amd64
-- ibm-rocky-linux-10-1-minimal-amd64-3
-
-## Can I extend my Cloud Sandbox trial period beyond 14 days?
-{: #faq-extend-trial}
-{: faq}
-
-Yes, you can request a one-time extension of up to 2 days(48 hours) for your Cloud Sandbox environment.
+- ibm-centos-stream-10-amd64-10
+- ibm-centos-stream-9-amd64-17
+- ibm-debian-13-6-minimal-amd64-1
+- ibm-rocky-linux-10-2-minimal-amd64-1
+- ibm-rocky-linux-9-7-minimal-amd64-6
+- ibm-ubuntu-22-04-5-minimal-amd64-18
+- ibm-ubuntu-24-04-4-minimal-amd64-7
+- ibm-windows-server-2019-full-standard-amd64-47
 
 ## Is it possible to provision the VPC infrastructure on all available cloud regions?
 {: #faq-vpc-cr}
@@ -70,7 +63,7 @@ No, the Cloud Sandbox VPC infrastructure resources could be provisioned only at 
 {: #faq-permissions}
 {: faq}
 
-No, to provision the Cloud Sandbox service through IBM cloud catalog the user should have administrator permission to trigger the deployment. A user with minimal permissions will not be able to provision the service.
+No, to provision the Cloud Sandbox service through IBM cloud catalog the user should have **administrator permission** to trigger the deployment. A user with minimal permissions will not be able to provision the service. For more information, see [IAM Permissions](/docs/sandbox?topic=sandbox-manage-user-access-sandbox).
 
 ## What happens to my resources when the Cloud Sandbox trial period ends?
 {: #faq-trial-expiry}
@@ -88,6 +81,8 @@ Yes, you can invite team members to collaborate in your environment. You can add
 * Enter their IBMids or email addresses.
 * Assign appropriate permission levels (Viewer, Editor, or Administrator)
 * Send the invitations. All collaborators share the same 14-day trial period.
+* If the user is already part of the account, you can use the **User Management** page to add them to the Cloud Sandbox Account.
+* If the user is not part of the account, first invite them to join the account. Once they have been added, use the User Management page to add them to the Cloud Sandbox Account.
 
 Invited users must have an {{site.data.keyword.Bluemix_notm}} account.
 {: note}
@@ -114,7 +109,9 @@ Yes, you can delete your Cloud Sandbox account at any time using the **Delete S
 {: #faq-multiple}
 {: faq}
 
-No, only one active Cloud Sandbox is allowed per allow-listed customer account.
+User can create up to three Sandbox instances per year. However, a 21-day cooling period is enforced by default between Sandbox provisions. Once the cooling period has elapsed, a new Sandbox account can be provisioned.
+
+By default, multiple Sandbox accounts cannot be created simultaneously.
 
 ## Can I deploy Bare Metal (BM) in all regions?
 {: #faq-bm}
@@ -128,11 +125,19 @@ No, Bare Metal servers are not available in all regions. You must select a regio
 
 Virtual Server Instances (VSI) are virtual machines that offer flexibility, quick deployment, and are ideal for most use cases including development, testing, and web applications. Bare Metal Servers are dedicated physical servers that provide maximum performance, consistent resources, and complete isolation. They're best suited for high-performance computing, intensive database operations, or workloads with strict compliance requirements. VSIs are recommended for most Cloud Sandbox users due to their faster provisioning and flexibility.
 
-## What additional services are automatically provisioned with my Cloud Sandbox?
+## Which resource types are supported within a Cloud Sandbox environment?
 {: #faq-additional-services}
 {: faq}
 
-Your Cloud Sandbox environment automatically includes four complementary services with default configurations: {{site.data.keyword.cos_full_notm}} for scalable data storage and backups, Load Balancer for distributing traffic across server instances, VPN for VPC for secure encrypted connectivity to your environment, and Transit Gateway for connecting Classic and VPC resources. These services are ready to use immediately without additional setup.
+The following resource types are supported for creation within a Cloud Sandbox environment:
+* Virtual Server Instance (VSI)
+* Bare Metal Server (BM)
+* Virtual Private Cloud (VPC)
+* Transit Gateway
+* Load Balancer
+* Cloud Object Storage (COS)
+* Secrets Manager (Trial plan only)
+* VPN
 
 ## Can I choose which region my Cloud Sandbox is deployed in?
 {: #faq-region-selection}
@@ -150,13 +155,13 @@ The Cloud Sandbox offers three types of compute profiles: Balanced profiles prov
 {: #faq-resource-limits}
 {: faq}
 
-Yes, Cloud Sandbox environments have resource quotas to ensure fair usage and system stability. While specific limits may vary, they typically include restrictions on the number of Virtual Server Instances, Bare Metal Servers, storage volumes, and network resources you can provision. These limits are designed to provide sufficient resources for testing and evaluation while maintaining system performance. If you encounter resource limits, prioritize your most critical testing scenarios.
+Yes, Cloud Sandbox environments have resource quotas to ensure fair usage and system stability. While specific limits may vary, they typically include restrictions on the number of Virtual Server Instances, Bare Metal Servers, storage volumes, and network resources you can provision. These limits are designed to provide sufficient resources for testing and evaluation while maintaining system performance. If you encounter resource limits, prioritize your most critical testing scenarios. For more information, see [Cloud Sandbox quota limits](/docs/sandbox?topic=sandbox-sandbox-quota).
 
 ## Can I access my Cloud Sandbox resources from outside IBM Cloud?
 {: #faq-external-access}
 {: faq}
 
-Yes, you can access your Cloud Sandbox resources from outside IBM Cloud using several methods. For web-facing applications, you can configure public network access during server creation. For secure remote access to private resources, use the automatically provisioned VPN for VPC service, which provides encrypted connectivity from your on-premises network or remote locations. You can also configure firewall rules and security groups to control inbound and outbound traffic based on your security requirements.
+Yes, you can access your Cloud Sandbox resources from outside IBM Cloud using several methods. For web-facing applications, you can configure public network access during server creation. If you require private connectivity, create a VPN within the Cloud Sandbox environment. You can also configure firewall rules and security groups to control inbound and outbound traffic based on your security requirements.
 
 ## What happens if I need to migrate my Cloud Sandbox workload to a production environment?
 {: #faq-migration-to-production}
@@ -180,7 +185,13 @@ You can monitor your Cloud Sandbox resources through the IBM Cloud Console. Navi
 {: #faq-security-features}
 {: faq}
 
-The Cloud Sandbox includes several security features: Each customer receives a dedicated, isolated sub-account ensuring complete separation from other users; Access control is managed through IBM Cloud IAM with trusted profiles providing fine-grained permissions; The VPN for VPC service offers encrypted connectivity using industry-standard IPsec protocols; You can configure security groups and firewall rules to control network traffic; and all resources are contained within your private Cloud Sandbox environment. These features allow you to test security configurations and understand IBM Cloud's security capabilities.
+The Cloud Sandbox includes several security features: 
+
+* Each customer receives a dedicated, isolated sub-account ensuring complete separation from other users.
+* Access control is managed through IBM Cloud IAM with trusted profiles providing fine-grained permissions.
+* The VPN for VPC service offers encrypted connectivity using industry-standard IPsec protocols.
+* You can configure security groups and firewall rules to control network traffic.
+* All resources are contained within your private Cloud Sandbox environment. These features allow you to test security configurations and understand IBM Cloud's security capabilities.
 
 ## Can I use the Cloud Sandbox for production workloads or customer-facing applications?
 {: #faq-production-use}
@@ -192,25 +203,13 @@ No, the Cloud Sandbox is strictly for testing, evaluation, and learning purposes
 {: #faq-support}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} provides documentation, tutorials, and FAQs to help you navigate the Cloud Sandbox environment. If you encounter technical issues or have questions, you can access {{site.data.keyword.Bluemix_notm}} support resources through the console. For Cloud Sandbox-specific questions about provisioning, access, or trial period extensions, contact {{site.data.keyword.Bluemix_notm}} support. Keep in mind that the Cloud Sandbox is a trial environment, so support focuses on helping you successfully evaluate {{site.data.keyword.Bluemix_notm}} capabilities rather than production-level SLAs.
-
-## Which bucket type should I select?
-{: #faq-bucket-type}
-{: faq}
-
-Select **Create a Custom Bucket** to create and configure a bucket based on your specific storage requirements.
+{{site.data.keyword.Bluemix_notm}} provides documentation, tutorials, and FAQs to help you navigate the Cloud Sandbox environment. If you encounter technical issues or have questions, you can access {{site.data.keyword.Bluemix_notm}} support resources through the console. For Cloud Sandbox-specific questions about provisioning, access, or trial period extensions, we have advanced level of Support from {{site.data.keyword.Bluemix_notm}}. Cloud Sandbox is intended for evaluation and testing purposes, so support focuses on helping you successfully evaluate {{site.data.keyword.Bluemix_notm}} capabilities rather than production-level SLAs.
 
 ## Is it possible to create an image from a VSI file in a Cloud Sandbox account?
 {: #faq-vsi}
 {: faq}
 
 Yes, it is possible. You need to ensure that the VSI is stopped by clicking on **Actions > Stop**, as the “Create Image” option is only available when the VSI is in a stopped state.
-
-## How do I find my VPCs address prefix?
-{: #faq-vpcs}
-{: faq}
-
-Verify your VPC configuration in the IBM Cloud Console under **VPC > Address Prefixes**.
 
 ## Can I change the client IP pool after creation?
 {: #faq-ippool}
@@ -277,3 +276,27 @@ In the IBM Cloud Sandbox environment, a Cloud Object Storage (COS) bucket suppor
 No. Cloud Sandbox is not responsible for reclaiming resources that have been deleted accidentally.
 
 If you accidentally delete a resource, you can reclaim only those resources that are supported by the IBM Cloud.
+
+## Why are my Cloud Sandbox resources not appearing in the resource list?
+{: #faq-rl}
+{: faq}
+
+This can happen for the following reasons:
+
+* Some **Bare Metal Server (BM) profiles** are available only in specific regions and zones. The profile might be unavailable due to regional or zone-specific restrictions, or because of capacity limitations in the selected location.
+* The selected **Flex VSI profile** might be unavailable because of capacity constraints. In such cases, choose a different Flex VSI profile from the list of available profiles.
+
+## Can I reclaim resources and Cloud Sandbox account?
+{: #faq-reclaim}
+{: faq}
+
+Yes, but only for supported resource types.
+
+If you accidentally delete your Sandbox account from the resource list, you can reclaim only the resources that are supported in IBM Cloud Sandbox.
+If you click **End Early** before your trial expires and later decide to continue using the remaining trial period, you can reclaim only the supported resources during the **trial reclamation period**.
+
+## Why is my manually created SSH key not listed on the Quick Start page?
+{: #faq-ssh-key}
+{: faq}
+
+The **Quick Start** page displays only the SSH keys that are created in the `sandbox-rg` resource group. SSH keys created in the **Default** resource group or any other resource group are not displayed on the Quick Start page.
