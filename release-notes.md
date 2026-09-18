@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-18"
 
 keywords:
 
@@ -21,18 +21,24 @@ content-type: release-note
 The release notes describes the brief overview of the new features, enhancements, known and fixed issues added to Sandbox for the release.
 {: shortdesc}
 
-## 15 September 2026 [New release]{: tag-green}
+## 18 September 2026 [New release]{: tag-green}
 {: #subcollection-15sep}
-{: release-note}
-
-Add the updates done for the GA release.
-
-## 5 May 2026
-{: #subcollection-01may}
 {: release-note}
 
 ### What's New
 {: #what-new}
+
+* User Management
+:  User Management allows administrators to add new users or remove existing users from the Sandbox account.
+
+* SSH Key Creation from Quick Start Page
+:  From the Quick Start page, you can create the SSH keys required for secure authentication.
+
+* Reclamation Controller Onboarding
+
+## 5 May 2026
+{: #subcollection-01may}
+{: release-note}
 
 This is the first release of {{site.data.keyword.sandbox_full_notm}}, a new service that provides a secure, scalable, and free-to-use trial environment designed to help customers explore and experience {{site.data.keyword.Bluemix_notm}} VPC and next-generation infrastructure. This release focuses on onboarding and Cloud Sandbox management capabilities.
 
