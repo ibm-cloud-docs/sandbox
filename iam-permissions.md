@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-11"
+lastupdated: "2026-09-18"
 
 keywords:
 
@@ -78,6 +78,35 @@ With this access model, users can provision and manage Cloud Sandbox environment
 * Assign permissions to other users
 
 This approach allows organizations to maintain centralized administrative control while enabling users to work with Sandbox resources.
+
+## Adding and Removing Users After Sandbox Provisioning
+{: #add-remove-users}
+
+The Sandbox instance is displayed in the Resource list. To access the Cloud Sandbox environment:
+
+1. Click on the Cloud Sandbox instance name in the **Resource list**.
+
+2. On the **user management** page:
+    
+    - Click **[Launch Sandbox](/sandbox/overview)**{: external} to provision the required resources.
+
+    - From the **Actions** drop-down, you can: 
+
+        * **View docs** - Explore the Cloud Sandbox documentation.
+        * **Extend** - Extend the Sandbox trial by 2 days (48 hours).
+        * **End** - End the Sandbox trial early.
+
+    - Use the **Add Tags** section to add appropriate tags for filtering, organizing, and tracking resources.
+
+    - For additional information, use the **Helpful Links** section to access **Documentation**, **Videos**, and **Feedback resources**.
+
+3. Under the **Users** section, you can add new users or remove existing users. Users added here are granted access to the Cloud Sandbox. Removing a user requires confirmation before the action is completed.
+
+    The requester of a Cloud Sandbox account cannot be removed from the Sandbox user list.
+    {: note}
+    
+    To reclaim the Cloud Sandbox account during the trial period, contact the Sandbox team.
+    {: tip}
 
 ## Inviting a user and add Cloud Sandbox permission
 {: #invite-user-sandbox}
