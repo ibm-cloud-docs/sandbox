@@ -22,7 +22,7 @@ The release notes describes the brief overview of the new features, enhancements
 {: shortdesc}
 
 ## 18 September 2026 [New release]{: tag-green}
-{: #subcollection-15sep}
+{: #subcollection-18sep}
 {: release-note}
 
 ### What's New
@@ -32,7 +32,7 @@ The release notes describes the brief overview of the new features, enhancements
 
 :  User Management allows administrators to add new users or remove existing users from the Sandbox account.
 
-* **SSH Key Creation from Quick Start Page**
+* **SSH key creation from Quick Start page**
 
 :  From the Quick Start page, you can create the SSH keys required for secure authentication.
 
