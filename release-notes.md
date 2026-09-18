@@ -28,13 +28,15 @@ The release notes describes the brief overview of the new features, enhancements
 ### What's New
 {: #what-new}
 
-* User Management
+* **User Management**
+
 :  User Management allows administrators to add new users or remove existing users from the Sandbox account.
 
-* SSH Key Creation from Quick Start Page
+* **SSH Key Creation from Quick Start Page**
+
 :  From the Quick Start page, you can create the SSH keys required for secure authentication.
 
-* Reclamation Controller Onboarding
+* **Reclamation Controller Onboarding**
 
 ## 5 May 2026
 {: #subcollection-01may}
