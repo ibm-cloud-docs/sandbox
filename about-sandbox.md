@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2026-05-04"
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -23,7 +23,8 @@ subcollection: sandbox
 # About {{site.data.keyword.sandbox_full_notm}}
 {: #architecture}
 
-The Sandbox platform provides a secure, automated, and scalable environment that enables users to discover {{site.data.keyword.Bluemix_notm}} offerings from the {{site.data.keyword.Bluemix_notm}} Catalog. You can provision Sandbox environment, deploy workloads, and evaluate {{site.data.keyword.Bluemix_notm}} VPC capabilities with minimal setup effort.
+The {{site.data.keyword.sandbox_full_notm}} platform provides a secure, automated, and scalable environment that enables users to discover {{site.data.keyword.Bluemix_notm}} offerings from the {{site.data.keyword.Bluemix_notm}} Catalog. You can provision Cloud Sandbox environment, deploy workloads, and evaluate {{site.data.keyword.Bluemix_notm}} VPC capabilities with minimal setup effort.
+{: shortdesc}
 
 {{site.data.keyword.sandbox_full_notm}} enables users to:
 
@@ -50,7 +51,7 @@ Following are the key features:
 
 * **Trusted profile security** - Fine-grained access control through {{site.data.keyword.Bluemix_notm}} IAM.
 
-* **Collaborative access** - Ability to invite team members to the sandbox environment.
+* **Collaborative access** - Ability to invite team members to the Cloud Sandbox environment.
 
 ## Architecture diagram
 {: #arch-diagram}
@@ -60,23 +61,23 @@ Following are the key features:
 ## How it works
 {: #how-it-works}
 
-The {{site.data.keyword.sandbox_full_notm}} architecture consists of few primary layers that work together to provide a secure and isolated trial environment:
+The Cloud Sandbox architecture consists of few primary layers that work together to provide a secure and isolated trial environment:
 
-1. **Users** - Users access the Cloud Sandbox through the {{site.data.keyword.Bluemix_notm}} Console. After authentication, users can create the sandbox environment, which triggers the provisioning workflow.
+1. **Users** - Users access the Cloud Sandbox through the {{site.data.keyword.Bluemix_notm}} Console. After authentication, users can create the Cloud Sandbox environment, which triggers the provisioning workflow.
 
-2. **Customer account** - The customer account serves as the entry point for Sandbox provisioning and management. This layer includes:
+2. **Customer account** - The customer account serves as the entry point for Cloud Sandbox provisioning and management. This layer includes:
 
-    * ***{{site.data.keyword.Bluemix_notm}} catalog*** - The {{site.data.keyword.Bluemix_notm}} catalog provides the Cloud Sandbox service offering, allowing users to discover and create the Sandbox environment directly from the catalog interface.
+    * ***{{site.data.keyword.Bluemix_notm}} catalog*** - The {{site.data.keyword.Bluemix_notm}} catalog provides the Cloud Sandbox service offering, allowing users to discover and create the Cloud Sandbox environment directly from the catalog interface.
 
-    * ***Cloud Console*** - The Cloud Console provides the user interface for creating and managing Sandbox environments.
+    * ***Cloud Console*** - The Cloud Console provides the user interface for creating and managing Cloud Sandbox environments.
 
-3. **Sandbox Sub Account** - The Sandbox Sub Account is the central infrastructure that hosts all customer Sandbox environments. Each customer receives a dedicated sub-account with a trusted profile that provides isolated access to Sandbox resources. This sub-account has a 14-day trial period and includes:
+3. **Sandbox Sub Account** - The Sandbox Sub-Account serves as the core infrastructure for hosting all customer Cloud Sandbox environments. Each customer is assigned a dedicated sub-account along with a trusted profile, ensuring secure and isolated access to Sandbox resources. The sub-account is provisioned with a 14-day trial period and includes the following features:
 
-* **Sandbox Overview page** - Under the **Overview** page, you can create the resources for Sandbox by clicking **Create Resources**.
+* **Sandbox Overview page** - Under the **Overview** page, you can create the resources for Cloud Sandbox by clicking **Create Resources**.
 
 * **Servers** - You can provision the virtual server instances (VSIs) or Bare Metal servers for testing workloads.
 
-* **Additional services** - These are additional services that are automatically provisioned with default configurations when you create your Sandbox. They enhance your environments capabilities and are ready to use immediately without additional setup.
+* **Additional services** - These are additional services that are automatically provisioned with default configurations when you create your Cloud Sandbox. They enhance your environments capabilities and are ready to use immediately without additional setup.
 
     * **{{site.data.keyword.cos_full_notm}}** - A highly scalable and durable storage solution designed for unstructured data.
 
@@ -86,4 +87,4 @@ The {{site.data.keyword.sandbox_full_notm}} architecture consists of few primary
 
     * **Transit Gateway** - A centralized network hub that simplifies connectivity between different network environments.
 
-The trusted profile ensures that customers have appropriate access controls and can only interact with resources within their allocated Sandbox environment. All resources are automatically cleaned up after the 14-day trial period expires.
+The trusted profile ensures that customers have appropriate access controls and can only interact with resources within their allocated Cloud Sandbox environment. All resources are cleaned up after the 14-day trial period expires.

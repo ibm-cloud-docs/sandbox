@@ -31,15 +31,17 @@
   },
   "section_highlights": [
     {
-      "title": "Resource title",
-      "description": "Short description of resource content.",
-      "href": "https://www.example.ibm.com/link/to/resource",
-      "type": "blog"
+      "title": "Sandbox Video Tutorials",
+      "description": "Simple video lessons that make learning engaging, practical, and easy.",
+      "href": "https://cloud.ibm.com/docs/sandbox?topic=sandbox-sandbox-feature-video",
+      "type": "video"
+    },
+    {
+      "title": "VPC documentation",
+      "description": "VPC infrastructure contains a number of Infrastructure-as-a-Service (IaaS) offerings, including Virtual Servers for VPC.",
+      "href": "https://cloud.ibm.com/docs/vpc",
+      "type": "training",
+      "recommended": true
     }
-  ],
-  "section_devtools": {
-    "api": "/apidocs/acme-test-v1/acme-test-v1.2.0",
-    "cli": "/docs/acme-test",
-    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group"
-  }
+  ]
 }

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-09-02"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -12,14 +12,13 @@ subcollection: sandbox
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Accessing Sandbox - CLI
+# Accessing Cloud Sandbox - CLI
 {: #access-cli}
 
 To access and manage {{site.data.keyword.sandbox_full_notm}} resources using the {{site.data.keyword.Bluemix_notm}} CLI, including installation steps, authentication, and essential commands for VPC infrastructure management.
 {: shortdesc}
 
-
-To access Sandbox using CLI, you need the following commands:
+To access Cloud Sandbox using CLI, you need the following commands:
 
 1. Log into the {{site.data.keyword.Bluemix_notm}} console at https://cloud.ibm.com.
 
@@ -53,7 +52,7 @@ To access Sandbox using CLI, you need the following commands:
     ```
     {: codeblock}
 
-The following are the commands to list and check the resources:
+    The following are the commands to list and check the resources:
 
     | Command | Description |
     | ------- | --------- |

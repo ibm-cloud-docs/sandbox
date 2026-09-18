@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-09-02"
 
 keywords: save configuration, terraform, export configuration, download terraform, infrastructure as code, terraform files
 
@@ -12,23 +12,25 @@ subcollection: sandbox
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Saving your Sandbox configuration
+# Saving your Cloud Sandbox configuration
 {: #save-config}
 
-The Save configuration feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
+Before suspending the Cloud Sandbox account, customers must delete all the resources created during provisioning. If these resources are not removed, the account will remain suspended and the resources will be deleted automatically. Therefore, it is recommended to back-up data using the **Save configuration** option before the trial period expires.
 {: shortdesc}
 
-You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page.
+The **Save configuration** feature allows you to export your {{site.data.keyword.sandbox_full_notm}} environment as ready-to-apply Terraform configuration files. This feature reads the live state of your Cloud Sandbox account and automatically generates Infrastructure as Code (IaC) that you can use to recreate your environment in a production account.
 
-After your 14-day trial period expires, all Sandbox resources are automatically deleted. Use the **Save configuration** feature to preserve your infrastructure setup before the trial ends.
+You can find the Save configuration option in [Sandbox Overview](https://cloud.ibm.com/sandbox/overview){: external} page.
+
+After your 14-day trial period expires, all Cloud Sandbox resources are automatically deleted. Use the **Save configuration** feature to preserve your infrastructure setup before the trial ends.
 {: important}
 
 ## How it works
 {: #save-config-how-it-works}
 
-The **Save configuration** feature uses the POST `/v1/configuration/save` API to generate terraform files from your live Sandbox environment. The process includes the following steps:
+The **Save configuration** feature uses the POST `/v1/configuration/save` API to generate terraform files from your live Cloud Sandbox environment. The process includes the following steps:
 
-1. **Authentication** - The system authenticates into your Sandbox account by using a trusted profile and generates a temporary token to access your resources.
+1. **Authentication** - The system authenticates into your Cloud Sandbox account by using a trusted profile and generates a temporary token to access your resources.
 
 2. **Resource discovery** - Using the temporary token, the system calls {{site.data.keyword.Bluemix_notm}} APIs to retrieve the complete configuration of all resources in your specified account and region.
 
@@ -135,43 +137,46 @@ The following resources are not included in the generated Terraform configuratio
 ## Saving your configuration
 {: #save-config-procedure}
 
-To save your Sandbox configuration and download the Terraform package:
+Following are the steps to save your Cloud Sandbox configuration and download the Terraform package:
 
-1. Navigate to the [Sandbox Overview](https://cloud.ibm.com/sandbox/overview) page from your resource list.
+1. Navigate to the [Sandbox Overview](https://cloud.ibm.com/sandbox/overview){: external} page from your resource list.
 
 2. In the **Manage Sandbox** section, click **Save Configuration**.
-
-   ![Sandbox - Save configuration](images/sandbox-save-config.png "Sandbox - Save configuration"){: caption="Figure 1. Save configuration option" caption-side="bottom"}
 
 3. Click **Download Terraform**. The system generates the Terraform configuration files from your live environment. This process can take a few minutes depending on the number of resources in your account. After generation is complete, a `.zip` file is automatically downloaded to your local machine.
 
 4. Extract the downloaded `.zip` file to a working directory.
 
+Once the account is deleted, all the data also gets deleted. The configuration saved by the user will be in the COS bucket.
+{: important} 
 
-## Applying the configuration in your production account
+## Applying configuration in your production account
 {: #save-config-apply}
 
-After downloading and extracting the Terraform configuration, you can apply it to your production {{site.data.keyword.Bluemix_notm}} account:
+After downloading and extracting the Terraform configuration, you can apply it to your production {{site.data.keyword.Bluemix_notm}} account by following the steps below.
 
 ### Before you begin
 {: #save-config-prereqs}
 
 * Ensure that you are logged into a Pay-As-You-Go {{site.data.keyword.Bluemix_notm}} account.
-* Install [Terraform CLI](https://www.terraform.io/downloads){: external} (version 1.0 or later)
-* Install the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started)
-* Have an {{site.data.keyword.Bluemix_notm}} API key with appropriate permissions for the resources you want to create
+
+* Install [Terraform CLI](https://www.terraform.io/downloads){: external} (version 1.0 or later).
+
+* Install the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started).
+
+* Have an {{site.data.keyword.Bluemix_notm}} API key with appropriate permissions for the resources you want to create.
 
 ### Procedure
 {: #save-config-apply-steps}
 
-1. Navigate to the extracted directory:
+1. Navigate to the extracted directory using the command:
 
    ```sh
    cd /path-to-extracted-terraform-config
    ```
    {: pre}
 
-3. Update the `terraform.tfvars` file with your {{site.data.keyword.Bluemix_notm}} credentials and desired values. For available region values, see [Creating a VPC in a different region](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli).
+2. Update the `terraform.tfvars` file with your {{site.data.keyword.Bluemix_notm}} credentials and desired values. For available region values, see [Creating a VPC in a different region](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli).
 
    ```hcl
    ibmcloud_api_key = "your-api-key"
@@ -179,28 +184,28 @@ After downloading and extracting the Terraform configuration, you can apply it t
    ```
    {: codeblock}
 
-4. Initialize Terraform to download the required providers:
+3. Initialize Terraform to download the required providers:
 
    ```sh
    terraform init
    ```
    {: pre}
 
-5. Review the planned changes:
+4. Review the planned changes:
 
    ```sh
    terraform plan
    ```
    {: pre}
 
-6. Apply the configuration to create resources in your production account:
+5. Apply the configuration to create resources in your production account:
 
    ```sh
    terraform apply
    ```
    {: pre}
 
-7. When prompted, type `yes` to confirm the resource creation.
+6. When prompted, type `yes` to confirm the resource creation.
 
 ## Best practices
 {: #save-config-best-practices}
@@ -218,17 +223,17 @@ After downloading and extracting the Terraform configuration, you can apply it t
 ## Limitations
 {: #save-config-limitations}
 
-* The Save Configuration feature captures the current state of your resources at the time of export. Any changes made after the export are not included.
+* The **Save Configuration** feature captures the current state of your resources at the time of export. Any changes made after the export are not included.
 
 * Some resource attributes can require manual adjustment in the generated Terraform files, particularly for resources with complex dependencies.
 
-* The generated configuration uses default variable names and may require customization to match your organization's naming standards.
+* The generated configuration uses default variable names and may require customization to match your organization naming standards.
 
-* Resource quotas and limits in your production account might differ from the Sandbox environment. Verify that your account has sufficient quota before applying the configuration.
+* Resource quotas and limits in your production account might differ from the Cloud Sandbox environment. Verify that your account has sufficient quota before applying the configuration.
 
 ## Next steps
 {: #save-config-next-steps}
 
 * [Understanding Terraform basics](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started)
 * [Managing infrastructure with Terraform](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-manage_resources)
-* [Extending your Sandbox trial](/docs/sandbox?topic=sandbox-deploy#deploy)
+* [Extending your Sandbox trial](/docs/sandbox?topic=sandbox-deploy)

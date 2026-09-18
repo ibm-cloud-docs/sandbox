@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-06"
+lastupdated: "2026-09-09"
 
 keywords:
 
@@ -14,47 +14,55 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
-
-# Creating resources in Sandbox
+# Creating resources in Cloud Sandbox
 {: #create-resource}
 
-Create and configure compute resources such as Virtual Server Instances or Bare Metal servers in your {{site.data.keyword.sandbox_full_notm}} environment, along with optional services like {{site.data.keyword.cos_short}}, Load Balancer, VPN, and Transit Gateway.
+Provision and configure compute resources in your {{site.data.keyword.sandbox_full_notm}} environment, including Virtual Server Instances (VSIs) or Bare Metal servers, along with optional services such as {{site.data.keyword.cos_short}}, Load Balancer, VPN, and Transit Gateway.
 {: shortdesc}
-
-Before you create resources, switch to the trusted profile by using the account switcher in the console menu bar.
-   {: note}
 
 On the **Sandbox Overview** page, you can create compute resources such as Virtual Server Instances or Bare Metal servers. You can also add optional services using the default configuration.
 
-1. From the Sandbox Overview page, click **Create resources**.
+1. On the **Sandbox Overview** page, click **Create resources**.
 
-    ![Sandbox - Overview](images/ui-sandbox-quick-start.png "Sandbox - Overview"){: caption="Sandbox - Overview" caption-side="bottom"}
+    ![Sandbox - Create resources](images/sandbox-create-resource.svg "Sandbox - Create resources"){: caption="Sandbox - Create resources" caption-side="bottom"}
 
-2. Under **Server Configuration**:
+2. Under **Server configuration**, click **Create a SSH key** to create a SSH key to access the server.
 
-    * The image is selected by default. But you can change if required by clicking **Change image**.
+    Following are the requirements when working with the SSH keys:
 
-    ![Select image - Server instance](images/sandbox-select-image.png "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
+    * You can select one or more existing SSH keys from the SSH key dropdown.
+    * Selecting at least one SSH key is required when creating a Virtual Server Instance (VSI).
+    * The selected SSH key is automatically attached to the VSI during provisioning.
+    * When a new SSH key is created, the corresponding private key is downloaded automatically.
+    * Authorized Cloud Sandbox users can share the downloaded private key with other authorized users who require SSH access to the VSI.
+    * Users cannot establish an SSH connection to the VSI without the corresponding private SSH key.
+    * Non-VSI services can be provisioned without an SSH key.
 
-    * The profile type is selected by default. But you can change if required by clicking **Change profile**.
+    For more information on creating SSH key, see [Getting started with SSH keys](/docs/vpc?topic=vpc-ssh-keys&locale=en&interface=ui).
 
-    ![Select profile - Server instance](images/sandbox-select-instance-profile.png "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
+    The **Allowed IP addresses** field will be updated to your current system IP address by default.
 
-    Users can choose from different images and profiles apart from those included in the Quickstart.
-    {: note}
+3. To choose an operating system image from the available options, click **Change image**.
 
+    ![Select image - Server instance](images/sandbox-select-image.svg "Select image - Server instance"){: caption="Select image - Server instance" caption-side="bottom"}
 
-3. Under **Additional services**, you can enable and customize the services.
+4. To choose an instance profile from the available options, click **Change profile**.
+
+    ![Select profile - Server instance](images/sandbox-select-instance-profile.svg "Select profile - Server instance"){: caption="Select profile - Server instance" caption-side="bottom"}
+
+5. Under **Additional services**, enable the optional services that you want to use:
 
     * **{{site.data.keyword.cos_full_notm}}** - Deploy scalable object storage for data, backups, and application content.
 
-    * **Load Balancer** - Configure load balancers to distribute traffic across multiple server instances for high availability.
+    * **Load Balancer** - Distribute network traffic across multiple server instances to enhance availability and reliability.
 
-    * **VPN for VPC** - Set up secure VPN connectivity to access your sandbox environment from on-premises networks or remote locations.
+    * **VPN for VPC** - Establish a secure connection between your Cloud Sandbox VPC and an external or on-premises network.
 
-    * **Transit Gateway** - Connect multiple VPCs or integrate with on-premises networks for hybrid cloud scenarios.
+    * **Transit Gateway** - Connect multiple VPCs and integrate with on-premises networks to support hybrid cloud connectivity.
 
-4. You can verify the resources to be created in the **Summary** and accept the terms and conditions.
+    ![Sandbox - Additional offerings](images/sandbox-additional-offerings.svg "Sandbox - Additional offerings"){: caption="Sandbox - Additional offerings" caption-side="bottom"}
+    
+4. Review the resources listed in the **Summary**, accept the terms and conditions, and click **Create resources**.
 
 5. Click **Create resources**.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-09-02"
 
 keywords: sandbox troubleshooting, sandbox provisioning issues, sandbox access problems, sandbox connectivity, sandbox resources
 
@@ -17,7 +17,10 @@ content-type: troubleshoot
 # Limitations
 {: #limitation}
 
-This section describes known constraints and limitations of {{site.data.keyword.sandbox_full_notm}}. The Sandbox is designed for safe evaluation and testing of {{site.data.keyword.Bluemix_notm}} VPC capabilities. Follow the guidelines below to safeguard your account and data, ensure responsible resource usage, and maintain security:
+This section describes known constraints and limitations of {{site.data.keyword.sandbox_full_notm}}. The Cloud Sandbox is designed for safe evaluation and testing of {{site.data.keyword.Bluemix_notm}} VPC capabilities. 
+{: shortdesc}
+
+Follow the guidelines below to safeguard your account and data, ensure responsible resource usage, and maintain security:
 
 ## Security guidelines
 {: #security-guidlines}
@@ -37,7 +40,7 @@ Following are the do's and dont's for the Security guidelines:
     Assign Floating IPs only when needed for testing and remove them afterward.
 
 * **Patch vulnerabilities:**
-    Keep your environment up to date by applying security patches. If patches are not applied, the Sandbox may be decommissioned to protect your account.
+    Keep your environment up to date by applying security patches. If patches are not applied, the Cloud Sandbox may be decommissioned to protect your account.
 
 ### Don'ts
 {: #sg-dont}
@@ -82,7 +85,7 @@ For Bare Metal servers (if enabled), follow recommended lifecycle actions and al
 
 * Do not force-stop Bare Metal servers during provisioning, operating system installation, or maintenance actions.
 
-* Do not attach unauthorized storage or network interfaces that violate your Sandbox limits.
+* Do not attach unauthorized storage or network interfaces that violate your Cloud Sandbox limits.
 
 ## General usage conduct
 {: #general}
@@ -92,15 +95,15 @@ Following are the do's and dont's for the general usage conduct:
 ### Do's
 {: #compute-dos}
 
-* Follow Sandbox usage limits and trial timelines.
+* Follow Cloud Sandbox usage limits and trial timelines.
 
 * Notify IBM if suspicious activity or unauthorized access is detected.
 
 ### Don'ts
 {: #compute-dont}
 
-* Do not use the Sandbox for production workloads.
+* Do not use the Cloud Sandbox for production workloads.
 
 * Do not perform stress testing, penetration testing, or high-risk security scans unless explicitly approved by IBM.
 
-* Do not deploy sensitive or regulated production data inside the Sandbox.
+* Do not deploy sensitive or regulated production data inside the Cloud Sandbox.

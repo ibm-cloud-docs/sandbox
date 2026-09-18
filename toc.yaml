@@ -3,9 +3,8 @@ toc:
     subcollection: sandbox
     path: sandbox
     href: /docs/sandbox
-    service-name: service-name
-    audience: service
-    category: solution_docs
+    service-name: service
+    audience: software
     label: IBM Cloud Sandbox
   entries:
   - navgroup:
@@ -13,6 +12,7 @@ toc:
       topics:
       - getting-started.md
       - about-sandbox.md
+      - sandbox-feature-video.md
       - release-notes.md
   - navgroup:
       id: howto
@@ -23,9 +23,9 @@ toc:
       - additional-offerings.md
       - access-sandbox-cli.md
       - connect-servers.md
-      - manage-user-access.md
+      - iam-permissions.md
       - save-config.md
-      - at-events.md
+      - security-monitor.md
   - navgroup:
       id: help
       topics:

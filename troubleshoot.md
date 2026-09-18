@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-08-31"
 
 keywords: sandbox troubleshooting, sandbox provisioning issues, sandbox access problems, sandbox connectivity, sandbox resources
 
@@ -20,46 +20,46 @@ content-type: troubleshoot
 General troubleshooting tips and answers to common questions about using {{site.data.keyword.sandbox_full_notm}}.
 {: shortdesc}
 
-## Why cannot I create a sandbox?
+## Why cannot I create a Cloud Sandbox?
 {: #ts-cannot-create-sandbox}
 {: troubleshoot}
 {: support}
 
-You receive an error message when attempting to create a sandbox environment.
+You receive an error message when attempting to create a Cloud Sandbox environment.
 
 You might see one of the following error messages:
 {: tsSymptoms}
 
-- "Only one sandbox is allowed per account"
-- "You are not authorized to create a sandbox"
+- "Only one Sandbox is allowed per account"
+- "You are not authorized to create a Sandbox"
 - "Sandbox service is not available in your account"
 
 This issue can occur for several reasons:
 {: tsCauses}
 
-- You already have an active sandbox in your account. Only one sandbox is allowed per allow-listed customer account.
-- Your account is not allow-listed for the sandbox service.
-- You don't have the required IAM permissions (administrator access) to create a sandbox.
+- You already have an active Cloud Sandbox in your account. Only one Sandbox is allowed per allow-listed customer account.
+- Your account is not allow-listed for the Cloud Sandbox service.
+- You don't have the required IAM permissions (administrator access) to create a Cloud Sandbox.
 
 Try the following solutions:
 {: tsResolve}
 
-1. Check if you already have an active sandbox by navigating to your [Resource list](https://cloud.ibm.com/resources){: external} and searching for "sandbox".
-2. If you have an existing sandbox that you no longer need, delete it using the **End Sandbox** option before creating a new one.
-3. Verify that your account is allow-listed by checking for the sandbox invitation email or contacting {{site.data.keyword.Bluemix_notm}} support.
+1. Check if you already have an active Cloud Sandbox by navigating to your [Resource list](https://cloud.ibm.com/resources){: external} and searching for "Sandbox".
+2. If you have an existing Sandbox that you no longer need, delete it using the **End Sandbox** option before creating a new one.
+3. Verify that your account is allow-listed by checking for the Cloud Sandbox invitation email or contacting {{site.data.keyword.Bluemix_notm}} support.
 4. Ensure you have administrator access in your {{site.data.keyword.Bluemix_notm}} account. Contact your account administrator to grant the necessary permissions.
 
-## Why is my sandbox provisioning taking longer than expected?
+## Why is my Cloud Sandbox provisioning taking longer than expected?
 {: #ts-slow-provisioning}
 {: troubleshoot}
 {: support}
 
-Your sandbox environment is taking more than 10 minutes to provision.
+Your Cloud Sandbox environment is taking more than 10 minutes to provision.
 
-The sandbox provisioning status shows "In Progress" for an extended period, typically longer than 10-15 minutes.
+The Cloud Sandbox provisioning status shows "In Progress" for an extended period, typically longer than 10-15 minutes.
 {: tsSymptoms}
 
-Sandbox provisioning typically takes 5-10 minutes but can be delayed due to:
+Cloud Sandbox provisioning typically takes 5-10 minutes but can be delayed due to:
 {: tsCauses}
 
 - High demand on {{site.data.keyword.Bluemix_notm}} infrastructure in the selected region
@@ -70,27 +70,27 @@ Try the following solutions:
 {: tsResolve}
 
 1. Wait for up to 20 minutes before taking action, as some provisioning operations may take longer during peak times.
-2. Refresh your browser and check the [Resource list](https://cloud.ibm.com/resources){: external} to see if the sandbox appears.
+2. Refresh your browser and check the [Resource list](https://cloud.ibm.com/resources){: external} to see if the Cloud Sandbox appears.
 3. Check your email for the "Welcome to your IBM Cloud Sandbox" notification, which confirms successful provisioning.
-4. If provisioning fails or takes longer than 30 minutes, delete the failed instance and try creating a new sandbox in a different region.
+4. If provisioning fails or takes longer than 30 minutes, delete the failed instance and try creating a new Cloud Sandbox in a different region.
 5. Contact {{site.data.keyword.Bluemix_notm}} support if the issue persists.
 
-## Why cannot I access my sandbox trusted profile?
+## Why cannot I access my Cloud Sandbox trusted profile?
 {: #ts-cannot-access-profile}
 {: troubleshoot}
 {: support}
 
-You cannot switch to or access your sandbox trusted profile.
+You cannot switch to or access your Cloud Sandbox trusted profile.
 
-When attempting to access the sandbox, you cannot find the trusted profile in the account drop-down menu, or you receive an "Access Denied" error.
+When attempting to access the Cloud Sandbox, you cannot find the trusted profile in the account drop-down menu, or you receive an "Access Denied" error.
 {: tsSymptoms}
 
 This issue can occur for several reasons:
 {: tsCauses}
 
-- The sandbox provisioning is not yet complete
+- The Cloud Sandbox provisioning is not yet complete
 - Your trusted profile has expired (after the 14-day trial period)
-- You were not added as a user during sandbox creation
+- You were not added as a user during Cloud Sandbox creation
 - Browser cache or session issues
 
 Try the following solutions:
@@ -99,16 +99,15 @@ Try the following solutions:
 1. Verify that you received the "Welcome to your IBM Cloud Sandbox" email, which indicates successful provisioning.
 2. Check the account drop-down menu for a trusted profile with the tag `sandbox expires mm/dd`.
 3. Clear your browser cache and cookies, then log out and log back in to {{site.data.keyword.Bluemix_notm}}.
-4. If the sandbox trial period has expired, the trusted profile is automatically deleted. You'll need to create a new sandbox.
-5. Verify that you were added as a user during the initial sandbox creation. If not, contact the sandbox creator to be added.
-6. Try accessing the sandbox from a different browser or in incognito/private mode.
+4. If the Cloud Sandbox trial period has expired, the trusted profile is automatically deleted. You'll need to create a new Cloud Sandbox.
+5. Try accessing the Cloud Sandbox from a different browser or in incognito/private mode.
 
-## Why cannot I create resources in my sandbox?
+## Why cannot I create resources in my Cloud Sandbox?
 {: #ts-cannot-create-resources}
 {: troubleshoot}
 {: support}
 
-You receive an error when attempting to create resources in your sandbox environment.
+You receive an error when attempting to create resources in your Cloud Sandbox environment.
 
 When clicking **Create Resources** or attempting to provision servers, you see error messages such as "Insufficient permissions" or "Resource creation failed".
 {: tsSymptoms}
@@ -117,19 +116,19 @@ This issue can occur for several reasons:
 {: tsCauses}
 
 - You don't have write access (administrator, editor, or operator role)
-- You've reached the resource quota limits for your sandbox
+- You've reached the resource quota limits for your Cloud Sandbox
 - The selected region doesn't support the requested resource type
-- The sandbox trial period has expired
+- The Cloud Sandbox trial period has expired
 
 Try the following solutions:
 {: tsResolve}
 
-1. Verify that you have write access by checking your role in the sandbox. Only users with administrator, editor, or operator roles can create resources.
+1. Verify that you have write access by checking your role in the Cloud Sandbox. Only users with administrator, editor, or operator roles can create resources.
 2. Check if you've reached resource quota limits by reviewing your existing resources in the [Resource list](https://cloud.ibm.com/resources){: external}.
-3. If provisioning Bare Metal servers, ensure you selected a region that supports Bare Metal during sandbox creation.
-4. Verify that your sandbox trial period hasn't expired by checking the expiration date in the trusted profile tag.
+3. If provisioning Bare Metal servers, ensure you selected a region that supports Bare Metal during Cloud Sandbox creation.
+4. Verify that your Cloud Sandbox trial period hasn't expired by checking the expiration date in the trusted profile tag.
 5. Try creating a different resource type or reducing the number of instances.
-6. Contact the sandbox administrator to adjust your permissions if needed.
+6. Contact the Cloud Sandbox administrator to adjust your permissions if needed.
 
 ## Why is my VPC creation failing?
 {: #ts-vpc-creation-fails}
@@ -138,7 +137,7 @@ Try the following solutions:
 
 VPC resource creation fails with an error message.
 
-When attempting to create VPC resources in Sandbox Overview page, you receive error messages such as "VPC creation failed" or "Unable to provision network resources".
+When attempting to create VPC resources in Cloud Sandbox Overview page, you receive error messages such as "VPC creation failed" or "Unable to provision network resources".
 {: tsSymptoms}
 
 VPC creation can fail due to:
@@ -152,11 +151,11 @@ VPC creation can fail due to:
 Try the following solutions:
 {: tsResolve}
 
-1. Verify that you're creating resources in the same region selected during sandbox provisioning.
+1. Verify that you're creating resources in the same region selected during Cloud Sandbox provisioning.
 2. Check for any existing VPC resources that might conflict with the new configuration.
 3. Review your resource quotas to ensure you haven't exceeded limits for VPCs, subnets, or security groups.
 4. Try creating the VPC with default settings first, then customize after successful creation.
-5. Ensure that all the required fields are properly filled out in the Sandbox Overview page.
+5. Ensure that all the required fields are properly filled out in the Cloud Sandbox Overview page.
 6. Wait a few minutes and retry the operation, as temporary service issues may resolve automatically.
 
 ## Why cannot I SSH into my Virtual Server Instance?
@@ -189,38 +188,38 @@ Try the following solutions:
 6. If using VPN for VPC, ensure your VPN connection is active and properly configured.
 7. Try connecting from a different network or location to rule out local firewall issues.
 
-## Why is my sandbox extension failing?
+## Why is my Cloud Sandbox extension failing?
 {: #ts-extension-fails}
 {: troubleshoot}
 {: support}
 
-You cannot extend your sandbox trial period.
+You cannot extend your Cloud Sandbox trial period.
 
-When attempting to extend your sandbox using the **Extend Sandbox** option, you receive an error message or the extension doesn't apply.
+When attempting to extend your Cloud Sandbox using the **Extend Sandbox** option, you receive an error message or the extension doesn't apply.
 {: tsSymptoms}
 
-Sandbox extension can fail due to:
+Cloud Sandbox extension can fail due to:
 {: tsCauses}
 
-- You've already used your one-time 2-day extension
-- The sandbox has already expired
+- You have already used your one-time 2-day extension
+- The Cloud Sandbox has already expired
 - System issues preventing the extension operation
 
 Try the following solutions:
 {: tsResolve}
 
-1. Verify that you haven't already extended your sandbox. Each sandbox is eligible for only one 2-day extension.
-2. Check the current expiration date in your trusted profile tag to ensure the sandbox hasn't already expired.
+1. Verify that you haven't already extended your Cloud Sandbox. Each Cloud Sandbox is eligible for only one 2-day extension.
+2. Check the current expiration date in your trusted profile tag to ensure the Cloud Sandbox expiration.
 3. Ensure you're requesting the extension before the trial period ends. Extensions cannot be applied after expiration.
 4. Refresh your browser and try the extension operation again.
-5. If the issue persists, save your sandbox configuration using the **Manage Sandbox** option and create a new sandbox if needed.
+5. If the issue persists, save your Sandbox configuration using the **Manage Sandbox** option and create a new Cloud Sandbox if needed.
 
-## Why cannot I save my sandbox configuration?
+## Why cannot I save my Cloud Sandbox configuration?
 {: #ts-cannot-save-config}
 {: troubleshoot}
 {: support}
 
-The configuration download fails when attempting to save your sandbox setup.
+The configuration download fails when attempting to save your Cloud Sandbox setup.
 
 When clicking **Manage Sandbox** and attempting to download the Terraform configuration, the download fails or produces an incomplete file.
 {: tsSymptoms}
@@ -229,7 +228,7 @@ Configuration save issues can occur due to:
 {: tsCauses}
 
 - Browser download restrictions or pop-up blockers
-- Insufficient resources created in the sandbox
+- Insufficient resources created in the Cloud Sandbox
 - Temporary service issues generating the Terraform package
 - Network connectivity problems during download
 
@@ -237,26 +236,26 @@ Try the following solutions:
 {: tsResolve}
 
 1. Disable pop-up blockers in your browser and allow downloads from cloud.ibm.com.
-2. Ensure you have created resources in your sandbox before attempting to save the configuration.
+2. Ensure you have created resources in your Cloud Sandbox before attempting to save the configuration.
 3. Try downloading the configuration using a different browser.
 4. Check your browser's download folder for the ZIP file, as it may have downloaded without notification.
 5. Verify you have sufficient disk space for the download.
 6. Wait a few minutes and retry the download operation.
 
-## Why are my sandbox resources not appearing in the resource list?
+## Why are my Cloud Sandbox resources not appearing in the resource list?
 {: #ts-resources-not-visible}
 {: troubleshoot}
 {: support}
 
-Resources you created in the sandbox are not visible in the resource list.
+Resources you created in the Cloud Sandbox are not visible in the resource list.
 
-After creating resources in your sandbox, they don't appear in the {{site.data.keyword.Bluemix_notm}} resource list or sandbox overview page.
+After creating resources in your Cloud Sandbox, they don't appear in the {{site.data.keyword.Bluemix_notm}} resource list or Cloud Sandbox overview page.
 {: tsSymptoms}
 
 Resources may not be visible due to:
 {: tsCauses}
 
-- You're viewing the wrong account (not switched to the sandbox trusted profile)
+- You are viewing the wrong account (not switched to the Cloud Sandbox trusted profile)
 - Resource provisioning is still in progress
 - Browser cache issues
 - Resource creation actually failed but didn't show an error
@@ -264,24 +263,24 @@ Resources may not be visible due to:
 Try the following solutions:
 {: tsResolve}
 
-1. Verify that you're switched to the sandbox trusted profile by checking the account drop-down menu.
+1. Verify that you're switched to the Cloud Sandbox trusted profile by checking the account drop-down menu.
 2. Refresh the resource list page to update the view.
 3. Wait 2-3 minutes for newly created resources to appear, as there may be a delay in updating the list.
 4. Clear your browser cache and reload the page.
 5. Check the Activity Tracker or audit logs to verify if resources were actually created.
 6. Navigate directly to the specific service page (e.g., VPC Infrastructure) to see if resources appear there.
 
-## Why did I receive a sandbox suspension notification?
+## Why did I receive a Cloud Sandbox suspension notification?
 {: #ts-sandbox-suspended}
 {: troubleshoot}
 {: support}
 
-You received an email notification that your sandbox account has been suspended.
+You received an email notification that your Cloud Sandbox account has been suspended.
 
-Your sandbox account shows as suspended, and you cannot access or create resources.
+Your Cloud Sandbox account shows as suspended, and you cannot access or create resources.
 {: tsSymptoms}
 
-Sandbox suspension occurs when:
+Cloud Sandbox suspension occurs when:
 {: tsCauses}
 
 - No resources were created by day 7 of the trial period
@@ -291,18 +290,18 @@ Sandbox suspension occurs when:
 Try the following solutions:
 {: tsResolve}
 
-1. If suspended due to inactivity (no resources created by day 7), create resources immediately to reactivate the sandbox.
+1. If suspended due to inactivity (no resources created by day 7), create resources immediately to reactivate the Sandbox.
 2. Review the suspension email for specific reasons and required actions.
 3. Contact {{site.data.keyword.Bluemix_notm}} support to understand the suspension reason and request reactivation if appropriate.
-4. Ensure you're using the sandbox for legitimate testing and evaluation purposes only.
-5. If the suspension cannot be resolved, you may need to create a new sandbox after the current one expires.
+4. Ensure you're using the Cloud Sandbox for legitimate testing and evaluation purposes only.
+5. If the suspension cannot be resolved, you may need to create a new Cloud Sandbox after the current one expires.
 
-## Why cannot I add or modify users in my sandbox?
+## Why cannot I add or modify users in my Cloud Sandbox?
 {: #ts-cannot-modify-users}
 {: troubleshoot}
 {: support}
 
-You cannot add new users or change user permissions in your sandbox.
+You cannot add new users or change user permissions in your Cloud Sandbox.
 
 When attempting to add users or modify their roles, the options are unavailable or changes don't take effect.
 {: tsSymptoms}
@@ -310,17 +309,17 @@ When attempting to add users or modify their roles, the options are unavailable 
 User management limitations exist because:
 {: tsCauses}
 
-- Users can only be added during initial sandbox creation
+- Users can only be added during initial Cloud Sandbox creation
 - User roles are fixed and cannot be modified after creation
-- This is a design limitation of the sandbox environment
+- This is a design limitation of the Cloud Sandbox environment
 
 This is expected behavior:
 {: tsResolve}
 
-1. Users can only be added during the initial sandbox provisioning step, not after creation.
-2. Once users are added and the sandbox is created, the user list and their roles remain unchanged throughout the trial period.
-3. If you need to add additional users or change permissions, you must delete the current sandbox and create a new one with the desired user configuration.
-4. Plan your user access requirements carefully before creating the sandbox to avoid this limitation.
+1. Users can only be added during the initial Cloud Sandbox provisioning step, not after creation.
+2. Once users are added and the Cloud Sandbox is created, the user list and their roles remain unchanged throughout the trial period.
+3. If you need to add additional users or change permissions, you must delete the current Cloud Sandbox and create a new one with the desired user configuration.
+4. Plan your user access requirements carefully before creating the Cloud Sandbox to avoid this limitation.
 
 ## Why cannot I access resources in a different region?
 {: #ts-wrong-region}
@@ -335,18 +334,18 @@ When attempting to create resources or view services in different regions, you r
 Region access is restricted because:
 {: tsCauses}
 
-- The region is locked during sandbox creation and cannot be changed
+- The region is locked during Cloud Sandbox creation and cannot be changed
 - IAM policies restrict access to only the selected region
 - This is a design limitation to ensure resource isolation
 
 This is expected behavior:
 {: tsResolve}
 
-1. Verify which region was selected during sandbox creation by checking the sandbox details.
+1. Verify which region was selected during Cloud Sandbox creation by checking the Sandbox details.
 2. All resources must be created in the region selected during provisioning.
-3. You cannot change the region after sandbox creation.
-4. If you need to test resources in a different region, you must delete the current sandbox and create a new one with the desired region.
-5. Plan your region selection carefully based on your testing requirements before creating the sandbox.
+3. You cannot change the region after Cloud Sandbox creation.
+4. If you need to test resources in a different region, you must delete the current Cloud Sandbox and create a new one with the desired region.
+5. Plan your region selection carefully based on your testing requirements before creating the Cloud Sandbox.
 
 ## Why is my Load Balancer not distributing traffic correctly?
 {: #ts-load-balancer-issues}
@@ -382,7 +381,7 @@ Try the following solutions:
 {: troubleshoot}
 {: support}
 
-You cannot establish a VPN connection to your sandbox environment.
+You cannot establish a VPN connection to your Cloud Sandbox environment.
 
 VPN connection attempts fail, time out, or show as disconnected in the VPN client.
 {: tsSymptoms}
@@ -435,6 +434,38 @@ Try the following solutions:
 6. Test connectivity using ping or traceroute to identify where traffic is being blocked.
 7. Review Transit Gateway status and connection state in the {{site.data.keyword.Bluemix_notm}} Console.
 
+## What happens when VPC address prefix overlap?
+{: #ts-overlap}
+{: troubleshoot}
+{: support}
+
+The following error message is displayed when the client IP pool overlaps with VPC address prefix:
+
+```pre
+CreateVPNServer API call: The provided client IP pool overlaps with VPC address prefix '10.0.0.0/16'
+```
+{: tsSymptoms}
+
+The client IP pool you selected conflicts with the address ranges used by your VPC infrastructure network.
+{: tsCauses}
+
+Select a client IP pool from a private address range that does not overlap with your VPC.
+{: tsResolve}
+
+## Why is my environment provisioning taking longer than the expected 10–15 minutes?
+{: #ts-provision}
+{: troubleshoot}
+{: support}
+
+Provisioning may take longer due to backend processing delays, infrastructure dependencies, or resource availability. While most environments are set up within 10–15 minutes, occasional delays can occur and may not be directly controllable from the UI or user side.
+{: tsSymptoms}
+
+The template assignment process may take longer during peak usage periods, which can lead to request timeouts. In some instances, provisioning delays may extend up to approximately one hour.
+{: tsCauses}
+
+At present, this is a known interim issue, and IBM Cloud is actively working on a permanent fix. The long-term solution focuses on enhancing request handling across multiple regions to minimize timeouts and improve overall provisioning reliability.
+{: tsResolve}
+
 ## Getting help and support
 {: #ts-getting-help}
 
@@ -446,7 +477,7 @@ If you continue to experience issues with {{site.data.keyword.sandbox_full_notm}
 - Search for similar issues in the [{{site.data.keyword.Bluemix_notm}} Community](https://community.ibm.com/community/user/cloud/home){: external}
 
 When contacting support, provide the following information:
-- Your sandbox name and creation date
+- Your Cloud Sandbox name and creation date
 - The specific error messages you're receiving
 - Steps you've already taken to troubleshoot
 - Screenshots of the issue (if applicable)
