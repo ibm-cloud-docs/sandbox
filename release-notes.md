@@ -28,15 +28,18 @@ The release notes describes the brief overview of the new features, enhancements
 ### What's New
 {: #what-new}
 
-* **User Management**
+Support for Bare metal on Static Compute nodes
+:   Up to release v3.3.1, the solution supported only virtual server instances (VSI) for all the LSF cluster nodes. With the current release, bare metal is supported only for static compute nodes, while all other cluster nodes continue to use VSI.
 
-:  User Management allows administrators to add new users or remove existing users from the Sandbox account.
+**User Management**
 
-* **SSH key creation from Quick Start page**
+:   User Management allows administrators to add new users or remove existing users from the Sandbox account.
 
-:  From the Quick Start page, you can create the SSH keys required for secure authentication.
+**SSH key creation from Quick Start page**
 
-* **Reclamation Controller Onboarding**
+:   From the Quick Start page, you can create the SSH keys required for secure authentication.
+
+**Reclamation Controller Onboarding**
 
 ## 5 May 2026
 {: #subcollection-01may}
