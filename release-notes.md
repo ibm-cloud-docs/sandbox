@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-18"
+lastupdated: "2026-09-22"
 
 keywords:
 
@@ -28,9 +28,6 @@ The release notes describes the brief overview of the new features, enhancements
 ### What's New
 {: #what-new}
 
-Support for Bare metal on Static Compute nodes
-:   Up to release v3.3.1, the solution supported only virtual server instances (VSI) for all the LSF cluster nodes. With the current release, bare metal is supported only for static compute nodes, while all other cluster nodes continue to use VSI.
-
 **User Management**
 
 :   User Management allows administrators to add new users or remove existing users from the Sandbox account.
@@ -40,6 +37,11 @@ Support for Bare metal on Static Compute nodes
 :   From the Quick Start page, you can create the SSH keys required for secure authentication.
 
 **Reclamation Controller Onboarding**
+
+:   The Reclamation Controller helps you recover your Cloud Sandbox environment during the 14-day trial period. If your Sandbox instance is accidentally deleted, you can use the Reclamation Controller to restore the account and the resources associated with it.
+
+**BSS Usage**
+:   View the total number of provisioned hours for Cloud Sandbox instances in the BSS Usage section.
 
 ## 5 May 2026
 {: #subcollection-01may}
