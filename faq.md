@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-09-23"
 
 keywords:
 
@@ -300,3 +300,9 @@ If you click **End Early** before your trial expires and later decide to continu
 {: faq}
 
 The **Quick Start** page displays only the SSH keys that are created in the `sandbox-rg` resource group. SSH keys created in the **Default** resource group or any other resource group are not displayed on the Quick Start page.
+
+## Why is `sdp` support restricted to allowlisted customers?
+{: #faq-sdp}
+{: faq}
+
+Access to the sdp profile is limited to allowlisted accounts. Customers who are not on the allowlist cannot view or provision `sdp` volumes in the console, from the CLI, with the API, or Terraform. Existing sdp volumes are not impacted. To request access, submit an [allowlisting request](https://forms.monday.com/forms/6f855ea28400d75ef31e540e39c1d31a?r=use1&SDSallowlist=){: external}.
