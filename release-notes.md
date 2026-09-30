@@ -48,7 +48,7 @@ The release notes describes the brief overview of the new features, enhancements
 
 **Support for provisioning HPC environment**
 
-:   You can provision Bare Metal or HPC infrastructure and customize it with your own HPC configuration based on your requirements. For example, you can deploy an **IBM Spectrum LSF HPC** tile from a **Cloud Sandbox account** and then configure additional HPC software, tools, and workloads as needed.
+:   You can provision Bare Metal or HPC infrastructure and customize it with your own HPC configuration based on your requirements. For example, you can deploy an **IBM Spectrum LSF HPC** tile from a **Cloud Sandbox account** and then configure additional HPC software, tools, and workloads as required.
 
 **Support for additional profiles**
 
