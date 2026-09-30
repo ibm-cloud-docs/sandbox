@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-22"
+lastupdated: "2026-09-30"
 
 keywords:
 
@@ -21,7 +21,7 @@ content-type: release-note
 The release notes describes the brief overview of the new features, enhancements, known and fixed issues added to Sandbox for the release.
 {: shortdesc}
 
-## 18 September 2026 [New release]{: tag-green}
+## 30 September 2026 [New release]{: tag-green}
 {: #subcollection-18sep}
 {: release-note}
 
@@ -40,8 +40,23 @@ The release notes describes the brief overview of the new features, enhancements
 
 :   The Reclamation Controller helps you recover your Cloud Sandbox environment during the 14-day trial period. If your Sandbox instance is accidentally deleted, you can use the Reclamation Controller to restore the account and the resources associated with it.
 
-**BSS Usage**
+**BSS usage**
 :   View the total number of provisioned hours for Cloud Sandbox instances in the BSS Usage section.
+
+**Support for Gaudi 3 profiles**
+:   For the current release, Gaudi 3 (LLM, Agentic perf.) profiles are supported.
+
+**Support for provisioning HPC environment**
+
+:   You can provision Bare Metal or HPC infrastructure and customize it with your own HPC configuration based on your requirements. For example, you can deploy an **IBM Spectrum LSF HPC** tile from a **Cloud Sandbox account** and then configure additional HPC software, tools, and workloads as needed.
+
+**Support for additional profiles**
+
+:   * hx4a-8x16 - AMD profiles
+:   * cx3dc-2x5 - TDX(Confidential computing profiles)
+:   * gx3-16x80x1l4 - 16vcpu - 80GB RAM - GPU profiles
+:   * gx3d-160x1792x8gaudi3 - 160vcpu - 1792GB RAM (Gaudi 3 profiles)
+:   * Granite Rapids Gen4 profiles
 
 ## 5 May 2026
 {: #subcollection-01may}
