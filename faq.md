@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-30"
+lastupdated: "2026-10-01"
 
 keywords:
 
@@ -308,29 +308,3 @@ The **Quick Start** page displays only the SSH keys that are created in the `san
 Access to the sdp profile is limited to allowlisted accounts. Customers who are not on the allowlist cannot view or provision `sdp` volumes in the console, from the CLI, with the API, or Terraform. Existing sdp volumes are not impacted. To request access, submit an [allowlisting request](https://forms.monday.com/forms/6f855ea28400d75ef31e540e39c1d31a?r=use1&SDSallowlist=){: external}.
 
 For more information see, [SSD defined performance profile](/docs/vpc?topic=vpc-block-storage-profiles&locale=en&interface=ui#defined-performance-profile).
-
-## Does Cloud Sandbox support Gaudi 3 profiles?
-{: #faq-gaudi}
-{: faq}
-
-Yes, Gaudi 3 (LLM, Agentic perf.) profiles are supported.
-
-## Can I provision an HPC environment in a Cloud Sandbox account?
-{: #faq-hpc}
-{: faq}
-
-Yes, you can provision Bare Metal or HPC infrastructure and customize it with your own HPC configuration based on your requirements. 
-
-For example, you can deploy an **IBM Spectrum LSF HPC** tile from a **Cloud Sandbox account** and then configure additional HPC software, tools, and workloads as needed.
-
-## What profiles are supported besides Flex profiles?
-{: #faq-profile}
-{: faq}
-
-The following profiles are supported apart from Flex profiles:
-
-* hx4a-8x16 - AMD profiles
-* cx3dc-2x5 - TDX(Confidential computing profiles)
-* gx3-16x80x1l4 - 16vcpu - 80GB RAM - GPU profiles
-* gx3d-160x1792x8gaudi3 - 160vcpu - 1792GB RAM (Gaudi 3 profiles)
-* Granite Rapids Gen4 profiles
