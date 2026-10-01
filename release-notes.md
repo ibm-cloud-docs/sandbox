@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-22"
+lastupdated: "2026-10-01"
 
 keywords:
 
@@ -21,7 +21,7 @@ content-type: release-note
 The release notes describes the brief overview of the new features, enhancements, known and fixed issues added to Sandbox for the release.
 {: shortdesc}
 
-## 18 September 2026 [New release]{: tag-green}
+## 30 September 2026 [New release]{: tag-green}
 {: #subcollection-18sep}
 {: release-note}
 
@@ -40,7 +40,7 @@ The release notes describes the brief overview of the new features, enhancements
 
 :   The Reclamation Controller helps you recover your Cloud Sandbox environment during the 14-day trial period. If your Sandbox instance is accidentally deleted, you can use the Reclamation Controller to restore the account and the resources associated with it.
 
-**BSS Usage**
+**BSS usage**
 :   View the total number of provisioned hours for Cloud Sandbox instances in the BSS Usage section.
 
 ## 5 May 2026

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-28"
 
 keywords:
 
@@ -50,7 +50,9 @@ In this video, you will learn how to configure a Transit Gateway to enable secur
 
 ![Transit Gateway Configuration](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_3k8mhh4b?wid=_1773841&iframeembed=true&entry_id=1_3k8mhh4b){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
-## Load Balancer Configuration (Coming Soon)
+## Load Balancer Configuration
 {: #config-lb-video}
 
 In this video, you will learn how to configure and manage load balancers in the Cloud Sandbox environment to distribute traffic across multiple resources, helping improve application availability, scalability, and performance.
+
+![Load Balancer Configuration](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_ynismdzq?wid=_1773841&iframeembed=true&entry_id=1_ynismdzq){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
